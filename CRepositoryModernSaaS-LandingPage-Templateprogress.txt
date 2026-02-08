@@ -107,3 +107,90 @@ $ bun run lint
 - CSS custom properties enable runtime theme switching without JavaScript
 - Three-tier hierarchy: Primitive (fixed) → Semantic (adaptive) → Component (specific)
 - Next task: 3.3.3 (Create Global Styles and Reset) - can extract reset styles from globals.css
+
+---
+
+## Task 3.3.3 - Completed 2026-02-09
+
+**Task:** Create Global Styles and Reset
+
+**Selection:** SEQUENTIAL
+- Next incomplete task in plan order
+
+**Change:**
+- Enhanced `src/styles/globals.css` with comprehensive CSS reset and base styles
+- **CSS Reset additions:**
+  - Box-sizing reset for all elements (*, *::before, *::after)
+  - Margin and padding reset on all elements
+  - List style removal (ul, ol)
+  - Button normalization (remove default styles, inherit font)
+  - Anchor tag normalization (remove underline, inherit color)
+  - Form element reset (input, textarea, select inherit font/color)
+  - Image/media reset (display: block, max-width: 100%)
+  - Table reset (border-collapse, border-spacing)
+  - Heading reset (inherit font-size and font-weight)
+  - Paragraph reset (margin: 0)
+  - Address and cite reset (font-style: normal)
+- **Base styles preserved and enhanced:**
+  - Border-default application via @apply
+  - Smooth scrolling with antialiased fonts (-webkit-font-smoothing, -moz-osx-font-smoothing)
+  - Body styling with bg-primary, text-primary, font-sans
+  - Font feature settings for ligatures ('rlig' 1, 'calt' 1)
+  - Selection styles for light mode (bg-primary-200, text-primary-900)
+  - Selection styles for dark mode (bg-primary-800, text-primary-100)
+  - Focus-visible ring styling (ring-2, ring-focus-ring, ring-offset)
+  - Reduced motion media query (disables animations, transitions, smooth scroll)
+
+**Reason:**
+- Follows sequential order after task 3.3.2 completion
+- No dependencies - tokens.css already created
+- CSS reset ensures consistent cross-browser styling baseline
+- Base styles provide foundation for all component styling
+- Completes styling infrastructure setup phase
+
+**Self-Review:**
+- All 7 acceptance criteria fully satisfied:
+  1. ✅ Created `src/styles/globals.css` - file exists with reset and base styles
+  2. ✅ Applied CSS reset - comprehensive reset for all common elements
+  3. ✅ Set base typography styles - font-sans, antialiased, feature-settings
+  4. ✅ Set smooth scrolling with reduced motion support - scroll-smooth + media query
+  5. ✅ Set selection styles - ::selection for both light and dark modes
+  6. ✅ Set focus visible styles - :focus-visible with ring styling
+  7. ✅ `bun run build` - build completes successfully with styles included
+- CSS reset follows modern best practices (box-sizing, margin/padding reset)
+- Reduced motion support is comprehensive (animations, transitions, scroll-behavior)
+- Selection and focus styles are theme-aware
+- No breaking changes to existing styles
+
+**Verification Evidence:**
+```
+$ bun run typecheck
+Result (14 files): 0 errors, 0 warnings, 0 hints
+
+$ bun run lint
+(No errors)
+
+$ bun run build
+[build] ✓ Completed in 1.24s
+[build] 1 page(s) built successfully
+[build] Complete!
+```
+
+**Unblocked:**
+- Task 3.4.1 (Install and Configure Animation Library) - sequential dependency satisfied
+- Task 3.4.2 (Create Centralized Path Configuration) - can proceed
+- Task 3.4.3 (Configure Image Optimization Pipeline) - can proceed
+- Task 3.5.1 (Create Automated Image Fetching Script) - can proceed
+- Task 3.5.2 (Create Placeholder Data Structure) - can proceed
+- Task 3.5.3 (Create Site Configuration File) - can proceed
+- Task 3.5.4 (Verify Complete Project Setup) - setup phase 3.x nearly complete
+- Task 4.1.1 (Implement Theme Provider Component) - has base styles ready
+- All UI implementation tasks - have global reset and base styles foundation
+
+**Notes:**
+- CSS reset placed before @layer base for proper cascade
+- Reset uses universal selector for box-sizing (most reliable approach)
+- Form elements inherit font from parent (consistent typography)
+- Images set to display: block to remove bottom spacing
+- Reduced motion media query uses !important to override any inline styles
+- Next task: 3.4.1 (Install and Configure Animation Library)

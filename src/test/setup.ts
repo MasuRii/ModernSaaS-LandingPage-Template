@@ -5,9 +5,32 @@ import '@testing-library/jest-dom/vitest';
 import { cleanup } from '@testing-library/react';
 import { afterEach, beforeAll, vi } from 'vitest';
 
+// Setup localStorage mock immediately
+let localStorageStore: Record<string, string> = {};
+Object.defineProperty(globalThis, 'localStorage', {
+  value: {
+    getItem: (key: string) => localStorageStore[key] || null,
+    setItem: (key: string, value: string) => {
+      localStorageStore[key] = value;
+    },
+    removeItem: (key: string) => {
+      delete localStorageStore[key];
+    },
+    clear: () => {
+      localStorageStore = {};
+    },
+    get length() {
+      return Object.keys(localStorageStore).length;
+    },
+    key: (index: number) => Object.keys(localStorageStore)[index] || null,
+  },
+  writable: true,
+});
+
 // Cleanup after each test
 afterEach(() => {
   cleanup();
+  localStorageStore = {};
 });
 
 // Mock matchMedia for responsive testing
@@ -54,19 +77,6 @@ beforeAll(() => {
   Object.defineProperty(window, 'scrollTo', {
     writable: true,
     value: vi.fn(),
-  });
-
-  // Mock localStorage for theme persistence tests
-  const localStorageMock = {
-    getItem: vi.fn(),
-    setItem: vi.fn(),
-    removeItem: vi.fn(),
-    clear: vi.fn(),
-    length: 0,
-    key: vi.fn(),
-  };
-  Object.defineProperty(window, 'localStorage', {
-    value: localStorageMock,
   });
 
   // Mock prefers-reduced-motion media query

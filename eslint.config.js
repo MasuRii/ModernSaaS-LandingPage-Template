@@ -6,14 +6,7 @@ import js from '@eslint/js';
 export default [
   // Ignore patterns
   {
-    ignores: [
-      'dist/**',
-      'node_modules/**',
-      '.astro/**',
-      '*.min.js',
-      'coverage/**',
-      '.opencode/**',
-    ],
+    ignores: ['dist/**', 'node_modules/**', '.astro/**', '*.min.js', 'coverage/**', '.opencode/**'],
   },
 
   // Base JavaScript configuration
@@ -25,6 +18,12 @@ export default [
   // Base configuration for JavaScript/TypeScript files
   {
     files: ['**/*.{js,mjs,cjs,ts,tsx}'],
+    languageOptions: {
+      globals: {
+        process: 'readonly',
+        console: 'readonly',
+      },
+    },
     rules: {
       // Error prevention
       'no-console': ['warn', { allow: ['warn', 'error'] }],
@@ -33,12 +32,12 @@ export default [
       // Best practices
       'prefer-const': 'error',
       'no-var': 'error',
-      'eqeqeq': ['error', 'always'],
-      'curly': ['error', 'all'],
+      eqeqeq: ['error', 'always'],
+      curly: ['error', 'all'],
 
       // Style consistency
-      'semi': ['error', 'always'],
-      'quotes': ['error', 'single', { avoidEscape: true }],
+      semi: ['error', 'always'],
+      quotes: ['error', 'single', { avoidEscape: true }],
       'comma-dangle': ['error', 'always-multiline'],
       'object-shorthand': 'error',
 

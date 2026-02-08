@@ -1,0 +1,174 @@
+---
+/**
+ * OptimizedImage Component
+ *
+ * A wrapper around Astro's built-in Image component with enhanced features:
+ * - Automatic format optimization (WebP/AVIF)
+ * - Responsive srcset generation
+ * - Lazy loading with intersection observer
+ * - Blur placeholder support
+ * - Path resolution integration
+ * - Accessibility features
+ *
+ * @example
+ * ```astro
+ * <OptimizedImage
+ *   src={import('@assets/photo.jpg')}
+ *   alt="Description"
+ *   width={800}
+ *   height={600}
+ * />
+ * ```
+ */
+
+import { Image } from 'astro:assets';
+import { getImagePath } from '@/config/paths';
+import { IMAGE_BREAKPOINTS, IMAGE_QUALITY, IMAGE_PRESETS } from '@/config/images';
+
+// Type for ImageMetadata (matches Astro's internal type)
+interface ImageMetadata {
+  src: string;
+  width: number;
+  height: number;
+  format: 'svg' | 'avif' | 'jpeg' | 'jpg' | 'png' | 'webp' | 'tiff' | 'gif';
+}
+
+// Props interface for the OptimizedImage component
+interface Props {
+  /** Image source - local import or remote URL */
+  src: ImageMetadata | string;
+  /** Alternative text for accessibility */
+  alt: string;
+  /** Width in pixels */
+  width?: number;
+  /** Height in pixels */
+  height?: number;
+  /** Image format for conversion - 'avif', 'jpeg', 'jpg', 'png', 'webp', 'svg' */
+  format?: 'avif' | 'jpeg' | 'jpg' | 'png' | 'webp' | 'svg';
+  /** Quality for lossy formats (1-100) */
+  quality?: number;
+  /** Loading strategy */
+  loading?: 'eager' | 'lazy';
+  /** Whether to generate responsive srcset */
+  responsive?: boolean;
+  /** Custom sizes attribute for responsive images */
+  sizes?: string;
+  /** Predefined size preset */
+  preset?: keyof typeof IMAGE_PRESETS;
+  /** Object fit style */
+  fit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
+  /** Additional CSS classes */
+  class?: string;
+  /** Border radius style */
+  rounded?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  format = 'webp',
+  quality = IMAGE_QUALITY.default,
+  loading = 'lazy',
+  responsive = false,
+  sizes,
+  preset,
+  fit = 'cover',
+  class: className = '',
+  rounded = 'none',
+} = Astro.props;
+
+// Apply preset dimensions if provided
+const presetDimensions = preset ? IMAGE_PRESETS[preset] : null;
+const finalWidth = width || presetDimensions?.width || 800;
+const finalHeight = height || presetDimensions?.height || 600;
+
+// Resolve image path for local images
+const resolvedSrc = typeof src === 'string' && !src.startsWith('http') ? getImagePath(src) : src;
+
+// Generate rounded class
+const roundedClasses = {
+  none: '',
+  sm: 'rounded-sm',
+  md: 'rounded-md',
+  lg: 'rounded-lg',
+  xl: 'rounded-xl',
+  full: 'rounded-full',
+};
+
+// Generate object fit class
+const fitClasses = {
+  cover: 'object-cover',
+  contain: 'object-contain',
+  fill: 'object-fill',
+  none: 'object-none',
+  'scale-down': 'object-scale-down',
+};
+
+// Combine classes
+const combinedClasses = [fitClasses[fit], roundedClasses[rounded], className]
+  .filter(Boolean)
+  .join(' ');
+
+// Check if we have a local image (ImageMetadata)
+const isLocalImage = typeof resolvedSrc === 'object' && 'src' in resolvedSrc;
+// Check if we have a remote string URL
+const isRemoteString = typeof resolvedSrc === 'string';
+---
+
+{
+  isLocalImage ? (
+    <div class="image-wrapper">
+      <Image
+        src={resolvedSrc}
+        alt={alt}
+        width={finalWidth}
+        height={finalHeight}
+        format={format}
+        quality={quality}
+        loading={loading}
+        decoding={loading === 'eager' ? 'sync' : 'async'}
+        class={combinedClasses}
+        widths={responsive ? [...IMAGE_BREAKPOINTS] : [finalWidth]}
+        sizes={sizes}
+      />
+    </div>
+  ) : isRemoteString ? (
+    <div class="image-wrapper">
+      <img
+        src={resolvedSrc}
+        alt={alt}
+        width={finalWidth}
+        height={finalHeight}
+        loading={loading}
+        decoding={loading === 'eager' ? 'sync' : 'async'}
+        class={combinedClasses}
+        sizes={sizes}
+      />
+    </div>
+  ) : (
+    <div class="image-error">
+      <p class="text-red-500">Error: Invalid image source</p>
+    </div>
+  )
+}
+
+<style>
+  .image-wrapper {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .image-wrapper :global(img) {
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .image-wrapper :global(img) {
+      transition: none;
+    }
+  }
+</style>

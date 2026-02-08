@@ -26,4 +26,61 @@ export default defineConfig({
   base: getBasePath(),
   output: 'static',
   trailingSlash: 'always',
+
+  // Image optimization configuration
+  image: {
+    // Service for image optimization using Sharp
+    service: {
+      entrypoint: 'astro/assets/services/sharp',
+      config: {
+        // Limit concurrent image processing
+        limitInputPixels: 268402689, // ~16384 x 16384
+        // Default image quality for lossy formats
+        quality: 80,
+      },
+    },
+    // Default breakpoints for responsive images
+    breakpoints: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    // Enable remote image optimization (for placeholder images)
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.pexels.com',
+      },
+    ],
+  },
+
+  // Vite configuration for additional optimizations
+  vite: {
+    build: {
+      // Optimize asset handling
+      assetsInlineLimit: 4096, // 4KB
+      // Ensure proper image handling
+      rollupOptions: {
+        output: {
+          assetFileNames: (assetInfo) => {
+            const name = assetInfo.name || '';
+            const info = name.split('.');
+            const ext = info[info.length - 1] || '';
+            if (/webp|avif|png|jpe?g|gif|svg/i.test(ext)) {
+              return `images/[name]-[hash][extname]`;
+            }
+            return `assets/[name]-[hash][extname]`;
+          },
+        },
+      },
+    },
+  },
 });

@@ -13,7 +13,15 @@ export default defineConfig({
     include: ['src/**/*.{test,spec}.{js,ts,jsx,tsx}', 'tests/**/*.{test,spec}.{js,ts,jsx,tsx}'],
 
     // Exclude patterns
-    exclude: ['node_modules', 'dist', '.astro', '**/node_modules/**', '**/dist/**'],
+    exclude: [
+      'node_modules',
+      'dist',
+      '.astro',
+      'e2e',
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/e2e/**',
+    ],
 
     // Coverage configuration
     coverage: {

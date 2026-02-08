@@ -1,17 +1,84 @@
 ---
-
+import '../styles/globals.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ModernSaaS - Landing Page Template</title>
+    <meta
+      name="description"
+      content="A production-ready, visually stunning SaaS startup landing page template"
+    />
+  </head>
+  <body class="min-h-screen bg-bg-primary text-text-primary antialiased">
+    <main class="container-wide py-12">
+      <div class="text-center space-y-6">
+        <h1 class="text-4xl md:text-6xl font-bold text-gradient">ModernSaaS Landing</h1>
+        <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+          A production-ready, visually stunning SaaS startup landing page template featuring modern
+          2026 design trends.
+        </p>
+        <div class="flex gap-4 justify-center pt-4">
+          <button
+            class="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-base shadow-md hover:shadow-lg"
+          >
+            Get Started
+          </button>
+          <button
+            class="px-6 py-3 border border-border-default rounded-lg hover:bg-bg-secondary transition-base"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <!-- Design System Preview -->
+      <section class="mt-20 space-y-8">
+        <h2 class="text-2xl font-semibold text-center">Design System Preview</h2>
+
+        <!-- Color Palette -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="space-y-2">
+            <div class="h-20 bg-primary-500 rounded-lg"></div>
+            <p class="text-sm text-text-secondary text-center">Primary</p>
+          </div>
+          <div class="space-y-2">
+            <div class="h-20 bg-secondary-500 rounded-lg"></div>
+            <p class="text-sm text-text-secondary text-center">Secondary</p>
+          </div>
+          <div class="space-y-2">
+            <div class="h-20 bg-accent-500 rounded-lg"></div>
+            <p class="text-sm text-text-secondary text-center">Accent</p>
+          </div>
+          <div class="space-y-2">
+            <div class="h-20 bg-gray-500 rounded-lg"></div>
+            <p class="text-sm text-text-secondary text-center">Gray</p>
+          </div>
+        </div>
+
+        <!-- Card Examples -->
+        <div class="grid md:grid-cols-3 gap-6 pt-8">
+          <div class="p-6 rounded-xl bg-bg-secondary border border-border-default shadow-sm">
+            <h3 class="font-semibold mb-2">Card Title</h3>
+            <p class="text-text-secondary text-sm">
+              Example card component with theme-aware styling.
+            </p>
+          </div>
+          <div class="p-6 rounded-xl glass">
+            <h3 class="font-semibold mb-2">Glass Card</h3>
+            <p class="text-text-secondary text-sm">Glassmorphism effect with backdrop blur.</p>
+          </div>
+          <div class="p-6 rounded-xl gradient-mesh">
+            <h3 class="font-semibold mb-2">Gradient Mesh</h3>
+            <p class="text-text-secondary text-sm">Beautiful gradient mesh background.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

@@ -58,42 +58,22 @@ export interface LinkProps extends Omit<React.AnchorHTMLAttributes<HTMLAnchorEle
   resolvePath?: boolean;
   /** Custom underline offset */
   underlineOffset?: number;
+  /** Custom modal title override */
+  modalTitle?: string;
+  /** Custom modal message override */
+  modalMessage?: string;
+  /** Custom modal description override */
+  modalDescription?: string;
+  /** Callback when the modal is opened */
+  onModalOpen?: (url: string) => void;
+  /** Callback when the modal is closed */
+  onModalClose?: () => void;
+  /** Callback when URL is copied from modal */
+  onModalCopy?: (url: string) => void;
 }
 
 /**
  * Link Component
- *
- * A versatile, accessible link component that handles both internal and external
- * navigation with consistent styling and demo link modal integration.
- *
- * Features:
- * - Automatic path resolution for internal routes
- * - External link detection and icon
- * - Demo link modal integration
- * - Multiple visual variants
- * - Full accessibility support
- * - Light/dark theme support
- *
- * @example
- * ```tsx
- * // Internal link
- * <Link href="/pricing">View Pricing</Link>
- *
- * // External link with icon
- * <Link href="https://example.com" showExternalIcon>
- *   Visit Site
- * </Link>
- *
- * // Demo link with modal
- * <Link href="/dashboard" useDemoModal>
- *   Open Dashboard
- * </Link>
- *
- * // Button-styled link
- * <Link href="/signup" variant="button" size="lg">
- *   Get Started
- * </Link>
- * ```
  */
 export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   (
@@ -112,6 +92,12 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
       rel,
       target,
       onClick,
+      modalTitle,
+      modalMessage,
+      modalDescription,
+      onModalOpen,
+      onModalClose,
+      onModalCopy,
       ...props
     },
     ref,
@@ -220,23 +206,20 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
 
     // Render with DemoLink wrapper if applicable
     if (shouldUseDemoLink) {
-      // Extract only the props that DemoLink accepts
-      const { modalTitle, modalMessage, modalDescription, onModalOpen, onModalClose, onCopy } =
-        props as Record<string, unknown>;
-
       return (
         <DemoLink
-          ref={ref as React.Ref<HTMLAnchorElement>}
+          ref={ref}
           href={resolvedHref}
           className={classes}
           forceDemo={forceDemo}
-          onClick={onClick as React.MouseEventHandler<HTMLAnchorElement>}
-          modalTitle={modalTitle as string | undefined}
-          modalMessage={modalMessage as string | undefined}
-          modalDescription={modalDescription as string | undefined}
-          onModalOpen={onModalOpen as ((url: string) => void) | undefined}
-          onModalClose={onModalClose as (() => void) | undefined}
-          onCopy={onCopy as ((url: string) => void) | undefined}
+          onClick={onClick}
+          modalTitle={modalTitle}
+          modalMessage={modalMessage}
+          modalDescription={modalDescription}
+          onModalOpen={onModalOpen}
+          onModalClose={onModalClose}
+          onModalCopy={onModalCopy}
+          {...props}
         >
           {linkContent}
         </DemoLink>
@@ -266,11 +249,6 @@ Link.displayName = 'Link';
  *
  * A convenience component for external links with automatic external icon.
  * Always opens in a new tab by default.
- *
- * @example
- * ```tsx
- * <ExternalLink href="https://github.com">GitHub</ExternalLink>
- * ```
  */
 export interface ExternalLinkProps extends Omit<LinkProps, 'showExternalIcon'> {
   /** The external URL */
@@ -293,13 +271,6 @@ ExternalLinkComponent.displayName = 'ExternalLink';
  * NavLink Component
  *
  * A link component specifically for navigation with active state support.
- *
- * @example
- * ```tsx
- * <NavLink href="/features" isActive={currentPath === '/features'}>
- *   Features
- * </NavLink>
- * ```
  */
 export interface NavLinkProps extends LinkProps {
   /** Whether this link represents the current page */
@@ -339,12 +310,6 @@ NavLink.displayName = 'NavLink';
  * ArrowLink Component
  *
  * A link with an animated arrow that moves on hover.
- * Great for "Learn more" and "Read more" links.
- *
- * @example
- * ```tsx
- * <ArrowLink href="/blog/post">Read the full article</ArrowLink>
- * ```
  */
 export type ArrowLinkProps = Omit<LinkProps, 'showExternalIcon'>;
 
@@ -374,11 +339,6 @@ ArrowLink.displayName = 'ArrowLink';
  *
  * A skip link for accessibility that allows keyboard users to
  * skip to the main content. Hidden by default, visible on focus.
- *
- * @example
- * ```tsx
- * <SkipLink targetId="main-content">Skip to main content</SkipLink>
- * ```
  */
 export interface SkipLinkProps extends Omit<LinkProps, 'href'> {
   /** The ID of the element to skip to */

@@ -3,7 +3,10 @@
 
 import '@testing-library/jest-dom/vitest';
 import { cleanup } from '@testing-library/react';
-import { afterEach, beforeAll, vi } from 'vitest';
+import { afterEach, beforeAll, expect, vi } from 'vitest';
+import * as axeMatchers from 'vitest-axe/matchers';
+
+expect.extend(axeMatchers);
 
 // Setup localStorage mock immediately
 let localStorageStore: Record<string, string> = {};
@@ -52,25 +55,25 @@ beforeAll(() => {
   // Mock IntersectionObserver for scroll-triggered animations
   Object.defineProperty(window, 'IntersectionObserver', {
     writable: true,
-    value: vi.fn().mockImplementation(() => ({
-      disconnect: vi.fn(),
-      observe: vi.fn(),
-      unobserve: vi.fn(),
-      takeRecords: vi.fn().mockReturnValue([]),
-      root: null,
-      rootMargin: '',
-      thresholds: [],
-    })),
+    value: class {
+      disconnect = vi.fn();
+      observe = vi.fn();
+      unobserve = vi.fn();
+      takeRecords = vi.fn().mockReturnValue([]);
+      root = null;
+      rootMargin = '';
+      thresholds = [];
+    },
   });
 
   // Mock ResizeObserver for responsive components
   Object.defineProperty(window, 'ResizeObserver', {
     writable: true,
-    value: vi.fn().mockImplementation(() => ({
-      disconnect: vi.fn(),
-      observe: vi.fn(),
-      unobserve: vi.fn(),
-    })),
+    value: class {
+      disconnect = vi.fn();
+      observe = vi.fn();
+      unobserve = vi.fn();
+    },
   });
 
   // Mock scrollTo for navigation tests

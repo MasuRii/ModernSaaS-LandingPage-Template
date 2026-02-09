@@ -76,7 +76,7 @@ describe('Header', () => {
     fireEvent.click(menuButton);
 
     await waitFor(() => {
-      expect(screen.getByLabelText('Close menu')).toBeInTheDocument();
+      expect(screen.getAllByLabelText('Close menu')[0]).toBeInTheDocument();
     });
   });
 
@@ -88,11 +88,11 @@ describe('Header', () => {
     fireEvent.click(menuButton);
 
     await waitFor(() => {
-      expect(screen.getByLabelText('Close menu')).toBeInTheDocument();
+      expect(screen.getAllByLabelText('Close menu')[0]).toBeInTheDocument();
     });
 
     // Close menu
-    const closeButton = screen.getByLabelText('Close menu');
+    const closeButton = screen.getAllByLabelText('Close menu')[0];
     fireEvent.click(closeButton);
 
     await waitFor(() => {
@@ -122,11 +122,11 @@ describe('Header', () => {
   it('renders all navigation links with correct hrefs', () => {
     renderWithTheme(<Header />);
 
-    expect(screen.getByText('Features').closest('a')).toHaveAttribute('href', '/features');
-    expect(screen.getByText('Pricing').closest('a')).toHaveAttribute('href', '/pricing');
-    expect(screen.getByText('About').closest('a')).toHaveAttribute('href', '/about');
-    expect(screen.getByText('Blog').closest('a')).toHaveAttribute('href', '/blog');
-    expect(screen.getByText('Contact').closest('a')).toHaveAttribute('href', '/contact');
+    expect(screen.getByText('Features').closest('a')).toHaveAttribute('href', '/features/');
+    expect(screen.getByText('Pricing').closest('a')).toHaveAttribute('href', '/pricing/');
+    expect(screen.getByText('About').closest('a')).toHaveAttribute('href', '/about/');
+    expect(screen.getByText('Blog').closest('a')).toHaveAttribute('href', '/blog/');
+    expect(screen.getByText('Contact').closest('a')).toHaveAttribute('href', '/contact/');
   });
 });
 

@@ -53,7 +53,7 @@ export interface DemoLinkModalProps {
   /** Optional custom action text */
   actionText?: string | undefined;
   /** Callback when URL is copied */
-  onCopy?: ((url: string) => void) | undefined;
+  onModalCopy?: ((url: string) => void) | undefined;
 }
 
 /**
@@ -136,41 +136,8 @@ function useFocusTrap(
 
 /**
  * DemoLinkModal Component
- *
- * Displays an informative modal when users click on demo/placeholder links.
- * Provides context about the placeholder functionality and options to copy
- * the URL or close the modal.
- *
- * Features:
- * - Focus trap when open (accessibility requirement)
- * - Smooth entrance/exit animations
- * - Copy URL functionality with visual feedback
- * - Escape key handling
- * - Backdrop click to close
- * - Reduced motion support
- * - Theme-aware styling
- *
- * @example
- * ```tsx
- * <DemoLinkModal
- *   isOpen={isModalOpen}
- *   onClose={closeModal}
- *   url="/dashboard"
- * />
- * ```
- *
- * @example
- * ```tsx
- * <DemoLinkModal
- *   isOpen={isModalOpen}
- *   onClose={closeModal}
- *   url="https://example.com"
- *   title="Custom Title"
- *   message="Custom message about this link."
- * />
- * ```
  */
-export function DemoLinkModal({
+export const DemoLinkModal = ({
   isOpen,
   onClose,
   url,
@@ -178,8 +145,8 @@ export function DemoLinkModal({
   message: customMessage,
   description: customDescription,
   actionText: customActionText,
-  onCopy,
-}: DemoLinkModalProps): React.ReactElement | null {
+  onModalCopy,
+}: DemoLinkModalProps): React.ReactElement | null => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [copied, setCopied] = useState(false);
 
@@ -201,7 +168,7 @@ export function DemoLinkModal({
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);
-      onCopy?.(url);
+      onModalCopy?.(url);
 
       // Reset copied state after 2 seconds
       setTimeout(() => {
@@ -211,7 +178,7 @@ export function DemoLinkModal({
       // Fallback for browsers that don't support clipboard API
       console.warn('Failed to copy to clipboard:', error);
     }
-  }, [url, onCopy]);
+  }, [url, onModalCopy]);
 
   // Handle body scroll lock
   useEffect(() => {
@@ -367,25 +334,11 @@ export function DemoLinkModal({
       `}</style>
     </>
   );
-}
+};
 
 /**
  * Hook for managing DemoLinkModal state
  * @returns Modal state and controls
- *
- * @example
- * ```tsx
- * const { isOpen, url, openModal, closeModal } = useDemoLinkModal();
- *
- * return (
- *   <>
- *     <a href="/dashboard" onClick={(e) => { e.preventDefault(); openModal('/dashboard'); }}>
- *       Dashboard
- *     </a>
- *     <DemoLinkModal isOpen={isOpen} onClose={closeModal} url={url} />
- *   </>
- * );
- * ```
  */
 export function useDemoLinkModal(): {
   isOpen: boolean;

@@ -212,6 +212,7 @@ export const Toaster = () => {
   return (
     <div
       className="fixed bottom-0 right-0 z-[100] flex w-full flex-col gap-3 p-4 sm:max-w-md sm:p-6"
+      role="region"
       aria-label="Notifications"
     >
       <AnimatePresence mode="popLayout">

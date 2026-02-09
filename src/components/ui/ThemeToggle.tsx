@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { useTheme } from '@/components/ThemeProvider';
 import { Moon, Sun } from 'lucide-react';
 

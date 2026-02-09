@@ -1,3 +1,4 @@
+import * as React from 'react';
 /**
  * Link Component Tests
  *
@@ -6,7 +7,7 @@
  * @module components/ui
  */
 
-import { describe, expect, it, vi } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import {
   ArrowLink,
@@ -15,15 +16,21 @@ import {
   NavLink,
   SkipLink,
 } from '../../../src/components/ui/Link';
-import * as paths from '../../../src/config/paths';
 
 // Mock the paths module
-vi.mock('../../../src/config/paths', () => ({
-  resolveHref: vi.fn((href: string) => href),
-  isExternalUrl: vi.fn((url: string) => url.startsWith('http') || url.startsWith('//')),
-}));
+vi.mock('../../../src/config/paths', async (importOriginal) => {
+  const actual = (await importOriginal()) as Record<string, unknown>;
+  return {
+    ...actual,
+    resolveHref: vi.fn((href: string) => href),
+    isExternalUrl: vi.fn((url: string) => url.startsWith('http') || url.startsWith('//')),
+  };
+});
 
 describe('Link Component', () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
   describe('Basic Rendering', () => {
     it('renders with default variant', () => {
       render(<Link href="/test">Test Link</Link>);
@@ -119,7 +126,7 @@ describe('Link Component', () => {
         </Link>,
       );
       const link = screen.getByText('Large Link');
-      expect(link).toHaveClass('text-lg');
+      expect(link).toHaveClass('text-lg font-medium');
     });
   });
 
@@ -256,6 +263,8 @@ describe('Link Component', () => {
 
   describe('Path Resolution', () => {
     it('resolves paths when resolvePath is true', () => {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const paths = require('../../../src/config/paths');
       const mockResolveHref = vi.mocked(paths.resolveHref);
       mockResolveHref.mockReturnValueOnce('/resolved/path');
 
@@ -266,6 +275,8 @@ describe('Link Component', () => {
     });
 
     it('skips path resolution when resolvePath is false', () => {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      const paths = require('../../../src/config/paths');
       const mockResolveHref = vi.mocked(paths.resolveHref);
 
       render(

@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { type ReactNode, createContext, useCallback, useContext, useEffect, useState } from 'react';
 
 /**

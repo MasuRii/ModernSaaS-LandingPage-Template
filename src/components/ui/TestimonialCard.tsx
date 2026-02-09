@@ -73,7 +73,7 @@ export const TestimonialCard = React.forwardRef<HTMLDivElement, TestimonialCardP
       >
         <CardHeader className="border-none pb-4 flex flex-row items-center justify-between space-y-0">
           {/* Star Rating */}
-          <div className="flex gap-0.5" aria-label={`Rating: ${rating} out of 5 stars`}>
+          <div className="flex gap-0.5" role="img" aria-label={`Rating: ${rating} out of 5 stars`}>
             {[...Array(5)].map((_, i) => (
               <Star
                 key={i}

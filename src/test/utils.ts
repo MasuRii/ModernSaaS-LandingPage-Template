@@ -5,6 +5,8 @@ import type { RenderOptions } from '@testing-library/react';
 import { render } from '@testing-library/react';
 import type { ReactElement, ReactNode } from 'react';
 import { expect, vi } from 'vitest';
+import * as React from 'react';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 /**
  * Custom render function that wraps components with necessary providers
@@ -12,20 +14,16 @@ import { expect, vi } from 'vitest';
  */
 interface CustomRenderOptions extends Omit<RenderOptions, 'wrapper'> {
   withTheme?: boolean;
-  theme?: 'light' | 'dark';
+  theme?: 'light' | 'dark' | 'system';
 }
-
-// Import React for JSX in .tsx files
-import React from 'react';
 
 /**
  * Creates a mock theme context provider for testing
  * Returns a wrapper component as a React component
  */
-const createThemeWrapper = (theme: 'light' | 'dark' = 'light') => {
+const createThemeWrapper = (theme: 'light' | 'dark' | 'system' = 'light') => {
   return function ThemeWrapper({ children }: { children: ReactNode }) {
-    // Use React.createElement to avoid JSX in .ts file
-    return React.createElement('div', { 'data-theme': theme, className: theme }, children);
+    return React.createElement(ThemeProvider, { defaultTheme: theme, children });
   };
 };
 

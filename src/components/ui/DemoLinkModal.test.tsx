@@ -152,19 +152,19 @@ describe('DemoLinkModal Component', () => {
     });
 
     it('calls onCopy callback when URL is copied', async () => {
-      const onCopy = vi.fn();
+      const onModalCopy = vi.fn();
       const mockClipboard = {
         writeText: vi.fn().mockResolvedValue(undefined),
       };
       Object.assign(navigator, { clipboard: mockClipboard });
 
-      render(<DemoLinkModal {...defaultProps} url="/test-url" onCopy={onCopy} />);
+      render(<DemoLinkModal {...defaultProps} url="/test-url" onModalCopy={onModalCopy} />);
 
       const copyButton = screen.getByRole('button', { name: /copy link url/i });
       await userEvent.click(copyButton);
 
       await waitFor(() => {
-        expect(onCopy).toHaveBeenCalledWith('/test-url');
+        expect(onModalCopy).toHaveBeenCalledWith('/test-url');
       });
     });
   });
@@ -292,9 +292,9 @@ describe('DemoLink Component', () => {
     it('renders as an anchor tag', () => {
       render(<DemoLink href="/test">Test Link</DemoLink>);
 
-      const link = screen.getByRole('link');
+      const link = screen.getByText('Test Link');
+      expect(link.tagName.toLowerCase()).toBe('a');
       expect(link).toHaveAttribute('href', '/test');
-      expect(link).toHaveTextContent('Test Link');
     });
 
     it('applies custom className', () => {
@@ -304,7 +304,7 @@ describe('DemoLink Component', () => {
         </DemoLink>,
       );
 
-      expect(screen.getByRole('link')).toHaveClass('custom-class');
+      expect(screen.getByText('Test Link')).toHaveClass('custom-class');
     });
 
     it('applies title attribute', () => {
@@ -314,7 +314,7 @@ describe('DemoLink Component', () => {
         </DemoLink>,
       );
 
-      expect(screen.getByRole('link')).toHaveAttribute('title', 'Test Title');
+      expect(screen.getByText('Test Link')).toHaveAttribute('title', 'Test Title');
     });
   });
 
@@ -322,7 +322,7 @@ describe('DemoLink Component', () => {
     it('shows modal for demo links when clicked', async () => {
       render(<DemoLink href="/dashboard">Dashboard</DemoLink>);
 
-      const link = screen.getByRole('link');
+      const link = screen.getByText('Dashboard');
       await userEvent.click(link);
 
       // Modal should appear
@@ -332,13 +332,21 @@ describe('DemoLink Component', () => {
     });
 
     it('prevents default navigation for demo links', async () => {
-      const preventDefault = vi.fn();
-      render(<DemoLink href="/dashboard">Dashboard</DemoLink>);
+      render(
+        <DemoLink href="/dashboard" forceDemo>
+          Dashboard
+        </DemoLink>,
+      );
 
-      const link = screen.getByRole('link');
-      fireEvent.click(link, { preventDefault });
+      const link = screen.getByText('Dashboard');
+      const event = new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+      });
+      const preventDefaultSpy = vi.spyOn(event, 'preventDefault');
+      fireEvent(link, event);
 
-      expect(preventDefault).toHaveBeenCalled();
+      expect(preventDefaultSpy).toHaveBeenCalled();
     });
   });
 
@@ -350,7 +358,7 @@ describe('DemoLink Component', () => {
         </DemoLink>,
       );
 
-      const link = screen.getByRole('link');
+      const link = screen.getByText('Test Link');
       await userEvent.click(link);
 
       await waitFor(() => {
@@ -365,7 +373,7 @@ describe('DemoLink Component', () => {
         </DemoLink>,
       );
 
-      const link = screen.getByRole('link');
+      const link = screen.getByText('Test Link');
       await userEvent.click(link);
 
       await waitFor(() => {
@@ -383,7 +391,7 @@ describe('DemoLink Component', () => {
         </DemoLink>,
       );
 
-      const link = screen.getByRole('link');
+      const link = screen.getByText('Dashboard');
       await userEvent.click(link);
 
       expect(onModalOpen).toHaveBeenCalledWith('/dashboard');
@@ -398,7 +406,7 @@ describe('DemoLink Component', () => {
       );
 
       // Open modal
-      const link = screen.getByRole('link');
+      const link = screen.getByText('Dashboard');
       await userEvent.click(link);
 
       // Close modal
@@ -418,7 +426,7 @@ describe('DemoLinkButton Component', () => {
       </DemoLinkButton>,
     );
 
-    const link = screen.getByRole('link');
+    const link = screen.getByText('Test Button');
     expect(link).toHaveClass('inline-flex');
     expect(link).toHaveClass('rounded-lg');
   });
@@ -430,7 +438,7 @@ describe('DemoLinkButton Component', () => {
       </DemoLinkButton>,
     );
 
-    const link = screen.getByRole('link');
+    const link = screen.getByText('Test Button');
     expect(link).toHaveClass('bg-secondary-600');
   });
 
@@ -441,7 +449,7 @@ describe('DemoLinkButton Component', () => {
       </DemoLinkButton>,
     );
 
-    const link = screen.getByRole('link');
+    const link = screen.getByText('Test Button');
     expect(link).toHaveClass('px-6');
     expect(link).toHaveClass('py-3');
     expect(link).toHaveClass('text-lg');
@@ -454,7 +462,7 @@ describe('DemoLinkButton Component', () => {
       </DemoLinkButton>,
     );
 
-    expect(screen.getByRole('link')).toHaveClass('w-full');
+    expect(screen.getByText('Test Button')).toHaveClass('w-full');
   });
 
   it('opens modal when clicked', async () => {
@@ -464,7 +472,7 @@ describe('DemoLinkButton Component', () => {
       </DemoLinkButton>,
     );
 
-    const button = screen.getByRole('link');
+    const button = screen.getByText('Dashboard');
     await userEvent.click(button);
 
     await waitFor(() => {

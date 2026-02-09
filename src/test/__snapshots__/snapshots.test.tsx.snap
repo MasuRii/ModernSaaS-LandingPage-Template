@@ -1018,6 +1018,23 @@ exports[`Component Snapshots > dark theme > Sections > FAQSection matches snapsh
             data-state="closed"
             type="button"
           >
+            Do you offer student or non-profit discounts?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
             What happens when I reach my plan limits?
             <div
               class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
@@ -6122,6 +6139,23 @@ exports[`Component Snapshots > light theme > Sections > FAQSection matches snaps
             type="button"
           >
             Is there a discount for annual billing?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Do you offer student or non-profit discounts?
             <div
               class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
               data-testid="icon-chevrondown"

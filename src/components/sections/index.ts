@@ -41,3 +41,5 @@ export { PricingTiers } from './PricingTiers';
 export type { PricingTiersProps } from './PricingTiers';
 export { PricingComparison } from './PricingComparison';
 export type { PricingComparisonProps } from './PricingComparison';
+export { EnterpriseContact } from './EnterpriseContact';
+export type { EnterpriseContactProps } from './EnterpriseContact';

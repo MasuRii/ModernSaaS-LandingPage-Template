@@ -97,6 +97,8 @@ export { BlogPostCard } from './BlogPostCard';
 export type { BlogPostCardProps } from './BlogPostCard';
 export { FeaturedPost } from './FeaturedPost';
 export type { FeaturedPostProps } from './FeaturedPost';
+export { CategoryFilter } from './CategoryFilter';
+export type { CategoryFilterProps } from './CategoryFilter';
 
 // Theme & Navigation
 export { ProductMockup } from './ProductMockup';

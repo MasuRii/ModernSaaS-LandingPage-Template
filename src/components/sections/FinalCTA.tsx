@@ -6,6 +6,29 @@ import { FadeInUp, StaggerContainer } from '@/components/animation/AnimatedEleme
 import { ArrowRight, Rocket } from 'lucide-react';
 import { ROUTES } from '@/config/paths';
 import { company } from '@/config/site';
+import { cn } from '@/utils/cn';
+
+/**
+ * Props for the FinalCTA component
+ */
+export interface FinalCTAProps {
+  /** Section title override */
+  title?: React.ReactNode;
+  /** Section description override */
+  description?: string;
+  /** Primary button configuration */
+  primaryButton?: {
+    text: string;
+    href: string;
+  };
+  /** Secondary button configuration */
+  secondaryButton?: {
+    text: string;
+    href: string;
+  };
+  /** Additional CSS classes */
+  className?: string;
+}
 
 /**
  * FinalCTA Section Component
@@ -14,13 +37,19 @@ import { company } from '@/config/site';
  * Features a gradient mesh background, attention-grabbing animations, and
  * clear primary/secondary CTAs.
  */
-export const FinalCTA: React.FC = () => {
+export const FinalCTA: React.FC<FinalCTAProps> = ({
+  title,
+  description,
+  primaryButton,
+  secondaryButton,
+  className,
+}) => {
   return (
     <Section
       id="final-cta"
       background="gradient"
       padding="xl"
-      className="overflow-hidden"
+      className={cn('overflow-hidden', className)}
       aria-label="Final Call to Action"
     >
       <Container size="narrow" className="text-center relative z-10">
@@ -39,16 +68,23 @@ export const FinalCTA: React.FC = () => {
 
           <FadeInUp>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary tracking-tight mb-6">
-              Stop settling for slow. <br className="hidden md:block" />
-              Start building with{' '}
-              <span className="text-primary-600 dark:text-primary-400">{company.name}</span> today.
+              {title || (
+                <>
+                  Stop settling for slow. <br className="hidden md:block" />
+                  Start building with{' '}
+                  <span className="text-primary-600 dark:text-primary-400">
+                    {company.name}
+                  </span>{' '}
+                  today.
+                </>
+              )}
             </h2>
           </FadeInUp>
 
           <FadeInUp>
             <p className="text-lg md:text-xl text-text-secondary mb-10 max-w-2xl mx-auto">
-              Join 5,000+ teams who have already optimized their processes and shipped products
-              faster with our intelligent automation platform.
+              {description ||
+                `Join 5,000+ teams who have already optimized their processes and shipped products faster with our intelligent automation platform.`}
             </p>
           </FadeInUp>
 
@@ -58,17 +94,17 @@ export const FinalCTA: React.FC = () => {
                 variant="primary"
                 size="lg"
                 rightIcon={<ArrowRight size={20} />}
-                onClick={() => (window.location.href = ROUTES.SIGNUP)}
+                onClick={() => (window.location.href = primaryButton?.href || ROUTES.SIGNUP)}
               >
-                Get Started for Free
+                {primaryButton?.text || 'Get Started for Free'}
               </Button>
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() => (window.location.href = ROUTES.CONTACT)}
+                onClick={() => (window.location.href = secondaryButton?.href || ROUTES.CONTACT)}
                 className="bg-bg-primary/50 backdrop-blur-sm"
               >
-                Contact Sales
+                {secondaryButton?.text || 'Contact Sales'}
               </Button>
             </ButtonGroup>
           </FadeInUp>

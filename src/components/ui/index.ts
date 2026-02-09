@@ -65,6 +65,8 @@ export { FeatureCard } from './FeatureCard';
 export type { FeatureCardProps } from './FeatureCard';
 export { PricingCard } from './PricingCard';
 export type { PricingCardProps, PricingFeature } from './PricingCard';
+export { TestimonialCard } from './TestimonialCard';
+export type { TestimonialCardProps } from './TestimonialCard';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

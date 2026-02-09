@@ -23,3 +23,4 @@ export type { IntegrationsSectionProps } from './IntegrationsSection';
 export { PricingPreview } from './PricingPreview';
 export type { PricingPreviewProps } from './PricingPreview';
 export { FAQSection } from './FAQSection';
+export { FinalCTA } from './FinalCTA';

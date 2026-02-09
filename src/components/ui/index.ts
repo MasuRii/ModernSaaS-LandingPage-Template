@@ -95,6 +95,8 @@ export type { IntegrationLogoProps } from './IntegrationLogo';
 
 export { BlogPostCard } from './BlogPostCard';
 export type { BlogPostCardProps } from './BlogPostCard';
+export { FeaturedPost } from './FeaturedPost';
+export type { FeaturedPostProps } from './FeaturedPost';
 
 // Theme & Navigation
 export { ProductMockup } from './ProductMockup';

@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { useEffect, useRef } from 'react';
 import { useReducedMotion } from '@/utils/reducedMotion';
 

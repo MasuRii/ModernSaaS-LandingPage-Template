@@ -1,0 +1,2625 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component Snapshots > dark theme > Basic Components > Badge matches snapshot 1`] = `
+<DocumentFragment>
+  <span
+    class="inline-flex items-center justify-center font-medium transition-colors duration-200 whitespace-nowrap shrink-0 bg-bg-secondary text-text-secondary border border-border-default dark:bg-bg-secondary dark:text-text-secondary dark:border-border-default px-2.5 py-1 text-sm gap-1.5 rounded-full"
+  >
+    Status
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Basic Components > Button matches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg"
+    type="button"
+  >
+    <span>
+      Click me
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Basic Components > Button variants match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="space-y-2"
+  >
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg"
+      type="button"
+    >
+      <span>
+        Primary
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-secondary-600 text-white border border-transparent hover:bg-secondary-700 hover:shadow-md active:bg-secondary-800 dark:bg-secondary-500 dark:hover:bg-secondary-600 dark:active:bg-secondary-700 dark:focus-visible:ring-secondary-400 h-10 px-4 text-base gap-2 rounded-lg"
+      type="button"
+    >
+      <span>
+        Secondary
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      type="button"
+    >
+      <span>
+        Outline
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-transparent hover:bg-bg-secondary active:bg-bg-tertiary dark:hover:bg-bg-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      type="button"
+    >
+      <span>
+        Ghost
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-8 px-3 text-sm gap-1.5 rounded-md"
+      type="button"
+    >
+      <span>
+        Small
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-12 px-6 text-lg gap-2.5 rounded-lg"
+      type="button"
+    >
+      <span>
+        Large
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Basic Components > Link matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline underline-offset-2 decoration-primary-400 dark:decoration-primary-600 hover:decoration-primary-600 dark:hover:decoration-primary-400 text-base"
+    href="/"
+  >
+    Home
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Cards > Card matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden bg-bg-primary shadow-md shadow-shadow-default border border-border-default p-4 rounded-lg"
+  >
+    Card content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Cards > FeatureCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden bg-bg-primary shadow-md shadow-shadow-default border border-border-default p-6 rounded-xl transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-shadow-default cursor-pointer flex flex-col h-full group"
+  >
+    <div
+      class="flex items-center justify-center w-12 h-12 mb-6 rounded-xl transition-colors duration-300 bg-primary-50 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/50"
+    >
+      <span>
+        🚀
+      </span>
+    </div>
+    <div
+      class="flex flex-col flex-grow"
+    >
+      <h3
+        class="mb-2 text-xl font-bold text-text-primary tracking-tight"
+      >
+        Feature
+      </h3>
+      <p
+        class="text-text-secondary leading-relaxed mb-6"
+      >
+        Description
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Cards > GlassmorphicCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden glass shadow-[0_0_15px_rgba(var(--color-primary-500),0.1)] dark:shadow-[0_0_20px_rgba(var(--color-primary-400),0.05)] p-4 rounded-lg"
+  >
+    Glass content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Cards > PricingCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden bg-bg-primary border p-6 rounded-2xl flex flex-col h-full transition-all duration-300 border-primary-500 ring-1 ring-primary-500 dark:ring-primary-400 shadow-xl shadow-primary-500/10 dark:shadow-primary-400/5"
+  >
+    <div
+      class="absolute top-4 right-4"
+    >
+      <span
+        class="inline-flex items-center justify-center font-medium transition-colors duration-200 whitespace-nowrap shrink-0 bg-info-100 text-info-800 border border-info-200 dark:bg-info-900/30 dark:text-info-300 dark:border-info-800 px-2.5 py-1 text-sm gap-1.5 rounded-full bg-primary-600 text-white border-transparent dark:bg-primary-500 font-bold px-3"
+      >
+        Most Popular
+      </span>
+    </div>
+    <div
+      class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
+    >
+      <h3
+        class="text-text-primary tracking-tight text-2xl font-bold"
+      >
+        Pro
+      </h3>
+      <p
+        class="text-text-secondary text-base mt-2 min-h-[3rem]"
+      >
+        Best for teams
+      </p>
+    </div>
+    <div
+      class="flex-grow pt-4"
+    >
+      <div
+        class="flex items-baseline mb-8"
+      >
+        <span
+          class="text-4xl font-extrabold tracking-tight text-text-primary"
+        >
+          $29
+        </span>
+        <span
+          class="ml-1 text-xl font-medium text-text-secondary"
+        >
+          /mo
+        </span>
+      </div>
+      <ul
+        class="space-y-4"
+        role="list"
+      >
+        <li
+          class="flex items-start gap-3"
+        >
+          <div
+            class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+          >
+            <div
+              aria-hidden="true"
+              data-testid="icon-check"
+              size="16"
+              stroke-width="3"
+            />
+          </div>
+          <span
+            class="text-sm"
+          >
+            Feature 1
+          </span>
+        </li>
+        <li
+          class="flex items-start gap-3"
+        >
+          <div
+            class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+          >
+            <div
+              aria-hidden="true"
+              data-testid="icon-check"
+              size="16"
+              stroke-width="3"
+            />
+          </div>
+          <span
+            class="text-sm"
+          >
+            Feature 2
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="flex items-center mt-4 border-t border-border-default border-none pt-8"
+    >
+      <button
+        aria-busy="false"
+        aria-disabled="false"
+        class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg w-full w-full py-3"
+        type="button"
+      >
+        <span>
+          Get Started
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Cards > TestimonialCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30"
+  >
+    <div
+      class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+    >
+      <div
+        aria-label="Rating: 5 out of 5 stars"
+        class="flex gap-0.5"
+        role="img"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="flex-grow pt-2"
+    >
+      <blockquote
+        class="relative"
+      >
+        <span
+          aria-hidden="true"
+          class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+        >
+          “
+        </span>
+        <p
+          class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+        >
+          Excellent template!
+        </p>
+      </blockquote>
+    </div>
+    <div
+      class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+    >
+      <div
+        class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+      >
+        <img
+          alt="Jane Smith"
+          class="w-full h-full object-cover"
+          loading="lazy"
+          src="/avatars/jane.jpg"
+        />
+      </div>
+      <div
+        class="flex flex-col min-w-0"
+      >
+        <span
+          class="text-text-primary font-bold truncate"
+        >
+          Jane Smith
+        </span>
+        <span
+          class="text-text-muted text-sm truncate"
+        >
+          Designer at 
+          <span
+            class="text-primary-600 dark:text-primary-400"
+          >
+            Creative Co
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Form Components > Input matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col gap-1.5 w-auto"
+  >
+    <label
+      class="text-sm font-medium text-text-primary select-none"
+      for="user"
+    >
+      Username
+    </label>
+    <div
+      class="relative flex items-center"
+    >
+      <input
+        aria-describedby=""
+        aria-invalid="false"
+        class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+        id="user"
+        placeholder="Enter username"
+        type="text"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Form Components > Input states match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="space-y-4"
+  >
+    <div
+      class="flex flex-col gap-1.5 w-auto"
+    >
+      <label
+        class="text-sm font-medium text-text-primary select-none"
+        for="default"
+      >
+        Default
+      </label>
+      <div
+        class="relative flex items-center"
+      >
+        <input
+          aria-describedby=""
+          aria-invalid="false"
+          class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+          id="default"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap-1.5 w-auto"
+    >
+      <label
+        class="text-sm font-medium text-text-primary select-none"
+        for="error"
+      >
+        Error
+      </label>
+      <div
+        class="relative flex items-center"
+      >
+        <input
+          aria-describedby="error-error"
+          aria-invalid="true"
+          class="flex h-10 w-full rounded-lg border bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-primary border-error-500 focus-visible:ring-error-500 dark:border-error-400 dark:focus-visible:ring-error-400"
+          id="error"
+          type="text"
+        />
+      </div>
+      <p
+        class="text-xs font-medium text-error-600 dark:text-error-400 animate-in fade-in slide-in-from-top-1 duration-200"
+        id="error-error"
+        role="alert"
+      >
+        This field is required
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-1.5 w-auto"
+    >
+      <label
+        class="text-sm font-medium text-text-primary select-none"
+        for="helper"
+      >
+        Helper
+      </label>
+      <div
+        class="relative flex items-center"
+      >
+        <input
+          aria-describedby="helper-helper"
+          aria-invalid="false"
+          class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+          id="helper"
+          type="text"
+        />
+      </div>
+      <p
+        class="text-xs text-text-muted"
+        id="helper-helper"
+      >
+        Minimal 8 characters
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Form Components > NewsletterForm matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full"
+  >
+    <form
+      class="flex flex-col gap-3 sm:flex-row sm:items-start"
+      novalidate=""
+    >
+      <div
+        class="flex flex-col gap-1.5 w-auto flex-1"
+      >
+        <div
+          class="relative flex items-center"
+        >
+          <div
+            class="absolute left-3 flex items-center justify-center pointer-events-none text-text-muted"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-mail h-4 w-4 text-text-muted"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+              />
+              <rect
+                height="16"
+                rx="2"
+                width="20"
+                x="2"
+                y="4"
+              />
+            </svg>
+          </div>
+          <input
+            aria-describedby=""
+            aria-invalid="false"
+            autocomplete="email"
+            class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 pl-10 hover:border-border-primary sm:min-w-[280px]"
+            id="_r_i_"
+            placeholder="Enter your email"
+            type="email"
+            value=""
+          />
+        </div>
+      </div>
+      <button
+        aria-busy="false"
+        aria-disabled="false"
+        class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg sm:mt-0"
+        type="submit"
+      >
+        <span>
+          Subscribe
+        </span>
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Form Components > Select matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col gap-1.5 w-auto"
+  >
+    <label
+      class="text-sm font-medium text-text-primary select-none"
+      for="theme-select"
+    >
+      Theme
+    </label>
+    <div
+      class="relative group"
+    >
+      <select
+        aria-describedby=""
+        aria-invalid="false"
+        class="flex h-10 w-full appearance-none rounded-lg border border-border-default bg-bg-primary px-3 py-2 pr-10 text-base ring-offset-bg-primary transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+        id="theme-select"
+      >
+        <option
+          value="light"
+        >
+          Light
+        </option>
+        <option
+          value="dark"
+        >
+          Dark
+        </option>
+      </select>
+      <div
+        class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-text-muted group-hover:text-text-primary transition-colors duration-200"
+      >
+        <div
+          class="h-4 w-4"
+          data-testid="icon-chevrondown"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Form Components > Textarea matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col gap-1.5 w-auto"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <label
+        class="text-sm font-medium text-text-primary select-none"
+        for="bio"
+      >
+        Bio
+      </label>
+      <span
+        class="text-xs text-text-muted select-none"
+      >
+        0 / 100
+      </span>
+    </div>
+    <div
+      class="relative"
+    >
+      <textarea
+        aria-describedby=""
+        aria-invalid="false"
+        class="flex min-h-[80px] w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+        id="bio"
+        maxlength="100"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Interactive Components > Accordion matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full space-y-2"
+  >
+    <div
+      class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary shadow-sm"
+      data-state="open"
+    >
+      <button
+        aria-expanded="true"
+        class="flex w-full items-center justify-between py-4 px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary"
+        data-state="open"
+        type="button"
+      >
+        Is it responsive?
+        <div
+          class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary rotate-180"
+          data-testid="icon-chevrondown"
+        />
+      </button>
+      <div
+        style="height: auto; opacity: 1;"
+      >
+        <div
+          class="px-5 pb-4 pt-0 text-text-secondary leading-relaxed"
+        >
+          Yes, it is fully responsive.
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Interactive Components > AnimatedCounter matches snapshot 1`] = `
+<DocumentFragment>
+  <span
+    aria-live="polite"
+    class=""
+  >
+    0%
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Interactive Components > BillingToggle matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center gap-4"
+  >
+    <button
+      class="text-sm font-medium transition-colors text-text-muted hover:text-text-primary"
+      type="button"
+    >
+      Monthly
+    </button>
+    <div
+      aria-checked="true"
+      aria-label="Toggle annual billing"
+      class="relative flex h-8 w-14 cursor-pointer items-center rounded-full bg-bg-secondary p-1 ring-offset-bg-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+      role="switch"
+      tabindex="0"
+    >
+      <div
+        class="h-6 w-6 rounded-full bg-primary-600 shadow-sm"
+      />
+    </div>
+    <div
+      class="flex items-center gap-2"
+    >
+      <button
+        class="text-sm font-medium transition-colors text-text-primary"
+        type="button"
+      >
+        Annual
+      </button>
+      <span
+        class="inline-flex items-center rounded-full bg-primary-100 px-2 py-0.5 text-xs font-semibold text-primary-700 dark:bg-primary-900/30 dark:text-primary-400"
+      >
+        Save 20%
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Interactive Components > Tabs matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      aria-orientation="horizontal"
+      class="inline-flex h-10 items-center justify-center rounded-lg bg-bg-secondary p-1 text-text-muted"
+      role="tablist"
+    >
+      <button
+        aria-controls="_r_l_-content-tab1"
+        aria-selected="true"
+        class="relative inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 text-text-primary"
+        data-value="tab1"
+        id="_r_l_-trigger-tab1"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        <div
+          class="absolute inset-0 rounded-md bg-bg-primary shadow-sm"
+        />
+        <span
+          class="relative z-10"
+        >
+          Tab 1
+        </span>
+      </button>
+      <button
+        aria-controls="_r_l_-content-tab2"
+        aria-selected="false"
+        class="relative inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary"
+        data-value="tab2"
+        id="_r_l_-trigger-tab2"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="relative z-10"
+        >
+          Tab 2
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="_r_l_-trigger-tab1"
+      class="mt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
+      id="_r_l_-content-tab1"
+      role="tabpanel"
+      style="opacity: 0; transform: translateY(10px);"
+      tabindex="0"
+    >
+      Content 1
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Interactive Components > Toast matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    aria-live="polite"
+    class="pointer-events-auto flex w-full max-w-md items-start gap-4 rounded-xl border p-4 shadow-lg backdrop-blur-sm bg-success-50 text-success-900 border-success-200 dark:bg-success-950/30 dark:text-success-400 dark:border-success-800"
+    role="alert"
+    style="opacity: 0; transform: translateY(20px) scale(0.95);"
+  >
+    <div
+      class="mt-0.5 shrink-0 text-success-600 dark:text-success-400"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-circle-check h-5 w-5"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <path
+          d="m9 12 2 2 4-4"
+        />
+      </svg>
+    </div>
+    <div
+      class="flex-1 space-y-1"
+    >
+      <p
+        class="text-sm leading-relaxed"
+      >
+        Saved successfully
+      </p>
+    </div>
+    <button
+      aria-label="Close"
+      class="shrink-0 rounded-lg p-1 opacity-50 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-primary-500"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="icon-x"
+      />
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Layout Components > BentoGrid matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid-cols-1 w-full md:grid-cols-3 gap-4"
+  >
+    <div
+      class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1"
+    >
+      <div
+        class="transition-all duration-300 group-hover/bento:translate-x-1"
+      >
+        <div
+          class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+        >
+          Item 1
+        </div>
+        <div
+          class="font-normal text-text-secondary text-sm leading-relaxed"
+        >
+          Desc 1
+        </div>
+      </div>
+      <div
+        class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+      />
+    </div>
+    <div
+      class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-2 md:row-span-1"
+    >
+      <div
+        class="transition-all duration-300 group-hover/bento:translate-x-1"
+      >
+        <div
+          class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+        >
+          Item 2
+        </div>
+        <div
+          class="font-normal text-text-secondary text-sm leading-relaxed"
+        >
+          Desc 2
+        </div>
+      </div>
+      <div
+        class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Layout Components > Container matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+  >
+    Content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Layout Components > Section matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="bg-bg-primary py-16 md:py-24"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Title
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        Subtitle
+      </p>
+    </div>
+    <p>
+      Content
+    </p>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Specialized Components > CodeBlock matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="group relative my-6 w-full overflow-hidden rounded-lg border border-border-default bg-bg-secondary font-mono text-sm shadow-sm"
+  >
+    <div
+      class="flex items-center justify-between border-b border-border-default bg-bg-muted px-4 py-2"
+    >
+      <div
+        class="flex items-center space-x-2"
+      >
+        <span
+          class="text-xs font-medium uppercase text-text-muted"
+        >
+          bash
+        </span>
+      </div>
+      <button
+        aria-label="Copy code"
+        class="flex items-center space-x-1 rounded-md p-1.5 text-text-muted transition-colors hover:bg-bg-tertiary hover:text-text-primary focus:outline-hidden focus:ring-2 focus:ring-primary-500"
+      >
+        <div
+          class="h-3.5 w-3.5"
+          data-testid="icon-copy"
+        />
+        <span
+          class="text-xs"
+        >
+          Copy
+        </span>
+      </button>
+    </div>
+    <div
+      class="relative overflow-x-auto p-4 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-border-default"
+    >
+      <div
+        class="animate-pulse space-y-2"
+      >
+        <div
+          class="h-4 w-3/4 rounded-sm bg-bg-tertiary"
+        />
+        <div
+          class="h-4 w-1/2 rounded-sm bg-bg-tertiary"
+        />
+        <div
+          class="h-4 w-2/3 rounded-sm bg-bg-tertiary"
+        />
+      </div>
+    </div>
+    <style>
+      
+        .shiki-container pre {
+          background-color: transparent !important;
+          margin: 0;
+          padding: 0;
+        }
+        .shiki-container code {
+          counter-reset: line;
+        }
+        .shiki-container.line-numbers .line::before {
+          counter-increment: line;
+          content: counter(line);
+          display: inline-block;
+          width: 2rem;
+          margin-right: 1.5rem;
+          text-align: right;
+          color: var(--color-text-muted);
+          opacity: 0.5;
+          user-select: none;
+        }
+        [data-theme='light'] .shiki,
+        [data-theme='light'] .shiki span {
+          color: var(--shiki-light) !important;
+          background-color: var(--shiki-light-bg) !important;
+        }
+        [data-theme='dark'] .shiki,
+        [data-theme='dark'] .shiki span {
+          color: var(--shiki-dark) !important;
+          background-color: var(--shiki-dark-bg) !important;
+        }
+      
+    </style>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Specialized Components > IntegrationLogo matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    
+  "
+    href="#"
+    title="Figma"
+  >
+    <img
+      alt="Figma logo"
+      class="
+    h-10 md:h-16 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+      loading="lazy"
+      src="/logos/figma.svg"
+    />
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Specialized Components > LogoCloud matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full py-8"
+  >
+    <h3
+      class="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-tertiary"
+    >
+      Our Partners
+    </h3>
+    <div
+      class="grid items-center justify-items-center gap-8 md:gap-12 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+    >
+      <a
+        class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    
+  "
+        href="#"
+        title="Vercel"
+      >
+        <img
+          alt="Vercel logo"
+          class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+          loading="lazy"
+          src="/logos/vercel.svg"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Specialized Components > Skeleton variants match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="space-y-4"
+  >
+    <div
+      class="bg-bg-tertiary rounded-md animate-pulse h-4 w-20"
+    />
+    <div
+      class="flex flex-col w-full gap-2"
+    >
+      <div
+        class="bg-bg-tertiary rounded-md animate-pulse h-4 w-full"
+      />
+      <div
+        class="bg-bg-tertiary rounded-md animate-pulse h-4 w-3/4"
+      />
+    </div>
+    <div
+      class="bg-bg-tertiary animate-pulse rounded-full shrink-0 h-lg w-lg"
+    />
+    <div
+      class="overflow-hidden rounded-xl border border-border-default bg-bg-elevated p-4"
+    >
+      <div
+        class="bg-bg-tertiary rounded-md animate-pulse aspect-video w-full mb-4"
+      />
+      <div
+        class="space-y-3"
+      >
+        <div
+          class="bg-bg-tertiary rounded-md animate-pulse h-6 w-1/2"
+        />
+        <div
+          class="flex flex-col w-full gap-2"
+        >
+          <div
+            class="bg-bg-tertiary rounded-md animate-pulse h-4 w-full"
+          />
+          <div
+            class="bg-bg-tertiary rounded-md animate-pulse h-4 w-full"
+          />
+          <div
+            class="bg-bg-tertiary rounded-md animate-pulse h-4 w-3/4"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Theme & Utils > DemoLink matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class=""
+    href="/demo"
+  >
+    Try Demo
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Theme & Utils > GradientBackground matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Decorative gradient background"
+    class="pointer-events-none absolute inset-0 overflow-hidden "
+    role="img"
+  >
+    <div
+      class="absolute inset-0"
+    >
+      <div
+        class="absolute inset-0 opacity-100 transition-opacity duration-500 dark:opacity-0"
+      >
+        <div
+          class="absolute inset-0"
+          style="background: radial-gradient(ellipse 80% 50% at 50% -20%, var(--primitive-color-primary-100), transparent),
+                radial-gradient(ellipse 60% 40% at 80% 80%, var(--primitive-color-secondary-100), transparent),
+                radial-gradient(ellipse 50% 30% at 20% 100%, var(--primitive-color-accent-100), transparent);"
+        />
+        <div
+          class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
+          style="--intensity: 0.5; animation: gradientFloat1-dz87qii6t 20s ease-in-out infinite; animation-delay: 0s;"
+        />
+        <div
+          class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
+          style="--intensity: 0.5; animation: gradientFloat2-dz87qii6t 25s ease-in-out infinite; animation-delay: 2s;"
+        />
+        <div
+          class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
+          style="--intensity: 0.5; animation: gradientFloat3-dz87qii6t 22s ease-in-out infinite; animation-delay: 4s;"
+        />
+      </div>
+      <div
+        class="absolute inset-0 opacity-0 transition-opacity duration-500 dark:opacity-100"
+      >
+        <div
+          class="absolute inset-0"
+          style="background: radial-gradient(ellipse 80% 50% at 50% -20%, var(--primitive-color-primary-900), transparent),
+                radial-gradient(ellipse 60% 40% at 80% 80%, var(--primitive-color-secondary-900), transparent),
+                radial-gradient(ellipse 50% 30% at 20% 100%, var(--primitive-color-accent-900), transparent);"
+        />
+        <div
+          class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
+          style="--intensity: 0.5; animation: gradientFloat1-dz87qii6t 20s ease-in-out infinite; animation-delay: 0s;"
+        />
+        <div
+          class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
+          style="--intensity: 0.5; animation: gradientFloat2-dz87qii6t 25s ease-in-out infinite; animation-delay: 2s;"
+        />
+        <div
+          class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
+          style="--intensity: 0.5; animation: gradientFloat3-dz87qii6t 22s ease-in-out infinite; animation-delay: 4s;"
+        />
+      </div>
+    </div>
+    <div
+      class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
+      style="background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");"
+    />
+    <div
+      class="absolute inset-0 transition-opacity duration-300"
+      style="background: radial-gradient(ellipse at center, transparent 0%, var(--color-bg-primary) 70%); opacity: 0.3;"
+    />
+    <div
+      class="absolute inset-0 pointer-events-none"
+      style="background: linear-gradient(to bottom, var(--color-bg-primary) 0%, transparent 15%, transparent 85%, var(--color-bg-primary) 100%),
+            linear-gradient(to right, var(--color-bg-primary) 0%, transparent 10%, transparent 90%, var(--color-bg-primary) 100%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Theme & Utils > ThemeToggle matches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Toggle theme"
+    class="
+        relative inline-flex h-10 w-10 items-center justify-center rounded-lg
+        border border-[var(--color-border-default)]
+        bg-[var(--color-bg-primary)]
+        text-[var(--color-text-secondary)]
+        transition-all duration-200 ease-in-out
+        hover:bg-[var(--color-bg-secondary)]
+        hover:text-[var(--color-text-primary)]
+        hover:shadow-[var(--shadow-sm)]
+        focus-visible:outline-none
+        focus-visible:ring-2
+        focus-visible:ring-[var(--color-focus-ring)]
+        focus-visible:ring-offset-2
+        focus-visible:ring-offset-[var(--color-bg-primary)]
+        active:scale-95
+        
+      "
+    title="Switch to light mode"
+    type="button"
+  >
+    <span
+      class="sr-only"
+    >
+      Switch to light mode
+    </span>
+    <div
+      aria-hidden="true"
+      class="
+          absolute h-5 w-5
+          transition-all duration-300 ease-in-out
+          rotate-90 scale-0 opacity-0
+        "
+      data-testid="icon-sun"
+      focusable="false"
+    />
+    <div
+      aria-hidden="true"
+      class="
+          absolute h-5 w-5
+          transition-all duration-300 ease-in-out
+          rotate-0 scale-100 opacity-100
+        "
+      data-testid="icon-moon"
+      focusable="false"
+    />
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Basic Components > Badge matches snapshot 1`] = `
+<DocumentFragment>
+  <span
+    class="inline-flex items-center justify-center font-medium transition-colors duration-200 whitespace-nowrap shrink-0 bg-bg-secondary text-text-secondary border border-border-default dark:bg-bg-secondary dark:text-text-secondary dark:border-border-default px-2.5 py-1 text-sm gap-1.5 rounded-full"
+  >
+    Status
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Basic Components > Button matches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    aria-busy="false"
+    aria-disabled="false"
+    class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg"
+    type="button"
+  >
+    <span>
+      Click me
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Basic Components > Button variants match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="space-y-2"
+  >
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg"
+      type="button"
+    >
+      <span>
+        Primary
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-secondary-600 text-white border border-transparent hover:bg-secondary-700 hover:shadow-md active:bg-secondary-800 dark:bg-secondary-500 dark:hover:bg-secondary-600 dark:active:bg-secondary-700 dark:focus-visible:ring-secondary-400 h-10 px-4 text-base gap-2 rounded-lg"
+      type="button"
+    >
+      <span>
+        Secondary
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      type="button"
+    >
+      <span>
+        Outline
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-transparent hover:bg-bg-secondary active:bg-bg-tertiary dark:hover:bg-bg-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      type="button"
+    >
+      <span>
+        Ghost
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-8 px-3 text-sm gap-1.5 rounded-md"
+      type="button"
+    >
+      <span>
+        Small
+      </span>
+    </button>
+    <button
+      aria-busy="false"
+      aria-disabled="false"
+      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-12 px-6 text-lg gap-2.5 rounded-lg"
+      type="button"
+    >
+      <span>
+        Large
+      </span>
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Basic Components > Link matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline underline-offset-2 decoration-primary-400 dark:decoration-primary-600 hover:decoration-primary-600 dark:hover:decoration-primary-400 text-base"
+    href="/"
+  >
+    Home
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Cards > Card matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden bg-bg-primary shadow-md shadow-shadow-default border border-border-default p-4 rounded-lg"
+  >
+    Card content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Cards > FeatureCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden bg-bg-primary shadow-md shadow-shadow-default border border-border-default p-6 rounded-xl transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-shadow-default cursor-pointer flex flex-col h-full group"
+  >
+    <div
+      class="flex items-center justify-center w-12 h-12 mb-6 rounded-xl transition-colors duration-300 bg-primary-50 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/50"
+    >
+      <span>
+        🚀
+      </span>
+    </div>
+    <div
+      class="flex flex-col flex-grow"
+    >
+      <h3
+        class="mb-2 text-xl font-bold text-text-primary tracking-tight"
+      >
+        Feature
+      </h3>
+      <p
+        class="text-text-secondary leading-relaxed mb-6"
+      >
+        Description
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Cards > GlassmorphicCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden glass shadow-[0_0_15px_rgba(var(--color-primary-500),0.1)] dark:shadow-[0_0_20px_rgba(var(--color-primary-400),0.05)] p-4 rounded-lg"
+  >
+    Glass content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Cards > PricingCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden bg-bg-primary border p-6 rounded-2xl flex flex-col h-full transition-all duration-300 border-primary-500 ring-1 ring-primary-500 dark:ring-primary-400 shadow-xl shadow-primary-500/10 dark:shadow-primary-400/5"
+  >
+    <div
+      class="absolute top-4 right-4"
+    >
+      <span
+        class="inline-flex items-center justify-center font-medium transition-colors duration-200 whitespace-nowrap shrink-0 bg-info-100 text-info-800 border border-info-200 dark:bg-info-900/30 dark:text-info-300 dark:border-info-800 px-2.5 py-1 text-sm gap-1.5 rounded-full bg-primary-600 text-white border-transparent dark:bg-primary-500 font-bold px-3"
+      >
+        Most Popular
+      </span>
+    </div>
+    <div
+      class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
+    >
+      <h3
+        class="text-text-primary tracking-tight text-2xl font-bold"
+      >
+        Pro
+      </h3>
+      <p
+        class="text-text-secondary text-base mt-2 min-h-[3rem]"
+      >
+        Best for teams
+      </p>
+    </div>
+    <div
+      class="flex-grow pt-4"
+    >
+      <div
+        class="flex items-baseline mb-8"
+      >
+        <span
+          class="text-4xl font-extrabold tracking-tight text-text-primary"
+        >
+          $29
+        </span>
+        <span
+          class="ml-1 text-xl font-medium text-text-secondary"
+        >
+          /mo
+        </span>
+      </div>
+      <ul
+        class="space-y-4"
+        role="list"
+      >
+        <li
+          class="flex items-start gap-3"
+        >
+          <div
+            class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+          >
+            <div
+              aria-hidden="true"
+              data-testid="icon-check"
+              size="16"
+              stroke-width="3"
+            />
+          </div>
+          <span
+            class="text-sm"
+          >
+            Feature 1
+          </span>
+        </li>
+        <li
+          class="flex items-start gap-3"
+        >
+          <div
+            class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+          >
+            <div
+              aria-hidden="true"
+              data-testid="icon-check"
+              size="16"
+              stroke-width="3"
+            />
+          </div>
+          <span
+            class="text-sm"
+          >
+            Feature 2
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="flex items-center mt-4 border-t border-border-default border-none pt-8"
+    >
+      <button
+        aria-busy="false"
+        aria-disabled="false"
+        class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg w-full w-full py-3"
+        type="button"
+      >
+        <span>
+          Get Started
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Cards > TestimonialCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30"
+  >
+    <div
+      class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+    >
+      <div
+        aria-label="Rating: 5 out of 5 stars"
+        class="flex gap-0.5"
+        role="img"
+      >
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-star fill-current text-accent-500"
+          fill="none"
+          height="16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="flex-grow pt-2"
+    >
+      <blockquote
+        class="relative"
+      >
+        <span
+          aria-hidden="true"
+          class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+        >
+          “
+        </span>
+        <p
+          class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+        >
+          Excellent template!
+        </p>
+      </blockquote>
+    </div>
+    <div
+      class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+    >
+      <div
+        class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+      >
+        <img
+          alt="Jane Smith"
+          class="w-full h-full object-cover"
+          loading="lazy"
+          src="/avatars/jane.jpg"
+        />
+      </div>
+      <div
+        class="flex flex-col min-w-0"
+      >
+        <span
+          class="text-text-primary font-bold truncate"
+        >
+          Jane Smith
+        </span>
+        <span
+          class="text-text-muted text-sm truncate"
+        >
+          Designer at 
+          <span
+            class="text-primary-600 dark:text-primary-400"
+          >
+            Creative Co
+          </span>
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Form Components > Input matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col gap-1.5 w-auto"
+  >
+    <label
+      class="text-sm font-medium text-text-primary select-none"
+      for="user"
+    >
+      Username
+    </label>
+    <div
+      class="relative flex items-center"
+    >
+      <input
+        aria-describedby=""
+        aria-invalid="false"
+        class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+        id="user"
+        placeholder="Enter username"
+        type="text"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Form Components > Input states match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="space-y-4"
+  >
+    <div
+      class="flex flex-col gap-1.5 w-auto"
+    >
+      <label
+        class="text-sm font-medium text-text-primary select-none"
+        for="default"
+      >
+        Default
+      </label>
+      <div
+        class="relative flex items-center"
+      >
+        <input
+          aria-describedby=""
+          aria-invalid="false"
+          class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+          id="default"
+          type="text"
+        />
+      </div>
+    </div>
+    <div
+      class="flex flex-col gap-1.5 w-auto"
+    >
+      <label
+        class="text-sm font-medium text-text-primary select-none"
+        for="error"
+      >
+        Error
+      </label>
+      <div
+        class="relative flex items-center"
+      >
+        <input
+          aria-describedby="error-error"
+          aria-invalid="true"
+          class="flex h-10 w-full rounded-lg border bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-primary border-error-500 focus-visible:ring-error-500 dark:border-error-400 dark:focus-visible:ring-error-400"
+          id="error"
+          type="text"
+        />
+      </div>
+      <p
+        class="text-xs font-medium text-error-600 dark:text-error-400 animate-in fade-in slide-in-from-top-1 duration-200"
+        id="error-error"
+        role="alert"
+      >
+        This field is required
+      </p>
+    </div>
+    <div
+      class="flex flex-col gap-1.5 w-auto"
+    >
+      <label
+        class="text-sm font-medium text-text-primary select-none"
+        for="helper"
+      >
+        Helper
+      </label>
+      <div
+        class="relative flex items-center"
+      >
+        <input
+          aria-describedby="helper-helper"
+          aria-invalid="false"
+          class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+          id="helper"
+          type="text"
+        />
+      </div>
+      <p
+        class="text-xs text-text-muted"
+        id="helper-helper"
+      >
+        Minimal 8 characters
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Form Components > NewsletterForm matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full"
+  >
+    <form
+      class="flex flex-col gap-3 sm:flex-row sm:items-start"
+      novalidate=""
+    >
+      <div
+        class="flex flex-col gap-1.5 w-auto flex-1"
+      >
+        <div
+          class="relative flex items-center"
+        >
+          <div
+            class="absolute left-3 flex items-center justify-center pointer-events-none text-text-muted"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-mail h-4 w-4 text-text-muted"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+              />
+              <rect
+                height="16"
+                rx="2"
+                width="20"
+                x="2"
+                y="4"
+              />
+            </svg>
+          </div>
+          <input
+            aria-describedby=""
+            aria-invalid="false"
+            autocomplete="email"
+            class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 pl-10 hover:border-border-primary sm:min-w-[280px]"
+            id="_r_6_"
+            placeholder="Enter your email"
+            type="email"
+            value=""
+          />
+        </div>
+      </div>
+      <button
+        aria-busy="false"
+        aria-disabled="false"
+        class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg sm:mt-0"
+        type="submit"
+      >
+        <span>
+          Subscribe
+        </span>
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Form Components > Select matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col gap-1.5 w-auto"
+  >
+    <label
+      class="text-sm font-medium text-text-primary select-none"
+      for="theme-select"
+    >
+      Theme
+    </label>
+    <div
+      class="relative group"
+    >
+      <select
+        aria-describedby=""
+        aria-invalid="false"
+        class="flex h-10 w-full appearance-none rounded-lg border border-border-default bg-bg-primary px-3 py-2 pr-10 text-base ring-offset-bg-primary transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+        id="theme-select"
+      >
+        <option
+          value="light"
+        >
+          Light
+        </option>
+        <option
+          value="dark"
+        >
+          Dark
+        </option>
+      </select>
+      <div
+        class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-text-muted group-hover:text-text-primary transition-colors duration-200"
+      >
+        <div
+          class="h-4 w-4"
+          data-testid="icon-chevrondown"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Form Components > Textarea matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col gap-1.5 w-auto"
+  >
+    <div
+      class="flex items-center justify-between"
+    >
+      <label
+        class="text-sm font-medium text-text-primary select-none"
+        for="bio"
+      >
+        Bio
+      </label>
+      <span
+        class="text-xs text-text-muted select-none"
+      >
+        0 / 100
+      </span>
+    </div>
+    <div
+      class="relative"
+    >
+      <textarea
+        aria-describedby=""
+        aria-invalid="false"
+        class="flex min-h-[80px] w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 hover:border-border-primary"
+        id="bio"
+        maxlength="100"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Interactive Components > Accordion matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full space-y-2"
+  >
+    <div
+      class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary shadow-sm"
+      data-state="open"
+    >
+      <button
+        aria-expanded="true"
+        class="flex w-full items-center justify-between py-4 px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary"
+        data-state="open"
+        type="button"
+      >
+        Is it responsive?
+        <div
+          class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary rotate-180"
+          data-testid="icon-chevrondown"
+        />
+      </button>
+      <div
+        style="height: auto; opacity: 1;"
+      >
+        <div
+          class="px-5 pb-4 pt-0 text-text-secondary leading-relaxed"
+        >
+          Yes, it is fully responsive.
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Interactive Components > AnimatedCounter matches snapshot 1`] = `
+<DocumentFragment>
+  <span
+    aria-live="polite"
+    class=""
+  >
+    0%
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Interactive Components > BillingToggle matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center gap-4"
+  >
+    <button
+      class="text-sm font-medium transition-colors text-text-muted hover:text-text-primary"
+      type="button"
+    >
+      Monthly
+    </button>
+    <div
+      aria-checked="true"
+      aria-label="Toggle annual billing"
+      class="relative flex h-8 w-14 cursor-pointer items-center rounded-full bg-bg-secondary p-1 ring-offset-bg-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+      role="switch"
+      tabindex="0"
+    >
+      <div
+        class="h-6 w-6 rounded-full bg-primary-600 shadow-sm"
+      />
+    </div>
+    <div
+      class="flex items-center gap-2"
+    >
+      <button
+        class="text-sm font-medium transition-colors text-text-primary"
+        type="button"
+      >
+        Annual
+      </button>
+      <span
+        class="inline-flex items-center rounded-full bg-primary-100 px-2 py-0.5 text-xs font-semibold text-primary-700 dark:bg-primary-900/30 dark:text-primary-400"
+      >
+        Save 20%
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Interactive Components > Tabs matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex flex-col"
+  >
+    <div
+      aria-orientation="horizontal"
+      class="inline-flex h-10 items-center justify-center rounded-lg bg-bg-secondary p-1 text-text-muted"
+      role="tablist"
+    >
+      <button
+        aria-controls="_r_9_-content-tab1"
+        aria-selected="true"
+        class="relative inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 text-text-primary"
+        data-value="tab1"
+        id="_r_9_-trigger-tab1"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        <div
+          class="absolute inset-0 rounded-md bg-bg-primary shadow-sm"
+        />
+        <span
+          class="relative z-10"
+        >
+          Tab 1
+        </span>
+      </button>
+      <button
+        aria-controls="_r_9_-content-tab2"
+        aria-selected="false"
+        class="relative inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary"
+        data-value="tab2"
+        id="_r_9_-trigger-tab2"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        <span
+          class="relative z-10"
+        >
+          Tab 2
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="_r_9_-trigger-tab1"
+      class="mt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
+      id="_r_9_-content-tab1"
+      role="tabpanel"
+      style="opacity: 0; transform: translateY(10px);"
+      tabindex="0"
+    >
+      Content 1
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Interactive Components > Toast matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    aria-live="polite"
+    class="pointer-events-auto flex w-full max-w-md items-start gap-4 rounded-xl border p-4 shadow-lg backdrop-blur-sm bg-success-50 text-success-900 border-success-200 dark:bg-success-950/30 dark:text-success-400 dark:border-success-800"
+    role="alert"
+    style="opacity: 0; transform: translateY(20px) scale(0.95);"
+  >
+    <div
+      class="mt-0.5 shrink-0 text-success-600 dark:text-success-400"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-circle-check h-5 w-5"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+        <path
+          d="m9 12 2 2 4-4"
+        />
+      </svg>
+    </div>
+    <div
+      class="flex-1 space-y-1"
+    >
+      <p
+        class="text-sm leading-relaxed"
+      >
+        Saved successfully
+      </p>
+    </div>
+    <button
+      aria-label="Close"
+      class="shrink-0 rounded-lg p-1 opacity-50 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-primary-500"
+    >
+      <div
+        class="h-4 w-4"
+        data-testid="icon-x"
+      />
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Layout Components > BentoGrid matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="grid grid-cols-1 w-full md:grid-cols-3 gap-4"
+  >
+    <div
+      class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1"
+    >
+      <div
+        class="transition-all duration-300 group-hover/bento:translate-x-1"
+      >
+        <div
+          class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+        >
+          Item 1
+        </div>
+        <div
+          class="font-normal text-text-secondary text-sm leading-relaxed"
+        >
+          Desc 1
+        </div>
+      </div>
+      <div
+        class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+      />
+    </div>
+    <div
+      class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-2 md:row-span-1"
+    >
+      <div
+        class="transition-all duration-300 group-hover/bento:translate-x-1"
+      >
+        <div
+          class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+        >
+          Item 2
+        </div>
+        <div
+          class="font-normal text-text-secondary text-sm leading-relaxed"
+        >
+          Desc 2
+        </div>
+      </div>
+      <div
+        class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Layout Components > Container matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+  >
+    Content
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Layout Components > Section matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="bg-bg-primary py-16 md:py-24"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Title
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        Subtitle
+      </p>
+    </div>
+    <p>
+      Content
+    </p>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Specialized Components > CodeBlock matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="group relative my-6 w-full overflow-hidden rounded-lg border border-border-default bg-bg-secondary font-mono text-sm shadow-sm"
+  >
+    <div
+      class="flex items-center justify-between border-b border-border-default bg-bg-muted px-4 py-2"
+    >
+      <div
+        class="flex items-center space-x-2"
+      >
+        <span
+          class="text-xs font-medium uppercase text-text-muted"
+        >
+          bash
+        </span>
+      </div>
+      <button
+        aria-label="Copy code"
+        class="flex items-center space-x-1 rounded-md p-1.5 text-text-muted transition-colors hover:bg-bg-tertiary hover:text-text-primary focus:outline-hidden focus:ring-2 focus:ring-primary-500"
+      >
+        <div
+          class="h-3.5 w-3.5"
+          data-testid="icon-copy"
+        />
+        <span
+          class="text-xs"
+        >
+          Copy
+        </span>
+      </button>
+    </div>
+    <div
+      class="relative overflow-x-auto p-4 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-border-default"
+    >
+      <div
+        class="animate-pulse space-y-2"
+      >
+        <div
+          class="h-4 w-3/4 rounded-sm bg-bg-tertiary"
+        />
+        <div
+          class="h-4 w-1/2 rounded-sm bg-bg-tertiary"
+        />
+        <div
+          class="h-4 w-2/3 rounded-sm bg-bg-tertiary"
+        />
+      </div>
+    </div>
+    <style>
+      
+        .shiki-container pre {
+          background-color: transparent !important;
+          margin: 0;
+          padding: 0;
+        }
+        .shiki-container code {
+          counter-reset: line;
+        }
+        .shiki-container.line-numbers .line::before {
+          counter-increment: line;
+          content: counter(line);
+          display: inline-block;
+          width: 2rem;
+          margin-right: 1.5rem;
+          text-align: right;
+          color: var(--color-text-muted);
+          opacity: 0.5;
+          user-select: none;
+        }
+        [data-theme='light'] .shiki,
+        [data-theme='light'] .shiki span {
+          color: var(--shiki-light) !important;
+          background-color: var(--shiki-light-bg) !important;
+        }
+        [data-theme='dark'] .shiki,
+        [data-theme='dark'] .shiki span {
+          color: var(--shiki-dark) !important;
+          background-color: var(--shiki-dark-bg) !important;
+        }
+      
+    </style>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Specialized Components > IntegrationLogo matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    
+  "
+    href="#"
+    title="Figma"
+  >
+    <img
+      alt="Figma logo"
+      class="
+    h-10 md:h-16 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+      loading="lazy"
+      src="/logos/figma.svg"
+    />
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Specialized Components > LogoCloud matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-full py-8"
+  >
+    <h3
+      class="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-tertiary"
+    >
+      Our Partners
+    </h3>
+    <div
+      class="grid items-center justify-items-center gap-8 md:gap-12 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+    >
+      <a
+        class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    
+  "
+        href="#"
+        title="Vercel"
+      >
+        <img
+          alt="Vercel logo"
+          class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+          loading="lazy"
+          src="/logos/vercel.svg"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Specialized Components > Skeleton variants match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="space-y-4"
+  >
+    <div
+      class="bg-bg-tertiary rounded-md animate-pulse h-4 w-20"
+    />
+    <div
+      class="flex flex-col w-full gap-2"
+    >
+      <div
+        class="bg-bg-tertiary rounded-md animate-pulse h-4 w-full"
+      />
+      <div
+        class="bg-bg-tertiary rounded-md animate-pulse h-4 w-3/4"
+      />
+    </div>
+    <div
+      class="bg-bg-tertiary animate-pulse rounded-full shrink-0 h-lg w-lg"
+    />
+    <div
+      class="overflow-hidden rounded-xl border border-border-default bg-bg-elevated p-4"
+    >
+      <div
+        class="bg-bg-tertiary rounded-md animate-pulse aspect-video w-full mb-4"
+      />
+      <div
+        class="space-y-3"
+      >
+        <div
+          class="bg-bg-tertiary rounded-md animate-pulse h-6 w-1/2"
+        />
+        <div
+          class="flex flex-col w-full gap-2"
+        >
+          <div
+            class="bg-bg-tertiary rounded-md animate-pulse h-4 w-full"
+          />
+          <div
+            class="bg-bg-tertiary rounded-md animate-pulse h-4 w-full"
+          />
+          <div
+            class="bg-bg-tertiary rounded-md animate-pulse h-4 w-3/4"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Theme & Utils > DemoLink matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class=""
+    href="/demo"
+  >
+    Try Demo
+  </a>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Theme & Utils > GradientBackground matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Decorative gradient background"
+    class="pointer-events-none absolute inset-0 overflow-hidden "
+    role="img"
+  >
+    <div
+      class="absolute inset-0"
+    >
+      <div
+        class="absolute inset-0 opacity-100 transition-opacity duration-500 dark:opacity-0"
+      >
+        <div
+          class="absolute inset-0"
+          style="background: radial-gradient(ellipse 80% 50% at 50% -20%, var(--primitive-color-primary-100), transparent),
+                radial-gradient(ellipse 60% 40% at 80% 80%, var(--primitive-color-secondary-100), transparent),
+                radial-gradient(ellipse 50% 30% at 20% 100%, var(--primitive-color-accent-100), transparent);"
+        />
+        <div
+          class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
+          style="--intensity: 0.5; animation: gradientFloat1-dkn05vobk 20s ease-in-out infinite; animation-delay: 0s;"
+        />
+        <div
+          class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
+          style="--intensity: 0.5; animation: gradientFloat2-dkn05vobk 25s ease-in-out infinite; animation-delay: 2s;"
+        />
+        <div
+          class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
+          style="--intensity: 0.5; animation: gradientFloat3-dkn05vobk 22s ease-in-out infinite; animation-delay: 4s;"
+        />
+      </div>
+      <div
+        class="absolute inset-0 opacity-0 transition-opacity duration-500 dark:opacity-100"
+      >
+        <div
+          class="absolute inset-0"
+          style="background: radial-gradient(ellipse 80% 50% at 50% -20%, var(--primitive-color-primary-900), transparent),
+                radial-gradient(ellipse 60% 40% at 80% 80%, var(--primitive-color-secondary-900), transparent),
+                radial-gradient(ellipse 50% 30% at 20% 100%, var(--primitive-color-accent-900), transparent);"
+        />
+        <div
+          class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
+          style="--intensity: 0.5; animation: gradientFloat1-dkn05vobk 20s ease-in-out infinite; animation-delay: 0s;"
+        />
+        <div
+          class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
+          style="--intensity: 0.5; animation: gradientFloat2-dkn05vobk 25s ease-in-out infinite; animation-delay: 2s;"
+        />
+        <div
+          class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
+          style="--intensity: 0.5; animation: gradientFloat3-dkn05vobk 22s ease-in-out infinite; animation-delay: 4s;"
+        />
+      </div>
+    </div>
+    <div
+      class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
+      style="background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");"
+    />
+    <div
+      class="absolute inset-0 transition-opacity duration-300"
+      style="background: radial-gradient(ellipse at center, transparent 0%, var(--color-bg-primary) 70%); opacity: 0.3;"
+    />
+    <div
+      class="absolute inset-0 pointer-events-none"
+      style="background: linear-gradient(to bottom, var(--color-bg-primary) 0%, transparent 15%, transparent 85%, var(--color-bg-primary) 100%),
+            linear-gradient(to right, var(--color-bg-primary) 0%, transparent 10%, transparent 90%, var(--color-bg-primary) 100%);"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Theme & Utils > ThemeToggle matches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Toggle theme"
+    class="
+        relative inline-flex h-10 w-10 items-center justify-center rounded-lg
+        border border-[var(--color-border-default)]
+        bg-[var(--color-bg-primary)]
+        text-[var(--color-text-secondary)]
+        transition-all duration-200 ease-in-out
+        hover:bg-[var(--color-bg-secondary)]
+        hover:text-[var(--color-text-primary)]
+        hover:shadow-[var(--shadow-sm)]
+        focus-visible:outline-none
+        focus-visible:ring-2
+        focus-visible:ring-[var(--color-focus-ring)]
+        focus-visible:ring-offset-2
+        focus-visible:ring-offset-[var(--color-bg-primary)]
+        active:scale-95
+        
+      "
+    title="Switch to dark mode"
+    type="button"
+  >
+    <span
+      class="sr-only"
+    >
+      Switch to dark mode
+    </span>
+    <div
+      aria-hidden="true"
+      class="
+          absolute h-5 w-5
+          transition-all duration-300 ease-in-out
+          rotate-0 scale-100 opacity-100
+        "
+      data-testid="icon-sun"
+      focusable="false"
+    />
+    <div
+      aria-hidden="true"
+      class="
+          absolute h-5 w-5
+          transition-all duration-300 ease-in-out
+          -rotate-90 scale-0 opacity-0
+        "
+      data-testid="icon-moon"
+      focusable="false"
+    />
+  </button>
+</DocumentFragment>
+`;

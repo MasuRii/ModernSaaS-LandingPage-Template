@@ -73,6 +73,13 @@ export { IntegrationLogo } from './IntegrationLogo';
 export type { IntegrationLogoProps } from './IntegrationLogo';
 export { LogoCloud } from './LogoCloud';
 export type { LogoCloudProps } from './LogoCloud';
+export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './Accordion';
+export type {
+  AccordionProps,
+  AccordionItemProps,
+  AccordionTriggerProps,
+  AccordionContentProps,
+} from './Accordion';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

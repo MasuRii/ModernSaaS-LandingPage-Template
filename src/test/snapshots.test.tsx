@@ -10,6 +10,7 @@ import {
   LogoCloudSection,
   PricingPreview,
   StatsSection,
+  TeamSection,
   TestimonialsSection,
 } from '@/components/sections';
 import { ThemeProvider } from '@/components/ThemeProvider';
@@ -185,6 +186,19 @@ describe('Component Snapshots', () => {
                 company: 'Creative Co',
                 avatar: '/avatars/jane.jpg',
               }}
+            />,
+            { wrapper },
+          );
+          expect(asFragment()).toMatchSnapshot();
+        });
+
+        it('TeamMemberCard matches snapshot', () => {
+          const { asFragment } = render(
+            <UI.TeamMemberCard
+              name="Alexandra Chen"
+              role="CEO"
+              avatar="/images/team-01.jpg"
+              social={[{ platform: 'twitter', url: '#' }]}
             />,
             { wrapper },
           );
@@ -415,6 +429,11 @@ describe('Component Snapshots', () => {
 
         it('FinalCTA matches snapshot', () => {
           const { asFragment } = render(<FinalCTA />, { wrapper });
+          expect(asFragment()).toMatchSnapshot();
+        });
+
+        it('TeamSection matches snapshot', () => {
+          const { asFragment } = render(<TeamSection />, { wrapper });
           expect(asFragment()).toMatchSnapshot();
         });
       });

@@ -263,6 +263,75 @@ exports[`Component Snapshots > dark theme > Cards > PricingCard matches snapshot
 </DocumentFragment>
 `;
 
+exports[`Component Snapshots > dark theme > Cards > TeamMemberCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1"
+  >
+    <div
+      class="p-8 flex flex-col items-center"
+    >
+      <div
+        class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+      >
+        <img
+          alt="Alexandra Chen"
+          class="w-full h-full object-cover"
+          loading="lazy"
+          src="/images/team-01.jpg"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+        >
+          AC
+        </div>
+      </div>
+      <div
+        class="space-y-1 mb-4"
+      >
+        <h4
+          class="text-text-primary font-bold text-xl"
+        >
+          Alexandra Chen
+        </h4>
+        <p
+          class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+        >
+          CEO
+        </p>
+      </div>
+      <div
+        class="flex items-center justify-center gap-3"
+      >
+        <a
+          aria-label="Alexandra Chen's twitter"
+          class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+          href="#"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-twitter"
+            fill="none"
+            height="20"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Component Snapshots > dark theme > Cards > TestimonialCard matches snapshot 1`] = `
 <DocumentFragment>
   <div
@@ -4093,6 +4162,993 @@ exports[`Component Snapshots > dark theme > Sections > StatsSection matches snap
 </DocumentFragment>
 `;
 
+exports[`Component Snapshots > dark theme > Sections > TeamSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Our Team"
+    class="bg-bg-primary py-16 md:py-24 bg-bg-primary"
+    id="team"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Meet our talented team
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        We're a team of designers, engineers, and strategists passionate about building the future of work.
+      </p>
+    </div>
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="space-y-16"
+      >
+        <div
+          class="space-y-8"
+        >
+          <h3
+            class="text-2xl font-bold text-text-primary text-center"
+          >
+            Leadership
+          </h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center max-w-5xl mx-auto"
+          >
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-48 h-48 md:w-56 md:h-56"
+                  >
+                    <img
+                      alt="Alexandra Chen"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-01.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      AC
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-2xl"
+                    >
+                      Alexandra Chen
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      CEO & Co-Founder
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Former VP of Product at TechGiant. Built and scaled products used by millions. Passionate about creating tools that empower teams.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Alexandra Chen's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/alexchen"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Alexandra Chen's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/alexchen"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-48 h-48 md:w-56 md:h-56"
+                  >
+                    <img
+                      alt="Marcus Johnson"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-02.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      MJ
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-2xl"
+                    >
+                      Marcus Johnson
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      CTO & Co-Founder
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Ex-Google engineer with 15+ years building distributed systems. Open source contributor and conference speaker.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Marcus Johnson's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/marcusj"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Marcus Johnson's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/marcusj"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Marcus Johnson's github"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://github.com/marcusj"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-github"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        />
+                        <path
+                          d="M9 18c-4.51 2-5-2-7-2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-48 h-48 md:w-56 md:h-56"
+                  >
+                    <img
+                      alt="Thomas Anderson"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-03.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      TA
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-2xl"
+                    >
+                      Thomas Anderson
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Senior Product Manager
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Product leader focused on user experience and market fit. Previously shipped products at Microsoft and Shopify.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Thomas Anderson's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/thomasanderson"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Thomas Anderson's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/thomasanderson"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="space-y-8"
+        >
+          <h3
+            class="text-2xl font-bold text-text-primary text-center"
+          >
+            Team
+          </h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
+          >
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Priya Sharma"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-03.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      PS
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Priya Sharma
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Head of Design
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Award-winning designer previously at Apple and Airbnb. Believes great design is invisible and intuitive.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Priya Sharma's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/priyas"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Priya Sharma's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/priyas"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Priya Sharma's website"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://priyasharma.design"
+                      role="button"
+                    >
+                      <div
+                        data-testid="icon-globe"
+                        size="20"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="David Kim"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-01.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      DK
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      David Kim
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      VP of Engineering
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Led engineering teams at multiple unicorn startups. Expert in scaling engineering organizations and technical architecture.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="David Kim's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/davidkim"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="David Kim's github"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://github.com/davidkim"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-github"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        />
+                        <path
+                          d="M9 18c-4.51 2-5-2-7-2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Emily Rodriguez"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-02.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      ER
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Emily Rodriguez
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Head of Marketing
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Growth marketer with experience taking B2B SaaS companies from $0 to $100M ARR. Data-driven and creative.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Emily Rodriguez's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/emilyr"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Emily Rodriguez's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/emilyr"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Sarah Mitchell"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-01.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      SM
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Sarah Mitchell
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Lead Engineer
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Full-stack engineer specializing in performance and scalability. Open source maintainer and tech blogger.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Sarah Mitchell's github"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://github.com/sarahmitchell"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-github"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        />
+                        <path
+                          d="M9 18c-4.51 2-5-2-7-2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Sarah Mitchell's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/sarahcodes"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Jordan Lee"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-02.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      JL
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Jordan Lee
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Senior Designer
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    UI/UX designer with a background in psychology. Focuses on creating accessible and inclusive digital experiences.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Jordan Lee's website"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://jordanlee.design"
+                      role="button"
+                    >
+                      <div
+                        data-testid="icon-globe"
+                        size="20"
+                      />
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Jordan Lee's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/jordanlee"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
 exports[`Component Snapshots > dark theme > Sections > TestimonialsSection matches snapshot 1`] = `
 <DocumentFragment>
   <section
@@ -5399,6 +6455,75 @@ exports[`Component Snapshots > light theme > Cards > PricingCard matches snapsho
           Get Started
         </span>
       </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Cards > TeamMemberCard matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1"
+  >
+    <div
+      class="p-8 flex flex-col items-center"
+    >
+      <div
+        class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+      >
+        <img
+          alt="Alexandra Chen"
+          class="w-full h-full object-cover"
+          loading="lazy"
+          src="/images/team-01.jpg"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+        >
+          AC
+        </div>
+      </div>
+      <div
+        class="space-y-1 mb-4"
+      >
+        <h4
+          class="text-text-primary font-bold text-xl"
+        >
+          Alexandra Chen
+        </h4>
+        <p
+          class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+        >
+          CEO
+        </p>
+      </div>
+      <div
+        class="flex items-center justify-center gap-3"
+      >
+        <a
+          aria-label="Alexandra Chen's twitter"
+          class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+          href="#"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-twitter"
+            fill="none"
+            height="20"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+            />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 </DocumentFragment>
@@ -9226,6 +10351,993 @@ exports[`Component Snapshots > light theme > Sections > StatsSection matches sna
             >
               Delivering consistent value and reliability to our global user base.
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Sections > TeamSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Our Team"
+    class="bg-bg-primary py-16 md:py-24 bg-bg-primary"
+    id="team"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Meet our talented team
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        We're a team of designers, engineers, and strategists passionate about building the future of work.
+      </p>
+    </div>
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="space-y-16"
+      >
+        <div
+          class="space-y-8"
+        >
+          <h3
+            class="text-2xl font-bold text-text-primary text-center"
+          >
+            Leadership
+          </h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center max-w-5xl mx-auto"
+          >
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-48 h-48 md:w-56 md:h-56"
+                  >
+                    <img
+                      alt="Alexandra Chen"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-01.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      AC
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-2xl"
+                    >
+                      Alexandra Chen
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      CEO & Co-Founder
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Former VP of Product at TechGiant. Built and scaled products used by millions. Passionate about creating tools that empower teams.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Alexandra Chen's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/alexchen"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Alexandra Chen's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/alexchen"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-48 h-48 md:w-56 md:h-56"
+                  >
+                    <img
+                      alt="Marcus Johnson"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-02.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      MJ
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-2xl"
+                    >
+                      Marcus Johnson
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      CTO & Co-Founder
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Ex-Google engineer with 15+ years building distributed systems. Open source contributor and conference speaker.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Marcus Johnson's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/marcusj"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Marcus Johnson's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/marcusj"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Marcus Johnson's github"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://github.com/marcusj"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-github"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        />
+                        <path
+                          d="M9 18c-4.51 2-5-2-7-2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-48 h-48 md:w-56 md:h-56"
+                  >
+                    <img
+                      alt="Thomas Anderson"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-03.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      TA
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-2xl"
+                    >
+                      Thomas Anderson
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Senior Product Manager
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Product leader focused on user experience and market fit. Previously shipped products at Microsoft and Shopify.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Thomas Anderson's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/thomasanderson"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Thomas Anderson's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/thomasanderson"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="space-y-8"
+        >
+          <h3
+            class="text-2xl font-bold text-text-primary text-center"
+          >
+            Team
+          </h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
+          >
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Priya Sharma"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-03.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      PS
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Priya Sharma
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Head of Design
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Award-winning designer previously at Apple and Airbnb. Believes great design is invisible and intuitive.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Priya Sharma's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/priyas"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Priya Sharma's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/priyas"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Priya Sharma's website"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://priyasharma.design"
+                      role="button"
+                    >
+                      <div
+                        data-testid="icon-globe"
+                        size="20"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="David Kim"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-01.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      DK
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      David Kim
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      VP of Engineering
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Led engineering teams at multiple unicorn startups. Expert in scaling engineering organizations and technical architecture.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="David Kim's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/davidkim"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="David Kim's github"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://github.com/davidkim"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-github"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        />
+                        <path
+                          d="M9 18c-4.51 2-5-2-7-2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Emily Rodriguez"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-02.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      ER
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Emily Rodriguez
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Head of Marketing
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Growth marketer with experience taking B2B SaaS companies from $0 to $100M ARR. Data-driven and creative.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Emily Rodriguez's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/emilyr"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Emily Rodriguez's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/emilyr"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Sarah Mitchell"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-01.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      SM
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Sarah Mitchell
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Lead Engineer
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Full-stack engineer specializing in performance and scalability. Open source maintainer and tech blogger.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Sarah Mitchell's github"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://github.com/sarahmitchell"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-github"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        />
+                        <path
+                          d="M9 18c-4.51 2-5-2-7-2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Sarah Mitchell's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/sarahcodes"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Jordan Lee"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-02.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      JL
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Jordan Lee
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Senior Designer
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    UI/UX designer with a background in psychology. Focuses on creating accessible and inclusive digital experiences.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Jordan Lee's website"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://jordanlee.design"
+                      role="button"
+                    >
+                      <div
+                        data-testid="icon-globe"
+                        size="20"
+                      />
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Jordan Lee's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/jordanlee"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

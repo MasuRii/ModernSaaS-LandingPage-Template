@@ -141,6 +141,20 @@ describe('Accessibility', () => {
           const results = await axe(container);
           expect(results).toHaveNoViolations();
         });
+
+        it('TeamMemberCard should have no accessibility violations', async () => {
+          const { container } = render(
+            <UI.TeamMemberCard
+              name="Alexandra Chen"
+              role="CEO"
+              avatar="/images/team-01.jpg"
+              social={[{ platform: 'twitter', url: '#' }]}
+            />,
+            { wrapper },
+          );
+          const results = await axe(container);
+          expect(results).toHaveNoViolations();
+        });
       });
 
       describe('Interactive Components', () => {
@@ -353,6 +367,12 @@ describe('Accessibility', () => {
 
           it('FinalCTA should have no accessibility violations', async () => {
             const { container } = render(<Sections.FinalCTA />, { wrapper });
+            const results = await axe(container);
+            expect(results).toHaveNoViolations();
+          });
+
+          it('TeamSection should have no accessibility violations', async () => {
+            const { container } = render(<Sections.TeamSection />, { wrapper });
             const results = await axe(container);
             expect(results).toHaveNoViolations();
           });

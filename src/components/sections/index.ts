@@ -46,3 +46,5 @@ export type { EnterpriseContactProps } from './EnterpriseContact';
 export { MoneyBackGuarantee } from './MoneyBackGuarantee';
 export { CompanyStory } from './CompanyStory';
 export type { CompanyStoryProps } from './CompanyStory';
+export { TeamSection } from './TeamSection';
+export type { TeamSectionProps } from './TeamSection';

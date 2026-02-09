@@ -51,6 +51,8 @@ export { PricingCard } from './PricingCard';
 export type { PricingCardProps } from './PricingCard';
 export { TestimonialCard } from './TestimonialCard';
 export type { TestimonialCardProps } from './TestimonialCard';
+export { TeamMemberCard } from './TeamMemberCard';
+export type { TeamMemberCardProps } from './TeamMemberCard';
 
 // Forms
 export { Input } from './Input';

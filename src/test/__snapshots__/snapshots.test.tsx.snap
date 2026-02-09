@@ -523,7 +523,7 @@ exports[`Component Snapshots > dark theme > Form Components > NewsletterForm mat
             aria-invalid="false"
             autocomplete="email"
             class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 pl-10 hover:border-border-primary sm:min-w-[280px]"
-            id="_r_i_"
+            id="_r_l_"
             placeholder="Enter your email"
             type="email"
             value=""
@@ -722,11 +722,11 @@ exports[`Component Snapshots > dark theme > Interactive Components > Tabs matche
       role="tablist"
     >
       <button
-        aria-controls="_r_l_-content-tab1"
+        aria-controls="_r_o_-content-tab1"
         aria-selected="true"
         class="relative inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 text-text-primary"
         data-value="tab1"
-        id="_r_l_-trigger-tab1"
+        id="_r_o_-trigger-tab1"
         role="tab"
         tabindex="0"
         type="button"
@@ -741,11 +741,11 @@ exports[`Component Snapshots > dark theme > Interactive Components > Tabs matche
         </span>
       </button>
       <button
-        aria-controls="_r_l_-content-tab2"
+        aria-controls="_r_o_-content-tab2"
         aria-selected="false"
         class="relative inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary"
         data-value="tab2"
-        id="_r_l_-trigger-tab2"
+        id="_r_o_-trigger-tab2"
         role="tab"
         tabindex="-1"
         type="button"
@@ -758,9 +758,9 @@ exports[`Component Snapshots > dark theme > Interactive Components > Tabs matche
       </button>
     </div>
     <div
-      aria-labelledby="_r_l_-trigger-tab1"
+      aria-labelledby="_r_o_-trigger-tab1"
       class="mt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
-      id="_r_l_-content-tab1"
+      id="_r_o_-content-tab1"
       role="tabpanel"
       style="opacity: 0; transform: translateY(10px);"
       tabindex="0"
@@ -1673,6 +1673,493 @@ exports[`Component Snapshots > dark theme > Sections > HowItWorks section matche
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Sections > IntegrationsSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Integrations"
+    class="bg-bg-primary py-16 md:py-24 py-20 lg:py-32 overflow-hidden"
+    id="integrations"
+  >
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="flex flex-col items-center text-center mb-12 lg:mb-16"
+      >
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-text-primary mb-4"
+          >
+            Works with 
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400"
+            >
+              your stack
+            </span>
+          </h2>
+          <p
+            class="text-lg md:text-xl text-text-muted max-w-[800px] mx-auto leading-relaxed"
+          >
+            ModernSaaS seamlessly integrates with the tools you already use. Connect your workflow and automate your processes in minutes.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col w-full"
+      >
+        <div
+          class="flex justify-center mb-12"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="items-center text-text-muted flex flex-wrap justify-center h-auto p-1 bg-bg-secondary/50 backdrop-blur-sm border border-border-muted rounded-full"
+            role="tablist"
+          >
+            <button
+              aria-controls="_r_r_-content-all"
+              aria-selected="true"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="all"
+              id="_r_r_-trigger-all"
+              role="tab"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="absolute inset-0 rounded-md bg-bg-primary shadow-sm"
+              />
+              <span
+                class="relative z-10"
+              >
+                All
+              </span>
+            </button>
+            <button
+              aria-controls="_r_r_-content-communication"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="communication"
+              id="_r_r_-trigger-communication"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Communication
+              </span>
+            </button>
+            <button
+              aria-controls="_r_r_-content-development"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="development"
+              id="_r_r_-trigger-development"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Development
+              </span>
+            </button>
+            <button
+              aria-controls="_r_r_-content-design"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="design"
+              id="_r_r_-trigger-design"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Design
+              </span>
+            </button>
+            <button
+              aria-controls="_r_r_-content-productivity"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="productivity"
+              id="_r_r_-trigger-productivity"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Productivity
+              </span>
+            </button>
+            <button
+              aria-controls="_r_r_-content-analytics"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="analytics"
+              id="_r_r_-trigger-analytics"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Analytics
+              </span>
+            </button>
+            <button
+              aria-controls="_r_r_-content-storage"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="storage"
+              id="_r_r_-trigger-storage"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Storage
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="min-h-[400px]"
+        >
+          <div
+            aria-labelledby="_r_r_-trigger-all"
+            class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 mt-0"
+            id="_r_r_-content-all"
+            role="tabpanel"
+            style="opacity: 0; transform: translateY(10px);"
+            tabindex="0"
+          >
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8"
+            >
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Microsoft Teams"
+              >
+                <img
+                  alt="Microsoft Teams logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/teams.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="GitLab"
+              >
+                <img
+                  alt="GitLab logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/gitlab.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Sketch"
+              >
+                <img
+                  alt="Sketch logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/sketch.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Asana"
+              >
+                <img
+                  alt="Asana logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/asana.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex justify-center mt-12"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <a
+          class="text-primary-600 dark:text-primary-400 font-semibold hover:underline flex items-center gap-2"
+          href="/integrations"
+        >
+          View all 100+ integrations
+          <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 12L10 8L6 4"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
       </div>
     </div>
   </section>
@@ -5460,6 +5947,493 @@ exports[`Component Snapshots > light theme > Sections > HowItWorks section match
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Sections > IntegrationsSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Integrations"
+    class="bg-bg-primary py-16 md:py-24 py-20 lg:py-32 overflow-hidden"
+    id="integrations"
+  >
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="flex flex-col items-center text-center mb-12 lg:mb-16"
+      >
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-text-primary mb-4"
+          >
+            Works with 
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400"
+            >
+              your stack
+            </span>
+          </h2>
+          <p
+            class="text-lg md:text-xl text-text-muted max-w-[800px] mx-auto leading-relaxed"
+          >
+            ModernSaaS seamlessly integrates with the tools you already use. Connect your workflow and automate your processes in minutes.
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col w-full"
+      >
+        <div
+          class="flex justify-center mb-12"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="items-center text-text-muted flex flex-wrap justify-center h-auto p-1 bg-bg-secondary/50 backdrop-blur-sm border border-border-muted rounded-full"
+            role="tablist"
+          >
+            <button
+              aria-controls="_r_c_-content-all"
+              aria-selected="true"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="all"
+              id="_r_c_-trigger-all"
+              role="tab"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="absolute inset-0 rounded-md bg-bg-primary shadow-sm"
+              />
+              <span
+                class="relative z-10"
+              >
+                All
+              </span>
+            </button>
+            <button
+              aria-controls="_r_c_-content-communication"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="communication"
+              id="_r_c_-trigger-communication"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Communication
+              </span>
+            </button>
+            <button
+              aria-controls="_r_c_-content-development"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="development"
+              id="_r_c_-trigger-development"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Development
+              </span>
+            </button>
+            <button
+              aria-controls="_r_c_-content-design"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="design"
+              id="_r_c_-trigger-design"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Design
+              </span>
+            </button>
+            <button
+              aria-controls="_r_c_-content-productivity"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="productivity"
+              id="_r_c_-trigger-productivity"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Productivity
+              </span>
+            </button>
+            <button
+              aria-controls="_r_c_-content-analytics"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="analytics"
+              id="_r_c_-trigger-analytics"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Analytics
+              </span>
+            </button>
+            <button
+              aria-controls="_r_c_-content-storage"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="storage"
+              id="_r_c_-trigger-storage"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Storage
+              </span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="min-h-[400px]"
+        >
+          <div
+            aria-labelledby="_r_c_-trigger-all"
+            class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 mt-0"
+            id="_r_c_-content-all"
+            role="tabpanel"
+            style="opacity: 0; transform: translateY(10px);"
+            tabindex="0"
+          >
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8"
+            >
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Microsoft Teams"
+              >
+                <img
+                  alt="Microsoft Teams logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/teams.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="GitLab"
+              >
+                <img
+                  alt="GitLab logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/gitlab.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Sketch"
+              >
+                <img
+                  alt="Sketch logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/sketch.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
+  "
+                href="#"
+                title="Asana"
+              >
+                <img
+                  alt="Asana logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/asana.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex justify-center mt-12"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <a
+          class="text-primary-600 dark:text-primary-400 font-semibold hover:underline flex items-center gap-2"
+          href="/integrations"
+        >
+          View all 100+ integrations
+          <svg
+            fill="none"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 12L10 8L6 4"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </a>
       </div>
     </div>
   </section>

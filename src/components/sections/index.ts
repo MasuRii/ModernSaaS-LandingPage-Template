@@ -18,3 +18,5 @@ export { FeaturesOverview } from './FeaturesOverview';
 export type { FeaturesOverviewProps } from './FeaturesOverview';
 export { HowItWorks } from './HowItWorks';
 export type { HowItWorksProps } from './HowItWorks';
+export { IntegrationsSection } from './IntegrationsSection';
+export type { IntegrationsSectionProps } from './IntegrationsSection';

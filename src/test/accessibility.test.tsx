@@ -332,6 +332,12 @@ describe('Accessibility', () => {
             const results = await axe(container);
             expect(results).toHaveNoViolations();
           });
+
+          it('IntegrationsSection should have no accessibility violations', async () => {
+            const { container } = render(<Sections.IntegrationsSection />, { wrapper });
+            const results = await axe(container);
+            expect(results).toHaveNoViolations();
+          });
         });
       });
     });

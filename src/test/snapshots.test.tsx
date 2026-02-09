@@ -4,6 +4,7 @@ import {
   FeaturesOverview,
   Hero,
   HowItWorks,
+  IntegrationsSection,
   LogoCloudSection,
   StatsSection,
   TestimonialsSection,
@@ -391,6 +392,11 @@ describe('Component Snapshots', () => {
 
         it('HowItWorks section matches snapshot', () => {
           const { asFragment } = render(<HowItWorks />, { wrapper });
+          expect(asFragment()).toMatchSnapshot();
+        });
+
+        it('IntegrationsSection matches snapshot', () => {
+          const { asFragment } = render(<IntegrationsSection />, { wrapper });
           expect(asFragment()).toMatchSnapshot();
         });
       });

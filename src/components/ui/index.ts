@@ -20,6 +20,10 @@ export {
 } from './GradientBackground';
 export { default as GradientBackgroundDefault } from './GradientBackground';
 
+// Layout
+export { Container, NarrowContainer, WideContainer, FullContainer } from './Container';
+export { default as ContainerDefault } from './Container';
+
 // Future UI components will be exported here
 // export { default as Button } from './Button';
 // export { default as Card } from './Card';

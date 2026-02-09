@@ -92,6 +92,8 @@ export { Textarea } from './Textarea';
 export type { TextareaProps } from './Textarea';
 export { Select } from './Select';
 export type { SelectProps, SelectOption } from './Select';
+export { NewsletterForm } from './NewsletterForm';
+export type { NewsletterFormProps } from './NewsletterForm';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

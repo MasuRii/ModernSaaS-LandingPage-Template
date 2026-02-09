@@ -6,15 +6,19 @@ import { cn } from '../../utils/cn';
  */
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   /** Optional label for the input */
-  label?: string;
+  label?: string | undefined;
   /** Optional helper text displayed below the input */
-  helperText?: string;
+  helperText?: string | undefined;
   /** Error message to display (sets error state) */
-  error?: string;
+  error?: string | undefined;
   /** Whether the input should take up the full width of its container */
-  fullWidth?: boolean;
+  fullWidth?: boolean | undefined;
   /** Additional CSS classes for the container */
-  containerClassName?: string;
+  containerClassName?: string | undefined;
+  /** Icon to display on the left side of the input */
+  leftIcon?: React.ReactNode | undefined;
+  /** Icon to display on the right side of the input */
+  rightIcon?: React.ReactNode | undefined;
 }
 
 /**
@@ -55,6 +59,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       fullWidth = false,
       id,
       containerClassName = '',
+      leftIcon,
+      rightIcon,
       ...props
     },
     ref,
@@ -74,13 +80,20 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             {label}
           </label>
         )}
-        <div className="relative">
+        <div className="relative flex items-center">
+          {leftIcon && (
+            <div className="absolute left-3 flex items-center justify-center pointer-events-none text-text-muted">
+              {leftIcon}
+            </div>
+          )}
           <input
             ref={ref}
             type={type}
             id={inputId}
             className={cn(
               'flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400',
+              leftIcon && 'pl-10',
+              rightIcon && 'pr-10',
               error
                 ? 'border-error-500 focus-visible:ring-error-500 dark:border-error-400 dark:focus-visible:ring-error-400'
                 : 'hover:border-border-primary',
@@ -90,6 +103,11 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             aria-invalid={!!error}
             {...props}
           />
+          {rightIcon && (
+            <div className="absolute right-3 flex items-center justify-center pointer-events-none text-text-muted">
+              {rightIcon}
+            </div>
+          )}
         </div>
         {error ? (
           <p

@@ -60,3 +60,5 @@ export { BlogHero } from './BlogHero';
 export { BlogNewsletter } from './BlogNewsletter';
 export { RelatedPosts } from './RelatedPosts';
 export type { RelatedPostsProps } from './RelatedPosts';
+export { ContactInfo } from './ContactInfo';
+export type { ContactInfoProps } from './ContactInfo';

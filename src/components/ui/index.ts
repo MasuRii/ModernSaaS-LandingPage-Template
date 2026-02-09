@@ -80,6 +80,8 @@ export type {
   AccordionTriggerProps,
   AccordionContentProps,
 } from './Accordion';
+export { AnimatedCounter } from './AnimatedCounter';
+export type { AnimatedCounterProps } from './AnimatedCounter';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

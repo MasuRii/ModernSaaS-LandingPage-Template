@@ -93,6 +93,9 @@ export type { LogoCloudProps } from './LogoCloud';
 export { IntegrationLogo } from './IntegrationLogo';
 export type { IntegrationLogoProps } from './IntegrationLogo';
 
+export { BlogPostCard } from './BlogPostCard';
+export type { BlogPostCardProps } from './BlogPostCard';
+
 // Theme & Navigation
 export { ProductMockup } from './ProductMockup';
 export type { ProductMockupProps } from './ProductMockup';

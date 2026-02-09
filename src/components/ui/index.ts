@@ -104,6 +104,9 @@ export type { BlogSearchProps } from './BlogSearch';
 export { Pagination } from './Pagination';
 export type { PaginationProps } from './Pagination';
 
+export { SocialShare } from './SocialShare';
+export type { SocialShareProps } from './SocialShare';
+
 // Theme & Navigation
 export { ProductMockup } from './ProductMockup';
 export type { ProductMockupProps } from './ProductMockup';

@@ -48,3 +48,5 @@ export { CompanyStory } from './CompanyStory';
 export type { CompanyStoryProps } from './CompanyStory';
 export { TeamSection } from './TeamSection';
 export type { TeamSectionProps } from './TeamSection';
+export { CompanyValues } from './CompanyValues';
+export type { CompanyValuesProps } from './CompanyValues';

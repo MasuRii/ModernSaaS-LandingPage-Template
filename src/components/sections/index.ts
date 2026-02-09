@@ -8,3 +8,5 @@
 
 export { Hero } from './Hero';
 export type { HeroProps } from './Hero';
+export { LogoCloudSection } from './LogoCloudSection';
+export type { LogoCloudSectionProps } from './LogoCloudSection';

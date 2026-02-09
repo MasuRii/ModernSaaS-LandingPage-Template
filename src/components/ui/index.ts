@@ -99,6 +99,8 @@ export { FeaturedPost } from './FeaturedPost';
 export type { FeaturedPostProps } from './FeaturedPost';
 export { CategoryFilter } from './CategoryFilter';
 export type { CategoryFilterProps } from './CategoryFilter';
+export { BlogSearch, filterBlogPosts } from './BlogSearch';
+export type { BlogSearchProps } from './BlogSearch';
 
 // Theme & Navigation
 export { ProductMockup } from './ProductMockup';

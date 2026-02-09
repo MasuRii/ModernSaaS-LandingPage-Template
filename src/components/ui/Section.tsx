@@ -64,7 +64,7 @@ export interface SectionProps {
   /**
    * Additional CSS classes to apply
    */
-  className?: string;
+  className?: string | undefined;
 
   /**
    * The HTML element to render as

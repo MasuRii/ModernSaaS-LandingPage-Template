@@ -3,7 +3,7 @@ import '../../styles/globals.css';
 import { ClientHeader } from '../../components/ClientHeader';
 import { Footer } from '../../components/layout/Footer';
 import { getThemeScript } from '../../components/ThemeProvider';
-import { BlogNewsletter } from '../../components/sections';
+import { BlogNewsletter, RelatedPosts } from '../../components/sections';
 import { AuthorBio } from '../../components/blog/AuthorBio';
 import { blogPosts, type BlogPost } from '../../data/blog';
 import { Container } from '../../components/ui/Container';
@@ -25,8 +25,18 @@ interface Props {
 }
 
 const { post } = Astro.props;
-const { title, excerpt, content, category, author, publishedAt, readingTime, coverImage, tags } =
-  post;
+const {
+  title,
+  excerpt,
+  content,
+  category,
+  author,
+  publishedAt,
+  readingTime,
+  coverImage,
+  tags,
+  relatedPosts: relatedPostIds,
+} = post;
 
 // Format date
 const formattedDate = new Date(publishedAt).toLocaleDateString('en-US', {
@@ -34,6 +44,9 @@ const formattedDate = new Date(publishedAt).toLocaleDateString('en-US', {
   month: 'long',
   day: 'numeric',
 });
+
+// Get related post objects
+const relatedPosts = blogPosts.filter((p) => relatedPostIds?.includes(p.id));
 ---
 
 <html lang="en">
@@ -186,7 +199,10 @@ const formattedDate = new Date(publishedAt).toLocaleDateString('en-US', {
         </Container>
       </Section>
 
-      {/* 5. Newsletter Section */}
+      {/* 5. Related Posts */}
+      {relatedPosts.length > 0 && <RelatedPosts posts={relatedPosts} />}
+
+      {/* 6. Newsletter Section */}
       <BlogNewsletter client:visible />
     </main>
 

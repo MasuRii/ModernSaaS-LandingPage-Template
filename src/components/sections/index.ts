@@ -58,3 +58,5 @@ export { CareersCTA } from './CareersCTA';
 export type { CareersCTAProps } from './CareersCTA';
 export { BlogHero } from './BlogHero';
 export { BlogNewsletter } from './BlogNewsletter';
+export { RelatedPosts } from './RelatedPosts';
+export type { RelatedPostsProps } from './RelatedPosts';

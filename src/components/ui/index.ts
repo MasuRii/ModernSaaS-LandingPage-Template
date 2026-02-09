@@ -88,6 +88,8 @@ export { BillingToggle } from './BillingToggle';
 export type { BillingToggleProps } from './BillingToggle';
 export { Input } from './Input';
 export type { InputProps } from './Input';
+export { Textarea } from './Textarea';
+export type { TextareaProps } from './Textarea';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

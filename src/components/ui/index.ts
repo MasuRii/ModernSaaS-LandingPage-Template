@@ -36,7 +36,10 @@ export { default as DemoLinkModalDefault } from './DemoLinkModal';
 export { DemoLink, DemoLinkButton, useIsDemoLink } from './DemoLink';
 export { default as DemoLinkDefault } from './DemoLink';
 
+// Buttons
+export { Button, IconButton, ButtonGroup } from './Button';
+export { default as ButtonDefault } from './Button';
+
 // Future UI components will be exported here
-// export { default as Button } from './Button';
 // export { default as Card } from './Card';
 // etc.

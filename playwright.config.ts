@@ -30,6 +30,13 @@ export default defineConfig({
   // Timeout for each expect assertion (5 seconds)
   expect: {
     timeout: 5000,
+    // Visual regression threshold - allow 2.5% pixel difference
+    // to account for font rendering variations across platforms
+    toHaveScreenshot: {
+      maxDiffPixels: 250,
+      threshold: 0.25,
+      animations: 'disabled',
+    },
   },
 
   // Run tests in files in parallel

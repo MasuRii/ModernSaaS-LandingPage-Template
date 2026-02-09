@@ -3,6 +3,18 @@ import '../styles/globals.css';
 import { ClientHeader } from '../components/ClientHeader';
 import { Footer } from '../components/layout/Footer';
 import { getThemeScript } from '../components/ThemeProvider';
+import {
+  Hero,
+  LogoCloudSection,
+  FeaturesOverview,
+  HowItWorks,
+  StatsSection,
+  IntegrationsSection,
+  TestimonialsSection,
+  PricingPreview,
+  FAQSection,
+  FinalCTA,
+} from '../components/sections';
 ---
 
 <html lang="en">
@@ -31,75 +43,36 @@ import { getThemeScript } from '../components/ThemeProvider';
 
     <ClientHeader client:load />
 
-    <main
-      id="main-content"
-      class="container-wide py-24"
-      tabindex="-1"
-      role="main"
-      aria-label="Main content"
-    >
-      <div class="text-center space-y-6">
-        <h1 class="text-4xl md:text-6xl font-bold text-gradient">ModernSaaS Landing</h1>
-        <p class="text-xl text-text-secondary max-w-2xl mx-auto">
-          A production-ready, visually stunning SaaS startup landing page template featuring modern
-          2026 design trends.
-        </p>
-        <div class="flex gap-4 justify-center pt-4">
-          <button
-            class="px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-base shadow-md hover:shadow-lg"
-          >
-            Get Started
-          </button>
-          <button
-            class="px-6 py-3 border border-border-default rounded-lg hover:bg-bg-secondary transition-base"
-          >
-            Learn More
-          </button>
-        </div>
-      </div>
+    <main id="main-content" tabindex="-1" role="main" aria-label="Main content">
+      {/* 1. Hero Section */}
+      <Hero client:load />
 
-      <!-- Design System Preview -->
-      <section class="mt-20 space-y-8">
-        <h2 class="text-2xl font-semibold text-center">Design System Preview</h2>
+      {/* 2. Logo Cloud Section */}
+      <LogoCloudSection client:visible />
 
-        <!-- Color Palette -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="space-y-2">
-            <div class="h-20 bg-primary-500 rounded-lg"></div>
-            <p class="text-sm text-text-secondary text-center">Primary</p>
-          </div>
-          <div class="space-y-2">
-            <div class="h-20 bg-secondary-500 rounded-lg"></div>
-            <p class="text-sm text-text-secondary text-center">Secondary</p>
-          </div>
-          <div class="space-y-2">
-            <div class="h-20 bg-accent-500 rounded-lg"></div>
-            <p class="text-sm text-text-secondary text-center">Accent</p>
-          </div>
-          <div class="space-y-2">
-            <div class="h-20 bg-gray-500 rounded-lg"></div>
-            <p class="text-sm text-text-secondary text-center">Gray</p>
-          </div>
-        </div>
+      {/* 3. Features Overview Section */}
+      <FeaturesOverview client:visible />
 
-        <!-- Card Examples -->
-        <div class="grid md:grid-cols-3 gap-6 pt-8">
-          <div class="p-6 rounded-xl bg-bg-secondary border border-border-default shadow-sm">
-            <h3 class="font-semibold mb-2">Card Title</h3>
-            <p class="text-text-secondary text-sm">
-              Example card component with theme-aware styling.
-            </p>
-          </div>
-          <div class="p-6 rounded-xl glass">
-            <h3 class="font-semibold mb-2">Glass Card</h3>
-            <p class="text-text-secondary text-sm">Glassmorphism effect with backdrop blur.</p>
-          </div>
-          <div class="p-6 rounded-xl gradient-mesh">
-            <h3 class="font-semibold mb-2">Gradient Mesh</h3>
-            <p class="text-text-secondary text-sm">Beautiful gradient mesh background.</p>
-          </div>
-        </div>
-      </section>
+      {/* 4. How It Works Section */}
+      <HowItWorks client:visible />
+
+      {/* 5. Statistics Section */}
+      <StatsSection client:visible />
+
+      {/* 6. Integrations Section */}
+      <IntegrationsSection client:visible />
+
+      {/* 7. Testimonials Section */}
+      <TestimonialsSection client:visible />
+
+      {/* 8. Pricing Preview Section */}
+      <PricingPreview client:visible />
+
+      {/* 9. FAQ Section */}
+      <FAQSection client:visible />
+
+      {/* 10. Final CTA Section */}
+      <FinalCTA client:visible />
     </main>
 
     <Footer />

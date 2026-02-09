@@ -50,3 +50,5 @@ export { TeamSection } from './TeamSection';
 export type { TeamSectionProps } from './TeamSection';
 export { CompanyValues } from './CompanyValues';
 export type { CompanyValuesProps } from './CompanyValues';
+export { AboutStats } from './AboutStats';
+export type { AboutStatsProps } from './AboutStats';

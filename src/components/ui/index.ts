@@ -23,6 +23,18 @@ export { default as GradientBackgroundDefault } from './GradientBackground';
 // Layout
 export { Container, NarrowContainer, WideContainer, FullContainer } from './Container';
 export { default as ContainerDefault } from './Container';
+export { Section, HeroSection, FeatureSection, CTASection, ContentSection } from './Section';
+export { default as SectionDefault } from './Section';
+
+// Navigation
+export { MobileNavigation, MobileMenuButton } from './MobileNavigation';
+export { default as MobileNavigationDefault } from './MobileNavigation';
+
+// Demo Links
+export { DemoLinkModal, useDemoLinkModal } from './DemoLinkModal';
+export { default as DemoLinkModalDefault } from './DemoLinkModal';
+export { DemoLink, DemoLinkButton, useIsDemoLink } from './DemoLink';
+export { default as DemoLinkDefault } from './DemoLink';
 
 // Future UI components will be exported here
 // export { default as Button } from './Button';

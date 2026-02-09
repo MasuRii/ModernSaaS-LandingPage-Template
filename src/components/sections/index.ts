@@ -37,3 +37,5 @@ export { DemoVideo } from './DemoVideo';
 export type { DemoVideoProps } from './DemoVideo';
 export { PricingHero } from './PricingHero';
 export type { PricingHeroProps } from './PricingHero';
+export { PricingTiers } from './PricingTiers';
+export type { PricingTiersProps } from './PricingTiers';

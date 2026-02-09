@@ -18,6 +18,7 @@
     "typecheck": "astro check",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
     "test:perf": "node scripts/run-lighthouse.js",
+    "test:a11y": "node scripts/run-axe.js",
     "prepare": "husky"
   },
   "lint-staged": {

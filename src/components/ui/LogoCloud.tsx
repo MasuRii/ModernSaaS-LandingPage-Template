@@ -83,9 +83,9 @@ export const LogoCloud: React.FC<LogoCloudProps> = ({
     return (
       <div className={cn('w-full overflow-hidden py-4', className)}>
         {title && (
-          <h3 className="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-tertiary">
+          <h2 className="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-tertiary">
             {title}
-          </h3>
+          </h2>
         )}
 
         <div className="relative flex w-full">

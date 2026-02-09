@@ -2466,11 +2466,11 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
         <div
           class="w-full overflow-hidden py-0"
         >
-          <h3
+          <h2
             class="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-tertiary"
           >
             Trusted by 10,000+ companies worldwide
-          </h3>
+          </h2>
           <div
             class="relative flex w-full"
           >
@@ -7586,11 +7586,11 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
         <div
           class="w-full overflow-hidden py-0"
         >
-          <h3
+          <h2
             class="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-tertiary"
           >
             Trusted by 10,000+ companies worldwide
-          </h3>
+          </h2>
           <div
             class="relative flex w-full"
           >

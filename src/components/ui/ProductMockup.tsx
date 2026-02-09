@@ -102,8 +102,7 @@ export const ProductMockup: React.FC<ProductMockupProps> = ({
               className="w-full h-full object-cover object-top"
               loading={loading}
               decoding="async"
-              // @ts-expect-error - fetchPriority is a valid attribute but might not be in all type definitions yet
-              fetchpriority={fetchPriority}
+              {...(fetchPriority ? { fetchPriority } : {})}
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-500/10 to-secondary-500/10 p-8">

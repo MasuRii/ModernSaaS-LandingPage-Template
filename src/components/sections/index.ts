@@ -24,3 +24,5 @@ export { PricingPreview } from './PricingPreview';
 export type { PricingPreviewProps } from './PricingPreview';
 export { FAQSection } from './FAQSection';
 export { FinalCTA } from './FinalCTA';
+export { FeaturesHero } from './FeaturesHero';
+export type { FeaturesHeroProps } from './FeaturesHero';

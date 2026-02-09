@@ -66,6 +66,8 @@ export type {
   SkeletonAvatarProps,
   SkeletonCardProps,
 } from './Skeleton';
+export { SocialProofBadge } from './SocialProofBadge';
+export type { SocialProofBadgeProps } from './SocialProofBadge';
 export { LogoCloud } from './LogoCloud';
 export type { LogoCloudProps } from './LogoCloud';
 export { IntegrationLogo } from './IntegrationLogo';

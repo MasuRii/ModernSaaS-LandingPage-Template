@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { type Variants, motion } from 'framer-motion';
-import { ArrowRight, Play, Star } from 'lucide-react';
+import { ArrowRight, Play } from 'lucide-react';
 import {
   Button,
   Container,
@@ -8,8 +8,9 @@ import {
   GradientBackground,
   Section,
   Skeleton,
+  SocialProofBadge,
 } from '@/components/ui';
-import { socialProofStats } from '@/data';
+import { socialProofStats, testimonials } from '@/data';
 import { company } from '@/config/site';
 import { ROUTES } from '@/config/paths';
 import { PRESETS, STAGGER } from '@/config/animation';
@@ -75,34 +76,15 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
             }
             className="flex flex-col items-start text-left"
           >
-            {/* Social Proof Badge Placeholder */}
-            <motion.div variants={PRESETS.fadeInUp as unknown as Variants} className="mb-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-bg-secondary/80 backdrop-blur-sm border border-border-default text-sm font-medium text-text-muted">
-                <div className="flex -space-x-1.5">
-                  {[1, 2, 3].map((i) => (
-                    <div
-                      key={i}
-                      className="w-6 h-6 rounded-full border-2 border-bg-primary bg-primary-100 flex items-center justify-center overflow-hidden"
-                    >
-                      <span className="text-[10px] text-primary-600 font-bold uppercase">
-                        {String.fromCharCode(64 + i)}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                <div className="flex items-center gap-1.5 ml-1">
-                  <div className="flex items-center">
-                    <Star size={14} className="fill-accent-500 text-accent-500" />
-                  </div>
-                  <span className="text-text-primary font-bold">{socialProofStats.rating}/5</span>
-                  <span className="hidden sm:inline border-l border-border-default h-3 mx-1" />
-                  <span className="hidden sm:inline">
-                    Trusted by {socialProofStats.users} teams
-                  </span>
-                  <span className="sm:hidden">rating</span>
-                </div>
-              </div>
-            </motion.div>
+            {/* Social Proof Badge */}
+            <SocialProofBadge
+              className="mb-6"
+              variant="rated"
+              rating={socialProofStats.rating}
+              count={socialProofStats.users}
+              avatars={testimonials.slice(0, 3).map((t) => t.author.avatar || '')}
+              variants={PRESETS.fadeInUp as unknown as Variants}
+            />
 
             {/* Headline */}
             <motion.h1

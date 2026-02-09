@@ -250,6 +250,21 @@ describe('Accessibility', () => {
           expect(results).toHaveNoViolations();
         });
 
+        it('SocialProofBadge should have no accessibility violations', async () => {
+          const { container } = render(
+            <UI.SocialProofBadge
+              variant="rated"
+              rating={4.9}
+              count="1,000+"
+              avatars={['/img1.jpg', '/img2.jpg']}
+              animate={false}
+            />,
+            { wrapper },
+          );
+          const results = await axe(container);
+          expect(results).toHaveNoViolations();
+        });
+
         it('CodeBlock should have no accessibility violations', async () => {
           const { container } = render(<UI.CodeBlock code="const x = 1;" language="javascript" />, {
             wrapper,

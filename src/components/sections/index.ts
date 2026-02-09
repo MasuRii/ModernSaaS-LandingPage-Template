@@ -20,3 +20,5 @@ export { HowItWorks } from './HowItWorks';
 export type { HowItWorksProps } from './HowItWorks';
 export { IntegrationsSection } from './IntegrationsSection';
 export type { IntegrationsSectionProps } from './IntegrationsSection';
+export { PricingPreview } from './PricingPreview';
+export type { PricingPreviewProps } from './PricingPreview';

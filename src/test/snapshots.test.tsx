@@ -6,6 +6,7 @@ import {
   HowItWorks,
   IntegrationsSection,
   LogoCloudSection,
+  PricingPreview,
   StatsSection,
   TestimonialsSection,
 } from '@/components/sections';
@@ -397,6 +398,11 @@ describe('Component Snapshots', () => {
 
         it('IntegrationsSection matches snapshot', () => {
           const { asFragment } = render(<IntegrationsSection />, { wrapper });
+          expect(asFragment()).toMatchSnapshot();
+        });
+
+        it('PricingPreview matches snapshot', () => {
+          const { asFragment } = render(<PricingPreview />, { wrapper });
           expect(asFragment()).toMatchSnapshot();
         });
       });

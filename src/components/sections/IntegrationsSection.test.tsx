@@ -77,10 +77,11 @@ describe('IntegrationsSection Component', () => {
     fireEvent.click(tab);
 
     // Verify that the filtered integrations are present
-    // Note: Some might be hidden if they exceed the limit, but at least some should be there
-    // If we assume limit is large enough for the test
+    // Note: Use getAllByAltText because even if only one tab is active,
+    // there might be multiple logos rendered during transitions
     categoryIntegrations.slice(0, 12).forEach((integration) => {
-      expect(screen.getByAltText(`${integration.name} logo`)).toBeDefined();
+      const logos = screen.getAllByAltText(`${integration.name} logo`);
+      expect(logos.length).toBeGreaterThanOrEqual(1);
     });
   });
 

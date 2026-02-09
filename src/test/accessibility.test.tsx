@@ -338,6 +338,12 @@ describe('Accessibility', () => {
             const results = await axe(container);
             expect(results).toHaveNoViolations();
           });
+
+          it('PricingPreview should have no accessibility violations', async () => {
+            const { container } = render(<Sections.PricingPreview />, { wrapper });
+            const results = await axe(container);
+            expect(results).toHaveNoViolations();
+          });
         });
       });
     });

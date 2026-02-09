@@ -3062,6 +3062,568 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
 </DocumentFragment>
 `;
 
+exports[`Component Snapshots > dark theme > Sections > PricingPreview matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="bg-bg-primary py-16 md:py-24"
+    id="pricing"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Simple, transparent pricing
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        Choose the plan that best fits your needs. All plans include a 14-day free trial.
+      </p>
+    </div>
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="mb-12 flex justify-center"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <div
+          class="flex items-center justify-center gap-4"
+        >
+          <button
+            class="text-sm font-medium transition-colors text-text-muted hover:text-text-primary"
+            type="button"
+          >
+            Monthly
+          </button>
+          <div
+            aria-checked="true"
+            aria-label="Toggle annual billing"
+            class="relative flex h-8 w-14 cursor-pointer items-center rounded-full bg-bg-secondary p-1 ring-offset-bg-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+            role="switch"
+            tabindex="0"
+          >
+            <div
+              class="h-6 w-6 rounded-full bg-primary-600 shadow-sm"
+            />
+          </div>
+          <div
+            class="flex items-center gap-2"
+          >
+            <button
+              class="text-sm font-medium transition-colors text-text-primary"
+              type="button"
+            >
+              Annual
+            </button>
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2 py-0.5 text-xs font-semibold text-primary-700 dark:bg-primary-900/30 dark:text-primary-400"
+            >
+              Save 20%
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch"
+      >
+        <div
+          class="h-full"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden bg-bg-primary border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full transition-all duration-300"
+          >
+            <div
+              class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
+            >
+              <h3
+                class="text-text-primary tracking-tight text-2xl font-bold"
+              >
+                Starter
+              </h3>
+              <p
+                class="text-text-secondary text-base mt-2 min-h-[3rem]"
+              >
+                Perfect for individuals and small teams getting started.
+              </p>
+            </div>
+            <div
+              class="flex-grow pt-4"
+            >
+              <div
+                class="flex items-baseline mb-8"
+              >
+                <span
+                  class="text-4xl font-extrabold tracking-tight text-text-primary"
+                >
+                  $15
+                </span>
+                <span
+                  class="ml-1 text-xl font-medium text-text-secondary"
+                >
+                  /mo
+                </span>
+              </div>
+              <ul
+                class="space-y-4"
+                role="list"
+              >
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Up to 5 team members
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    10 GB storage
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited projects
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Basic analytics
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Email support
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex items-center mt-4 border-t border-border-default border-none pt-8"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-500 font-medium shadow-sm hover:shadow active:scale-[0.98] transition-all duration-200 w-full py-3 text-center transition-all duration-200 bg-transparent text-text-primary border border-border-strong hover:bg-bg-secondary dark:hover:bg-bg-secondary"
+                href="/signup/"
+                role="button"
+              >
+                Start Free Trial
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-full"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden bg-bg-primary border p-6 rounded-2xl flex flex-col h-full transition-all duration-300 border-primary-500 ring-1 ring-primary-500 dark:ring-primary-400 shadow-xl shadow-primary-500/10 dark:shadow-primary-400/5"
+          >
+            <div
+              class="absolute top-4 right-4"
+            >
+              <span
+                class="inline-flex items-center justify-center font-medium transition-colors duration-200 whitespace-nowrap shrink-0 bg-info-100 text-info-800 border border-info-200 dark:bg-info-900/30 dark:text-info-300 dark:border-info-800 px-2.5 py-1 text-sm gap-1.5 rounded-full bg-primary-600 text-white border-transparent dark:bg-primary-500 font-bold px-3"
+              >
+                Most Popular
+              </span>
+            </div>
+            <div
+              class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
+            >
+              <h3
+                class="text-text-primary tracking-tight text-2xl font-bold"
+              >
+                Pro
+              </h3>
+              <p
+                class="text-text-secondary text-base mt-2 min-h-[3rem]"
+              >
+                Best for growing teams that need advanced features.
+              </p>
+            </div>
+            <div
+              class="flex-grow pt-4"
+            >
+              <div
+                class="flex items-baseline mb-8"
+              >
+                <span
+                  class="text-4xl font-extrabold tracking-tight text-text-primary"
+                >
+                  $39
+                </span>
+                <span
+                  class="ml-1 text-xl font-medium text-text-secondary"
+                >
+                  /mo
+                </span>
+              </div>
+              <ul
+                class="space-y-4"
+                role="list"
+              >
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Up to 25 team members
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    100 GB storage
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited projects
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Advanced analytics
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Priority support
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex items-center mt-4 border-t border-border-default border-none pt-8"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-500 font-medium shadow-sm hover:shadow active:scale-[0.98] transition-all duration-200 w-full py-3 text-center transition-all duration-200"
+                href="/signup/"
+                role="button"
+              >
+                Start Free Trial
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-full"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden bg-bg-primary border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full transition-all duration-300"
+          >
+            <div
+              class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
+            >
+              <h3
+                class="text-text-primary tracking-tight text-2xl font-bold"
+              >
+                Enterprise
+              </h3>
+              <p
+                class="text-text-secondary text-base mt-2 min-h-[3rem]"
+              >
+                For large organizations with custom requirements.
+              </p>
+            </div>
+            <div
+              class="flex-grow pt-4"
+            >
+              <div
+                class="flex items-baseline mb-8"
+              >
+                <span
+                  class="text-4xl font-extrabold tracking-tight text-text-primary"
+                >
+                  Custom
+                </span>
+                <span
+                  class="ml-1 text-xl font-medium text-text-secondary"
+                />
+              </div>
+              <ul
+                class="space-y-4"
+                role="list"
+              >
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited team members
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited storage
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited projects
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Custom analytics
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    24/7 phone support
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex items-center mt-4 border-t border-border-default border-none pt-8"
+            >
+              <a
+                class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-500 font-medium shadow-sm hover:shadow active:scale-[0.98] transition-all duration-200 w-full py-3 text-center transition-all duration-200 bg-transparent text-text-primary border border-border-strong hover:bg-bg-secondary dark:hover:bg-bg-secondary"
+                href="/contact/"
+              >
+                Contact Sales
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-16 text-center"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <a
+          class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline underline-offset-4 decoration-primary-500 dark:decoration-primary-500 text-base text-primary-600 dark:text-primary-400 font-medium"
+          href="/pricing/"
+        >
+          View all features and full comparison
+        </a>
+        <p
+          class="mt-4 text-sm text-text-muted"
+        >
+          Looking for something else? 
+          <a
+            class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline underline-offset-4 decoration-primary-500 dark:decoration-primary-500 text-base"
+            href="/contact/"
+          >
+            Contact our sales team
+          </a>
+           for custom requirements.
+        </p>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
 exports[`Component Snapshots > dark theme > Sections > StatsSection matches snapshot 1`] = `
 <DocumentFragment>
   <section
@@ -7330,6 +7892,568 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
         
           </style>
         </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Sections > PricingPreview matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="bg-bg-primary py-16 md:py-24"
+    id="pricing"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Simple, transparent pricing
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        Choose the plan that best fits your needs. All plans include a 14-day free trial.
+      </p>
+    </div>
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="mb-12 flex justify-center"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <div
+          class="flex items-center justify-center gap-4"
+        >
+          <button
+            class="text-sm font-medium transition-colors text-text-muted hover:text-text-primary"
+            type="button"
+          >
+            Monthly
+          </button>
+          <div
+            aria-checked="true"
+            aria-label="Toggle annual billing"
+            class="relative flex h-8 w-14 cursor-pointer items-center rounded-full bg-bg-secondary p-1 ring-offset-bg-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
+            role="switch"
+            tabindex="0"
+          >
+            <div
+              class="h-6 w-6 rounded-full bg-primary-600 shadow-sm"
+            />
+          </div>
+          <div
+            class="flex items-center gap-2"
+          >
+            <button
+              class="text-sm font-medium transition-colors text-text-primary"
+              type="button"
+            >
+              Annual
+            </button>
+            <span
+              class="inline-flex items-center rounded-full bg-primary-100 px-2 py-0.5 text-xs font-semibold text-primary-700 dark:bg-primary-900/30 dark:text-primary-400"
+            >
+              Save 20%
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch"
+      >
+        <div
+          class="h-full"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden bg-bg-primary border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full transition-all duration-300"
+          >
+            <div
+              class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
+            >
+              <h3
+                class="text-text-primary tracking-tight text-2xl font-bold"
+              >
+                Starter
+              </h3>
+              <p
+                class="text-text-secondary text-base mt-2 min-h-[3rem]"
+              >
+                Perfect for individuals and small teams getting started.
+              </p>
+            </div>
+            <div
+              class="flex-grow pt-4"
+            >
+              <div
+                class="flex items-baseline mb-8"
+              >
+                <span
+                  class="text-4xl font-extrabold tracking-tight text-text-primary"
+                >
+                  $15
+                </span>
+                <span
+                  class="ml-1 text-xl font-medium text-text-secondary"
+                >
+                  /mo
+                </span>
+              </div>
+              <ul
+                class="space-y-4"
+                role="list"
+              >
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Up to 5 team members
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    10 GB storage
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited projects
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Basic analytics
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Email support
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex items-center mt-4 border-t border-border-default border-none pt-8"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-500 font-medium shadow-sm hover:shadow active:scale-[0.98] transition-all duration-200 w-full py-3 text-center transition-all duration-200 bg-transparent text-text-primary border border-border-strong hover:bg-bg-secondary dark:hover:bg-bg-secondary"
+                href="/signup/"
+                role="button"
+              >
+                Start Free Trial
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-full"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden bg-bg-primary border p-6 rounded-2xl flex flex-col h-full transition-all duration-300 border-primary-500 ring-1 ring-primary-500 dark:ring-primary-400 shadow-xl shadow-primary-500/10 dark:shadow-primary-400/5"
+          >
+            <div
+              class="absolute top-4 right-4"
+            >
+              <span
+                class="inline-flex items-center justify-center font-medium transition-colors duration-200 whitespace-nowrap shrink-0 bg-info-100 text-info-800 border border-info-200 dark:bg-info-900/30 dark:text-info-300 dark:border-info-800 px-2.5 py-1 text-sm gap-1.5 rounded-full bg-primary-600 text-white border-transparent dark:bg-primary-500 font-bold px-3"
+              >
+                Most Popular
+              </span>
+            </div>
+            <div
+              class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
+            >
+              <h3
+                class="text-text-primary tracking-tight text-2xl font-bold"
+              >
+                Pro
+              </h3>
+              <p
+                class="text-text-secondary text-base mt-2 min-h-[3rem]"
+              >
+                Best for growing teams that need advanced features.
+              </p>
+            </div>
+            <div
+              class="flex-grow pt-4"
+            >
+              <div
+                class="flex items-baseline mb-8"
+              >
+                <span
+                  class="text-4xl font-extrabold tracking-tight text-text-primary"
+                >
+                  $39
+                </span>
+                <span
+                  class="ml-1 text-xl font-medium text-text-secondary"
+                >
+                  /mo
+                </span>
+              </div>
+              <ul
+                class="space-y-4"
+                role="list"
+              >
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Up to 25 team members
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    100 GB storage
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited projects
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Advanced analytics
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Priority support
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex items-center mt-4 border-t border-border-default border-none pt-8"
+            >
+              <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-500 font-medium shadow-sm hover:shadow active:scale-[0.98] transition-all duration-200 w-full py-3 text-center transition-all duration-200"
+                href="/signup/"
+                role="button"
+              >
+                Start Free Trial
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="h-full"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden bg-bg-primary border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full transition-all duration-300"
+          >
+            <div
+              class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
+            >
+              <h3
+                class="text-text-primary tracking-tight text-2xl font-bold"
+              >
+                Enterprise
+              </h3>
+              <p
+                class="text-text-secondary text-base mt-2 min-h-[3rem]"
+              >
+                For large organizations with custom requirements.
+              </p>
+            </div>
+            <div
+              class="flex-grow pt-4"
+            >
+              <div
+                class="flex items-baseline mb-8"
+              >
+                <span
+                  class="text-4xl font-extrabold tracking-tight text-text-primary"
+                >
+                  Custom
+                </span>
+                <span
+                  class="ml-1 text-xl font-medium text-text-secondary"
+                />
+              </div>
+              <ul
+                class="space-y-4"
+                role="list"
+              >
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited team members
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited storage
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Unlimited projects
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    Custom analytics
+                  </span>
+                </li>
+                <li
+                  class="flex items-start gap-3"
+                >
+                  <div
+                    class="mt-1 shrink-0 rounded-full p-0.5 text-primary-600 dark:text-primary-400"
+                  >
+                    <div
+                      aria-hidden="true"
+                      data-testid="icon-check"
+                      size="16"
+                      stroke-width="3"
+                    />
+                  </div>
+                  <span
+                    class="text-sm"
+                  >
+                    24/7 phone support
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex items-center mt-4 border-t border-border-default border-none pt-8"
+            >
+              <a
+                class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-500 font-medium shadow-sm hover:shadow active:scale-[0.98] transition-all duration-200 w-full py-3 text-center transition-all duration-200 bg-transparent text-text-primary border border-border-strong hover:bg-bg-secondary dark:hover:bg-bg-secondary"
+                href="/contact/"
+              >
+                Contact Sales
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mt-16 text-center"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <a
+          class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline underline-offset-4 decoration-primary-500 dark:decoration-primary-500 text-base text-primary-600 dark:text-primary-400 font-medium"
+          href="/pricing/"
+        >
+          View all features and full comparison
+        </a>
+        <p
+          class="mt-4 text-sm text-text-muted"
+        >
+          Looking for something else? 
+          <a
+            class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline underline-offset-4 decoration-primary-500 dark:decoration-primary-500 text-base"
+            href="/contact/"
+          >
+            Contact our sales team
+          </a>
+           for custom requirements.
+        </p>
       </div>
     </div>
   </section>

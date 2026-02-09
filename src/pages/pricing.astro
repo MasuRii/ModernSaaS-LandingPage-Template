@@ -1,0 +1,50 @@
+---
+import '../styles/globals.css';
+import { ClientHeader } from '../components/ClientHeader';
+import { Footer } from '../components/layout/Footer';
+import { getThemeScript } from '../components/ThemeProvider';
+import { PricingPageContent } from '../components/pricing/PricingPageContent';
+import { pricingMetadata } from '../data/pricing';
+
+/**
+ * Pricing Page
+ *
+ * Comprehensive pricing page featuring:
+ * - Billing period toggle (Monthly/Annual)
+ * - Comparison grid of all pricing tiers
+ * - Money-back guarantee trust signal
+ * - Detailed feature comparison table
+ * - Pricing-specific FAQs
+ * - Enterprise contact section
+ */
+const { title, description } = pricingMetadata;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <!-- Theme script to prevent flash of wrong theme -->
+    <script is:inline set:html={getThemeScript('system')} />
+  </head>
+  <body class="min-h-screen bg-bg-primary text-text-primary antialiased">
+    <!-- Skip to content link for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-600 focus:text-white focus:rounded-lg focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 transition-all"
+    >
+      Skip to content
+    </a>
+
+    <ClientHeader client:load />
+
+    <PricingPageContent client:load />
+
+    <Footer />
+  </body>
+</html>

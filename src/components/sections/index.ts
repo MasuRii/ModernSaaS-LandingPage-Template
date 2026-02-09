@@ -43,3 +43,4 @@ export { PricingComparison } from './PricingComparison';
 export type { PricingComparisonProps } from './PricingComparison';
 export { EnterpriseContact } from './EnterpriseContact';
 export type { EnterpriseContactProps } from './EnterpriseContact';
+export { MoneyBackGuarantee } from './MoneyBackGuarantee';

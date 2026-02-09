@@ -1,6 +1,13 @@
 import { render } from '@testing-library/react';
 import * as UI from '@/components/ui';
-import { Hero, LogoCloudSection, StatsSection, TestimonialsSection } from '@/components/sections';
+import {
+  FeaturesOverview,
+  Hero,
+  HowItWorks,
+  LogoCloudSection,
+  StatsSection,
+  TestimonialsSection,
+} from '@/components/sections';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { describe, expect, it, vi } from 'vitest';
 import * as React from 'react';
@@ -24,6 +31,27 @@ vi.mock('lucide-react', async (importOriginal) => {
     'Sun',
     'Moon',
     'Menu',
+    'Zap',
+    'Shield',
+    'BarChart',
+    'Globe',
+    'Layers',
+    'Lock',
+    'Sparkles',
+    'Workflow',
+    'Code',
+    'Database',
+    'Cloud',
+    'Smartphone',
+    'Users',
+    'Plug',
+    'Clock',
+    'LineChart',
+    'Settings',
+    'Rocket',
+    'ArrowRight',
+    'Play',
+    'Star',
   ];
 
   iconNames.forEach((name) => {
@@ -327,7 +355,10 @@ describe('Component Snapshots', () => {
         });
 
         it('GradientBackground matches snapshot', () => {
-          const { asFragment } = render(<UI.GradientBackground variant="vibrant" />, { wrapper });
+          const { asFragment } = render(
+            <UI.GradientBackground variant="vibrant" id="test-gradient" />,
+            { wrapper },
+          );
           expect(asFragment()).toMatchSnapshot();
         });
       });
@@ -350,6 +381,16 @@ describe('Component Snapshots', () => {
 
         it('StatsSection matches snapshot', () => {
           const { asFragment } = render(<StatsSection />, { wrapper });
+          expect(asFragment()).toMatchSnapshot();
+        });
+
+        it('FeaturesOverview section matches snapshot', () => {
+          const { asFragment } = render(<FeaturesOverview />, { wrapper });
+          expect(asFragment()).toMatchSnapshot();
+        });
+
+        it('HowItWorks section matches snapshot', () => {
+          const { asFragment } = render(<HowItWorks />, { wrapper });
           expect(asFragment()).toMatchSnapshot();
         });
       });

@@ -63,8 +63,8 @@ describe('Toast', () => {
 describe('Toaster and toast() utility', () => {
   beforeEach(() => {
     // Reset internal state
-    // @ts-expect-error - calling private test helper
-    toast._reset();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (toast as any)._reset();
   });
 
   it('renders multiple toasts triggered by toast()', async () => {

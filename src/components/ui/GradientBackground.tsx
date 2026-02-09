@@ -34,6 +34,10 @@ export interface GradientBackgroundProps {
    * Custom aria-label for accessibility
    */
   'aria-label'?: string;
+  /**
+   * Optional ID for deterministic animation keys (useful for snapshots)
+   */
+  id?: string;
 }
 
 /**
@@ -72,6 +76,7 @@ export function GradientBackground({
   intensity = 0.5,
   blurOverlay = true,
   'aria-label': ariaLabel = 'Decorative gradient background',
+  id,
 }: GradientBackgroundProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { prefersReducedMotion } = useReducedMotion();
@@ -114,7 +119,7 @@ export function GradientBackground({
   const shouldAnimate = animated && !prefersReducedMotion;
 
   // Generate unique animation IDs for this instance
-  const instanceId = useRef(Math.random().toString(36).substr(2, 9)).current;
+  const instanceId = useRef(id || Math.random().toString(36).substr(2, 9)).current;
 
   useEffect(() => {
     // Inject animation keyframes if animation is enabled

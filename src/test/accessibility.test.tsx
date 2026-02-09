@@ -320,6 +320,18 @@ describe('Accessibility', () => {
             const results = await axe(container);
             expect(results).toHaveNoViolations();
           });
+
+          it('FeaturesOverview should have no accessibility violations', async () => {
+            const { container } = render(<Sections.FeaturesOverview />, { wrapper });
+            const results = await axe(container);
+            expect(results).toHaveNoViolations();
+          });
+
+          it('HowItWorks should have no accessibility violations', async () => {
+            const { container } = render(<Sections.HowItWorks />, { wrapper });
+            const results = await axe(container);
+            expect(results).toHaveNoViolations();
+          });
         });
       });
     });

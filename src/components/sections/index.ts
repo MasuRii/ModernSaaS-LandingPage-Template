@@ -14,3 +14,7 @@ export { TestimonialsSection } from './TestimonialsSection';
 export type { TestimonialsSectionProps } from './TestimonialsSection';
 export { StatsSection } from './StatsSection';
 export type { StatsSectionProps } from './StatsSection';
+export { FeaturesOverview } from './FeaturesOverview';
+export type { FeaturesOverviewProps } from './FeaturesOverview';
+export { HowItWorks } from './HowItWorks';
+export type { HowItWorksProps } from './HowItWorks';

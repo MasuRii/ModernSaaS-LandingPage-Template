@@ -92,7 +92,7 @@ describe('Header', () => {
     });
 
     // Close menu
-    const closeButton = screen.getAllByLabelText('Close menu')[0];
+    const closeButton = screen.getAllByLabelText('Close menu')[0]!;
     fireEvent.click(closeButton);
 
     await waitFor(() => {

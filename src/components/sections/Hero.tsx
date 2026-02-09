@@ -52,6 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
     >
       {/* Background with mesh gradient */}
       <GradientBackground
+        id="hero-gradient"
         variant="vibrant"
         intensity={0.6}
         className="opacity-40 dark:opacity-20"

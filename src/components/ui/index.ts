@@ -94,6 +94,13 @@ export { Select } from './Select';
 export type { SelectProps, SelectOption } from './Select';
 export { NewsletterForm } from './NewsletterForm';
 export type { NewsletterFormProps } from './NewsletterForm';
+export { Skeleton, SkeletonText, SkeletonAvatar, SkeletonCard } from './Skeleton';
+export type {
+  SkeletonProps,
+  SkeletonTextProps,
+  SkeletonAvatarProps,
+  SkeletonCardProps,
+} from './Skeleton';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

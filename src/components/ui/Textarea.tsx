@@ -6,19 +6,19 @@ import { cn } from '../../utils/cn';
  */
 export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   /** Optional label for the textarea */
-  label?: string;
+  label?: string | undefined;
   /** Optional helper text displayed below the textarea */
-  helperText?: string;
+  helperText?: string | undefined;
   /** Error message to display (sets error state) */
-  error?: string;
+  error?: string | undefined;
   /** Whether the textarea should take up the full width of its container */
-  fullWidth?: boolean;
+  fullWidth?: boolean | undefined;
   /** Whether to show a character count */
-  showCharacterCount?: boolean;
+  showCharacterCount?: boolean | undefined;
   /** Maximum number of characters allowed */
-  maxLength?: number;
+  maxLength?: number | undefined;
   /** Additional CSS classes for the container */
-  containerClassName?: string;
+  containerClassName?: string | undefined;
 }
 
 /**

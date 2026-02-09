@@ -19,17 +19,17 @@ export interface SelectOption {
  */
 export interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   /** Optional label for the select */
-  label?: string;
+  label?: string | undefined;
   /** Optional helper text displayed below the select */
-  helperText?: string;
+  helperText?: string | undefined;
   /** Error message to display (sets error state) */
-  error?: string;
+  error?: string | undefined;
   /** Whether the select should take up the full width of its container */
-  fullWidth?: boolean;
+  fullWidth?: boolean | undefined;
   /** Options for the select */
-  options?: SelectOption[];
+  options?: SelectOption[] | undefined;
   /** Additional CSS classes for the container */
-  containerClassName?: string;
+  containerClassName?: string | undefined;
 }
 
 /**

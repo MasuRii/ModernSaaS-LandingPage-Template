@@ -96,6 +96,7 @@ export const PricingCard = React.forwardRef<HTMLDivElement, PricingCardProps>(
         )}
         padding="lg"
         radius="xl"
+        data-testid="pricing-card"
         {...props}
       >
         {/* Popular Badge */}

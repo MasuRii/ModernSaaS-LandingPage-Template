@@ -159,6 +159,7 @@ exports[`Component Snapshots > dark theme > Cards > PricingCard matches snapshot
 <DocumentFragment>
   <div
     class="relative overflow-hidden bg-bg-primary border p-6 rounded-2xl flex flex-col h-full transition-all duration-300 border-primary-500 ring-1 ring-primary-500 dark:ring-primary-400 shadow-xl shadow-primary-500/10 dark:shadow-primary-400/5"
+    data-testid="pricing-card"
   >
     <div
       class="absolute top-4 right-4"
@@ -3436,6 +3437,7 @@ exports[`Component Snapshots > dark theme > Sections > PricingPreview matches sn
         >
           <div
             class="relative overflow-hidden bg-bg-primary border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full transition-all duration-300"
+            data-testid="pricing-card"
           >
             <div
               class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
@@ -3590,6 +3592,7 @@ exports[`Component Snapshots > dark theme > Sections > PricingPreview matches sn
         >
           <div
             class="relative overflow-hidden bg-bg-primary border p-6 rounded-2xl flex flex-col h-full transition-all duration-300 border-primary-500 ring-1 ring-primary-500 dark:ring-primary-400 shadow-xl shadow-primary-500/10 dark:shadow-primary-400/5"
+            data-testid="pricing-card"
           >
             <div
               class="absolute top-4 right-4"
@@ -3753,6 +3756,7 @@ exports[`Component Snapshots > dark theme > Sections > PricingPreview matches sn
         >
           <div
             class="relative overflow-hidden bg-bg-primary border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full transition-all duration-300"
+            data-testid="pricing-card"
           >
             <div
               class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
@@ -5296,6 +5300,7 @@ exports[`Component Snapshots > light theme > Cards > PricingCard matches snapsho
 <DocumentFragment>
   <div
     class="relative overflow-hidden bg-bg-primary border p-6 rounded-2xl flex flex-col h-full transition-all duration-300 border-primary-500 ring-1 ring-primary-500 dark:ring-primary-400 shadow-xl shadow-primary-500/10 dark:shadow-primary-400/5"
+    data-testid="pricing-card"
   >
     <div
       class="absolute top-4 right-4"
@@ -8573,6 +8578,7 @@ exports[`Component Snapshots > light theme > Sections > PricingPreview matches s
         >
           <div
             class="relative overflow-hidden bg-bg-primary border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full transition-all duration-300"
+            data-testid="pricing-card"
           >
             <div
               class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"
@@ -8727,6 +8733,7 @@ exports[`Component Snapshots > light theme > Sections > PricingPreview matches s
         >
           <div
             class="relative overflow-hidden bg-bg-primary border p-6 rounded-2xl flex flex-col h-full transition-all duration-300 border-primary-500 ring-1 ring-primary-500 dark:ring-primary-400 shadow-xl shadow-primary-500/10 dark:shadow-primary-400/5"
+            data-testid="pricing-card"
           >
             <div
               class="absolute top-4 right-4"
@@ -8890,6 +8897,7 @@ exports[`Component Snapshots > light theme > Sections > PricingPreview matches s
         >
           <div
             class="relative overflow-hidden bg-bg-primary border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col h-full transition-all duration-300"
+            data-testid="pricing-card"
           >
             <div
               class="flex flex-col space-y-1.5 border-b border-border-default border-none pb-2"

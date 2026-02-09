@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { Menu, X, Zap } from 'lucide-react';
+import { Zap } from 'lucide-react';
 import { ThemeToggle } from '../ui/ThemeToggle';
+import { MobileMenuButton, MobileNavigation } from '../ui/MobileNavigation';
 import { company, siteNavigation } from '../../config/site';
 import { ROUTES } from '../../config/paths';
 
@@ -29,7 +30,7 @@ export interface HeaderProps {
  * - Navigation links from site configuration
  * - Theme toggle button
  * - Primary CTA button
- * - Mobile hamburger menu (visual only - mobile nav in separate component)
+ * - Mobile hamburger menu with slide-out drawer
  * - Full accessibility support
  *
  * The header transitions from transparent to solid background on scroll
@@ -76,19 +77,6 @@ export function Header({
       window.removeEventListener('scroll', handleScroll);
     };
   }, [handleScroll]);
-
-  // Prevent body scroll when mobile menu is open
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isMobileMenuOpen]);
 
   // Handle CTA click
   const handleCtaClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -153,7 +141,7 @@ export function Header({
 
             {/* Right side actions */}
             <div className="flex items-center gap-2 lg:gap-4">
-              {/* Theme Toggle */}
+              {/* Theme Toggle - Desktop */}
               <ThemeToggle aria-label="Toggle theme" className="hidden sm:flex" />
 
               {/* CTA Button - Desktop */}
@@ -168,84 +156,25 @@ export function Header({
               )}
 
               {/* Mobile Menu Button */}
-              <button
-                type="button"
+              <MobileMenuButton
+                isOpen={isMobileMenuOpen}
                 onClick={toggleMobileMenu}
-                className="md:hidden p-2 text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-                aria-expanded={isMobileMenuOpen}
-                aria-controls="mobile-menu"
-                aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
-              >
-                {isMobileMenuOpen ? (
-                  <X className="w-6 h-6" aria-hidden="true" />
-                ) : (
-                  <Menu className="w-6 h-6" aria-hidden="true" />
-                )}
-              </button>
+                className="md:hidden"
+              />
             </div>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        <div
-          id="mobile-menu"
-          className={`md:hidden absolute top-full left-0 right-0 bg-bg-primary border-b border-border-default shadow-lg transition-all duration-300 ease-out ${
-            isMobileMenuOpen
-              ? 'opacity-100 translate-y-0 visible'
-              : 'opacity-0 -translate-y-2 invisible'
-          }`}
-          role="navigation"
-          aria-label="Mobile navigation"
-          aria-hidden={!isMobileMenuOpen}
-        >
-          <div className="px-4 py-4 space-y-2">
-            {/* Mobile Navigation Links */}
-            {siteNavigation.main.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                onClick={closeMobileMenu}
-                className="block px-4 py-3 text-base font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-              >
-                {item.label}
-              </a>
-            ))}
-
-            {/* Mobile Theme Toggle */}
-            <div className="pt-4 border-t border-border-default">
-              <div className="flex items-center justify-between px-4 py-3">
-                <span className="text-sm font-medium text-text-secondary">Theme</span>
-                <ThemeToggle aria-label="Toggle theme" />
-              </div>
-            </div>
-
-            {/* Mobile CTA */}
-            {showCta && (
-              <div className="pt-2">
-                <a
-                  href={ctaHref}
-                  onClick={(e) => {
-                    closeMobileMenu();
-                    handleCtaClick(e);
-                  }}
-                  className="block w-full px-4 py-3 text-center text-base font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-lg shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-                >
-                  {ctaText}
-                </a>
-              </div>
-            )}
           </div>
         </div>
       </header>
 
-      {/* Overlay for mobile menu */}
-      {isMobileMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 md:hidden"
-          onClick={closeMobileMenu}
-          aria-hidden="true"
-        />
-      )}
+      {/* Mobile Navigation Drawer */}
+      <MobileNavigation
+        isOpen={isMobileMenuOpen}
+        onClose={closeMobileMenu}
+        showCta={showCta}
+        ctaText={ctaText}
+        ctaHref={ctaHref}
+        {...(onCtaClick ? { onCtaClick } : {})}
+      />
     </>
   );
 }

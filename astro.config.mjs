@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import react from '@astrojs/react';
 
 /**
  * Determines the base path for deployment
@@ -22,6 +23,7 @@ const getBasePath = () => {
 
 // https://astro.build/config
 export default defineConfig({
+  integrations: [react()],
   site: process.env.SITE_URL || 'https://example.com',
   base: getBasePath(),
   output: 'static',

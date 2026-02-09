@@ -54,3 +54,5 @@ export { AboutStats } from './AboutStats';
 export type { AboutStatsProps } from './AboutStats';
 export { InvestorsSection } from './InvestorsSection';
 export type { InvestorsSectionProps } from './InvestorsSection';
+export { CareersCTA } from './CareersCTA';
+export type { CareersCTAProps } from './CareersCTA';

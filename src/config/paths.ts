@@ -179,6 +179,7 @@ export const ROUTES = {
   FEATURES: '/features/',
   PRICING: '/pricing/',
   ABOUT: '/about/',
+  CAREERS: '/careers/',
   CONTACT: '/contact/',
   BLOG: '/blog/',
 
@@ -221,7 +222,7 @@ export const NAVIGATION = {
       { label: 'About', href: ROUTES.ABOUT },
       { label: 'Blog', href: ROUTES.BLOG },
       { label: 'Contact', href: ROUTES.CONTACT },
-      { label: 'Careers', href: ROUTES.ABOUT }, // Link to about for now
+      { label: 'Careers', href: ROUTES.CAREERS },
     ],
     resources: [
       { label: 'Documentation', href: ROUTES.FEATURES },

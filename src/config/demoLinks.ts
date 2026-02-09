@@ -126,6 +126,7 @@ export const demoLinkPatterns: DemoLinkPattern[] = [
   { pattern: '/settings', category: 'dashboard' },
   { pattern: '/account', category: 'dashboard' },
   { pattern: '/profile', category: 'dashboard' },
+  { pattern: '/careers/', category: 'feature' },
 
   // Integration patterns
   { pattern: '/integrations/', category: 'integration' },

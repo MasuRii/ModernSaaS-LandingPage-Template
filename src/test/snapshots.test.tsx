@@ -1,5 +1,6 @@
 import { render } from '@testing-library/react';
 import * as UI from '@/components/ui';
+import { Hero } from '@/components/sections';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { describe, expect, it, vi } from 'vitest';
 import * as React from 'react';
@@ -316,6 +317,13 @@ describe('Component Snapshots', () => {
 
         it('GradientBackground matches snapshot', () => {
           const { asFragment } = render(<UI.GradientBackground variant="vibrant" />, { wrapper });
+          expect(asFragment()).toMatchSnapshot();
+        });
+      });
+
+      describe('Sections', () => {
+        it('Hero section matches snapshot', () => {
+          const { asFragment } = render(<Hero />, { wrapper });
           expect(asFragment()).toMatchSnapshot();
         });
       });

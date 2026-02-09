@@ -32,3 +32,5 @@ export { FeatureComparison } from './FeatureComparison';
 export type { FeatureComparisonProps } from './FeatureComparison';
 export { UseCases } from './UseCases';
 export type { UseCasesProps } from './UseCases';
+export { DemoVideo } from './DemoVideo';
+export type { DemoVideoProps } from './DemoVideo';

@@ -20,6 +20,8 @@ export type {
 } from './Skeleton';
 export { CodeBlock } from './CodeBlock';
 export type { CodeBlockProps } from './CodeBlock';
+export { Toast, Toaster, toast } from './Toast';
+export type { ToastProps, ToastVariant, ToastOptions } from './Toast';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

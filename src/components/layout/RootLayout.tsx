@@ -1,5 +1,6 @@
 import { type ReactNode } from 'react';
 import { type Theme, ThemeProvider } from '../ThemeProvider';
+import { Toaster } from '../ui/Toast';
 
 /**
  * Props for the SkipToContent component
@@ -110,6 +111,7 @@ export function RootLayout({
       <div className="relative min-h-screen bg-bg-primary text-text-primary antialiased">
         {children}
       </div>
+      <Toaster />
     </ThemeProvider>
   );
 }

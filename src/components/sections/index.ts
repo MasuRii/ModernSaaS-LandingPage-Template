@@ -35,3 +35,5 @@ export { UseCases } from './UseCases';
 export type { UseCasesProps } from './UseCases';
 export { DemoVideo } from './DemoVideo';
 export type { DemoVideoProps } from './DemoVideo';
+export { PricingHero } from './PricingHero';
+export type { PricingHeroProps } from './PricingHero';

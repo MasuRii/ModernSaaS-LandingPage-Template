@@ -40,6 +40,10 @@ export { default as DemoLinkDefault } from './DemoLink';
 export { Button, IconButton, ButtonGroup } from './Button';
 export { default as ButtonDefault } from './Button';
 
+// Badges
+export { Badge, StatusBadge, CounterBadge } from './Badge';
+export { default as BadgeDefault } from './Badge';
+
 // Future UI components will be exported here
 // export { default as Card } from './Card';
 // etc.

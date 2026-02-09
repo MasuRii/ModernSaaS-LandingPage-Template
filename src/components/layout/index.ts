@@ -19,3 +19,6 @@ export { default as RootLayoutDefault } from './RootLayout';
 
 export { Header, MinimalHeader, type HeaderProps, type MinimalHeaderProps } from './Header';
 export { default as HeaderDefault } from './Header';
+
+export { Footer, MinimalFooter, type FooterProps, type MinimalFooterProps } from './Footer';
+export { default as FooterDefault } from './Footer';

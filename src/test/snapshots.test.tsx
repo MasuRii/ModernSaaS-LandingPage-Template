@@ -1,6 +1,7 @@
 import { render } from '@testing-library/react';
 import * as UI from '@/components/ui';
 import {
+  FAQSection,
   FeaturesOverview,
   Hero,
   HowItWorks,
@@ -403,6 +404,11 @@ describe('Component Snapshots', () => {
 
         it('PricingPreview matches snapshot', () => {
           const { asFragment } = render(<PricingPreview />, { wrapper });
+          expect(asFragment()).toMatchSnapshot();
+        });
+
+        it('FAQSection matches snapshot', () => {
+          const { asFragment } = render(<FAQSection />, { wrapper });
           expect(asFragment()).toMatchSnapshot();
         });
       });

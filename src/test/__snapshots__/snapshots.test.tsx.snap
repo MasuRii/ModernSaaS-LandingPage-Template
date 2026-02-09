@@ -914,6 +914,174 @@ exports[`Component Snapshots > dark theme > Layout Components > Section matches 
 </DocumentFragment>
 `;
 
+exports[`Component Snapshots > dark theme > Sections > FAQSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="bg-bg-primary py-16 md:py-24"
+    id="faq"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Frequently Asked Questions
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        Everything you need to know about our product and pricing.
+      </p>
+    </div>
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto"
+    >
+      <div
+        class="w-full space-y-2 max-w-3xl mx-auto"
+      >
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Can I change my plan at any time?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Do you offer a free trial?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            What payment methods do you accept?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Is there a discount for annual billing?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            What happens when I reach my plan limits?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Do you offer refunds?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Can I invite external collaborators?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Do you have an API?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
 exports[`Component Snapshots > dark theme > Sections > FeaturesOverview section matches snapshot 1`] = `
 <DocumentFragment>
   <section
@@ -5746,6 +5914,174 @@ exports[`Component Snapshots > light theme > Layout Components > Section matches
     <p>
       Content
     </p>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Sections > FAQSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="bg-bg-primary py-16 md:py-24"
+    id="faq"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Frequently Asked Questions
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        Everything you need to know about our product and pricing.
+      </p>
+    </div>
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto"
+    >
+      <div
+        class="w-full space-y-2 max-w-3xl mx-auto"
+      >
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Can I change my plan at any time?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Do you offer a free trial?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            What payment methods do you accept?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Is there a discount for annual billing?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            What happens when I reach my plan limits?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Do you offer refunds?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Can I invite external collaborators?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Do you have an API?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
   </section>
 </DocumentFragment>
 `;

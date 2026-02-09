@@ -344,6 +344,12 @@ describe('Accessibility', () => {
             const results = await axe(container);
             expect(results).toHaveNoViolations();
           });
+
+          it('FAQSection should have no accessibility violations', async () => {
+            const { container } = render(<Sections.FAQSection />, { wrapper });
+            const results = await axe(container);
+            expect(results).toHaveNoViolations();
+          });
         });
       });
     });

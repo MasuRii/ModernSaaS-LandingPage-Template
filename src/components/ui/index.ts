@@ -59,6 +59,8 @@ export {
   CardImage,
   HoverableCard,
 } from './Card';
+export { GlassmorphicCard } from './GlassmorphicCard';
+export type { GlassmorphicCardProps } from './GlassmorphicCard';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

@@ -5,3 +5,4 @@
  */
 
 export { BlogListingContent } from './BlogListingContent';
+export { AuthorBio } from './AuthorBio';

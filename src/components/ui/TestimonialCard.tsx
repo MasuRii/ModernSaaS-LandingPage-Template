@@ -18,14 +18,14 @@ export interface TestimonialCardProps extends React.HTMLAttributes<HTMLDivElemen
     /** Company name of the author */
     company: string;
     /** Optional URL for the author's avatar image */
-    avatar?: string;
+    avatar?: string | undefined;
   };
   /** Optional star rating (1-5) */
-  rating?: number;
+  rating?: number | undefined;
   /** Optional URL for the company logo image */
-  companyLogo?: string;
+  companyLogo?: string | undefined;
   /** Additional CSS classes for the card */
-  className?: string;
+  className?: string | undefined;
 }
 
 /**

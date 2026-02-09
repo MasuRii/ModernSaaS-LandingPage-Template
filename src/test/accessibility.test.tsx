@@ -2,6 +2,7 @@ import { render } from '@testing-library/react';
 import { axe } from 'vitest-axe';
 import * as axeMatchers from 'vitest-axe/matchers';
 import * as UI from '@/components/ui';
+import * as Sections from '@/components/sections';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { describe, expect, it, vi } from 'vitest';
 import * as React from 'react';
@@ -299,6 +300,20 @@ describe('Accessibility', () => {
           const { container } = render(<UI.ThemeToggle />, { wrapper });
           const results = await axe(container);
           expect(results).toHaveNoViolations();
+        });
+
+        describe('Full Sections', () => {
+          it('LogoCloudSection should have no accessibility violations', async () => {
+            const { container } = render(<Sections.LogoCloudSection />, { wrapper });
+            const results = await axe(container);
+            expect(results).toHaveNoViolations();
+          });
+
+          it('TestimonialsSection should have no accessibility violations', async () => {
+            const { container } = render(<Sections.TestimonialsSection />, { wrapper });
+            const results = await axe(container);
+            expect(results).toHaveNoViolations();
+          });
         });
       });
     });

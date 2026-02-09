@@ -995,15 +995,15 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-673ta26v2 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-1bbe6uu30 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-673ta26v2 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-1bbe6uu30 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-673ta26v2 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-1bbe6uu30 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
         <div
@@ -1017,15 +1017,15 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-673ta26v2 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-1bbe6uu30 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-673ta26v2 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-1bbe6uu30 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-673ta26v2 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-1bbe6uu30 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
       </div>
@@ -1304,6 +1304,1865 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
               <div
                 class="bg-bg-tertiary animate-pulse h-2 w-3/4 rounded"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Partner Logos"
+    class="bg-bg-primary py-12 md:py-16 border-b border-border-default bg-bg-primary/50"
+    id="partners"
+  >
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <div
+          class="w-full overflow-hidden py-0"
+        >
+          <h3
+            class="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-tertiary"
+          >
+            Trusted by 10,000+ companies worldwide
+          </h3>
+          <div
+            class="relative flex w-full"
+          >
+            <div
+              class="flex min-w-full shrink-0 items-center justify-around gap-8 py-4 animate-marquee"
+              style="animation-duration: 40s;"
+            >
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Google Drive"
+              >
+                <img
+                  alt="Google Drive logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/google-drive.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Google Drive"
+              >
+                <img
+                  alt="Google Drive logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/google-drive.svg"
+                />
+              </a>
+            </div>
+            <div
+              aria-hidden="true"
+              class="flex min-w-full shrink-0 items-center justify-around gap-8 py-4 animate-marquee"
+              style="animation-duration: 40s;"
+            >
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Google Drive"
+              >
+                <img
+                  alt="Google Drive logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/google-drive.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Google Drive"
+              >
+                <img
+                  alt="Google Drive logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/google-drive.svg"
+                />
+              </a>
+            </div>
+          </div>
+          <style>
+            
+          @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+          }
+          @keyframes marquee-reverse {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+          }
+          .animate-marquee {
+            animation: marquee linear infinite;
+          }
+          .animate-marquee-reverse {
+            animation: marquee-reverse linear infinite;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .animate-marquee, .animate-marquee-reverse {
+              animation: none !important;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+          }
+        
+          </style>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Sections > TestimonialsSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Customer Testimonials"
+    class="bg-bg-primary py-16 md:py-24 bg-bg-secondary/30 dark:bg-bg-secondary/10"
+    id="testimonials"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Trusted by teams worldwide
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        Don't just take our word for it. Hear from the people who use ModernSaaS every day.
+      </p>
+    </div>
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+      >
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  ModernSaaS has completely transformed how our team collaborates. We've seen a 40% increase in productivity since switching. The interface is intuitive and the support team is incredibly responsive.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="Sarah Chen"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-01.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  Sarah Chen
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  VP of Engineering at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    TechCorp Inc.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  The best investment we made this year. The ROI was visible within the first month. Our developers love the API, and our managers love the reporting.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="Michael Rodriguez"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-02.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  Michael Rodriguez
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  CTO at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    StartupXYZ
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  We evaluated 12 different solutions before choosing ModernSaaS. The combination of features, pricing, and support made it an easy choice. Highly recommended!
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="Emily Watson"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-03.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  Emily Watson
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  Product Manager at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    InnovateCo
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  The enterprise features and security compliance were exactly what we needed. Our InfoSec team approved it immediately. The dedicated support is worth every penny.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="David Kim"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-01.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  David Kim
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  Director of IT at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    Enterprise Solutions
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 4 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-text-muted opacity-30"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  Switching to ModernSaaS was seamless. The migration tools handled everything automatically, and we were up and running in less than a day.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="Lisa Thompson"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-02.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  Lisa Thompson
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  Operations Lead at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    GrowthLabs
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  As a non-technical founder, I needed something powerful yet easy to use. ModernSaaS strikes that perfect balance. I can manage everything without bothering my dev team.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="James Wilson"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-03.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  James Wilson
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  CEO at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    FounderHub
+                  </span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -1624,15 +3483,15 @@ exports[`Component Snapshots > dark theme > Theme & Utils > GradientBackground m
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-4or2bxjfy 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-5jpww05l6 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-4or2bxjfy 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-5jpww05l6 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-4or2bxjfy 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-5jpww05l6 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
       <div
@@ -1646,15 +3505,15 @@ exports[`Component Snapshots > dark theme > Theme & Utils > GradientBackground m
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-4or2bxjfy 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-5jpww05l6 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-4or2bxjfy 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-5jpww05l6 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-4or2bxjfy 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-5jpww05l6 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
     </div>
@@ -2723,15 +4582,15 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-23o67qk2b 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-9lwhafrds 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-23o67qk2b 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-9lwhafrds 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-23o67qk2b 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-9lwhafrds 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
         <div
@@ -2745,15 +4604,15 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-23o67qk2b 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-9lwhafrds 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-23o67qk2b 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-9lwhafrds 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-23o67qk2b 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-9lwhafrds 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
       </div>
@@ -3032,6 +4891,1865 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
               <div
                 class="bg-bg-tertiary animate-pulse h-2 w-3/4 rounded"
               />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Partner Logos"
+    class="bg-bg-primary py-12 md:py-16 border-b border-border-default bg-bg-primary/50"
+    id="partners"
+  >
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <div
+          class="w-full overflow-hidden py-0"
+        >
+          <h3
+            class="mb-8 text-center text-sm font-semibold uppercase tracking-wider text-text-tertiary"
+          >
+            Trusted by 10,000+ companies worldwide
+          </h3>
+          <div
+            class="relative flex w-full"
+          >
+            <div
+              class="flex min-w-full shrink-0 items-center justify-around gap-8 py-4 animate-marquee"
+              style="animation-duration: 40s;"
+            >
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Google Drive"
+              >
+                <img
+                  alt="Google Drive logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/google-drive.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Google Drive"
+              >
+                <img
+                  alt="Google Drive logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/google-drive.svg"
+                />
+              </a>
+            </div>
+            <div
+              aria-hidden="true"
+              class="flex min-w-full shrink-0 items-center justify-around gap-8 py-4 animate-marquee"
+              style="animation-duration: 40s;"
+            >
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Google Drive"
+              >
+                <img
+                  alt="Google Drive logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/google-drive.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Slack"
+              >
+                <img
+                  alt="Slack logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Discord"
+              >
+                <img
+                  alt="Discord logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/discord.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="GitHub"
+              >
+                <img
+                  alt="GitHub logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Jira"
+              >
+                <img
+                  alt="Jira logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/jira.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Vercel"
+              >
+                <img
+                  alt="Vercel logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Figma"
+              >
+                <img
+                  alt="Figma logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Notion"
+              >
+                <img
+                  alt="Notion logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Linear"
+              >
+                <img
+                  alt="Linear logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/linear.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Google Drive"
+              >
+                <img
+                  alt="Google Drive logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/google-drive.svg"
+                />
+              </a>
+            </div>
+          </div>
+          <style>
+            
+          @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+          }
+          @keyframes marquee-reverse {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+          }
+          .animate-marquee {
+            animation: marquee linear infinite;
+          }
+          .animate-marquee-reverse {
+            animation: marquee-reverse linear infinite;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .animate-marquee, .animate-marquee-reverse {
+              animation: none !important;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+          }
+        
+          </style>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Sections > TestimonialsSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Customer Testimonials"
+    class="bg-bg-primary py-16 md:py-24 bg-bg-secondary/30 dark:bg-bg-secondary/10"
+    id="testimonials"
+  >
+    <div
+      class="container-wide mb-12 md:mb-16"
+    >
+      <h2
+        class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary text-center"
+      >
+        Trusted by teams worldwide
+      </h2>
+      <p
+        class="mt-4 text-lg md:text-xl text-text-secondary text-center max-w-3xl mx-auto"
+      >
+        Don't just take our word for it. Hear from the people who use ModernSaaS every day.
+      </p>
+    </div>
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+      >
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  ModernSaaS has completely transformed how our team collaborates. We've seen a 40% increase in productivity since switching. The interface is intuitive and the support team is incredibly responsive.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="Sarah Chen"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-01.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  Sarah Chen
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  VP of Engineering at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    TechCorp Inc.
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  The best investment we made this year. The ROI was visible within the first month. Our developers love the API, and our managers love the reporting.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="Michael Rodriguez"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-02.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  Michael Rodriguez
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  CTO at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    StartupXYZ
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  We evaluated 12 different solutions before choosing ModernSaaS. The combination of features, pricing, and support made it an easy choice. Highly recommended!
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="Emily Watson"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-03.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  Emily Watson
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  Product Manager at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    InnovateCo
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  The enterprise features and security compliance were exactly what we needed. Our InfoSec team approved it immediately. The dedicated support is worth every penny.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="David Kim"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-01.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  David Kim
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  Director of IT at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    Enterprise Solutions
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 4 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-text-muted opacity-30"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  Switching to ModernSaaS was seamless. The migration tools handled everything automatically, and we were up and running in less than a day.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="Lisa Thompson"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-02.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  Lisa Thompson
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  Operations Lead at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    GrowthLabs
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="relative overflow-hidden border-2 border-border-strong shadow-none p-6 rounded-2xl flex flex-col bg-bg-primary transition-all duration-300 hover:shadow-lg hover:border-primary-500/30 h-full"
+          >
+            <div
+              class="border-b border-border-default border-none pb-4 flex flex-row items-center justify-between space-y-0"
+            >
+              <div
+                aria-label="Rating: 5 out of 5 stars"
+                class="flex gap-0.5"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-star fill-current text-accent-500"
+                  fill="none"
+                  height="16"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="flex-grow pt-2"
+            >
+              <blockquote
+                class="relative"
+              >
+                <span
+                  aria-hidden="true"
+                  class="absolute -top-4 -left-2 text-6xl text-primary-500/10 font-serif leading-none select-none pointer-events-none"
+                >
+                  “
+                </span>
+                <p
+                  class="text-text-primary text-lg leading-relaxed relative z-10 italic"
+                >
+                  As a non-technical founder, I needed something powerful yet easy to use. ModernSaaS strikes that perfect balance. I can manage everything without bothering my dev team.
+                </p>
+              </blockquote>
+            </div>
+            <div
+              class="mt-4 border-t border-border-default border-none pt-8 flex items-center gap-4"
+            >
+              <div
+                class="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm"
+              >
+                <img
+                  alt="James Wilson"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                  src="/images/team-03.jpg"
+                />
+              </div>
+              <div
+                class="flex flex-col min-w-0"
+              >
+                <span
+                  class="text-text-primary font-bold truncate"
+                >
+                  James Wilson
+                </span>
+                <span
+                  class="text-text-muted text-sm truncate"
+                >
+                  CEO at 
+                  <span
+                    class="text-primary-600 dark:text-primary-400"
+                  >
+                    FounderHub
+                  </span>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -3352,15 +7070,15 @@ exports[`Component Snapshots > light theme > Theme & Utils > GradientBackground 
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-in7wwqzxx 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-8pkmzd756 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-in7wwqzxx 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-8pkmzd756 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-in7wwqzxx 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-8pkmzd756 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
       <div
@@ -3374,15 +7092,15 @@ exports[`Component Snapshots > light theme > Theme & Utils > GradientBackground 
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-in7wwqzxx 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-8pkmzd756 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-in7wwqzxx 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-8pkmzd756 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-in7wwqzxx 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-8pkmzd756 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
     </div>

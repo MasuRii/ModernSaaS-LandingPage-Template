@@ -82,6 +82,8 @@ export type {
 } from './Accordion';
 export { AnimatedCounter } from './AnimatedCounter';
 export type { AnimatedCounterProps } from './AnimatedCounter';
+export { Tabs, TabsList, TabsTrigger, TabsContent } from './Tabs';
+export type { TabsProps, TabsListProps, TabsTriggerProps, TabsContentProps } from './Tabs';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

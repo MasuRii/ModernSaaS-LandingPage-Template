@@ -17,6 +17,7 @@
     "test:e2e:webkit": "playwright test --project=webkit-desktop",
     "typecheck": "astro check",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
+    "test:perf": "node scripts/run-lighthouse.js",
     "prepare": "husky"
   },
   "lint-staged": {

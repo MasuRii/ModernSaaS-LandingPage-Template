@@ -150,6 +150,8 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               src="/images/dashboard-mockup.svg"
               alt="Platform Dashboard"
               variant="laptop"
+              loading="eager"
+              fetchPriority="high"
               variants={PRESETS.fadeInRight as unknown as Variants}
               className="z-10"
             />

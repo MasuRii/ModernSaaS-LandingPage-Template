@@ -26,6 +26,15 @@ export interface ProductMockupProps extends HTMLMotionProps<'div'> {
    */
   floating?: boolean;
   /**
+   * The loading strategy for the image
+   * @default 'lazy'
+   */
+  loading?: 'lazy' | 'eager';
+  /**
+   * The fetch priority for the image
+   */
+  fetchPriority?: 'high' | 'low' | 'auto';
+  /**
    * Animation variants for the container
    */
   variants?: Variants;
@@ -42,6 +51,8 @@ export const ProductMockup: React.FC<ProductMockupProps> = ({
   alt = 'Product mockup',
   variant = 'laptop',
   floating = true,
+  loading = 'lazy',
+  fetchPriority,
   className,
   variants,
   ...props
@@ -89,8 +100,10 @@ export const ProductMockup: React.FC<ProductMockupProps> = ({
               src={resolvedSrc}
               alt={alt}
               className="w-full h-full object-cover object-top"
-              loading="lazy"
+              loading={loading}
               decoding="async"
+              // @ts-expect-error - fetchPriority is a valid attribute but might not be in all type definitions yet
+              fetchpriority={fetchPriority}
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-500/10 to-secondary-500/10 p-8">

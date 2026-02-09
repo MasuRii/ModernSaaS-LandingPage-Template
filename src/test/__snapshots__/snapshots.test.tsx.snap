@@ -1699,7 +1699,8 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
                   alt="Platform Dashboard"
                   class="w-full h-full object-cover object-top"
                   decoding="async"
-                  loading="lazy"
+                  fetchpriority="high"
+                  loading="eager"
                   src="/images/dashboard-mockup.svg"
                 />
               </div>
@@ -6818,7 +6819,8 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
                   alt="Platform Dashboard"
                   class="w-full h-full object-cover object-top"
                   decoding="async"
-                  loading="lazy"
+                  fetchpriority="high"
+                  loading="eager"
                   src="/images/dashboard-mockup.svg"
                 />
               </div>

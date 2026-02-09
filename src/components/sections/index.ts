@@ -30,3 +30,5 @@ export { FeatureDetail } from './FeatureDetail';
 export type { FeatureDetailProps } from './FeatureDetail';
 export { FeatureComparison } from './FeatureComparison';
 export type { FeatureComparisonProps } from './FeatureComparison';
+export { UseCases } from './UseCases';
+export type { UseCasesProps } from './UseCases';

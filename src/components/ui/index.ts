@@ -23,8 +23,26 @@ export { BentoGrid, BentoGridItem } from './BentoGrid';
 export type { BentoGridProps, BentoGridItemProps } from './BentoGrid';
 
 // Cards
-export { Card } from './Card';
-export type { CardProps } from './Card';
+export {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+  CardImage,
+  HoverableCard,
+} from './Card';
+export type {
+  CardProps,
+  CardHeaderProps,
+  CardTitleProps,
+  CardDescriptionProps,
+  CardContentProps,
+  CardFooterProps,
+  CardImageProps,
+  HoverableCardProps,
+} from './Card';
 export { GlassmorphicCard } from './GlassmorphicCard';
 export type { GlassmorphicCardProps } from './GlassmorphicCard';
 export { FeatureCard } from './FeatureCard';

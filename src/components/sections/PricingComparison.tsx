@@ -61,7 +61,12 @@ export const PricingComparison: React.FC<PricingComparisonProps> = ({
 
         <FadeInUp triggerOnView delay={0.2}>
           <div className="relative overflow-hidden rounded-2xl border border-border-default bg-bg-secondary/20 shadow-sm">
-            <div className="overflow-x-auto scrollbar-hide">
+            <div
+              className="overflow-x-auto scrollbar-hide focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-2xl"
+              tabIndex={0}
+              role="region"
+              aria-label="Feature comparison table"
+            >
               <table className="w-full border-collapse text-left min-w-[800px]">
                 <thead className="sticky top-0 z-10 bg-bg-secondary/95 backdrop-blur-sm border-b border-border-default">
                   <tr>

@@ -7,8 +7,8 @@
  */
 
 // Basic Components
-export { Button } from './Button';
-export type { ButtonProps } from './Button';
+export { Button, ButtonGroup } from './Button';
+export type { ButtonProps, ButtonGroupProps } from './Button';
 export { Badge } from './Badge';
 export type { BadgeProps } from './Badge';
 export { Link } from './Link';
@@ -97,7 +97,7 @@ export type { ProductMockupProps } from './ProductMockup';
 export { ThemeToggle } from './ThemeToggle';
 export { MobileNavigation } from './MobileNavigation';
 export type { MobileNavigationProps } from './MobileNavigation';
-export { DemoLink } from './DemoLink';
+export { DemoLink, DemoLinkButton } from './DemoLink';
 export { DemoLinkModal } from './DemoLinkModal';
 export { GradientBackground } from './GradientBackground';
 export type { GradientBackgroundProps } from './GradientBackground';

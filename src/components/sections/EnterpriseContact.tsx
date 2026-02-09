@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { type Variants, motion } from 'framer-motion';
 import { Check, FileText, Headphones, Settings, Shield } from 'lucide-react';
-import { Button, Container, DemoLink, Section } from '@/components/ui';
+import { ButtonGroup, Container, DemoLinkButton, Section } from '@/components/ui';
 import { enterpriseFeatures } from '@/data/pricing';
 import { ROUTES } from '@/config/paths';
 import { PRESETS } from '@/config/animation';
@@ -91,18 +91,14 @@ export const EnterpriseContact: React.FC<EnterpriseContactProps> = ({
               {description}
             </p>
 
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <DemoLink href={ROUTES.CONTACT} forceDemo>
-                <Button size="lg" className="w-full sm:w-auto">
-                  Contact Sales
-                </Button>
-              </DemoLink>
-              <DemoLink href={ROUTES.CONTACT} forceDemo>
-                <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                  Schedule a Demo
-                </Button>
-              </DemoLink>
-            </div>
+            <ButtonGroup stackOnMobile className="mt-8">
+              <DemoLinkButton href={ROUTES.CONTACT} forceDemo size="lg">
+                Contact Sales
+              </DemoLinkButton>
+              <DemoLinkButton href={ROUTES.CONTACT} forceDemo variant="outline" size="lg">
+                Schedule a Demo
+              </DemoLinkButton>
+            </ButtonGroup>
 
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-4">
               <div className="flex items-center gap-2 text-sm font-medium text-text-primary">

@@ -25,7 +25,7 @@ export const PricingPageContent: React.FC = () => {
   };
 
   return (
-    <main>
+    <main id="main-content">
       {/* 1. Pricing Hero with Toggle */}
       <PricingHero billingPeriod={billingPeriod} onBillingPeriodChange={handleBillingChange} />
 

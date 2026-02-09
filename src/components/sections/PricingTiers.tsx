@@ -41,9 +41,12 @@ export const PricingTiers: React.FC<PricingTiersProps> = ({ className, billingPe
       id="pricing-tiers"
       className={cn('py-16 lg:py-24', className)}
       background="default"
-      aria-label="Pricing Plans"
+      aria-labelledby="pricing-tiers-title"
     >
       <Container>
+        <h2 id="pricing-tiers-title" className="sr-only">
+          Pricing Plans
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {pricingTiers.map((tier, index) => {
             const isAnnual = billingPeriod === 'annual';

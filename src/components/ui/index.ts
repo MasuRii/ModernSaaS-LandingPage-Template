@@ -101,6 +101,8 @@ export { CategoryFilter } from './CategoryFilter';
 export type { CategoryFilterProps } from './CategoryFilter';
 export { BlogSearch, filterBlogPosts } from './BlogSearch';
 export type { BlogSearchProps } from './BlogSearch';
+export { Pagination } from './Pagination';
+export type { PaginationProps } from './Pagination';
 
 // Theme & Navigation
 export { ProductMockup } from './ProductMockup';

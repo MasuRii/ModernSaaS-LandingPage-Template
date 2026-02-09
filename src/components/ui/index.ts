@@ -48,6 +48,18 @@ export { default as BadgeDefault } from './Badge';
 export { Link, ExternalLinkComponent as ExternalLink, NavLink, ArrowLink, SkipLink } from './Link';
 export { default as LinkDefault } from './Link';
 
+// Cards
+export {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+  CardImage,
+  HoverableCard,
+} from './Card';
+export { default as CardDefault } from './Card';
+
 // Future UI components will be exported here
-// export { default as Card } from './Card';
 // etc.

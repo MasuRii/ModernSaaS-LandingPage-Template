@@ -69,6 +69,8 @@ export { TestimonialCard } from './TestimonialCard';
 export type { TestimonialCardProps } from './TestimonialCard';
 export { BentoGrid, BentoGridItem } from './BentoGrid';
 export type { BentoGridProps, BentoGridItemProps } from './BentoGrid';
+export { IntegrationLogo } from './IntegrationLogo';
+export type { IntegrationLogoProps } from './IntegrationLogo';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

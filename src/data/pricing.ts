@@ -193,6 +193,12 @@ export const pricingFAQs: PricingFAQ[] = [
     category: 'billing',
   },
   {
+    question: 'Do you offer student or non-profit discounts?',
+    answer:
+      "Yes! We're committed to supporting education and social impact. Eligible students and non-profit organizations can receive an additional 30% discount on any plan. Contact our support team with your credentials to apply.",
+    category: 'billing',
+  },
+  {
     question: 'What happens when I reach my plan limits?',
     answer:
       "We'll notify you when you're approaching your limits. You can upgrade your plan at any time, or contact us for custom options if you need temporary increases.",

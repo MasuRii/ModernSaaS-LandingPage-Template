@@ -39,3 +39,5 @@ export { PricingHero } from './PricingHero';
 export type { PricingHeroProps } from './PricingHero';
 export { PricingTiers } from './PricingTiers';
 export type { PricingTiersProps } from './PricingTiers';
+export { PricingComparison } from './PricingComparison';
+export type { PricingComparisonProps } from './PricingComparison';

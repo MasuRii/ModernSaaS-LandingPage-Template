@@ -67,6 +67,8 @@ export { PricingCard } from './PricingCard';
 export type { PricingCardProps, PricingFeature } from './PricingCard';
 export { TestimonialCard } from './TestimonialCard';
 export type { TestimonialCardProps } from './TestimonialCard';
+export { BentoGrid, BentoGridItem } from './BentoGrid';
+export type { BentoGridProps, BentoGridItemProps } from './BentoGrid';
 export { default as CardDefault } from './Card';
 
 // Future UI components will be exported here

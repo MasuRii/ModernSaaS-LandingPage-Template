@@ -12,3 +12,5 @@ export { LogoCloudSection } from './LogoCloudSection';
 export type { LogoCloudSectionProps } from './LogoCloudSection';
 export { TestimonialsSection } from './TestimonialsSection';
 export type { TestimonialsSectionProps } from './TestimonialsSection';
+export { StatsSection } from './StatsSection';
+export type { StatsSectionProps } from './StatsSection';

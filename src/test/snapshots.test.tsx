@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import * as UI from '@/components/ui';
-import { Hero, LogoCloudSection, TestimonialsSection } from '@/components/sections';
+import { Hero, LogoCloudSection, StatsSection, TestimonialsSection } from '@/components/sections';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { describe, expect, it, vi } from 'vitest';
 import * as React from 'react';
@@ -345,6 +345,11 @@ describe('Component Snapshots', () => {
 
         it('TestimonialsSection matches snapshot', () => {
           const { asFragment } = render(<TestimonialsSection />, { wrapper });
+          expect(asFragment()).toMatchSnapshot();
+        });
+
+        it('StatsSection matches snapshot', () => {
+          const { asFragment } = render(<StatsSection />, { wrapper });
           expect(asFragment()).toMatchSnapshot();
         });
       });

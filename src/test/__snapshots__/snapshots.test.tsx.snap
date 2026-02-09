@@ -995,15 +995,15 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-1bbe6uu30 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-do2t1gs4r 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-1bbe6uu30 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-do2t1gs4r 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-1bbe6uu30 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-do2t1gs4r 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
         <div
@@ -1017,15 +1017,15 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-1bbe6uu30 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-do2t1gs4r 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-1bbe6uu30 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-do2t1gs4r 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-1bbe6uu30 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-do2t1gs4r 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
       </div>
@@ -2202,6 +2202,170 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
           }
         
           </style>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > dark theme > Sections > StatsSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-labelledby="stats-heading"
+    class="bg-bg-primary py-16 md:py-24 bg-bg-primary"
+    id="stats"
+  >
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="mx-auto mb-16 max-w-2xl text-center"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <h2
+          class="mb-4 text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
+          id="stats-heading"
+        >
+          By the numbers
+        </h2>
+        <p
+          class="text-lg text-text-secondary"
+        >
+          Trusted by thousands of developers and teams worldwide to power their mission-critical applications.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <div
+          class="group relative overflow-hidden rounded-2xl border border-border-default bg-bg-secondary p-8 transition-colors hover:border-brand-primary/50"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-brand-primary/5 blur-2xl transition-all group-hover:bg-brand-primary/10"
+          />
+          <div
+            class="relative z-10"
+          >
+            <div
+              class="mb-2 flex items-baseline gap-1"
+            >
+              <span
+                aria-live="polite"
+                class="text-4xl font-bold tracking-tight text-brand-primary sm:text-5xl"
+              >
+                0.00%
+              </span>
+            </div>
+            <div
+              class="text-lg font-semibold text-text-primary"
+            >
+              Uptime SLA
+            </div>
+            <p
+              class="mt-2 text-sm text-text-secondary"
+            >
+              Delivering consistent value and reliability to our global user base.
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-2xl border border-border-default bg-bg-secondary p-8 transition-colors hover:border-brand-primary/50"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-brand-primary/5 blur-2xl transition-all group-hover:bg-brand-primary/10"
+          />
+          <div
+            class="relative z-10"
+          >
+            <div
+              class="mb-2 flex items-baseline gap-1"
+            >
+              <span
+                aria-live="polite"
+                class="text-4xl font-bold tracking-tight text-brand-primary sm:text-5xl"
+              >
+                0+
+              </span>
+            </div>
+            <div
+              class="text-lg font-semibold text-text-primary"
+            >
+              Integrations
+            </div>
+            <p
+              class="mt-2 text-sm text-text-secondary"
+            >
+              Delivering consistent value and reliability to our global user base.
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-2xl border border-border-default bg-bg-secondary p-8 transition-colors hover:border-brand-primary/50"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-brand-primary/5 blur-2xl transition-all group-hover:bg-brand-primary/10"
+          />
+          <div
+            class="relative z-10"
+          >
+            <div
+              class="mb-2 flex items-baseline gap-1"
+            >
+              <span
+                aria-live="polite"
+                class="text-4xl font-bold tracking-tight text-brand-primary sm:text-5xl"
+              >
+                &lt;0ms
+              </span>
+            </div>
+            <div
+              class="text-lg font-semibold text-text-primary"
+            >
+              Avg Response Time
+            </div>
+            <p
+              class="mt-2 text-sm text-text-secondary"
+            >
+              Delivering consistent value and reliability to our global user base.
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-2xl border border-border-default bg-bg-secondary p-8 transition-colors hover:border-brand-primary/50"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-brand-primary/5 blur-2xl transition-all group-hover:bg-brand-primary/10"
+          />
+          <div
+            class="relative z-10"
+          >
+            <div
+              class="mb-2 flex items-baseline gap-1"
+            >
+              <span
+                aria-live="polite"
+                class="text-4xl font-bold tracking-tight text-brand-primary sm:text-5xl"
+              >
+                0B+
+              </span>
+            </div>
+            <div
+              class="text-lg font-semibold text-text-primary"
+            >
+              Requests Processed
+            </div>
+            <p
+              class="mt-2 text-sm text-text-secondary"
+            >
+              Delivering consistent value and reliability to our global user base.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -3483,15 +3647,15 @@ exports[`Component Snapshots > dark theme > Theme & Utils > GradientBackground m
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-5jpww05l6 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-ok6s3qy7x 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-5jpww05l6 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-ok6s3qy7x 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-5jpww05l6 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-ok6s3qy7x 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
       <div
@@ -3505,15 +3669,15 @@ exports[`Component Snapshots > dark theme > Theme & Utils > GradientBackground m
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-5jpww05l6 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-ok6s3qy7x 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-5jpww05l6 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-ok6s3qy7x 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-5jpww05l6 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-ok6s3qy7x 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
     </div>
@@ -4582,15 +4746,15 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-9lwhafrds 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-8e4xhqep6 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-9lwhafrds 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-8e4xhqep6 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-9lwhafrds 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-8e4xhqep6 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
         <div
@@ -4604,15 +4768,15 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-9lwhafrds 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-8e4xhqep6 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-9lwhafrds 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-8e4xhqep6 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-9lwhafrds 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-8e4xhqep6 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
       </div>
@@ -5789,6 +5953,170 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
           }
         
           </style>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Component Snapshots > light theme > Sections > StatsSection matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-labelledby="stats-heading"
+    class="bg-bg-primary py-16 md:py-24 bg-bg-primary"
+    id="stats"
+  >
+    <div
+      class="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
+    >
+      <div
+        class="mx-auto mb-16 max-w-2xl text-center"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <h2
+          class="mb-4 text-3xl font-bold tracking-tight text-text-primary sm:text-4xl"
+          id="stats-heading"
+        >
+          By the numbers
+        </h2>
+        <p
+          class="text-lg text-text-secondary"
+        >
+          Trusted by thousands of developers and teams worldwide to power their mission-critical applications.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+        style="opacity: 0; transform: translateY(20px);"
+      >
+        <div
+          class="group relative overflow-hidden rounded-2xl border border-border-default bg-bg-secondary p-8 transition-colors hover:border-brand-primary/50"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-brand-primary/5 blur-2xl transition-all group-hover:bg-brand-primary/10"
+          />
+          <div
+            class="relative z-10"
+          >
+            <div
+              class="mb-2 flex items-baseline gap-1"
+            >
+              <span
+                aria-live="polite"
+                class="text-4xl font-bold tracking-tight text-brand-primary sm:text-5xl"
+              >
+                0.00%
+              </span>
+            </div>
+            <div
+              class="text-lg font-semibold text-text-primary"
+            >
+              Uptime SLA
+            </div>
+            <p
+              class="mt-2 text-sm text-text-secondary"
+            >
+              Delivering consistent value and reliability to our global user base.
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-2xl border border-border-default bg-bg-secondary p-8 transition-colors hover:border-brand-primary/50"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-brand-primary/5 blur-2xl transition-all group-hover:bg-brand-primary/10"
+          />
+          <div
+            class="relative z-10"
+          >
+            <div
+              class="mb-2 flex items-baseline gap-1"
+            >
+              <span
+                aria-live="polite"
+                class="text-4xl font-bold tracking-tight text-brand-primary sm:text-5xl"
+              >
+                0+
+              </span>
+            </div>
+            <div
+              class="text-lg font-semibold text-text-primary"
+            >
+              Integrations
+            </div>
+            <p
+              class="mt-2 text-sm text-text-secondary"
+            >
+              Delivering consistent value and reliability to our global user base.
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-2xl border border-border-default bg-bg-secondary p-8 transition-colors hover:border-brand-primary/50"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-brand-primary/5 blur-2xl transition-all group-hover:bg-brand-primary/10"
+          />
+          <div
+            class="relative z-10"
+          >
+            <div
+              class="mb-2 flex items-baseline gap-1"
+            >
+              <span
+                aria-live="polite"
+                class="text-4xl font-bold tracking-tight text-brand-primary sm:text-5xl"
+              >
+                &lt;0ms
+              </span>
+            </div>
+            <div
+              class="text-lg font-semibold text-text-primary"
+            >
+              Avg Response Time
+            </div>
+            <p
+              class="mt-2 text-sm text-text-secondary"
+            >
+              Delivering consistent value and reliability to our global user base.
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-2xl border border-border-default bg-bg-secondary p-8 transition-colors hover:border-brand-primary/50"
+          style="opacity: 0; transform: translateY(20px);"
+        >
+          <div
+            class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-brand-primary/5 blur-2xl transition-all group-hover:bg-brand-primary/10"
+          />
+          <div
+            class="relative z-10"
+          >
+            <div
+              class="mb-2 flex items-baseline gap-1"
+            >
+              <span
+                aria-live="polite"
+                class="text-4xl font-bold tracking-tight text-brand-primary sm:text-5xl"
+              >
+                0B+
+              </span>
+            </div>
+            <div
+              class="text-lg font-semibold text-text-primary"
+            >
+              Requests Processed
+            </div>
+            <p
+              class="mt-2 text-sm text-text-secondary"
+            >
+              Delivering consistent value and reliability to our global user base.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -7070,15 +7398,15 @@ exports[`Component Snapshots > light theme > Theme & Utils > GradientBackground 
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-8pkmzd756 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-pbgsrc51p 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-8pkmzd756 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-pbgsrc51p 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-8pkmzd756 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-pbgsrc51p 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
       <div
@@ -7092,15 +7420,15 @@ exports[`Component Snapshots > light theme > Theme & Utils > GradientBackground 
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-8pkmzd756 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-pbgsrc51p 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-8pkmzd756 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-pbgsrc51p 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-8pkmzd756 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-pbgsrc51p 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
     </div>

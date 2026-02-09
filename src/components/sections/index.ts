@@ -26,3 +26,5 @@ export { FAQSection } from './FAQSection';
 export { FinalCTA } from './FinalCTA';
 export { FeaturesHero } from './FeaturesHero';
 export type { FeaturesHeroProps } from './FeaturesHero';
+export { FeatureDetail } from './FeatureDetail';
+export type { FeatureDetailProps } from './FeatureDetail';

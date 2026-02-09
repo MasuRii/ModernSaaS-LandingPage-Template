@@ -265,6 +265,15 @@ describe('Accessibility', () => {
           expect(results).toHaveNoViolations();
         });
 
+        it('ProductMockup should have no accessibility violations', async () => {
+          const { container } = render(
+            <UI.ProductMockup src="/images/dashboard-mockup.svg" alt="Dashboard" />,
+            { wrapper },
+          );
+          const results = await axe(container);
+          expect(results).toHaveNoViolations();
+        });
+
         it('CodeBlock should have no accessibility violations', async () => {
           const { container } = render(<UI.CodeBlock code="const x = 1;" language="javascript" />, {
             wrapper,

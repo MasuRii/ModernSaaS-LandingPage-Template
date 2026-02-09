@@ -995,15 +995,15 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-j5cvtots3 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-673ta26v2 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-j5cvtots3 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-673ta26v2 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-j5cvtots3 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-673ta26v2 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
         <div
@@ -1017,15 +1017,15 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-j5cvtots3 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-673ta26v2 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-j5cvtots3 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-673ta26v2 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-j5cvtots3 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-673ta26v2 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
       </div>
@@ -1246,128 +1246,35 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
           </div>
         </div>
         <div
-          class="relative perspective-1000"
-          style="opacity: 0; transform: translateX(40px) scale(0.9);"
+          class="relative"
         >
           <div
-            class="relative z-10 w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl border border-border-default bg-bg-primary"
+            class="relative perspective-1000 z-10"
           >
             <div
-              class="absolute inset-0 flex flex-col bg-bg-secondary/30"
+              class="relative z-10 w-full shadow-2xl overflow-hidden bg-bg-primary border-border-default aspect-[16/10] rounded-t-xl border-x-[6px] border-t-[6px] md:border-x-[12px] md:border-t-[12px]"
             >
               <div
-                class="flex items-center gap-2 px-4 h-10 border-b border-border-default bg-bg-primary/80 backdrop-blur-md"
+                class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
               >
-                <div
-                  class="flex gap-1.5"
-                >
-                  <div
-                    class="w-2.5 h-2.5 rounded-full bg-error-500/40"
-                  />
-                  <div
-                    class="w-2.5 h-2.5 rounded-full bg-warning-500/40"
-                  />
-                  <div
-                    class="w-2.5 h-2.5 rounded-full bg-success-500/40"
-                  />
-                </div>
-                <div
-                  class="mx-auto"
-                >
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-4 w-48 rounded-md opacity-40"
-                  />
-                </div>
+                <img
+                  alt="Platform Dashboard"
+                  class="w-full h-full object-cover object-top"
+                  decoding="async"
+                  loading="lazy"
+                  src="/images/dashboard-mockup.svg"
+                />
               </div>
               <div
-                class="flex-1 flex overflow-hidden"
-              >
-                <div
-                  class="w-16 md:w-20 border-r border-border-default bg-bg-primary/40 p-3 space-y-4"
-                >
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                </div>
-                <div
-                  class="flex-1 p-6 space-y-6 overflow-hidden"
-                >
-                  <div
-                    class="flex justify-between items-center mb-2"
-                  >
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-8 w-40 rounded-lg opacity-50"
-                    />
-                    <div
-                      class="flex gap-2"
-                    >
-                      <div
-                        class="bg-bg-tertiary animate-pulse h-9 w-9 rounded-md opacity-30"
-                      />
-                      <div
-                        class="bg-bg-tertiary animate-pulse h-9 w-24 rounded-md opacity-40"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="grid grid-cols-3 gap-4"
-                  >
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-28 rounded-xl opacity-40"
-                    />
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-28 rounded-xl opacity-40"
-                    />
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-28 rounded-xl opacity-40"
-                    />
-                  </div>
-                  <div
-                    class="space-y-4 pt-2"
-                  >
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-4 w-3/4 rounded opacity-30"
-                    />
-                    <div
-                      class="grid grid-cols-2 gap-6"
-                    >
-                      <div
-                        class="space-y-3"
-                      >
-                        <div
-                          class="bg-bg-tertiary animate-pulse h-32 rounded-xl opacity-20"
-                        />
-                        <div
-                          class="bg-bg-tertiary animate-pulse h-4 w-full rounded opacity-10"
-                        />
-                      </div>
-                      <div
-                        class="space-y-3"
-                      >
-                        <div
-                          class="bg-bg-tertiary animate-pulse h-32 rounded-xl opacity-20"
-                        />
-                        <div
-                          class="bg-bg-tertiary animate-pulse h-4 w-full rounded opacity-10"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-white/5 to-white/20 dark:from-white/0 dark:to-white/5"
+              />
             </div>
+            <div
+              class="relative z-0 h-3 md:h-4 bg-bg-secondary w-[105%] -left-[2.5%] rounded-b-xl shadow-2xl border-t border-white/10"
+            />
+            <div
+              class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[90%] h-10 bg-black/20 blur-[40px] rounded-full -z-10"
+            />
           </div>
           <div
             class="absolute -top-16 -right-16 w-80 h-80 bg-primary-500/20 blur-[100px] rounded-full -z-10 animate-pulse"
@@ -1561,6 +1468,78 @@ exports[`Component Snapshots > dark theme > Specialized Components > LogoCloud m
 </DocumentFragment>
 `;
 
+exports[`Component Snapshots > dark theme > Specialized Components > ProductMockup matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="space-y-8"
+  >
+    <div
+      class="relative perspective-1000"
+    >
+      <div
+        class="relative z-10 w-full shadow-2xl overflow-hidden bg-bg-primary border-border-default aspect-[16/10] rounded-t-xl border-x-[6px] border-t-[6px] md:border-x-[12px] md:border-t-[12px]"
+      >
+        <div
+          class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
+        >
+          <img
+            alt="Product mockup"
+            class="w-full h-full object-cover object-top"
+            decoding="async"
+            loading="lazy"
+            src="/images/dashboard-mockup.svg"
+          />
+        </div>
+        <div
+          class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-white/5 to-white/20 dark:from-white/0 dark:to-white/5"
+        />
+      </div>
+      <div
+        class="relative z-0 h-3 md:h-4 bg-bg-secondary w-[105%] -left-[2.5%] rounded-b-xl shadow-2xl border-t border-white/10"
+      />
+      <div
+        class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[90%] h-10 bg-black/20 blur-[40px] rounded-full -z-10"
+      />
+    </div>
+    <div
+      class="relative perspective-1000"
+    >
+      <div
+        class="relative z-10 shadow-2xl overflow-hidden bg-bg-primary border-border-default aspect-[9/19] rounded-[2.5rem] border-[8px] md:border-[12px] w-[280px] md:w-[320px] mx-auto"
+      >
+        <div
+          class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
+        >
+          <img
+            alt="Product mockup"
+            class="w-full h-full object-cover object-top"
+            decoding="async"
+            loading="lazy"
+            src="/images/dashboard-mockup.svg"
+          />
+        </div>
+        <div
+          class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-white/5 to-white/20 dark:from-white/0 dark:to-white/5"
+        />
+      </div>
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-bg-secondary rounded-b-2xl z-20 flex items-center justify-center gap-2"
+      >
+        <div
+          class="w-2 h-2 rounded-full bg-slate-800"
+        />
+        <div
+          class="w-12 h-1 rounded-full bg-slate-800/50"
+        />
+      </div>
+      <div
+        class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[90%] h-10 bg-black/20 blur-[40px] rounded-full -z-10"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Component Snapshots > dark theme > Specialized Components > Skeleton variants match snapshot 1`] = `
 <DocumentFragment>
   <div
@@ -1645,15 +1624,15 @@ exports[`Component Snapshots > dark theme > Theme & Utils > GradientBackground m
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-wwtdefcea 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-4or2bxjfy 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-wwtdefcea 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-4or2bxjfy 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-wwtdefcea 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-4or2bxjfy 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
       <div
@@ -1667,15 +1646,15 @@ exports[`Component Snapshots > dark theme > Theme & Utils > GradientBackground m
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-wwtdefcea 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-4or2bxjfy 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-wwtdefcea 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-4or2bxjfy 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-wwtdefcea 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-4or2bxjfy 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
     </div>
@@ -2744,15 +2723,15 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-9o63auj8d 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-23o67qk2b 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-9o63auj8d 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-23o67qk2b 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-9o63auj8d 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-23o67qk2b 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
         <div
@@ -2766,15 +2745,15 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
           />
           <div
             class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-            style="--intensity: 0.6; animation: gradientFloat1-9o63auj8d 20s ease-in-out infinite; animation-delay: 0s;"
+            style="--intensity: 0.6; animation: gradientFloat1-23o67qk2b 20s ease-in-out infinite; animation-delay: 0s;"
           />
           <div
             class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-            style="--intensity: 0.6; animation: gradientFloat2-9o63auj8d 25s ease-in-out infinite; animation-delay: 2s;"
+            style="--intensity: 0.6; animation: gradientFloat2-23o67qk2b 25s ease-in-out infinite; animation-delay: 2s;"
           />
           <div
             class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-            style="--intensity: 0.6; animation: gradientFloat3-9o63auj8d 22s ease-in-out infinite; animation-delay: 4s;"
+            style="--intensity: 0.6; animation: gradientFloat3-23o67qk2b 22s ease-in-out infinite; animation-delay: 4s;"
           />
         </div>
       </div>
@@ -2995,128 +2974,35 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
           </div>
         </div>
         <div
-          class="relative perspective-1000"
-          style="opacity: 0; transform: translateX(40px) scale(0.9);"
+          class="relative"
         >
           <div
-            class="relative z-10 w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl border border-border-default bg-bg-primary"
+            class="relative perspective-1000 z-10"
           >
             <div
-              class="absolute inset-0 flex flex-col bg-bg-secondary/30"
+              class="relative z-10 w-full shadow-2xl overflow-hidden bg-bg-primary border-border-default aspect-[16/10] rounded-t-xl border-x-[6px] border-t-[6px] md:border-x-[12px] md:border-t-[12px]"
             >
               <div
-                class="flex items-center gap-2 px-4 h-10 border-b border-border-default bg-bg-primary/80 backdrop-blur-md"
+                class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
               >
-                <div
-                  class="flex gap-1.5"
-                >
-                  <div
-                    class="w-2.5 h-2.5 rounded-full bg-error-500/40"
-                  />
-                  <div
-                    class="w-2.5 h-2.5 rounded-full bg-warning-500/40"
-                  />
-                  <div
-                    class="w-2.5 h-2.5 rounded-full bg-success-500/40"
-                  />
-                </div>
-                <div
-                  class="mx-auto"
-                >
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-4 w-48 rounded-md opacity-40"
-                  />
-                </div>
+                <img
+                  alt="Platform Dashboard"
+                  class="w-full h-full object-cover object-top"
+                  decoding="async"
+                  loading="lazy"
+                  src="/images/dashboard-mockup.svg"
+                />
               </div>
               <div
-                class="flex-1 flex overflow-hidden"
-              >
-                <div
-                  class="w-16 md:w-20 border-r border-border-default bg-bg-primary/40 p-3 space-y-4"
-                >
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                  <div
-                    class="bg-bg-tertiary animate-pulse h-10 w-full rounded-lg opacity-30"
-                  />
-                </div>
-                <div
-                  class="flex-1 p-6 space-y-6 overflow-hidden"
-                >
-                  <div
-                    class="flex justify-between items-center mb-2"
-                  >
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-8 w-40 rounded-lg opacity-50"
-                    />
-                    <div
-                      class="flex gap-2"
-                    >
-                      <div
-                        class="bg-bg-tertiary animate-pulse h-9 w-9 rounded-md opacity-30"
-                      />
-                      <div
-                        class="bg-bg-tertiary animate-pulse h-9 w-24 rounded-md opacity-40"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="grid grid-cols-3 gap-4"
-                  >
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-28 rounded-xl opacity-40"
-                    />
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-28 rounded-xl opacity-40"
-                    />
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-28 rounded-xl opacity-40"
-                    />
-                  </div>
-                  <div
-                    class="space-y-4 pt-2"
-                  >
-                    <div
-                      class="bg-bg-tertiary animate-pulse h-4 w-3/4 rounded opacity-30"
-                    />
-                    <div
-                      class="grid grid-cols-2 gap-6"
-                    >
-                      <div
-                        class="space-y-3"
-                      >
-                        <div
-                          class="bg-bg-tertiary animate-pulse h-32 rounded-xl opacity-20"
-                        />
-                        <div
-                          class="bg-bg-tertiary animate-pulse h-4 w-full rounded opacity-10"
-                        />
-                      </div>
-                      <div
-                        class="space-y-3"
-                      >
-                        <div
-                          class="bg-bg-tertiary animate-pulse h-32 rounded-xl opacity-20"
-                        />
-                        <div
-                          class="bg-bg-tertiary animate-pulse h-4 w-full rounded opacity-10"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-white/5 to-white/20 dark:from-white/0 dark:to-white/5"
+              />
             </div>
+            <div
+              class="relative z-0 h-3 md:h-4 bg-bg-secondary w-[105%] -left-[2.5%] rounded-b-xl shadow-2xl border-t border-white/10"
+            />
+            <div
+              class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[90%] h-10 bg-black/20 blur-[40px] rounded-full -z-10"
+            />
           </div>
           <div
             class="absolute -top-16 -right-16 w-80 h-80 bg-primary-500/20 blur-[100px] rounded-full -z-10 animate-pulse"
@@ -3310,6 +3196,78 @@ exports[`Component Snapshots > light theme > Specialized Components > LogoCloud 
 </DocumentFragment>
 `;
 
+exports[`Component Snapshots > light theme > Specialized Components > ProductMockup matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="space-y-8"
+  >
+    <div
+      class="relative perspective-1000"
+    >
+      <div
+        class="relative z-10 w-full shadow-2xl overflow-hidden bg-bg-primary border-border-default aspect-[16/10] rounded-t-xl border-x-[6px] border-t-[6px] md:border-x-[12px] md:border-t-[12px]"
+      >
+        <div
+          class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
+        >
+          <img
+            alt="Product mockup"
+            class="w-full h-full object-cover object-top"
+            decoding="async"
+            loading="lazy"
+            src="/images/dashboard-mockup.svg"
+          />
+        </div>
+        <div
+          class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-white/5 to-white/20 dark:from-white/0 dark:to-white/5"
+        />
+      </div>
+      <div
+        class="relative z-0 h-3 md:h-4 bg-bg-secondary w-[105%] -left-[2.5%] rounded-b-xl shadow-2xl border-t border-white/10"
+      />
+      <div
+        class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[90%] h-10 bg-black/20 blur-[40px] rounded-full -z-10"
+      />
+    </div>
+    <div
+      class="relative perspective-1000"
+    >
+      <div
+        class="relative z-10 shadow-2xl overflow-hidden bg-bg-primary border-border-default aspect-[9/19] rounded-[2.5rem] border-[8px] md:border-[12px] w-[280px] md:w-[320px] mx-auto"
+      >
+        <div
+          class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
+        >
+          <img
+            alt="Product mockup"
+            class="w-full h-full object-cover object-top"
+            decoding="async"
+            loading="lazy"
+            src="/images/dashboard-mockup.svg"
+          />
+        </div>
+        <div
+          class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-white/5 to-white/20 dark:from-white/0 dark:to-white/5"
+        />
+      </div>
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-bg-secondary rounded-b-2xl z-20 flex items-center justify-center gap-2"
+      >
+        <div
+          class="w-2 h-2 rounded-full bg-slate-800"
+        />
+        <div
+          class="w-12 h-1 rounded-full bg-slate-800/50"
+        />
+      </div>
+      <div
+        class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[90%] h-10 bg-black/20 blur-[40px] rounded-full -z-10"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Component Snapshots > light theme > Specialized Components > Skeleton variants match snapshot 1`] = `
 <DocumentFragment>
   <div
@@ -3394,15 +3352,15 @@ exports[`Component Snapshots > light theme > Theme & Utils > GradientBackground 
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.4)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-rg8x6e2cf 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-in7wwqzxx 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.35)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-rg8x6e2cf 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-in7wwqzxx 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.3)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-rg8x6e2cf 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-in7wwqzxx 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
       <div
@@ -3416,15 +3374,15 @@ exports[`Component Snapshots > light theme > Theme & Utils > GradientBackground 
         />
         <div
           class="absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full bg-gradient-to-br from-[var(--primitive-color-primary-500)] to-[var(--primitive-color-secondary-600)] opacity-[calc(var(--intensity)*0.25)] blur-[100px]"
-          style="--intensity: 0.5; animation: gradientFloat1-rg8x6e2cf 20s ease-in-out infinite; animation-delay: 0s;"
+          style="--intensity: 0.5; animation: gradientFloat1-in7wwqzxx 20s ease-in-out infinite; animation-delay: 0s;"
         />
         <div
           class="absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full bg-gradient-to-tr from-[var(--primitive-color-secondary-500)] to-[var(--primitive-color-accent-500)] opacity-[calc(var(--intensity)*0.2)] blur-[80px]"
-          style="--intensity: 0.5; animation: gradientFloat2-rg8x6e2cf 25s ease-in-out infinite; animation-delay: 2s;"
+          style="--intensity: 0.5; animation: gradientFloat2-in7wwqzxx 25s ease-in-out infinite; animation-delay: 2s;"
         />
         <div
           class="absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full bg-gradient-to-bl from-[var(--primitive-color-accent-400)] to-[var(--primitive-color-primary-400)] opacity-[calc(var(--intensity)*0.15)] blur-[60px]"
-          style="--intensity: 0.5; animation: gradientFloat3-rg8x6e2cf 22s ease-in-out infinite; animation-delay: 4s;"
+          style="--intensity: 0.5; animation: gradientFloat3-in7wwqzxx 22s ease-in-out infinite; animation-delay: 4s;"
         />
       </div>
     </div>

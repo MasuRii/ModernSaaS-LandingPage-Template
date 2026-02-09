@@ -300,6 +300,17 @@ describe('Component Snapshots', () => {
           );
           expect(asFragment()).toMatchSnapshot();
         });
+
+        it('ProductMockup matches snapshot', () => {
+          const { asFragment } = render(
+            <div className="space-y-8">
+              <UI.ProductMockup src="/images/dashboard-mockup.svg" variant="laptop" />
+              <UI.ProductMockup src="/images/dashboard-mockup.svg" variant="phone" />
+            </div>,
+            { wrapper },
+          );
+          expect(asFragment()).toMatchSnapshot();
+        });
       });
 
       describe('Theme & Utils', () => {

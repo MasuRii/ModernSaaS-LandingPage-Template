@@ -6,6 +6,7 @@ import {
   Container,
   DemoLink,
   GradientBackground,
+  ProductMockup,
   Section,
   Skeleton,
   SocialProofBadge,
@@ -142,80 +143,15 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
             </motion.div>
           </motion.div>
 
-          {/* Visual Column - Product Mockup Placeholder */}
-          <motion.div
-            initial={{ opacity: 0, x: 40, scale: 0.9 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative perspective-1000"
-          >
-            <motion.div
-              animate={{
-                y: [0, -12, 0],
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                ease: 'easeInOut',
-              }}
-              className="relative z-10 w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl border border-border-default bg-bg-primary"
-            >
-              {/* Product Mockup Content (Simulated Dashboard) */}
-              <div className="absolute inset-0 flex flex-col bg-bg-secondary/30">
-                {/* Mockup Toolbar */}
-                <div className="flex items-center gap-2 px-4 h-10 border-b border-border-default bg-bg-primary/80 backdrop-blur-md">
-                  <div className="flex gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-error-500/40" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-warning-500/40" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-success-500/40" />
-                  </div>
-                  <div className="mx-auto">
-                    <Skeleton className="h-4 w-48 rounded-md opacity-40" />
-                  </div>
-                </div>
-
-                {/* Mockup Body */}
-                <div className="flex-1 flex overflow-hidden">
-                  {/* Sidebar */}
-                  <div className="w-16 md:w-20 border-r border-border-default bg-bg-primary/40 p-3 space-y-4">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Skeleton key={i} className="h-10 w-full rounded-lg opacity-30" />
-                    ))}
-                  </div>
-
-                  {/* Main Content */}
-                  <div className="flex-1 p-6 space-y-6 overflow-hidden">
-                    <div className="flex justify-between items-center mb-2">
-                      <Skeleton className="h-8 w-40 rounded-lg opacity-50" />
-                      <div className="flex gap-2">
-                        <Skeleton className="h-9 w-9 rounded-md opacity-30" />
-                        <Skeleton className="h-9 w-24 rounded-md opacity-40" />
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-3 gap-4">
-                      <Skeleton className="h-28 rounded-xl opacity-40" />
-                      <Skeleton className="h-28 rounded-xl opacity-40" />
-                      <Skeleton className="h-28 rounded-xl opacity-40" />
-                    </div>
-
-                    <div className="space-y-4 pt-2">
-                      <Skeleton className="h-4 w-3/4 rounded opacity-30" />
-                      <div className="grid grid-cols-2 gap-6">
-                        <div className="space-y-3">
-                          <Skeleton className="h-32 rounded-xl opacity-20" />
-                          <Skeleton className="h-4 w-full rounded opacity-10" />
-                        </div>
-                        <div className="space-y-3">
-                          <Skeleton className="h-32 rounded-xl opacity-20" />
-                          <Skeleton className="h-4 w-full rounded opacity-10" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+          {/* Visual Column - Product Mockup */}
+          <div className="relative">
+            <ProductMockup
+              src="/images/dashboard-mockup.svg"
+              alt="Platform Dashboard"
+              variant="laptop"
+              variants={PRESETS.fadeInRight as unknown as Variants}
+              className="z-10"
+            />
 
             {/* Decorative background effects */}
             <div className="absolute -top-16 -right-16 w-80 h-80 bg-primary-500/20 blur-[100px] rounded-full -z-10 animate-pulse" />
@@ -243,7 +179,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
                 <Skeleton className="h-2 w-3/4 rounded" />
               </div>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
       </Container>
     </Section>

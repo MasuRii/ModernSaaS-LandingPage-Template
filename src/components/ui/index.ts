@@ -74,6 +74,8 @@ export { IntegrationLogo } from './IntegrationLogo';
 export type { IntegrationLogoProps } from './IntegrationLogo';
 
 // Theme & Navigation
+export { ProductMockup } from './ProductMockup';
+export type { ProductMockupProps } from './ProductMockup';
 export { ThemeToggle } from './ThemeToggle';
 export { MobileNavigation } from './MobileNavigation';
 export type { MobileNavigationProps } from './MobileNavigation';

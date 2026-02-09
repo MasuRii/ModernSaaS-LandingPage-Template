@@ -350,6 +350,12 @@ describe('Accessibility', () => {
             const results = await axe(container);
             expect(results).toHaveNoViolations();
           });
+
+          it('FinalCTA should have no accessibility violations', async () => {
+            const { container } = render(<Sections.FinalCTA />, { wrapper });
+            const results = await axe(container);
+            expect(results).toHaveNoViolations();
+          });
         });
       });
     });

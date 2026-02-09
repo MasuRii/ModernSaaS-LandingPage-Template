@@ -3,6 +3,7 @@ import * as UI from '@/components/ui';
 import {
   FAQSection,
   FeaturesOverview,
+  FinalCTA,
   Hero,
   HowItWorks,
   IntegrationsSection,
@@ -409,6 +410,11 @@ describe('Component Snapshots', () => {
 
         it('FAQSection matches snapshot', () => {
           const { asFragment } = render(<FAQSection />, { wrapper });
+          expect(asFragment()).toMatchSnapshot();
+        });
+
+        it('FinalCTA matches snapshot', () => {
+          const { asFragment } = render(<FinalCTA />, { wrapper });
           expect(asFragment()).toMatchSnapshot();
         });
       });

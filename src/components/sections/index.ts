@@ -62,3 +62,5 @@ export { RelatedPosts } from './RelatedPosts';
 export type { RelatedPostsProps } from './RelatedPosts';
 export { ContactInfo } from './ContactInfo';
 export type { ContactInfoProps } from './ContactInfo';
+export { ContactHero } from './ContactHero';
+export type { ContactHeroProps } from './ContactHero';

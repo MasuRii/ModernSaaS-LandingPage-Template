@@ -56,3 +56,5 @@ export { InvestorsSection } from './InvestorsSection';
 export type { InvestorsSectionProps } from './InvestorsSection';
 export { CareersCTA } from './CareersCTA';
 export type { CareersCTAProps } from './CareersCTA';
+export { BlogHero } from './BlogHero';
+export { BlogNewsletter } from './BlogNewsletter';

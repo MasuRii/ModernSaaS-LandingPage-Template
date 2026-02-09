@@ -6,19 +6,19 @@
 
 export const testRoutes = {
   home: '/',
-  features: '/features',
-  pricing: '/pricing',
-  about: '/about',
-  blog: '/blog',
-  contact: '/contact',
-  changelog: '/changelog',
-  roadmap: '/roadmap',
-  privacy: '/privacy',
-  terms: '/terms',
-  signup: '/auth/signup',
-  login: '/auth/login',
-  dashboard: '/dashboard',
-  settings: '/settings',
+  features: '/features/',
+  pricing: '/pricing/',
+  about: '/about/',
+  blog: '/blog/',
+  contact: '/contact/',
+  changelog: '/changelog/',
+  roadmap: '/roadmap/',
+  privacy: '/privacy/',
+  terms: '/terms/',
+  signup: '/auth/signup/',
+  login: '/auth/login/',
+  dashboard: '/dashboard/',
+  settings: '/settings/',
 } as const;
 
 export const selectors = {

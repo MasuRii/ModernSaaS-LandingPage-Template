@@ -20,15 +20,16 @@ test.describe('Homepage', () => {
 
   test.describe('Hero Section', () => {
     test('displays headline and description', async ({ page }) => {
-      const headline = page.locator('h1');
+      const headline = page.locator('main h1').first();
       await expect(headline).toBeVisible();
       await expect(headline).not.toBeEmpty();
     });
 
     test('has primary CTA button', async ({ page }) => {
       const primaryCta = page
-        .locator('a, button')
-        .filter({ hasText: /get started|start free trial/i });
+        .locator('main a, main button')
+        .filter({ hasText: /get started|start free trial/i })
+        .first();
       await expect(primaryCta).toBeVisible();
     });
 
@@ -45,7 +46,7 @@ test.describe('Homepage', () => {
 
   test.describe('Navigation', () => {
     test('header is visible', async ({ page }) => {
-      const header = page.locator('header');
+      const header = page.locator('header[aria-label="Site header"]');
       await expect(header).toBeVisible();
     });
 
@@ -81,7 +82,7 @@ test.describe('Homepage', () => {
       await page.reload();
       await page.waitForLoadState('networkidle');
 
-      const headline = page.locator('h1');
+      const headline = page.locator('main h1').first();
       await expect(headline).toBeVisible();
     });
 
@@ -90,7 +91,7 @@ test.describe('Homepage', () => {
       await page.reload();
       await page.waitForLoadState('networkidle');
 
-      const headline = page.locator('h1');
+      const headline = page.locator('main h1').first();
       await expect(headline).toBeVisible();
     });
 
@@ -99,7 +100,7 @@ test.describe('Homepage', () => {
       await page.reload();
       await page.waitForLoadState('networkidle');
 
-      const headline = page.locator('h1');
+      const headline = page.locator('main h1').first();
       await expect(headline).toBeVisible();
     });
   });
@@ -117,7 +118,7 @@ test.describe('Homepage', () => {
 
     test('has proper charset', async ({ page }) => {
       const charset = page.locator('meta[charset]');
-      await expect(charset).toHaveAttribute('charset', 'UTF-8');
+      await expect(charset).toHaveAttribute('charset', /utf-8/i);
     });
   });
 

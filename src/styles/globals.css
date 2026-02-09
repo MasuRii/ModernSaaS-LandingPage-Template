@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import './tokens.css';
+@import './prose.css';
 
 /* ============================================
    ModernSaaS Landing Page - Global Styles
@@ -115,7 +116,9 @@ cite {
 
   body {
     @apply bg-bg-primary text-text-primary font-sans;
-    font-feature-settings: 'rlig' 1, 'calt' 1;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
   }
 
   /* Selection Styles */
@@ -152,7 +155,7 @@ cite {
   /* ========================================
      PRIMITIVE COLOR TOKENS
      ======================================== */
-  
+
   /* Primary - Trust Blue */
   --color-primary-50: var(--primitive-color-primary-50);
   --color-primary-100: var(--primitive-color-primary-100);
@@ -257,7 +260,7 @@ cite {
   /* ========================================
      SEMANTIC THEME-AWARE TOKENS
      ======================================== */
-  
+
   /* Background Colors */
   --color-bg-primary: var(--color-bg-primary);
   --color-bg-secondary: var(--color-bg-secondary);
@@ -398,15 +401,29 @@ cite {
 
   /* Gradient Mesh Background */
   .gradient-mesh {
-    background: radial-gradient(ellipse at top, var(--color-primary-100), transparent 50%),
+    background:
+      radial-gradient(ellipse at top, var(--color-primary-100), transparent 50%),
       radial-gradient(ellipse at bottom right, var(--color-secondary-100), transparent 50%),
       radial-gradient(ellipse at bottom left, var(--color-accent-100), transparent 50%);
   }
 
   .dark .gradient-mesh {
-    background: radial-gradient(ellipse at top, rgb(from var(--color-primary-900) r g b / 30%), transparent 50%),
-      radial-gradient(ellipse at bottom right, rgb(from var(--color-secondary-900) r g b / 30%), transparent 50%),
-      radial-gradient(ellipse at bottom left, rgb(from var(--color-accent-900) r g b / 30%), transparent 50%);
+    background:
+      radial-gradient(
+        ellipse at top,
+        rgb(from var(--color-primary-900) r g b / 30%),
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse at bottom right,
+        rgb(from var(--color-secondary-900) r g b / 30%),
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse at bottom left,
+        rgb(from var(--color-accent-900) r g b / 30%),
+        transparent 50%
+      );
   }
 
   /* Container Utilities */

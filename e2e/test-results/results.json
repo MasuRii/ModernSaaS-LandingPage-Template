@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-desktop",
         "name": "chromium-desktop",
@@ -34,7 +34,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "firefox-desktop",
         "name": "firefox-desktop",
@@ -48,7 +48,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "webkit-desktop",
         "name": "webkit-desktop",
@@ -62,7 +62,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-large-desktop",
         "name": "chromium-large-desktop",
@@ -76,7 +76,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-standard-desktop",
         "name": "chromium-standard-desktop",
@@ -90,7 +90,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-small-desktop",
         "name": "chromium-small-desktop",
@@ -104,7 +104,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-tablet",
         "name": "chromium-tablet",
@@ -118,7 +118,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-mobile-large",
         "name": "chromium-mobile-large",
@@ -132,7 +132,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-mobile-medium",
         "name": "chromium-mobile-medium",
@@ -146,7 +146,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-mobile-small",
         "name": "chromium-mobile-small",
@@ -160,7 +160,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-mobile-xs",
         "name": "chromium-mobile-xs",
@@ -174,7 +174,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-dark-mode",
         "name": "chromium-dark-mode",
@@ -188,7 +188,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-high-contrast",
         "name": "chromium-high-contrast",
@@ -224,7 +224,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.58.2",
-    "workers": 1,
+    "workers": 4,
     "webServer": {
       "command": "bun run dev",
       "url": "http://localhost:4321",
@@ -234,424 +234,255 @@
   },
   "suites": [
     {
-      "title": "tests\\contact.spec.ts",
-      "file": "tests/contact.spec.ts",
+      "title": "tests\\additional-pages.spec.ts",
+      "file": "tests/additional-pages.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Contact Page",
-          "file": "tests/contact.spec.ts",
-          "line": 16,
+          "title": "Additional Pages",
+          "file": "tests/additional-pages.spec.ts",
+          "line": 4,
           "column": 6,
-          "specs": [],
-          "suites": [
+          "specs": [
             {
-              "title": "Section Visibility",
-              "file": "tests/contact.spec.ts",
-              "line": 22,
-              "column": 8,
-              "specs": [
+              "title": "Changelog page renders correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "title": "displays hero section with correct title",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
                     {
-                      "timeout": 30000,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2872,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-10T01:01:03.355Z",
                       "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2279,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:14.496Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
+                      "attachments": []
                     }
                   ],
-                  "id": "3e05b955a8511dbd4295-98d4aace6606b9aa93fe",
-                  "file": "tests/contact.spec.ts",
-                  "line": 23,
-                  "column": 5
-                },
-                {
-                  "title": "displays contact form",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1407,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:16.959Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3e05b955a8511dbd4295-3b56c1a34b6c1b7f2168",
-                  "file": "tests/contact.spec.ts",
-                  "line": 29,
-                  "column": 5
-                },
-                {
-                  "title": "displays contact information section",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1424,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:18.383Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3e05b955a8511dbd4295-8acaf894622f69390982",
-                  "file": "tests/contact.spec.ts",
-                  "line": 38,
-                  "column": 5
-                },
-                {
-                  "title": "displays FAQ section",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1388,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:19.820Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3e05b955a8511dbd4295-67e3208c2b3c8dad30d2",
-                  "file": "tests/contact.spec.ts",
-                  "line": 46,
-                  "column": 5
-                },
-                {
-                  "title": "displays map placeholder",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1657,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:21.221Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3e05b955a8511dbd4295-26f5ba1acab8b7cc121e",
-                  "file": "tests/contact.spec.ts",
-                  "line": 51,
-                  "column": 5
+                  "status": "expected"
                 }
-              ]
+              ],
+              "id": "ec9847df64acb76dcf88-74643c23eab6d3812ab1",
+              "file": "tests/additional-pages.spec.ts",
+              "line": 5,
+              "column": 3
             },
             {
-              "title": "Form Validation and Submission",
-              "file": "tests/contact.spec.ts",
-              "line": 57,
-              "column": 8,
-              "specs": [
+              "title": "Roadmap page renders correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "title": "shows validation errors for empty required fields",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
                     {
-                      "timeout": 30000,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3064,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-10T01:01:03.203Z",
                       "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1480,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:22.891Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
+                      "attachments": []
                     }
                   ],
-                  "id": "3e05b955a8511dbd4295-d2b4e6b6d395ff67a324",
-                  "file": "tests/contact.spec.ts",
-                  "line": 58,
-                  "column": 5
-                },
-                {
-                  "title": "shows error for invalid email format",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1468,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:24.384Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3e05b955a8511dbd4295-047200b8630cdcac1a77",
-                  "file": "tests/contact.spec.ts",
-                  "line": 68,
-                  "column": 5
-                },
-                {
-                  "title": "successfully submits form and shows success state",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3502,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:25.865Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3e05b955a8511dbd4295-19d88fa90eac0efc9182",
-                  "file": "tests/contact.spec.ts",
-                  "line": 76,
-                  "column": 5
+                  "status": "expected"
                 }
-              ]
+              ],
+              "id": "ec9847df64acb76dcf88-4a72cf3d64ba6ae2c710",
+              "file": "tests/additional-pages.spec.ts",
+              "line": 16,
+              "column": 3
             },
             {
-              "title": "Contact Info and Demo Modal",
-              "file": "tests/contact.spec.ts",
-              "line": 104,
-              "column": 8,
-              "specs": [
+              "title": "Privacy Policy page renders correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "title": "triggers demo modal when clicking contact cards",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
                     {
-                      "timeout": 30000,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2978,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-10T01:01:03.173Z",
                       "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1754,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:29.383Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
+                      "attachments": []
                     }
                   ],
-                  "id": "3e05b955a8511dbd4295-c725c7b99e2acda871df",
-                  "file": "tests/contact.spec.ts",
-                  "line": 105,
-                  "column": 5
-                },
-                {
-                  "title": "triggers demo modal when clicking social links",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 1537,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:31.151Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "3e05b955a8511dbd4295-4513715514df8b5b141b",
-                  "file": "tests/contact.spec.ts",
-                  "line": 118,
-                  "column": 5
+                  "status": "expected"
                 }
-              ]
+              ],
+              "id": "ec9847df64acb76dcf88-93619083bf73c7d03da7",
+              "file": "tests/additional-pages.spec.ts",
+              "line": 26,
+              "column": 3
             },
             {
-              "title": "Responsive Behavior",
-              "file": "tests/contact.spec.ts",
-              "line": 129,
-              "column": 8,
-              "specs": [
+              "title": "Terms of Service page renders correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "title": "displays correctly on mobile",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
                     {
-                      "timeout": 30000,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2930,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-10T01:01:03.298Z",
                       "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 2135,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-10T00:03:32.702Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
+                      "attachments": []
                     }
                   ],
-                  "id": "3e05b955a8511dbd4295-72dc08d067deab1283aa",
-                  "file": "tests/contact.spec.ts",
-                  "line": 130,
-                  "column": 5
+                  "status": "expected"
                 }
-              ]
+              ],
+              "id": "ec9847df64acb76dcf88-b6e4db9a7e9ec76c3100",
+              "file": "tests/additional-pages.spec.ts",
+              "line": 36,
+              "column": 3
+            },
+            {
+              "title": "404 page renders correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1602,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-10T01:01:06.531Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ec9847df64acb76dcf88-a13a3b274d4bc4549448",
+              "file": "tests/additional-pages.spec.ts",
+              "line": 46,
+              "column": 3
+            },
+            {
+              "title": "Login mockup page renders correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1888,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-10T01:01:06.532Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ec9847df64acb76dcf88-dbf7adbdf1205781221f",
+              "file": "tests/additional-pages.spec.ts",
+              "line": 56,
+              "column": 3
+            },
+            {
+              "title": "Signup mockup page renders correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1524,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-10T01:01:06.949Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ec9847df64acb76dcf88-65bde281f5dd43ee48c0",
+              "file": "tests/additional-pages.spec.ts",
+              "line": 71,
+              "column": 3
             }
           ]
         }
@@ -660,9 +491,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-10T00:03:07.688Z",
-    "duration": 27412.722,
-    "expected": 11,
+    "startTime": "2026-02-10T01:00:58.518Z",
+    "duration": 11370.408,
+    "expected": 7,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -15,8 +15,8 @@ export const testRoutes = {
   roadmap: '/roadmap/',
   privacy: '/privacy/',
   terms: '/terms/',
-  signup: '/auth/signup/',
-  login: '/auth/login/',
+  signup: '/signup/',
+  login: '/login/',
   dashboard: '/dashboard/',
   settings: '/settings/',
 } as const;

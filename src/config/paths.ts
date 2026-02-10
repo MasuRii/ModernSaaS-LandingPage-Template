@@ -181,6 +181,7 @@ export const ROUTES = {
   ABOUT: '/about/',
   CAREERS: '/careers/',
   CONTACT: '/contact/',
+  SUPPORT: '/support/',
   BLOG: '/blog/',
 
   // Blog
@@ -226,7 +227,7 @@ export const NAVIGATION = {
     ],
     resources: [
       { label: 'Documentation', href: ROUTES.FEATURES },
-      { label: 'Help Center', href: ROUTES.CONTACT },
+      { label: 'Help Center', href: ROUTES.SUPPORT },
       { label: 'API Reference', href: ROUTES.FEATURES },
     ],
     legal: [

@@ -330,7 +330,7 @@ export const siteNavigation = {
       title: 'Resources',
       links: [
         { label: 'Documentation', href: ROUTES.FEATURES },
-        { label: 'Help Center', href: ROUTES.CONTACT },
+        { label: 'Help Center', href: ROUTES.SUPPORT },
         { label: 'API Reference', href: ROUTES.FEATURES },
         { label: 'Status', href: footer.statusPageUrl, external: true },
       ],
@@ -391,6 +391,10 @@ export const pageSEO = {
   contact: {
     title: 'Contact',
     description: `Get in touch with the ${company.name} team. We're here to help with any questions.`,
+  },
+  support: {
+    title: 'Support',
+    description: `Find help resources, documentation, and common answers in the ${company.name} Help Center.`,
   },
   blog: {
     title: 'Blog',

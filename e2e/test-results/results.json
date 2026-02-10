@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-desktop",
         "name": "chromium-desktop",
@@ -34,7 +34,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "firefox-desktop",
         "name": "firefox-desktop",
@@ -48,7 +48,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "webkit-desktop",
         "name": "webkit-desktop",
@@ -62,7 +62,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-large-desktop",
         "name": "chromium-large-desktop",
@@ -76,7 +76,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-standard-desktop",
         "name": "chromium-standard-desktop",
@@ -90,7 +90,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-small-desktop",
         "name": "chromium-small-desktop",
@@ -104,7 +104,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-tablet",
         "name": "chromium-tablet",
@@ -118,7 +118,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-mobile-large",
         "name": "chromium-mobile-large",
@@ -132,7 +132,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-mobile-medium",
         "name": "chromium-mobile-medium",
@@ -146,7 +146,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-mobile-small",
         "name": "chromium-mobile-small",
@@ -160,7 +160,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-mobile-xs",
         "name": "chromium-mobile-xs",
@@ -174,7 +174,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-dark-mode",
         "name": "chromium-dark-mode",
@@ -188,7 +188,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium-high-contrast",
         "name": "chromium-high-contrast",
@@ -224,7 +224,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.58.2",
-    "workers": 4,
+    "workers": 1,
     "webServer": {
       "command": "bun run dev",
       "url": "http://localhost:4321",
@@ -234,23 +234,23 @@
   },
   "suites": [
     {
-      "title": "tests\\pricing.spec.ts",
-      "file": "tests/pricing.spec.ts",
+      "title": "tests\\contact.spec.ts",
+      "file": "tests/contact.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Pricing Page",
-          "file": "tests/pricing.spec.ts",
-          "line": 18,
+          "title": "Contact Page",
+          "file": "tests/contact.spec.ts",
+          "line": 16,
           "column": 6,
           "specs": [],
           "suites": [
             {
               "title": "Section Visibility",
-              "file": "tests/pricing.spec.ts",
-              "line": 24,
+              "file": "tests/contact.spec.ts",
+              "line": 22,
               "column": 8,
               "specs": [
                 {
@@ -269,12 +269,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3637,
+                          "duration": 2279,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-09T21:44:52.306Z",
+                          "startTime": "2026-02-10T00:03:14.496Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -282,13 +282,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e35ca0bb4a853f7d832e-84747d2ce71f4c0759a0",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 25,
+                  "id": "3e05b955a8511dbd4295-98d4aace6606b9aa93fe",
+                  "file": "tests/contact.spec.ts",
+                  "line": 23,
                   "column": 5
                 },
                 {
-                  "title": "displays pricing tiers grid",
+                  "title": "displays contact form",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -300,15 +300,15 @@
                       "projectName": "chromium-desktop",
                       "results": [
                         {
-                          "workerIndex": 1,
-                          "parallelIndex": 1,
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4149,
+                          "duration": 1407,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-09T21:44:52.270Z",
+                          "startTime": "2026-02-10T00:03:16.959Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -316,13 +316,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e35ca0bb4a853f7d832e-1e93d00727fca640cad0",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 31,
+                  "id": "3e05b955a8511dbd4295-3b56c1a34b6c1b7f2168",
+                  "file": "tests/contact.spec.ts",
+                  "line": 29,
                   "column": 5
                 },
                 {
-                  "title": "displays money-back guarantee callout",
+                  "title": "displays contact information section",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -334,15 +334,15 @@
                       "projectName": "chromium-desktop",
                       "results": [
                         {
-                          "workerIndex": 2,
-                          "parallelIndex": 2,
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4250,
+                          "duration": 1424,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-09T21:44:52.244Z",
+                          "startTime": "2026-02-10T00:03:18.383Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -350,43 +350,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e35ca0bb4a853f7d832e-9bcccb8b34fe921ad759",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 39,
-                  "column": 5
-                },
-                {
-                  "title": "displays comparison table",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 3,
-                          "parallelIndex": 3,
-                          "status": "passed",
-                          "duration": 4032,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-09T21:44:52.285Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e35ca0bb4a853f7d832e-c250aebccaf8f5655df5",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 44,
+                  "id": "3e05b955a8511dbd4295-8acaf894622f69390982",
+                  "file": "tests/contact.spec.ts",
+                  "line": 38,
                   "column": 5
                 },
                 {
@@ -405,12 +371,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3083,
+                          "duration": 1388,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-09T21:44:56.511Z",
+                          "startTime": "2026-02-10T00:03:19.820Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -418,13 +384,13 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e35ca0bb4a853f7d832e-452ef370ff20bf7e4a12",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 49,
+                  "id": "3e05b955a8511dbd4295-67e3208c2b3c8dad30d2",
+                  "file": "tests/contact.spec.ts",
+                  "line": 46,
                   "column": 5
                 },
                 {
-                  "title": "displays enterprise contact section",
+                  "title": "displays map placeholder",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -436,15 +402,15 @@
                       "projectName": "chromium-desktop",
                       "results": [
                         {
-                          "workerIndex": 3,
-                          "parallelIndex": 3,
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3160,
+                          "duration": 1657,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-09T21:44:56.612Z",
+                          "startTime": "2026-02-10T00:03:21.221Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -452,21 +418,21 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e35ca0bb4a853f7d832e-c89987fbd4dddd57b810",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 54,
+                  "id": "3e05b955a8511dbd4295-26f5ba1acab8b7cc121e",
+                  "file": "tests/contact.spec.ts",
+                  "line": 51,
                   "column": 5
                 }
               ]
             },
             {
-              "title": "Billing Toggle Functionality",
-              "file": "tests/pricing.spec.ts",
-              "line": 60,
+              "title": "Form Validation and Submission",
+              "file": "tests/contact.spec.ts",
+              "line": 57,
               "column": 8,
               "specs": [
                 {
-                  "title": "toggles between monthly and annual pricing",
+                  "title": "shows validation errors for empty required fields",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -478,15 +444,15 @@
                       "projectName": "chromium-desktop",
                       "results": [
                         {
-                          "workerIndex": 1,
-                          "parallelIndex": 1,
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3186,
+                          "duration": 1480,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-09T21:44:56.707Z",
+                          "startTime": "2026-02-10T00:03:22.891Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -494,21 +460,89 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e35ca0bb4a853f7d832e-1150bb25442b0f5ba710",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 61,
+                  "id": "3e05b955a8511dbd4295-d2b4e6b6d395ff67a324",
+                  "file": "tests/contact.spec.ts",
+                  "line": 58,
+                  "column": 5
+                },
+                {
+                  "title": "shows error for invalid email format",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1468,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-10T00:03:24.384Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3e05b955a8511dbd4295-047200b8630cdcac1a77",
+                  "file": "tests/contact.spec.ts",
+                  "line": 68,
+                  "column": 5
+                },
+                {
+                  "title": "successfully submits form and shows success state",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3502,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-10T00:03:25.865Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3e05b955a8511dbd4295-19d88fa90eac0efc9182",
+                  "file": "tests/contact.spec.ts",
+                  "line": 76,
                   "column": 5
                 }
               ]
             },
             {
-              "title": "FAQ Interaction",
-              "file": "tests/pricing.spec.ts",
-              "line": 77,
+              "title": "Contact Info and Demo Modal",
+              "file": "tests/contact.spec.ts",
+              "line": 104,
               "column": 8,
               "specs": [
                 {
-                  "title": "expands FAQ item on click",
+                  "title": "triggers demo modal when clicking contact cards",
                   "ok": true,
                   "tags": [],
                   "tests": [
@@ -520,15 +554,15 @@
                       "projectName": "chromium-desktop",
                       "results": [
                         {
-                          "workerIndex": 2,
-                          "parallelIndex": 2,
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 3025,
+                          "duration": 1754,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-09T21:44:56.717Z",
+                          "startTime": "2026-02-10T00:03:29.383Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -536,17 +570,51 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e35ca0bb4a853f7d832e-1fc498904837753bdf8c",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 78,
+                  "id": "3e05b955a8511dbd4295-c725c7b99e2acda871df",
+                  "file": "tests/contact.spec.ts",
+                  "line": 105,
+                  "column": 5
+                },
+                {
+                  "title": "triggers demo modal when clicking social links",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium-desktop",
+                      "projectName": "chromium-desktop",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1537,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-02-10T00:03:31.151Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "3e05b955a8511dbd4295-4513715514df8b5b141b",
+                  "file": "tests/contact.spec.ts",
+                  "line": 118,
                   "column": 5
                 }
               ]
             },
             {
               "title": "Responsive Behavior",
-              "file": "tests/pricing.spec.ts",
-              "line": 93,
+              "file": "tests/contact.spec.ts",
+              "line": 129,
               "column": 8,
               "specs": [
                 {
@@ -565,12 +633,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 4110,
+                          "duration": 2135,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-02-09T21:44:59.717Z",
+                          "startTime": "2026-02-10T00:03:32.702Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -578,119 +646,9 @@
                       "status": "expected"
                     }
                   ],
-                  "id": "e35ca0bb4a853f7d832e-adb99371bcbd333df06b",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 94,
-                  "column": 5
-                },
-                {
-                  "title": "comparison table is scrollable on mobile",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 2,
-                          "parallelIndex": 2,
-                          "status": "passed",
-                          "duration": 3004,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-09T21:44:59.783Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e35ca0bb4a853f7d832e-82f2355e9cad5827947c",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 110,
-                  "column": 5
-                }
-              ]
-            },
-            {
-              "title": "SEO and Meta",
-              "file": "tests/pricing.spec.ts",
-              "line": 121,
-              "column": 8,
-              "specs": [
-                {
-                  "title": "has proper page title",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 3,
-                          "parallelIndex": 3,
-                          "status": "passed",
-                          "duration": 3025,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-09T21:44:59.802Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e35ca0bb4a853f7d832e-5c12a222bceb12fb7b86",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 122,
-                  "column": 5
-                },
-                {
-                  "title": "has meta description",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 30000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 1,
-                          "parallelIndex": 1,
-                          "status": "passed",
-                          "duration": 2998,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-09T21:44:59.931Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "e35ca0bb4a853f7d832e-8bfda46f9eac7bb1bf34",
-                  "file": "tests/pricing.spec.ts",
-                  "line": 126,
+                  "id": "3e05b955a8511dbd4295-72dc08d067deab1283aa",
+                  "file": "tests/contact.spec.ts",
+                  "line": 130,
                   "column": 5
                 }
               ]
@@ -702,9 +660,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-09T21:44:45.159Z",
-    "duration": 18968.338,
-    "expected": 12,
+    "startTime": "2026-02-10T00:03:07.688Z",
+    "duration": 27412.722,
+    "expected": 11,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

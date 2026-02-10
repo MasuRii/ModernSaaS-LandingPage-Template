@@ -16,6 +16,7 @@ import { company } from '@/config/site';
 import { ROUTES } from '@/config/paths';
 import { PRESETS, STAGGER } from '@/config/animation';
 import { cn } from '@/utils/cn';
+import { useReducedMotion } from '@/utils/reducedMotion';
 
 /**
  * Props for the Hero component
@@ -40,6 +41,8 @@ export interface HeroProps {
  * - Entrance animations for all elements
  */
 export const Hero: React.FC<HeroProps> = ({ className }) => {
+  const { prefersReducedMotion } = useReducedMotion();
+
   return (
     <Section
       className={cn(
@@ -63,7 +66,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content Column */}
           <motion.div
-            initial="initial"
+            initial={prefersReducedMotion ? false : 'initial'}
             animate="animate"
             variants={
               {
@@ -152,8 +155,10 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               variant="laptop"
               loading="eager"
               fetchPriority="high"
-              variants={PRESETS.fadeInRight as unknown as Variants}
+              variants={PRESETS.mockupEntrance as unknown as Variants}
               className="z-10"
+              initial={prefersReducedMotion ? false : 'initial'}
+              animate="animate"
             />
 
             {/* Decorative background effects */}
@@ -162,15 +167,23 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
 
             {/* Floating visual elements (decorations) */}
             <motion.div
-              animate={{
-                y: [0, 20, 0],
-                rotate: [0, 5, 0],
-              }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: 'easeInOut',
-              }}
+              animate={
+                prefersReducedMotion
+                  ? {}
+                  : {
+                      y: [0, 20, 0],
+                      rotate: [0, 5, 0],
+                    }
+              }
+              transition={
+                prefersReducedMotion
+                  ? {}
+                  : {
+                      duration: 5,
+                      repeat: Infinity,
+                      ease: 'easeInOut',
+                    }
+              }
               className="absolute -bottom-6 -right-6 w-32 h-32 bg-bg-primary border border-border-default rounded-xl shadow-xl z-20 flex items-center justify-center p-4 hidden md:flex"
             >
               <div className="space-y-2 w-full">

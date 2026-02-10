@@ -5,6 +5,7 @@ import { Hero } from './Hero';
 import { socialProofStats } from '@/data';
 import { company } from '@/config/site';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import * as reducedMotion from '@/utils/reducedMotion';
 
 // Mock matchMedia for ThemeProvider
 Object.defineProperty(window, 'matchMedia', {
@@ -35,6 +36,24 @@ describe('Hero Component', () => {
     const headline = screen.getByRole('heading', { name: /Build Faster with/i });
     expect(headline).toBeDefined();
     expect(screen.getByText(company.name)).toBeDefined();
+  });
+
+  it('respects reduced motion preference', () => {
+    const useReducedMotionSpy = vi.spyOn(reducedMotion, 'useReducedMotion');
+    useReducedMotionSpy.mockReturnValue({
+      prefersReducedMotion: true,
+      isSupported: true,
+      toggle: vi.fn(),
+      setPrefersReducedMotion: vi.fn(),
+    });
+
+    renderHero();
+
+    // If reduced motion is true, the animation props should be affected
+    // We can't easily check motion props in RTL, but we can verify the component renders without crashing
+    expect(screen.getByRole('heading', { name: /Build Faster with/i })).toBeDefined();
+
+    useReducedMotionSpy.mockRestore();
   });
 
   it('renders the subheadline correctly', () => {

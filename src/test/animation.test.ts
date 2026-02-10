@@ -34,6 +34,7 @@ describe('Animation Library Setup', () => {
       expect(PRESETS.fadeInUp).toBeDefined();
       expect(PRESETS.scaleIn).toBeDefined();
       expect(PRESETS.heroEntrance).toBeDefined();
+      expect(PRESETS.mockupEntrance).toBeDefined();
       expect(PRESETS.cardHover).toBeDefined();
     });
 
@@ -45,6 +46,14 @@ describe('Animation Library Setup', () => {
       expect(preset.animate).toHaveProperty('y');
       expect(preset.transition).toHaveProperty('duration');
       expect(preset.transition).toHaveProperty('ease');
+    });
+
+    it('mockupEntrance should have scale and x position', () => {
+      const preset = PRESETS.mockupEntrance!;
+      expect(preset.initial).toHaveProperty('scale');
+      expect(preset.initial).toHaveProperty('x');
+      expect(preset.animate).toHaveProperty('scale');
+      expect(preset.animate).toHaveProperty('x');
     });
 
     it('should export stagger configurations', () => {

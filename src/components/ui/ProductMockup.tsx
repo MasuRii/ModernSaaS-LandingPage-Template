@@ -2,6 +2,7 @@ import * as React from 'react';
 import { type HTMLMotionProps, type Variants, motion } from 'framer-motion';
 import { cn } from '@/utils/cn';
 import { getAssetPath } from '@/config/paths';
+import { useReducedMotion } from '@/utils/reducedMotion';
 
 /**
  * Props for the ProductMockup component
@@ -57,6 +58,7 @@ export const ProductMockup: React.FC<ProductMockupProps> = ({
   variants,
   ...props
 }) => {
+  const { prefersReducedMotion } = useReducedMotion();
   const resolvedSrc = src ? (src.startsWith('http') ? src : getAssetPath(src)) : null;
 
   // Frame styles based on variant
@@ -77,14 +79,14 @@ export const ProductMockup: React.FC<ProductMockupProps> = ({
     >
       <motion.div
         animate={
-          floating
+          floating && !prefersReducedMotion
             ? {
                 y: [0, -12, 0],
               }
             : {}
         }
         transition={
-          floating
+          floating && !prefersReducedMotion
             ? {
                 duration: 6,
                 repeat: Infinity,

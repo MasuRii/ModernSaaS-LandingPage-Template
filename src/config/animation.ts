@@ -147,6 +147,13 @@ export const PRESETS: Record<string, AnimationPreset> = {
     transition: { duration: DURATIONS.slower, ease: EASINGS.easeOut },
   },
 
+  /** Mockup entrance - scale and fade */
+  mockupEntrance: {
+    initial: { opacity: 0, scale: 0.9, x: 20 },
+    animate: { opacity: 1, scale: 1, x: 0 },
+    transition: { duration: DURATIONS.slower, ease: EASINGS.easeOut },
+  },
+
   /** Card hover - subtle lift */
   cardHover: {
     initial: { y: 0, boxShadow: '0 1px 3px rgba(0,0,0,0.1)' },

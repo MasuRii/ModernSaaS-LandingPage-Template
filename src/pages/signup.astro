@@ -1,0 +1,61 @@
+---
+import '../styles/globals.css';
+import { MinimalHeader } from '../components/layout/Header';
+import { MinimalFooter } from '../components/layout/Footer';
+import SignupForm from '../components/forms/SignupForm';
+import { GradientBackground } from '../components/ui/GradientBackground';
+import { getThemeScript } from '../components/ThemeProvider';
+import { pageSEO, company } from '../config/site';
+
+const seo = pageSEO.signup || {
+  title: 'Sign Up',
+  description: 'Create your account and start building with ModernSaaS today.',
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{seo.title} | {company.name}</title>
+    <meta name="description" content={seo.description} />
+    <!-- Theme script to prevent flash of wrong theme -->
+    <script is:inline set:html={getThemeScript('system')} />
+  </head>
+  <body class="min-h-screen bg-bg-primary text-text-primary antialiased">
+    <!-- Skip to content link for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-600 focus:text-white focus:rounded-lg focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 transition-all"
+    >
+      Skip to content
+    </a>
+
+    <div class="relative min-h-screen flex flex-col">
+      {/* Background */}
+      <div class="absolute inset-0 -z-10 overflow-hidden">
+        <GradientBackground variant="subtle" intensity={0.5} client:load />
+      </div>
+
+      {/* Header */}
+      <MinimalHeader />
+
+      {/* Main Content */}
+      <main
+        id="main-content"
+        class="flex-1 flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8"
+        tabindex="-1"
+        role="main"
+        aria-label="Main content"
+      >
+        <SignupForm client:load />
+      </main>
+
+      {/* Footer */}
+      <MinimalFooter />
+    </div>
+  </body>
+</html>

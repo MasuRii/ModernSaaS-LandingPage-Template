@@ -11,3 +11,4 @@ export * from './team';
 export * from './integrations';
 export * from './blog';
 export * from './how-it-works';
+export * from './changelog';

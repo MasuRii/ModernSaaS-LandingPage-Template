@@ -71,3 +71,7 @@ export type { SupportCategoriesProps } from './SupportCategories';
 export { SupportArticles } from './SupportArticles';
 export type { SupportArticlesProps } from './SupportArticles';
 export { SupportCTA } from './SupportCTA';
+export { ChangelogHero } from './ChangelogHero';
+export type { ChangelogHeroProps } from './ChangelogHero';
+export { ChangelogFeed } from './ChangelogFeed';
+export type { ChangelogFeedProps } from './ChangelogFeed';

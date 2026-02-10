@@ -45,6 +45,89 @@ describe('Contact Page Components', () => {
     expect(screen.getByRole('button', { name: /Send Message/i })).toBeDefined();
   });
 
+  it('shows validation errors for empty fields on submit', async () => {
+    const { userEvent } = await import('@testing-library/user-event');
+    const user = userEvent.setup();
+    render(<ContactForm />, { wrapper });
+
+    const submitButton = screen.getByRole('button', { name: /Send Message/i });
+    await user.click(submitButton);
+
+    expect(await screen.findByText(/Name is required/i)).toBeDefined();
+    expect(await screen.findByText(/Email is required/i)).toBeDefined();
+    expect(await screen.findByText(/Please select an inquiry type/i)).toBeDefined();
+    expect(await screen.findByText(/Message is required/i)).toBeDefined();
+  });
+
+  it('shows error for invalid email format', async () => {
+    const { userEvent } = await import('@testing-library/user-event');
+    const user = userEvent.setup();
+    render(<ContactForm />, { wrapper });
+
+    const emailInput = screen.getByLabelText(/Email Address/i);
+    await user.type(emailInput, 'invalid-email');
+
+    const submitButton = screen.getByRole('button', { name: /Send Message/i });
+    await user.click(submitButton);
+
+    expect(await screen.findByText(/Please enter a valid email address/i)).toBeDefined();
+  });
+
+  it('shows success state after successful submission', async () => {
+    const { userEvent } = await import('@testing-library/user-event');
+    const user = userEvent.setup();
+    render(<ContactForm />, { wrapper });
+
+    await user.type(screen.getByLabelText(/Full Name/i), 'John Doe');
+    await user.type(screen.getByLabelText(/Email Address/i), 'john@example.com');
+    await user.selectOptions(screen.getByLabelText(/Inquiry Type/i), 'general');
+    await user.type(
+      screen.getByLabelText(/Message/i),
+      'Hello, this is a test message of sufficient length.',
+    );
+
+    const submitButton = screen.getByRole('button', { name: /Send Message/i });
+    await user.click(submitButton);
+
+    // Should show loading state initially
+    expect(screen.getByRole('button', { name: /Send Message/i })).toHaveAttribute(
+      'aria-busy',
+      'true',
+    );
+
+    // After 1.5s delay (mocked implicitly by findByText)
+    expect(await screen.findByText(/Thank you!/i, {}, { timeout: 2000 })).toBeDefined();
+    expect(screen.getByText(/Your message has been sent successfully/i)).toBeDefined();
+  });
+
+  it('can reset form from success state', async () => {
+    const { userEvent } = await import('@testing-library/user-event');
+    const user = userEvent.setup();
+    render(<ContactForm />, { wrapper });
+
+    // Fill and submit
+    await user.type(screen.getByLabelText(/Full Name/i), 'John Doe');
+    await user.type(screen.getByLabelText(/Email Address/i), 'john@example.com');
+    await user.selectOptions(screen.getByLabelText(/Inquiry Type/i), 'general');
+    await user.type(
+      screen.getByLabelText(/Message/i),
+      'Hello, this is a test message of sufficient length.',
+    );
+    await user.click(screen.getByRole('button', { name: /Send Message/i }));
+
+    // Wait for success
+    const resetButton = await screen.findByRole(
+      'button',
+      { name: /Send another message/i },
+      { timeout: 2000 },
+    );
+    await user.click(resetButton);
+
+    // Should be back to initial state
+    expect(screen.getByLabelText(/Full Name/i)).toHaveValue('');
+    expect(screen.getByRole('button', { name: /Send Message/i })).toBeDefined();
+  });
+
   it('renders ContactInfo correctly', () => {
     render(<ContactInfo />, { wrapper });
     expect(screen.getByText(/Other ways to connect/i)).toBeDefined();

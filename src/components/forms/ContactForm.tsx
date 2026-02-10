@@ -168,6 +168,7 @@ export const ContactForm: React.FC = () => {
       onSubmit={handleSubmit}
       className="space-y-6 rounded-2xl border border-border-default bg-bg-primary p-6 shadow-sm sm:p-8"
       noValidate
+      data-testid="contact-form"
     >
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <Input
@@ -235,6 +236,7 @@ export const ContactForm: React.FC = () => {
         size="lg"
         loading={isSubmitting}
         leftIcon={!isSubmitting && <Send className="h-4 w-4" />}
+        data-testid="contact-submit"
       >
         Send Message
       </Button>

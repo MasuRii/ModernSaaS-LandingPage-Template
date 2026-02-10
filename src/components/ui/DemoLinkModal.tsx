@@ -209,6 +209,7 @@ export const DemoLinkModal = ({
         className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50"
         onClick={onClose}
         aria-hidden="true"
+        data-testid="modal-overlay"
         style={{
           animation: `fadeIn ${animationDuration} ease-out`,
         }}
@@ -222,6 +223,7 @@ export const DemoLinkModal = ({
         aria-modal="true"
         aria-labelledby="demo-link-modal-title"
         aria-describedby="demo-link-modal-description"
+        data-testid="modal-content"
         style={{
           animation: prefersReducedMotion ? undefined : `modalEnter ${animationDuration} ease-out`,
         }}
@@ -235,6 +237,7 @@ export const DemoLinkModal = ({
               onClick={onClose}
               className="absolute top-4 right-4 p-2 text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
               aria-label="Close modal"
+              data-testid="modal-close"
             >
               <X className="w-5 h-5" aria-hidden="true" />
             </button>

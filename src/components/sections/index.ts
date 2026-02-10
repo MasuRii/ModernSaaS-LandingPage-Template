@@ -79,3 +79,7 @@ export { RoadmapHero } from './RoadmapHero';
 export type { RoadmapHeroProps } from './RoadmapHero';
 export { RoadmapTimeline } from './RoadmapTimeline';
 export type { RoadmapTimelineProps } from './RoadmapTimeline';
+export { LegalHero } from './LegalHero';
+export type { LegalHeroProps } from './LegalHero';
+export { LegalContent } from './LegalContent';
+export type { LegalContentProps } from './LegalContent';

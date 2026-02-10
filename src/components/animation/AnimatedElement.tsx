@@ -37,6 +37,8 @@ export interface AnimatedElementProps extends React.HTMLAttributes<HTMLElement> 
   once?: boolean;
   /** Threshold for intersection observer (0-1) */
   threshold?: number;
+  /** Root margin for intersection observer */
+  rootMargin?: string;
   /** Transform origin for scale/rotate animations */
   transformOrigin?: string;
   /** Children to render inside */
@@ -63,6 +65,7 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
       triggerOnView = false,
       once = true,
       threshold = 0.1,
+      rootMargin,
       transformOrigin = 'center',
       children,
       className,
@@ -145,7 +148,11 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
             runAnimation();
             return once ? undefined : () => {};
           },
-          { amount: threshold },
+          {
+            amount: threshold,
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            margin: rootMargin as any,
+          },
         );
 
         return () => cleanup();
@@ -163,6 +170,7 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
       triggerOnView,
       once,
       threshold,
+      rootMargin,
       transformOrigin,
       prefersReducedMotion,
       elementRef,
@@ -225,6 +233,10 @@ export interface StaggerContainerProps extends React.HTMLAttributes<HTMLDivEleme
   triggerOnView?: boolean;
   /** Only animate once */
   once?: boolean;
+  /** Threshold for intersection observer (0-1) */
+  threshold?: number;
+  /** Root margin for intersection observer */
+  rootMargin?: string;
   children: React.ReactNode;
 }
 
@@ -237,6 +249,8 @@ export const StaggerContainer = forwardRef<HTMLDivElement, StaggerContainerProps
       childKeyframes,
       triggerOnView = true,
       once = true,
+      threshold = 0.1,
+      rootMargin,
       children,
       className,
       ...props
@@ -294,7 +308,11 @@ export const StaggerContainer = forwardRef<HTMLDivElement, StaggerContainerProps
       };
 
       if (triggerOnView) {
-        const cleanup = inView(container, runAnimations, { amount: 0.1 });
+        const cleanup = inView(container, runAnimations, {
+          amount: threshold,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          margin: rootMargin as any,
+        });
         return () => cleanup();
       } else {
         runAnimations();

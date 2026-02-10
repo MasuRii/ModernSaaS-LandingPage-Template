@@ -1775,6 +1775,7 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
         >
           <div
             class="relative perspective-1000 z-10"
+            style="opacity: 0; transform: translateX(20px) scale(0.9);"
           >
             <div
               class="relative z-10 w-full shadow-2xl overflow-hidden bg-bg-primary border-border-default aspect-[16/10] rounded-t-xl border-x-[6px] border-t-[6px] md:border-x-[12px] md:border-t-[12px]"
@@ -7972,6 +7973,7 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
         >
           <div
             class="relative perspective-1000 z-10"
+            style="opacity: 0; transform: translateX(20px) scale(0.9);"
           >
             <div
               class="relative z-10 w-full shadow-2xl overflow-hidden bg-bg-primary border-border-default aspect-[16/10] rounded-t-xl border-x-[6px] border-t-[6px] md:border-x-[12px] md:border-t-[12px]"

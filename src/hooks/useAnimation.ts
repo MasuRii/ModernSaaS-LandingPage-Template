@@ -116,7 +116,11 @@ export function useAnimation(
           // Return cleanup if once is false
           return once ? undefined : () => animationRef.current?.stop();
         },
-        { amount: threshold },
+        {
+          amount: threshold,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          margin: options.rootMargin as any,
+        },
       );
 
       return () => cleanup();
@@ -223,7 +227,11 @@ export function useInViewAnimation(
         }
         return undefined;
       },
-      { amount: threshold },
+      {
+        amount: threshold,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        margin: options.rootMargin as any,
+      },
     );
 
     return () => cleanup();
@@ -331,11 +339,19 @@ export function useStaggerAnimation(
     staggerDelay?: number;
     initialDelay?: number;
     triggerOnView?: boolean;
+    threshold?: number;
+    rootMargin?: string;
   } = {},
 ): React.RefObject<HTMLDivElement | null> {
   const containerRef = useRef<HTMLDivElement>(null);
   const { prefersReducedMotion } = useReducedMotion();
-  const { staggerDelay = 0.1, initialDelay = 0, triggerOnView = true } = options;
+  const {
+    staggerDelay = 0.1,
+    initialDelay = 0,
+    triggerOnView = true,
+    threshold = 0.1,
+    rootMargin,
+  } = options;
 
   useEffect(() => {
     if (!containerRef.current) return undefined;
@@ -373,14 +389,26 @@ export function useStaggerAnimation(
     };
 
     if (triggerOnView) {
-      const cleanup = inView(container, runAnimations, { amount: 0.1 });
+      const cleanup = inView(container, runAnimations, {
+        amount: threshold,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        margin: rootMargin as any,
+      });
       return () => cleanup();
     } else {
       runAnimations();
     }
 
     return undefined;
-  }, [keyframesList, staggerDelay, initialDelay, triggerOnView, prefersReducedMotion]);
+  }, [
+    keyframesList,
+    staggerDelay,
+    initialDelay,
+    triggerOnView,
+    threshold,
+    rootMargin,
+    prefersReducedMotion,
+  ]);
 
   return containerRef;
 }

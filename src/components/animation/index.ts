@@ -31,6 +31,13 @@ export {
   type StaggerContainerProps,
 } from './AnimatedElement';
 
+export {
+  ScrollReveal,
+  RevealGrid,
+  type ScrollRevealProps,
+  type RevealGridProps,
+} from './ScrollReveal';
+
 // Hooks (re-exported from hooks directory)
 export {
   useAnimation,

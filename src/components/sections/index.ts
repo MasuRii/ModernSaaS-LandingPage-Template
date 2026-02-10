@@ -75,3 +75,7 @@ export { ChangelogHero } from './ChangelogHero';
 export type { ChangelogHeroProps } from './ChangelogHero';
 export { ChangelogFeed } from './ChangelogFeed';
 export type { ChangelogFeedProps } from './ChangelogFeed';
+export { RoadmapHero } from './RoadmapHero';
+export type { RoadmapHeroProps } from './RoadmapHero';
+export { RoadmapTimeline } from './RoadmapTimeline';
+export type { RoadmapTimelineProps } from './RoadmapTimeline';

@@ -83,3 +83,4 @@ export { LegalHero } from './LegalHero';
 export type { LegalHeroProps } from './LegalHero';
 export { LegalContent } from './LegalContent';
 export type { LegalContentProps } from './LegalContent';
+export { NotFound } from './NotFound';

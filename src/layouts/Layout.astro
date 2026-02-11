@@ -11,6 +11,7 @@ import {
   WebSiteSchema,
   ProductSchema,
   BreadcrumbSchema,
+  MetaTags,
   type BreadcrumbItem,
 } from '../components/seo';
 
@@ -53,8 +54,9 @@ const finalCrumbs = crumbs || defaultCrumbs;
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} | ModernSaaS</title>
-    <meta name="description" content={description} />
+
+    <!-- SEO Meta Tags -->
+    <MetaTags title={title} description={description} pathname={currentPath} />
 
     <!-- SEO Schemas -->
     <OrganizationSchema />

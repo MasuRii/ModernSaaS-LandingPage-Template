@@ -162,11 +162,13 @@ export const getCanonicalUrl = (path: string = ''): string => {
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   const cleanBase = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
 
-  if (cleanBase === '' || cleanBase === '/') {
-    return `${siteUrl}/${cleanPath}`.replace(/\/+/g, '/');
-  }
+  const url =
+    cleanBase === '' || cleanBase === '/'
+      ? `${siteUrl}/${cleanPath}`
+      : `${siteUrl}${cleanBase}/${cleanPath}`;
 
-  return `${siteUrl}${cleanBase}/${cleanPath}`.replace(/\/+/g, '/');
+  // Replace double slashes while preserving the protocol double slash
+  return url.replace(/([^:])\/\//g, '$1/').replace(/([^:])\/\//g, '$1/');
 };
 
 /**

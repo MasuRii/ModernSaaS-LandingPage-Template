@@ -88,7 +88,7 @@ export const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
   });
 
   return (
-    <span ref={elementRef} className={className} aria-live="polite">
+    <span ref={elementRef} className={className} aria-live="polite" data-testid="animated-counter">
       {prefix}
       {formattedValue}
       {suffix}

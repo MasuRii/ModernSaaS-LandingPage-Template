@@ -10,7 +10,9 @@ export type IntegrationCategory =
   | 'design'
   | 'productivity'
   | 'analytics'
-  | 'storage';
+  | 'storage'
+  | 'marketing'
+  | 'security';
 
 /** Individual integration */
 export interface Integration {
@@ -23,6 +25,7 @@ export interface Integration {
   comingSoon?: boolean;
   setupTime: string;
   features: string[];
+  website: string;
 }
 
 /** Integration category metadata */
@@ -75,6 +78,18 @@ export const integrationCategories: IntegrationCategoryMeta[] = [
     description: 'Sync with cloud storage providers',
     icon: 'Cloud',
   },
+  {
+    id: 'marketing',
+    label: 'Marketing',
+    description: 'Automate your marketing and lead generation',
+    icon: 'Megaphone',
+  },
+  {
+    id: 'security',
+    label: 'Security',
+    description: 'Keep your data and users safe',
+    icon: 'ShieldCheck',
+  },
 ];
 
 /** Available integrations */
@@ -89,6 +104,7 @@ export const integrations: Integration[] = [
     popular: true,
     setupTime: '2 min',
     features: ['Real-time notifications', 'Slash commands', 'Channel sync'],
+    website: 'https://slack.com',
   },
   {
     id: 'discord',
@@ -99,6 +115,7 @@ export const integrations: Integration[] = [
     popular: true,
     setupTime: '3 min',
     features: ['Bot integration', 'Webhook support', 'Role sync'],
+    website: 'https://discord.com',
   },
   {
     id: 'teams',
@@ -108,6 +125,7 @@ export const integrations: Integration[] = [
     logo: '/images/integrations/teams.svg',
     setupTime: '5 min',
     features: ['Teams notifications', 'Channel integration', 'File sharing'],
+    website: 'https://microsoft.com/teams',
   },
   // Development
   {
@@ -119,6 +137,7 @@ export const integrations: Integration[] = [
     popular: true,
     setupTime: '3 min',
     features: ['Repo sync', 'Issue tracking', 'Pull request notifications'],
+    website: 'https://github.com',
   },
   {
     id: 'gitlab',
@@ -128,6 +147,7 @@ export const integrations: Integration[] = [
     logo: '/images/integrations/gitlab.svg',
     setupTime: '3 min',
     features: ['CI/CD integration', 'Repository sync', 'Merge request tracking'],
+    website: 'https://gitlab.com',
   },
   {
     id: 'jira',
@@ -138,6 +158,7 @@ export const integrations: Integration[] = [
     popular: true,
     setupTime: '5 min',
     features: ['Issue sync', 'Sprint tracking', 'Epic management'],
+    website: 'https://atlassian.com/software/jira',
   },
   {
     id: 'vercel',
@@ -148,6 +169,7 @@ export const integrations: Integration[] = [
     popular: true,
     setupTime: '2 min',
     features: ['Auto-deployment', 'Preview links', 'Analytics sync'],
+    website: 'https://vercel.com',
   },
   // Design
   {
@@ -159,6 +181,7 @@ export const integrations: Integration[] = [
     popular: true,
     setupTime: '2 min',
     features: ['Design embedding', 'Comment sync', 'Version control'],
+    website: 'https://figma.com',
   },
   {
     id: 'sketch',
@@ -168,6 +191,7 @@ export const integrations: Integration[] = [
     logo: '/images/integrations/sketch.svg',
     setupTime: '4 min',
     features: ['File import', 'Asset sync', 'Handoff tools'],
+    website: 'https://sketch.com',
   },
   // Productivity
   {
@@ -179,6 +203,7 @@ export const integrations: Integration[] = [
     popular: true,
     setupTime: '3 min',
     features: ['Page sync', 'Database integration', 'Wiki connection'],
+    website: 'https://notion.so',
   },
   {
     id: 'linear',
@@ -189,6 +214,7 @@ export const integrations: Integration[] = [
     popular: true,
     setupTime: '2 min',
     features: ['Issue sync', 'Cycle tracking', 'Roadmap view'],
+    website: 'https://linear.app',
   },
   {
     id: 'asana',
@@ -198,6 +224,7 @@ export const integrations: Integration[] = [
     logo: '/images/integrations/asana.svg',
     setupTime: '4 min',
     features: ['Task sync', 'Project mapping', 'Timeline view'],
+    website: 'https://asana.com',
   },
   // Analytics
   {
@@ -208,6 +235,7 @@ export const integrations: Integration[] = [
     logo: '/images/integrations/segment.svg',
     setupTime: '5 min',
     features: ['Event tracking', 'User identification', 'Data routing'],
+    website: 'https://segment.com',
   },
   {
     id: 'mixpanel',
@@ -217,6 +245,7 @@ export const integrations: Integration[] = [
     logo: '/images/integrations/mixpanel.svg',
     setupTime: '4 min',
     features: ['Event analytics', 'Funnel tracking', 'Cohort analysis'],
+    website: 'https://mixpanel.com',
   },
   // Storage
   {
@@ -228,6 +257,7 @@ export const integrations: Integration[] = [
     popular: true,
     setupTime: '2 min',
     features: ['File sync', 'Shared drives', 'Document embedding'],
+    website: 'https://google.com/drive',
   },
   {
     id: 'dropbox',
@@ -237,6 +267,7 @@ export const integrations: Integration[] = [
     logo: '/images/integrations/dropbox.svg',
     setupTime: '3 min',
     features: ['File sync', 'Paper integration', 'Team folders'],
+    website: 'https://dropbox.com',
   },
   {
     id: 'aws-s3',
@@ -246,6 +277,52 @@ export const integrations: Integration[] = [
     logo: '/images/integrations/aws.svg',
     setupTime: '10 min',
     features: ['Bucket sync', 'Access control', 'CDN integration'],
+    website: 'https://aws.amazon.com/s3',
+  },
+  // Marketing
+  {
+    id: 'mailchimp',
+    name: 'Mailchimp',
+    description: 'Automate your email marketing and manage your audience.',
+    category: 'marketing',
+    logo: '/images/integrations/mailchimp.svg',
+    popular: true,
+    setupTime: '5 min',
+    features: ['Audience sync', 'Email automation', 'Campaign tracking'],
+    website: 'https://mailchimp.com',
+  },
+  {
+    id: 'hubspot',
+    name: 'HubSpot',
+    description: 'Powerful CRM and marketing automation platform.',
+    category: 'marketing',
+    logo: '/images/integrations/hubspot.svg',
+    popular: true,
+    setupTime: '5 min',
+    features: ['CRM sync', 'Lead tracking', 'Form integration'],
+    website: 'https://hubspot.com',
+  },
+  // Security
+  {
+    id: 'okta',
+    name: 'Okta',
+    description: 'Identity and access management for your organization.',
+    category: 'security',
+    logo: '/images/integrations/okta.svg',
+    popular: true,
+    setupTime: '10 min',
+    features: ['SSO integration', 'User provisioning', 'Adaptive MFA'],
+    website: 'https://okta.com',
+  },
+  {
+    id: 'auth0',
+    name: 'Auth0',
+    description: 'Adaptable authentication and authorization platform.',
+    category: 'security',
+    logo: '/images/integrations/auth0.svg',
+    setupTime: '5 min',
+    features: ['Login sync', 'User management', 'Custom rules'],
+    website: 'https://auth0.com',
   },
 ];
 
@@ -264,7 +341,7 @@ export const featuredIntegrations = [
 /** Integration statistics */
 export const integrationStats = {
   total: 150,
-  categories: 6,
+  categories: 8,
   popular: 12,
   comingSoon: 8,
 } as const;

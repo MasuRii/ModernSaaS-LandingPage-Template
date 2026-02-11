@@ -176,12 +176,38 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
       elementRef,
     ]);
 
+    const initialStyles = React.useMemo(() => {
+      if (!preset || !PRESETS[preset]) return {};
+      const presetConfig = PRESETS[preset];
+      const styles: Record<string, string | number> = {};
+      const transforms: string[] = [];
+
+      Object.entries(presetConfig.initial).forEach(([key, value]) => {
+        if (key === 'x')
+          transforms.push(`translateX(${typeof value === 'number' ? value + 'px' : value})`);
+        else if (key === 'y')
+          transforms.push(`translateY(${typeof value === 'number' ? value + 'px' : value})`);
+        else if (key === 'scale') transforms.push(`scale(${value})`);
+        else if (key === 'rotate')
+          transforms.push(`rotate(${typeof value === 'number' ? value + 'deg' : value})`);
+        else if (typeof value === 'number' || typeof value === 'string') {
+          styles[key] = value;
+        }
+      });
+
+      if (transforms.length > 0) {
+        styles.transform = transforms.join(' ');
+      }
+
+      return styles;
+    }, [preset]);
+
     return React.createElement(
       Component,
       {
         ref: elementRef,
         className,
-        style,
+        style: { ...initialStyles, ...style },
         ...props,
       },
       children,

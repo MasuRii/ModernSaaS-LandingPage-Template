@@ -1,7 +1,7 @@
 @import 'tailwindcss';
-@variant dark (&:where(.dark, .dark *));
 @import './tokens.css';
 @import './prose.css';
+@variant dark (&:where(.dark, .dark *));
 
 /* ============================================
    ModernSaaS Landing Page - Global Styles

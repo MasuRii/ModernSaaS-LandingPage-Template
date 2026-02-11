@@ -124,8 +124,8 @@ async function run() {
       try {
         // Use npx lighthouse with specific flags for reliability in containerized environments
         execSync(
-          `npx lighthouse ${url} --chrome-flags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage" --quiet --output json --output-path ${reportPath} --only-categories=performance,accessibility,best-practices,seo`,
-          { stdio: 'inherit' },
+          `npx lighthouse ${url} --chrome-flags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage" --quiet --output json --output-path ${reportPath} --only-categories=performance,accessibility,best-practices,seo --preset=desktop`,
+          { stdio: 'inherit', env: { ...process.env, NODE_ENV: 'production' } },
         );
       } catch (e) {
         if (fs.existsSync(reportPath)) {

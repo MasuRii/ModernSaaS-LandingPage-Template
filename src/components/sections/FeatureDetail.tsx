@@ -135,17 +135,17 @@ export const FeatureDetail: React.FC<FeatureDetailProps> = ({ className }) => {
                       {/* Decorative gradient blur background */}
                       <div className="absolute -inset-4 bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-3xl blur-2xl group-hover:opacity-100 transition-opacity opacity-0 duration-500" />
 
-                      <div className="relative rounded-2xl border border-border-default bg-bg-secondary overflow-hidden shadow-2xl transition-all duration-500 group-hover:shadow-primary-500/10 group-hover:border-primary-500/20">
+                      <div className="relative rounded-2xl border border-border-default bg-bg-secondary overflow-hidden shadow-2xl transition-all duration-500 group-hover:shadow-primary-500/10 group-hover:border-primary-500/20 aspect-video">
                         {feature.image ? (
                           <img
                             src={getAssetPath(feature.image)}
                             alt={feature.imageAlt || feature.title}
-                            className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
+                            className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
                             loading="lazy"
                           />
                         ) : (
                           <div
-                            className="aspect-video bg-primary-50 dark:bg-primary-900/10 flex items-center justify-center p-8"
+                            className="w-full h-full bg-primary-50 dark:bg-primary-900/10 flex items-center justify-center p-8"
                             role="img"
                             aria-label={`Placeholder for ${feature.title}`}
                           >

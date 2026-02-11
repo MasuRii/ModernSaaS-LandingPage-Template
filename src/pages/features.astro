@@ -16,7 +16,7 @@ const seo = pageSEO.features;
 
 <Layout title={seo.title} description={seo.description}>
   {/* 1. Features Hero Section */}
-  <FeaturesHero client:idle />
+  <FeaturesHero client:load />
 
   {/* 2. Detailed Feature Sections (Alternating) */}
   <FeatureDetail client:visible />

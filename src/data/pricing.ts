@@ -287,6 +287,17 @@ export const comparisonFeatures = [
       { name: 'API access', starter: false, pro: true, enterprise: true },
     ],
   },
+  {
+    category: 'Analytics',
+    items: [
+      { name: 'Real-time dashboard', starter: true, pro: true, enterprise: true },
+      { name: 'Custom reports', starter: false, pro: true, enterprise: true },
+      { name: 'Export data (CSV/PDF)', starter: false, pro: true, enterprise: true },
+      { name: 'Advanced filtering', starter: false, pro: true, enterprise: true },
+      { name: 'Predictive insights', starter: false, pro: false, enterprise: true },
+      { name: 'Custom dashboards', starter: false, pro: false, enterprise: true },
+    ],
+  },
 ] as const;
 
 /** Money back guarantee info */

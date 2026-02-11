@@ -4,19 +4,21 @@ import { getCanonicalUrl } from '../../config/paths';
 
 export interface MetaTagsProps {
   /** Page-specific title override */
-  title?: string;
+  title?: string | undefined;
   /** Page-specific description override */
-  description?: string;
+  description?: string | undefined;
   /** Page-specific canonical URL override */
-  canonical?: string;
+  canonical?: string | undefined;
   /** Robots directive override (default: 'index, follow') */
-  robots?: string;
+  robots?: string | undefined;
   /** Current page pathname for auto-canonical generation */
-  pathname?: string;
+  pathname?: string | undefined;
   /** Open Graph type (default: 'website') */
   ogType?: 'website' | 'article' | 'profile' | undefined;
   /** Page-specific OG image override */
   ogImage?: string | undefined;
+  /** Page-specific Twitter card override (default: from config) */
+  twitterCard?: 'summary' | 'summary_large_image' | undefined;
 }
 
 /**
@@ -24,7 +26,7 @@ export interface MetaTagsProps {
  *
  * Renders standard SEO meta tags including title, description,
  * canonical URL, and robots directives.
- * Also includes Open Graph tags for social sharing.
+ * Also includes Open Graph and Twitter tags for social sharing.
  * Uses centralized configuration and path resolution.
  */
 export const MetaTags: React.FC<MetaTagsProps> = ({
@@ -35,6 +37,7 @@ export const MetaTags: React.FC<MetaTagsProps> = ({
   pathname = '',
   ogType = 'website',
   ogImage,
+  twitterCard,
 }) => {
   const { seo: defaultSeo, getPageTitle } = site;
 
@@ -54,6 +57,9 @@ export const MetaTags: React.FC<MetaTagsProps> = ({
   const finalOgImage = ogImage
     ? getCanonicalUrl(ogImage)
     : getCanonicalUrl(defaultSeo.defaultOgImage);
+
+  // Twitter card resolution
+  const finalTwitterCard = twitterCard || defaultSeo.twitterCardType;
 
   return (
     <>
@@ -78,6 +84,13 @@ export const MetaTags: React.FC<MetaTagsProps> = ({
       <meta property="og:url" content={finalCanonical} />
       <meta property="og:image" content={finalOgImage} />
       <meta property="og:locale" content={defaultSeo.locale} />
+
+      {/* Twitter Tags */}
+      <meta name="twitter:card" content={finalTwitterCard} />
+      <meta name="twitter:site" content={defaultSeo.twitterSite} />
+      <meta name="twitter:title" content={finalTitle} />
+      <meta name="twitter:description" content={finalDescription} />
+      <meta name="twitter:image" content={finalOgImage} />
     </>
   );
 };

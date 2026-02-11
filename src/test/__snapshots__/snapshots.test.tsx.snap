@@ -2842,8 +2842,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
         style="opacity: 0; transform: translateY(20px);"
       >
         <a
-          class="text-primary-600 dark:text-primary-400 font-semibold hover:underline flex items-center gap-2"
-          href="/integrations"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline underline-offset-2 decoration-primary-400 dark:decoration-primary-600 hover:decoration-primary-600 dark:hover:decoration-primary-400 text-base text-primary-600 dark:text-primary-400 font-semibold hover:underline flex items-center gap-2"
+          href="/integrations/"
+          role="button"
         >
           View all 100+ integrations
           <svg
@@ -9801,8 +9804,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
         style="opacity: 0; transform: translateY(20px);"
       >
         <a
-          class="text-primary-600 dark:text-primary-400 font-semibold hover:underline flex items-center gap-2"
-          href="/integrations"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 underline underline-offset-2 decoration-primary-400 dark:decoration-primary-600 hover:decoration-primary-600 dark:hover:decoration-primary-400 text-base text-primary-600 dark:text-primary-400 font-semibold hover:underline flex items-center gap-2"
+          href="/integrations/"
+          role="button"
         >
           View all 100+ integrations
           <svg

@@ -148,9 +148,14 @@ describe('Header', () => {
   });
 
   it('highlights the active navigation link', () => {
-    // Mock pathname
+    // Mock pathname without breaking other location properties
+    const originalLocation = window.location;
     Object.defineProperty(window, 'location', {
-      value: { pathname: '/features/' },
+      value: {
+        ...originalLocation,
+        pathname: '/features/',
+        hostname: originalLocation.hostname || 'localhost',
+      },
       writable: true,
       configurable: true,
     });
@@ -162,6 +167,13 @@ describe('Header', () => {
 
     const pricingLink = screen.getByText('Pricing').closest('a');
     expect(pricingLink).toHaveClass('text-text-secondary');
+
+    // Restore location
+    Object.defineProperty(window, 'location', {
+      value: originalLocation,
+      writable: true,
+      configurable: true,
+    });
   });
 });
 

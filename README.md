@@ -171,6 +171,58 @@ Key settings in `astro.config.mjs`:
 - `image.service`: Configured to use Sharp for high-performance image
   processing.
 
+## 🚀 Deployment
+
+The template is optimized for static hosting and can be deployed to any major
+provider.
+
+### 1. GitHub Pages (Recommended)
+
+This template is pre-configured for seamless GitHub Pages deployment via GitHub
+Actions.
+
+1. **Push your code** to a GitHub repository.
+2. **Enable GitHub Pages** in your repository settings:
+   - Go to **Settings > Pages**.
+   - Under **Build and deployment > Source**, select **GitHub Actions**.
+3. The included `.github/workflows/deploy.yml` will automatically build and
+   deploy your site whenever you push to the `main` branch.
+
+**Note**: If deploying to a project site (e.g.,
+`https://username.github.io/repo-name/`), the template automatically handles the
+subdirectory path resolution.
+
+### 2. Vercel
+
+Vercel is an excellent choice for Astro projects.
+
+1. Import your repository into the [Vercel Dashboard](https://vercel.com/new).
+2. Vercel will automatically detect Astro and use the correct build settings.
+3. Add the following **Environment Variables** (optional but recommended):
+   - `SITE_URL`: Your production URL.
+4. Click **Deploy**.
+
+### 3. Netlify
+
+1. Create a new site from [Netlify Dashboard](https://app.netlify.com/start).
+2. Connect your repository.
+3. Use the following build settings (should be auto-detected):
+   - **Build command**: `bun run build`
+   - **Publish directory**: `dist`
+4. Click **Deploy site**.
+
+### 4. Custom Domains
+
+When using a custom domain:
+
+1. Update `SITE_URL` in your deployment environment variables to match your
+   custom domain.
+2. If using GitHub Pages with a custom domain, ensure you update the `base` path
+   in `astro.config.mjs` to `/` (if it's not a subdirectory) or use the
+   `BASE_PATH` environment variable.
+3. Follow your provider's instructions for DNS configuration (A records, CNAME,
+   etc.).
+
 ## 📸 Screenshots
 
 ### Light Mode

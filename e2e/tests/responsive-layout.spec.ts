@@ -206,10 +206,20 @@ test.describe('Responsive Layout', () => {
 
   test.describe('Responsive Pages Suite', () => {
     const pages = [
+      { name: 'Home', route: testRoutes.home },
       { name: 'Features', route: testRoutes.features },
       { name: 'Pricing', route: testRoutes.pricing },
       { name: 'About', route: testRoutes.about },
       { name: 'Blog', route: testRoutes.blog },
+      { name: 'Contact', route: testRoutes.contact },
+      { name: 'Support', route: testRoutes.support },
+      { name: 'Changelog', route: testRoutes.changelog },
+      { name: 'Roadmap', route: testRoutes.roadmap },
+      { name: 'Privacy', route: testRoutes.privacy },
+      { name: 'Terms', route: testRoutes.terms },
+      { name: 'Login', route: testRoutes.login },
+      { name: 'Signup', route: testRoutes.signup },
+      { name: '404', route: '404/' },
     ];
 
     for (const { name, route } of pages) {
@@ -231,15 +241,13 @@ test.describe('Responsive Layout', () => {
             await expect(page.locator(selectors.navigation.header)).toBeVisible();
             await expect(page.locator(selectors.footer.section)).toBeVisible();
 
-            // Check for horizontal overflow (excluding known scrollable pages like Features)
-            if (name !== 'Features') {
-              const hasOverflow = await page.evaluate(() => {
-                return (
-                  document.documentElement.scrollWidth > document.documentElement.clientWidth + 5
-                );
-              });
-              expect(hasOverflow, `${name} has page overflow at ${size.width}px`).toBe(false);
-            }
+            // Check for horizontal overflow
+            // Allow small buffer for sub-pixel rendering and scrollbars
+            const hasOverflow = await page.evaluate(() => {
+              const root = document.documentElement;
+              return root.scrollWidth > root.clientWidth + 5;
+            });
+            expect(hasOverflow, `${name} has page overflow at ${size.width}px`).toBe(false);
           });
         }
       });

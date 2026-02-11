@@ -346,6 +346,11 @@ cite {
   --shadow-2xl: var(--shadow-2xl);
   --shadow-inner: var(--shadow-inner);
 
+  /* Colored Shadows */
+  --shadow-primary: var(--shadow-primary);
+  --shadow-secondary: var(--shadow-secondary);
+  --shadow-accent: var(--shadow-accent);
+
   /* ========================================
      TYPOGRAPHY TOKENS
      ======================================== */

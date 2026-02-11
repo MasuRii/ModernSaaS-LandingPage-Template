@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { describe, expect, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import { a11yTesting } from '@/test/utils';
 import {
   Card,
   CardContent,
@@ -235,6 +236,45 @@ describe('Card', () => {
       const card = screen.getByTestId('card');
       expect(card).not.toHaveClass('hover:-translate-y-1');
       expect(card).not.toHaveClass('cursor-pointer');
+    });
+
+    it('applies glow classes when glow is true', () => {
+      render(
+        <Card hover glow data-testid="card">
+          <p>Content</p>
+        </Card>,
+      );
+
+      const card = screen.getByTestId('card');
+      expect(card).toHaveClass('hover:shadow-primary/10');
+      expect(card).toHaveClass('hover:border-primary-500/30');
+    });
+
+    it('applies shadow-2xl on hover for elevated variant', () => {
+      render(
+        <Card hover variant="elevated" data-testid="card">
+          <p>Content</p>
+        </Card>,
+      );
+
+      const card = screen.getByTestId('card');
+      expect(card).toHaveClass('hover:shadow-2xl');
+    });
+
+    it('respects reduced motion by disabling lift and glow', () => {
+      a11yTesting.mockReducedMotion(true);
+      render(
+        <Card hover glow data-testid="card">
+          <p>Content</p>
+        </Card>,
+      );
+
+      const card = screen.getByTestId('card');
+      expect(card).not.toHaveClass('hover:-translate-y-1');
+      expect(card).not.toHaveClass('hover:shadow-primary/10');
+
+      // Reset mock for other tests
+      a11yTesting.mockReducedMotion(false);
     });
   });
 

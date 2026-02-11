@@ -143,7 +143,7 @@ exports[`Component Snapshots > dark theme > Basic Components > Link matches snap
 exports[`Component Snapshots > dark theme > Cards > Card matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="relative overflow-hidden bg-bg-primary shadow-md shadow-shadow-default border border-border-default p-4 rounded-lg"
+    class="relative overflow-hidden bg-bg-primary border border-border-default shadow-md shadow-shadow-default p-4 rounded-lg"
   >
     Card content
   </div>
@@ -153,7 +153,7 @@ exports[`Component Snapshots > dark theme > Cards > Card matches snapshot 1`] = 
 exports[`Component Snapshots > dark theme > Cards > FeatureCard matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="relative overflow-hidden bg-bg-primary shadow-md shadow-shadow-default border border-border-default p-6 rounded-xl transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-shadow-default cursor-pointer flex flex-col h-full group"
+    class="relative overflow-hidden bg-bg-primary border border-border-default shadow-md shadow-shadow-default p-6 rounded-xl cursor-pointer transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 hover:border-primary-500/30 flex flex-col h-full group"
   >
     <div
       class="flex items-center justify-center w-12 h-12 mb-6 rounded-xl transition-colors duration-300 bg-primary-50 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/50"
@@ -306,7 +306,7 @@ exports[`Component Snapshots > dark theme > Cards > PricingCard matches snapshot
 exports[`Component Snapshots > dark theme > Cards > TeamMemberCard matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1"
+    class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1"
   >
     <div
       class="p-8 flex flex-col items-center"
@@ -4270,7 +4270,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+                class="relative border shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -4383,7 +4383,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+                class="relative border shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -4525,7 +4525,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+                class="relative border shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -4651,7 +4651,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -4777,7 +4777,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -4893,7 +4893,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -5006,7 +5006,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -5111,7 +5111,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -6406,7 +6406,7 @@ exports[`Component Snapshots > light theme > Basic Components > Link matches sna
 exports[`Component Snapshots > light theme > Cards > Card matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="relative overflow-hidden bg-bg-primary shadow-md shadow-shadow-default border border-border-default p-4 rounded-lg"
+    class="relative overflow-hidden bg-bg-primary border border-border-default shadow-md shadow-shadow-default p-4 rounded-lg"
   >
     Card content
   </div>
@@ -6416,7 +6416,7 @@ exports[`Component Snapshots > light theme > Cards > Card matches snapshot 1`] =
 exports[`Component Snapshots > light theme > Cards > FeatureCard matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="relative overflow-hidden bg-bg-primary shadow-md shadow-shadow-default border border-border-default p-6 rounded-xl transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-shadow-default cursor-pointer flex flex-col h-full group"
+    class="relative overflow-hidden bg-bg-primary border border-border-default shadow-md shadow-shadow-default p-6 rounded-xl cursor-pointer transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 hover:border-primary-500/30 flex flex-col h-full group"
   >
     <div
       class="flex items-center justify-center w-12 h-12 mb-6 rounded-xl transition-colors duration-300 bg-primary-50 text-primary-600 dark:bg-primary-900/30 dark:text-primary-400 group-hover:bg-primary-100 dark:group-hover:bg-primary-900/50"
@@ -6569,7 +6569,7 @@ exports[`Component Snapshots > light theme > Cards > PricingCard matches snapsho
 exports[`Component Snapshots > light theme > Cards > TeamMemberCard matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1"
+    class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1"
   >
     <div
       class="p-8 flex flex-col items-center"
@@ -10533,7 +10533,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+                class="relative border shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -10646,7 +10646,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+                class="relative border shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -10788,7 +10788,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
+                class="relative border shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 ring-2 ring-primary-500/10 shadow-lg h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -10914,7 +10914,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -11040,7 +11040,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -11156,7 +11156,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -11269,7 +11269,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"
@@ -11374,7 +11374,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
               style="opacity: 0; transform: translateY(20px);"
             >
               <div
-                class="relative shadow-md shadow-shadow-default border rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
               >
                 <div
                   class="p-8 flex flex-col items-center"

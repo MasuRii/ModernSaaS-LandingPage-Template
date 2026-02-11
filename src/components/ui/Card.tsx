@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { motion } from 'framer-motion';
+import { useReducedMotion } from '@/utils/reducedMotion';
 import { cn } from '@/utils/cn';
 
 /**
@@ -46,6 +48,8 @@ export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   radius?: CardRadius;
   /** Enable hover lift animation */
   hover?: boolean;
+  /** Enable subtle glow effect on hover */
+  glow?: boolean;
   /** Full width card */
   fullWidth?: boolean;
   /** Additional CSS classes */
@@ -91,6 +95,7 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
       padding = 'md',
       radius = 'md',
       hover = false,
+      glow = false,
       fullWidth = false,
       className = '',
       children,
@@ -98,33 +103,17 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
     },
     ref,
   ) => {
+    const { prefersReducedMotion } = useReducedMotion();
+
     // Variant styles
     const variantStyles = {
-      default: `
-        bg-bg-primary
-        shadow-md
-        shadow-shadow-default
-        border
-        border-border-default
-      `,
-      outlined: `
-        bg-bg-primary
-        border-2
-        border-border-strong
-        shadow-none
-      `,
-      elevated: `
-        bg-bg-primary
-        shadow-xl
-        shadow-shadow-default
-        border
-        border-border-default
-      `,
-      flat: `
-        bg-bg-secondary
-        shadow-none
-        border-none
-      `,
+      default: cn(
+        'bg-bg-primary border border-border-default shadow-md shadow-shadow-default',
+        hover && 'hover:border-border-strong',
+      ),
+      outlined: 'bg-bg-primary border-2 border-border-strong shadow-none',
+      elevated: 'bg-bg-primary border border-border-default shadow-xl shadow-shadow-default',
+      flat: 'bg-bg-secondary border-none shadow-none',
     };
 
     // Padding styles
@@ -146,24 +135,27 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
       full: 'rounded-3xl',
     };
 
-    // Hover animation styles
-    const hoverStyles = hover
-      ? `
-        transition-all
-        duration-300
-        ease-out
-        hover:-translate-y-1
-        hover:shadow-lg
-        hover:shadow-shadow-default
-        cursor-pointer
-      `
+    // Hover effect classes
+    const hoverClasses = hover
+      ? cn(
+          'cursor-pointer transition-all duration-300 ease-out',
+          !prefersReducedMotion && 'hover:-translate-y-1',
+          variant === 'default' && 'hover:shadow-lg',
+          variant === 'elevated' && 'hover:shadow-2xl',
+          (glow || variant === 'default') &&
+            !prefersReducedMotion &&
+            'hover:shadow-primary/10 hover:border-primary-500/30',
+        )
       : '';
 
     // Full width style
     const widthStyles = fullWidth ? 'w-full' : '';
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const MotionDiv = motion.div as any;
+
     return (
-      <div
+      <MotionDiv
         ref={ref}
         className={cn(
           // Base styles
@@ -175,7 +167,7 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
           // Radius styles
           radiusStyles[radius],
           // Hover styles
-          hoverStyles,
+          hoverClasses,
           // Width styles
           widthStyles,
           // Custom classes
@@ -184,7 +176,7 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
         {...props}
       >
         {children}
-      </div>
+      </MotionDiv>
     );
   },
 );

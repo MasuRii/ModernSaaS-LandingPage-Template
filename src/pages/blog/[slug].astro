@@ -10,7 +10,8 @@ import { Badge } from '../../components/ui/Badge';
 import { Calendar, Clock, ChevronLeft } from 'lucide-react';
 import { Link } from '../../components/ui/Link';
 import { SocialShare } from '../../components/ui/SocialShare';
-import { ROUTES } from '../../config/paths';
+import { ROUTES, getAssetPath } from '../../config/paths';
+import OptimizedImage from '../../components/ui/OptimizedImage.astro';
 
 export async function getStaticPaths() {
   return blogPosts.map((post) => ({
@@ -61,6 +62,12 @@ const crumbs = [
   crumbs={crumbs}
   ogType="article"
   ogImage={coverImage}
+  preloadImages={[
+    {
+      href: getAssetPath(coverImage),
+      fetchpriority: 'high',
+    },
+  ]}
 >
   <ArticleSchema post={post} />
   <main
@@ -129,7 +136,15 @@ const crumbs = [
         <div
           class="relative aspect-[21/9] rounded-2xl overflow-hidden shadow-2xl border border-border-default"
         >
-          <img src={coverImage} alt={title} class="w-full h-full object-cover" />
+          <OptimizedImage
+            src={coverImage}
+            alt={title}
+            class="w-full h-full object-cover"
+            loading="eager"
+            responsive={true}
+            preset="hero"
+            fetchpriority="high"
+          />
         </div>
       </Container>
     </Section>

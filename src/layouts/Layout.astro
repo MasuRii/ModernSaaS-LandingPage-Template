@@ -16,6 +16,15 @@ import {
 } from '../components/seo';
 import { ROUTES, getAssetPath } from '../config/paths';
 
+interface PreloadImage {
+  href: string;
+  as?: string;
+  type?: string;
+  imagesrcset?: string;
+  imagesizes?: string;
+  fetchpriority?: 'high' | 'low' | 'auto';
+}
+
 interface Props {
   title: string;
   description?: string;
@@ -26,6 +35,7 @@ interface Props {
   ogImage?: string;
   twitterCard?: 'summary' | 'summary_large_image';
   robots?: string;
+  preloadImages?: PreloadImage[];
 }
 
 const {
@@ -38,7 +48,8 @@ const {
   ogImage,
   twitterCard,
   robots,
-} = Astro.props;
+  preloadImages = [],
+} = Astro.props as Props;
 
 // Auto-generate crumbs if not provided
 const currentPath = Astro.url.pathname;
@@ -63,6 +74,29 @@ const finalCrumbs = crumbs || defaultCrumbs;
     <link rel="icon" href={getAssetPath('favicon.ico')} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Preload critical images -->
+    {
+      preloadImages.map((image) => (
+        <link
+          rel="preload"
+          href={image.href}
+          as={image.as || 'image'}
+          type={image.type}
+          imagesrcset={image.imagesrcset}
+          imagesizes={image.imagesizes}
+          fetchpriority={image.fetchpriority}
+        />
+      ))
+    }
 
     <!-- SEO Meta Tags -->
     <MetaTags

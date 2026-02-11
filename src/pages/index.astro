@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getAssetPath } from '../config/paths';
 import {
   Hero,
   LogoCloudSection,
@@ -14,7 +15,17 @@ import {
 } from '../components/sections';
 ---
 
-<Layout title="Home">
+<Layout
+  title="Home"
+  preloadImages={[
+    {
+      href: getAssetPath('images/dashboard-mockup.svg'),
+      fetchpriority: 'high',
+      as: 'image',
+      type: 'image/svg+xml',
+    },
+  ]}
+>
   <main
     id="main-content"
     tabindex="-1"

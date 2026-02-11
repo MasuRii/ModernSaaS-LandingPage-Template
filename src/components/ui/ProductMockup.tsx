@@ -103,7 +103,7 @@ export const ProductMockup: React.FC<ProductMockupProps> = ({
               alt={alt}
               className="w-full h-full object-cover object-top"
               loading={loading}
-              decoding="async"
+              decoding={loading === 'eager' ? 'sync' : 'async'}
               {...(fetchPriority ? { fetchPriority } : {})}
             />
           ) : (

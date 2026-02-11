@@ -68,7 +68,12 @@ export const SocialProofBadge: React.FC<SocialProofBadgeProps> = ({
                   className="w-6 h-6 rounded-full border-2 border-bg-secondary bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center overflow-hidden"
                 >
                   {avatar ? (
-                    <img src={avatar} alt="User profile" className="w-full h-full object-cover" />
+                    <img
+                      src={avatar}
+                      alt="User profile"
+                      className="w-full h-full object-cover"
+                      loading="eager"
+                    />
                   ) : (
                     <span className="text-[10px] text-primary-600 dark:text-primary-400 font-bold uppercase">
                       {String.fromCharCode(65 + i)}

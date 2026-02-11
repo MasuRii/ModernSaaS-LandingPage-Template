@@ -61,6 +61,8 @@ interface Props {
   class?: string;
   /** Border radius style */
   rounded?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
+  /** Fetch priority */
+  fetchpriority?: 'high' | 'low' | 'auto';
 }
 
 const {
@@ -77,6 +79,7 @@ const {
   fit = 'cover',
   class: className = '',
   rounded = 'none',
+  fetchpriority,
 } = Astro.props;
 
 // Apply preset dimensions if provided
@@ -132,6 +135,7 @@ const isRemoteString = typeof resolvedSrc === 'string';
         class={combinedClasses}
         widths={responsive ? [...IMAGE_BREAKPOINTS] : [finalWidth]}
         sizes={sizes}
+        fetchpriority={fetchpriority}
       />
     </div>
   ) : isRemoteString ? (
@@ -145,6 +149,7 @@ const isRemoteString = typeof resolvedSrc === 'string';
         decoding={loading === 'eager' ? 'sync' : 'async'}
         class={combinedClasses}
         sizes={sizes}
+        fetchpriority={fetchpriority}
       />
     </div>
   ) : (

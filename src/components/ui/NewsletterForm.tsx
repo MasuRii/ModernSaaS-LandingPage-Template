@@ -119,6 +119,7 @@ export const NewsletterForm: React.FC<NewsletterFormProps> = ({
         onSubmit={handleSubmit}
         className="flex flex-col gap-3 sm:flex-row sm:items-start"
         noValidate
+        data-testid="newsletter-form"
         {...props}
       >
         <Input
@@ -142,6 +143,7 @@ export const NewsletterForm: React.FC<NewsletterFormProps> = ({
           className="sm:mt-0"
           fullWidth={false}
           size="md"
+          data-testid="newsletter-submit"
         >
           {buttonText}
         </Button>

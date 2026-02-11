@@ -165,7 +165,7 @@ export const LoginForm: React.FC = () => {
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="mt-8 space-y-6" noValidate>
+      <form onSubmit={handleSubmit} className="mt-8 space-y-6" noValidate data-testid="login-form">
         <div className="space-y-4">
           <Input
             label="Email Address"
@@ -219,7 +219,13 @@ export const LoginForm: React.FC = () => {
           </div>
         </div>
 
-        <Button type="submit" className="w-full" size="lg" loading={isSubmitting}>
+        <Button
+          type="submit"
+          className="w-full"
+          size="lg"
+          loading={isSubmitting}
+          data-testid="login-submit"
+        >
           Sign in
         </Button>
       </form>

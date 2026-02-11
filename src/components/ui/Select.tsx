@@ -210,6 +210,7 @@ const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
               transition={{ duration: 0.2 }}
               className="text-xs font-medium text-error-600 dark:text-error-400"
               role="alert"
+              data-testid="input-error"
             >
               {error}
             </motion.p>

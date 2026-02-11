@@ -180,7 +180,7 @@ export const SignupForm: React.FC = () => {
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className="mt-8 space-y-6" noValidate>
+      <form onSubmit={handleSubmit} className="mt-8 space-y-6" noValidate data-testid="signup-form">
         <div className="space-y-4">
           <Input
             label="Full Name"
@@ -260,7 +260,10 @@ export const SignupForm: React.FC = () => {
               </div>
             </div>
             {errors.acceptTerms && (
-              <p className="text-xs font-medium text-error-600 dark:text-error-400">
+              <p
+                className="text-xs font-medium text-error-600 dark:text-error-400"
+                data-testid="input-error"
+              >
                 {errors.acceptTerms}
               </p>
             )}

@@ -1,9 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import { Zap } from 'lucide-react';
 import { ThemeToggle } from '../ui/ThemeToggle';
 import { MobileMenuButton, MobileNavigation } from '../ui/MobileNavigation';
 import { company, siteNavigation } from '../../config/site';
-import { ROUTES } from '../../config/paths';
+import { ROUTES, isActiveRoute } from '../../config/paths';
+import { useReducedMotion } from '../../utils/reducedMotion';
 
 /**
  * Props for the Header component
@@ -59,22 +61,34 @@ export function Header({
 }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentPath, setCurrentPath] = useState('');
+  const { prefersReducedMotion } = useReducedMotion();
 
   // Handle scroll effect for background transition
   const handleScroll = useCallback(() => {
     const scrollY = window.scrollY;
-    setIsScrolled(scrollY > 10);
+    setIsScrolled(scrollY > 20);
   }, []);
 
   useEffect(() => {
-    // Check initial scroll position
+    // Check initial scroll position and path
     handleScroll();
+    setCurrentPath(window.location.pathname);
 
     // Add scroll listener
     window.addEventListener('scroll', handleScroll, { passive: true });
 
+    // Handle Astro transitions
+    const handleNavigation = () => {
+      setCurrentPath(window.location.pathname);
+      setIsMobileMenuOpen(false);
+    };
+
+    document.addEventListener('astro:after-navigation', handleNavigation);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('astro:after-navigation', handleNavigation);
     };
   }, [handleScroll]);
 
@@ -98,45 +112,80 @@ export function Header({
 
   // Header background styles based on scroll state
   const headerBackground = isScrolled
-    ? 'bg-bg-primary/95 backdrop-blur-md shadow-sm border-b border-border-default'
-    : 'bg-transparent';
+    ? 'bg-bg-primary/80 backdrop-blur-xl shadow-md border-b border-border-default/50'
+    : 'bg-transparent py-2';
 
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ease-out ${headerBackground} ${className}`}
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ease-in-out ${headerBackground} ${className}`}
         role="banner"
         aria-label="Site header"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div
+            className={`flex items-center justify-between transition-all duration-500 ${isScrolled ? 'h-16' : 'h-20 lg:h-24'}`}
+          >
             {/* Logo */}
             <a
               href={ROUTES.HOME}
               className="flex items-center gap-2 text-text-primary hover:opacity-80 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded-lg"
               aria-label={`${company.name} - Home`}
             >
-              <div className="w-8 h-8 lg:w-9 lg:h-9 rounded-lg bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center">
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded-xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center shadow-sm">
                 <Zap className="w-5 h-5 lg:w-6 lg:h-6 text-white" aria-hidden="true" />
               </div>
-              <span className="text-lg lg:text-xl font-bold tracking-tight">{company.name}</span>
+              <span className="text-lg lg:text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-text-primary to-text-primary/70">
+                {company.name}
+              </span>
             </a>
 
             {/* Desktop Navigation */}
             <nav
-              className="hidden md:flex items-center gap-1"
+              className="hidden md:flex items-center gap-2"
               role="navigation"
               aria-label="Main navigation"
             >
-              {siteNavigation.main.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary rounded-lg hover:bg-bg-secondary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-                >
-                  {item.label}
-                </a>
-              ))}
+              {siteNavigation.main.map((item) => {
+                const active = isActiveRoute(item.href, currentPath);
+                return (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    className={`relative px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded-lg ${
+                      active
+                        ? 'text-text-primary'
+                        : 'text-text-secondary hover:text-text-primary hover:bg-bg-secondary/50'
+                    }`}
+                  >
+                    {item.label}
+                    {active && (
+                      <motion.span
+                        layoutId="activeNavIndicator"
+                        className="absolute inset-0 bg-bg-secondary rounded-lg -z-10"
+                        initial={false}
+                        transition={
+                          prefersReducedMotion
+                            ? { duration: 0 }
+                            : { type: 'spring', stiffness: 380, damping: 30 }
+                        }
+                      />
+                    )}
+                    {active && (
+                      <motion.span
+                        layoutId="activeNavLine"
+                        className="absolute bottom-1 left-4 right-4 h-0.5 bg-primary-500 rounded-full"
+                        initial={false}
+                        transition={
+                          prefersReducedMotion
+                            ? { duration: 0 }
+                            : { type: 'spring', stiffness: 380, damping: 30 }
+                        }
+                      />
+                    )}
+                  </a>
+                );
+              })}
             </nav>
 
             {/* Right side actions */}
@@ -146,13 +195,15 @@ export function Header({
 
               {/* CTA Button - Desktop */}
               {showCta && (
-                <a
+                <motion.a
                   href={ctaHref}
                   onClick={handleCtaClick}
-                  className="hidden md:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-lg shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+                  whileHover={!prefersReducedMotion ? { scale: 1.05 } : {}}
+                  whileTap={!prefersReducedMotion ? { scale: 0.95 } : {}}
+                  className="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-xl shadow-md shadow-primary-500/20 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
                 >
                   {ctaText}
-                </a>
+                </motion.a>
               )}
 
               {/* Mobile Menu Button */}
@@ -173,6 +224,7 @@ export function Header({
         showCta={showCta}
         ctaText={ctaText}
         ctaHref={ctaHref}
+        currentPath={currentPath}
         {...(onCtaClick ? { onCtaClick } : {})}
       />
     </>

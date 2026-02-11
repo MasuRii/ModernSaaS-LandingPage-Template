@@ -1,8 +1,10 @@
 import React, { useCallback, useEffect, useRef } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import { siteNavigation } from '../../config/site';
-import { ROUTES } from '../../config/paths';
+import { ROUTES, isActiveRoute } from '../../config/paths';
+import { useReducedMotion } from '../../utils/reducedMotion';
 
 /**
  * Props for the MobileNavigation component
@@ -20,6 +22,8 @@ export interface MobileNavigationProps {
   ctaHref?: string;
   /** Callback when CTA is clicked */
   onCtaClick?: () => void;
+  /** The current page path */
+  currentPath?: string;
 }
 
 /**
@@ -120,32 +124,13 @@ function useFocusTrap(
  *
  * A full-featured mobile navigation drawer with:
  * - Focus trap when open (accessibility requirement)
- * - Smooth open/close animations
- * - Navigation links from site config
+ * - Smooth open/close animations using framer-motion
+ * - Navigation links from site config with active state highlighting
  * - Theme toggle
  * - Primary CTA button
  * - Backdrop overlay with click-to-close
  * - Escape key handling
  * - Reduced motion support
- *
- * @example
- * ```tsx
- * <MobileNavigation
- *   isOpen={isMobileMenuOpen}
- *   onClose={closeMobileMenu}
- * />
- * ```
- *
- * @example
- * ```tsx
- * <MobileNavigation
- *   isOpen={isMobileMenuOpen}
- *   onClose={closeMobileMenu}
- *   showCta={true}
- *   ctaText="Start Free Trial"
- *   onCtaClick={() => console.log('CTA clicked')}
- * />
- * ```
  */
 export function MobileNavigation({
   isOpen,
@@ -154,9 +139,11 @@ export function MobileNavigation({
   ctaText = 'Get Started',
   ctaHref = ROUTES.SIGNUP,
   onCtaClick,
-}: MobileNavigationProps): React.ReactElement | null {
+  currentPath = '',
+}: MobileNavigationProps): React.ReactElement {
   const containerRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const { prefersReducedMotion } = useReducedMotion();
 
   // Apply focus trap
   useFocusTrap(containerRef as React.RefObject<HTMLElement | null>, isOpen, onClose);
@@ -190,133 +177,110 @@ export function MobileNavigation({
     onClose();
   }, [onClose]);
 
-  // Reduced motion check
-  const prefersReducedMotion =
-    typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  const animationDuration = prefersReducedMotion ? '0ms' : '300ms';
-
-  if (!isOpen) {
-    return null;
-  }
-
   return (
-    <>
-      {/* Backdrop overlay */}
-      <div
-        className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
-        onClick={onClose}
-        aria-hidden="true"
-        style={{
-          animation: `fadeIn ${animationDuration} ease-out`,
-        }}
-      />
-
-      {/* Mobile navigation drawer */}
-      <div
-        ref={containerRef}
-        id="mobile-navigation"
-        className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-bg-primary border-l border-border-default shadow-2xl z-50 md:hidden flex flex-col"
-        role="dialog"
-        aria-modal="true"
-        aria-label="Mobile navigation menu"
-        style={{
-          animation: `slideIn ${animationDuration} ease-out`,
-        }}
-      >
-        {/* Header */}
-        <div className="flex items-center justify-between px-4 py-4 border-b border-border-default">
-          <span className="text-lg font-semibold text-text-primary">Menu</span>
-          <button
-            ref={closeButtonRef}
-            type="button"
+    <AnimatePresence>
+      {isOpen && (
+        <>
+          {/* Backdrop overlay */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 bg-bg-primary/60 backdrop-blur-sm z-40 md:hidden"
             onClick={onClose}
-            className="p-2 text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-            aria-label="Close menu"
+            aria-hidden="true"
+          />
+
+          {/* Mobile navigation drawer */}
+          <motion.div
+            ref={containerRef}
+            id="mobile-navigation"
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={
+              prefersReducedMotion
+                ? { duration: 0 }
+                : { type: 'spring', damping: 25, stiffness: 200 }
+            }
+            className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-bg-primary border-l border-border-default shadow-2xl z-50 md:hidden flex flex-col"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation menu"
           >
-            <X className="w-6 h-6" aria-hidden="true" />
-          </button>
-        </div>
+            {/* Header */}
+            <div className="flex items-center justify-between px-6 py-5 border-b border-border-default/50">
+              <span className="text-xl font-bold text-text-primary tracking-tight">Menu</span>
+              <button
+                ref={closeButtonRef}
+                type="button"
+                onClick={onClose}
+                className="p-2 text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-xl transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+                aria-label="Close menu"
+              >
+                <X className="w-6 h-6" aria-hidden="true" />
+              </button>
+            </div>
 
-        {/* Navigation links */}
-        <nav
-          className="flex-1 overflow-y-auto py-4 px-4"
-          role="navigation"
-          aria-label="Mobile navigation"
-        >
-          <ul className="space-y-1">
-            {siteNavigation.main.map((item, index) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  onClick={handleNavClick}
-                  className="block px-4 py-3 text-base font-medium text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-                  style={{
-                    animation: prefersReducedMotion
-                      ? undefined
-                      : `fadeInUp ${300 + index * 50}ms ease-out`,
-                  }}
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-
-        {/* Footer with theme toggle and CTA */}
-        <div className="border-t border-border-default p-4 space-y-4">
-          {/* Theme toggle */}
-          <div className="flex items-center justify-between px-4 py-2">
-            <span className="text-sm font-medium text-text-secondary">Theme</span>
-            <ThemeToggle aria-label="Toggle theme" />
-          </div>
-
-          {/* CTA Button */}
-          {showCta && (
-            <a
-              href={ctaHref}
-              onClick={handleCtaClick}
-              className="block w-full px-4 py-3 text-center text-base font-medium text-white bg-primary-600 hover:bg-primary-700 rounded-lg shadow-sm transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+            {/* Navigation links */}
+            <nav
+              className="flex-1 overflow-y-auto py-6 px-4"
+              role="navigation"
+              aria-label="Mobile navigation"
             >
-              {ctaText}
-            </a>
-          )}
-        </div>
-      </div>
+              <ul className="space-y-2">
+                {siteNavigation.main.map((item, index) => {
+                  const active = isActiveRoute(item.href, currentPath);
+                  return (
+                    <motion.li
+                      key={item.href}
+                      initial={prefersReducedMotion ? {} : { opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.1 + index * 0.05 }}
+                    >
+                      <a
+                        href={item.href}
+                        onClick={handleNavClick}
+                        className={`block px-5 py-4 text-lg font-semibold rounded-2xl transition-all ${
+                          active
+                            ? 'text-primary-600 bg-primary-500/10 dark:text-primary-400 dark:bg-primary-500/20'
+                            : 'text-text-secondary hover:text-text-primary hover:bg-bg-secondary'
+                        } focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2`}
+                      >
+                        {item.label}
+                      </a>
+                    </motion.li>
+                  );
+                })}
+              </ul>
+            </nav>
 
-      {/* CSS animations */}
-      <style>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
+            {/* Footer with theme toggle and CTA */}
+            <div className="border-t border-border-default/50 p-6 space-y-6 bg-bg-secondary/30">
+              {/* Theme toggle */}
+              <div className="flex items-center justify-between px-2">
+                <span className="text-sm font-semibold text-text-secondary uppercase tracking-wider">
+                  Appearance
+                </span>
+                <ThemeToggle aria-label="Toggle theme" />
+              </div>
 
-        @keyframes slideIn {
-          from {
-            transform: translateX(100%);
-          }
-          to {
-            transform: translateX(0);
-          }
-        }
-
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
-    </>
+              {/* CTA Button */}
+              {showCta && (
+                <a
+                  href={ctaHref}
+                  onClick={handleCtaClick}
+                  className="block w-full px-6 py-4 text-center text-lg font-bold text-white bg-primary-600 hover:bg-primary-700 rounded-2xl shadow-lg shadow-primary-500/20 transition-all active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+                >
+                  {ctaText}
+                </a>
+              )}
+            </div>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
   );
 }
 
@@ -337,14 +301,6 @@ export interface MobileMenuButtonProps {
  *
  * The hamburger menu button that triggers the mobile navigation.
  * Changes icon between hamburger and close based on open state.
- *
- * @example
- * ```tsx
- * <MobileMenuButton
- *   isOpen={isMobileMenuOpen}
- *   onClick={toggleMobileMenu}
- * />
- * ```
  */
 export function MobileMenuButton({
   isOpen,

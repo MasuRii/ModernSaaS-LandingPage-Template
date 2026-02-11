@@ -57,7 +57,7 @@ describe('MobileNavigation', () => {
 
     it('renders theme toggle', () => {
       renderWithTheme(<MobileNavigation isOpen={true} onClose={vi.fn()} />);
-      expect(screen.getByText('Theme')).toBeInTheDocument();
+      expect(screen.getByText('Appearance')).toBeInTheDocument();
     });
 
     it('renders CTA button by default', () => {

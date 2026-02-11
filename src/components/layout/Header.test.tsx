@@ -128,6 +128,41 @@ describe('Header', () => {
     expect(screen.getByText('Blog').closest('a')).toHaveAttribute('href', '/blog/');
     expect(screen.getByText('Contact').closest('a')).toHaveAttribute('href', '/contact/');
   });
+
+  it('changes background and height when scrolled', () => {
+    const { container } = renderWithTheme(<Header />);
+    const header = container.querySelector('header');
+    const innerContainer = container.querySelector('header > div > div');
+
+    // Initial state
+    expect(header).toHaveClass('bg-transparent');
+    expect(innerContainer).toHaveClass('h-20');
+
+    // Scroll down
+    Object.defineProperty(window, 'scrollY', { value: 50, writable: true });
+    fireEvent.scroll(window);
+
+    expect(header).toHaveClass('bg-bg-primary/80');
+    expect(header).toHaveClass('shadow-md');
+    expect(innerContainer).toHaveClass('h-16');
+  });
+
+  it('highlights the active navigation link', () => {
+    // Mock pathname
+    Object.defineProperty(window, 'location', {
+      value: { pathname: '/features/' },
+      writable: true,
+      configurable: true,
+    });
+
+    renderWithTheme(<Header />);
+
+    const featuresLink = screen.getByText('Features').closest('a');
+    expect(featuresLink).toHaveClass('text-text-primary');
+
+    const pricingLink = screen.getByText('Pricing').closest('a');
+    expect(pricingLink).toHaveClass('text-text-secondary');
+  });
 });
 
 describe('MinimalHeader', () => {

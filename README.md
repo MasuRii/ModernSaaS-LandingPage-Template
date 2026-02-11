@@ -92,6 +92,50 @@ Ensure you have [Bun](https://bun.sh/) installed.
    bun run build
    ```
 
+## 🎨 Customization
+
+This template is designed to be easily brandable and customizable.
+
+### 1. Branding & Identity
+
+Update `src/config/site.ts` to change:
+
+- **Company Name**: `company.name`
+- **Tagline**: `company.tagline`
+- **Social Links**: `social` object
+- **Contact Info**: `contact` object
+- **SEO Defaults**: `seo` object
+
+### 2. Colors & Typography
+
+Styling is managed via CSS variables in `src/styles/tokens.css`.
+
+- **Primary Color**: Update `--primitive-color-primary-*` scale.
+- **Secondary Color**: Update `--primitive-color-secondary-*` scale.
+- **Accent Color**: Update `--primitive-color-accent-*` scale.
+- **Typography**: Update `--font-family-sans` and `--font-size-*` tokens.
+
+The template uses **Tailwind CSS v4**, so these tokens are automatically
+available as utility classes.
+
+### 3. Content Data
+
+Most page content is centralized in `src/data/`:
+
+- **Features**: `src/data/features.ts`
+- **Pricing**: `src/data/pricing.ts`
+- **Testimonials**: `src/data/testimonials.ts`
+- **Team**: `src/data/team.ts`
+- **Integrations**: `src/data/integrations.ts`
+- **FAQs**: `src/data/faq.ts`
+
+### 4. Logos & Icons
+
+- **Text-based Logo**: Automatically updates via `company.name` in
+  `src/config/site.ts`.
+- **Logo Icon**: The default `Zap` icon is used in `Header.tsx`. Replace it with
+  your own SVG or icon component in `src/components/layout/Header.tsx`.
+
 ## 📸 Screenshots
 
 ### Light Mode

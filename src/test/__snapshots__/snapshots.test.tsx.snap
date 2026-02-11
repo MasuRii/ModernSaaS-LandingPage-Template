@@ -567,6 +567,7 @@ exports[`Component Snapshots > dark theme > Form Components > Input states match
       </div>
       <p
         class="text-xs font-medium text-error-600 dark:text-error-400"
+        data-testid="input-error"
         id="error-error"
         role="alert"
         style="opacity: 0; transform: translateY(-10px);"
@@ -613,6 +614,7 @@ exports[`Component Snapshots > dark theme > Form Components > NewsletterForm mat
   >
     <form
       class="flex flex-col gap-3 sm:flex-row sm:items-start"
+      data-testid="newsletter-form"
       novalidate=""
     >
       <div
@@ -622,7 +624,7 @@ exports[`Component Snapshots > dark theme > Form Components > NewsletterForm mat
           class="relative flex items-center"
         >
           <div
-            class="absolute left-3 flex items-center justify-center pointer-events-none text-text-muted z-10"
+            class="absolute left-3 flex items-center justify-center text-text-muted z-20 pointer-events-none"
           >
             <svg
               aria-hidden="true"
@@ -665,6 +667,7 @@ exports[`Component Snapshots > dark theme > Form Components > NewsletterForm mat
         aria-busy="false"
         aria-disabled="false"
         class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-700 text-white border-transparent hover:bg-primary-800 active:bg-primary-900 dark:bg-primary-600 dark:text-white dark:hover:bg-primary-500 dark:active:bg-primary-400 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg sm:mt-0"
+        data-testid="newsletter-submit"
         tabindex="0"
         type="submit"
       >
@@ -1272,6 +1275,7 @@ exports[`Component Snapshots > dark theme > Sections > FeaturesOverview section 
   <section
     aria-label="Features Overview"
     class="bg-bg-secondary py-16 md:py-24 py-20 lg:py-32"
+    data-testid="features-section"
     id="features"
   >
     <div
@@ -2058,31 +2062,18 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
             class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             style="opacity: 1; transform: none;"
           >
-            <button
-              aria-busy="false"
-              aria-disabled="false"
-              class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-700 text-white border-transparent hover:bg-primary-800 active:bg-primary-900 dark:bg-primary-600 dark:text-white dark:hover:bg-primary-500 dark:active:bg-primary-400 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 text-lg gap-2.5 rounded-lg px-8"
+            <a
+              class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-700 text-white hover:bg-primary-800 dark:bg-primary-600 dark:text-white dark:hover:bg-primary-500 font-medium shadow-sm hover:shadow active:scale-[0.98] transition-all duration-200 px-8"
               data-testid="hero-cta-primary"
-              tabindex="0"
-              type="button"
+              href="/signup/"
             >
-              <span
-                class="flex items-center justify-center w-full h-full"
-              >
-                <span>
-                  Get Started
-                </span>
-                <span
-                  aria-hidden="true"
-                  class="inline-flex shrink-0 ml-2"
-                >
-                  <div
-                    data-testid="icon-arrowright"
-                    size="20"
-                  />
-                </span>
-              </span>
-            </button>
+              Get Started
+              <div
+                class="ml-2"
+                data-testid="icon-arrowright"
+                size="20"
+              />
+            </a>
             <a
               class=""
               href="/features/"
@@ -2425,6 +2416,7 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
   <section
     aria-label="Integrations"
     class="bg-bg-primary py-16 md:py-24 py-20 lg:py-32 overflow-hidden"
+    data-testid="integrations-section"
     id="integrations"
   >
     <div
@@ -2631,13 +2623,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                 class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8"
               >
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://slack.com"
+                  role="button"
                   title="Slack"
                 >
                   <div
@@ -2652,13 +2648,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://discord.com"
+                  role="button"
                   title="Discord"
                 >
                   <div
@@ -2673,13 +2673,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://microsoft.com/teams"
+                  role="button"
                   title="Microsoft Teams"
                 >
                   <div
@@ -2694,13 +2698,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://github.com"
+                  role="button"
                   title="GitHub"
                 >
                   <div
@@ -2715,13 +2723,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://gitlab.com"
+                  role="button"
                   title="GitLab"
                 >
                   <div
@@ -2736,13 +2748,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://atlassian.com/software/jira"
+                  role="button"
                   title="Jira"
                 >
                   <div
@@ -2757,13 +2773,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://vercel.com"
+                  role="button"
                   title="Vercel"
                 >
                   <div
@@ -2778,13 +2798,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://figma.com"
+                  role="button"
                   title="Figma"
                 >
                   <div
@@ -2799,13 +2823,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://sketch.com"
+                  role="button"
                   title="Sketch"
                 >
                   <div
@@ -2820,13 +2848,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://notion.so"
+                  role="button"
                   title="Notion"
                 >
                   <div
@@ -2841,13 +2873,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://linear.app"
+                  role="button"
                   title="Linear"
                 >
                   <div
@@ -2862,13 +2898,17 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://asana.com"
+                  role="button"
                   title="Asana"
                 >
                   <div
@@ -3006,13 +3046,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
               style="animation-duration: 40s;"
             >
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://slack.com"
+                role="button"
                 title="Slack"
               >
                 <div
@@ -3027,13 +3071,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://discord.com"
+                role="button"
                 title="Discord"
               >
                 <div
@@ -3048,13 +3096,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://github.com"
+                role="button"
                 title="GitHub"
               >
                 <div
@@ -3069,13 +3121,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://atlassian.com/software/jira"
+                role="button"
                 title="Jira"
               >
                 <div
@@ -3090,13 +3146,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://vercel.com"
+                role="button"
                 title="Vercel"
               >
                 <div
@@ -3111,13 +3171,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://figma.com"
+                role="button"
                 title="Figma"
               >
                 <div
@@ -3132,13 +3196,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://notion.so"
+                role="button"
                 title="Notion"
               >
                 <div
@@ -3153,13 +3221,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://linear.app"
+                role="button"
                 title="Linear"
               >
                 <div
@@ -3174,13 +3246,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://google.com/drive"
+                role="button"
                 title="Google Drive"
               >
                 <div
@@ -3195,13 +3271,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://mailchimp.com"
+                role="button"
                 title="Mailchimp"
               >
                 <div
@@ -3216,13 +3296,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://slack.com"
+                role="button"
                 title="Slack"
               >
                 <div
@@ -3237,13 +3321,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://discord.com"
+                role="button"
                 title="Discord"
               >
                 <div
@@ -3258,13 +3346,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://github.com"
+                role="button"
                 title="GitHub"
               >
                 <div
@@ -3279,13 +3371,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://atlassian.com/software/jira"
+                role="button"
                 title="Jira"
               >
                 <div
@@ -3300,13 +3396,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://vercel.com"
+                role="button"
                 title="Vercel"
               >
                 <div
@@ -3321,13 +3421,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://figma.com"
+                role="button"
                 title="Figma"
               >
                 <div
@@ -3342,13 +3446,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://notion.so"
+                role="button"
                 title="Notion"
               >
                 <div
@@ -3363,13 +3471,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://linear.app"
+                role="button"
                 title="Linear"
               >
                 <div
@@ -3384,13 +3496,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://google.com/drive"
+                role="button"
                 title="Google Drive"
               >
                 <div
@@ -3405,13 +3521,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://mailchimp.com"
+                role="button"
                 title="Mailchimp"
               >
                 <div
@@ -3432,13 +3552,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
               style="animation-duration: 40s;"
             >
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://slack.com"
+                role="button"
                 tabindex="-1"
                 title="Slack"
               >
@@ -3454,13 +3578,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://discord.com"
+                role="button"
                 tabindex="-1"
                 title="Discord"
               >
@@ -3476,13 +3604,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://github.com"
+                role="button"
                 tabindex="-1"
                 title="GitHub"
               >
@@ -3498,13 +3630,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://atlassian.com/software/jira"
+                role="button"
                 tabindex="-1"
                 title="Jira"
               >
@@ -3520,13 +3656,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://vercel.com"
+                role="button"
                 tabindex="-1"
                 title="Vercel"
               >
@@ -3542,13 +3682,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://figma.com"
+                role="button"
                 tabindex="-1"
                 title="Figma"
               >
@@ -3564,13 +3708,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://notion.so"
+                role="button"
                 tabindex="-1"
                 title="Notion"
               >
@@ -3586,13 +3734,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://linear.app"
+                role="button"
                 tabindex="-1"
                 title="Linear"
               >
@@ -3608,13 +3760,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://google.com/drive"
+                role="button"
                 tabindex="-1"
                 title="Google Drive"
               >
@@ -3630,13 +3786,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://mailchimp.com"
+                role="button"
                 tabindex="-1"
                 title="Mailchimp"
               >
@@ -3652,13 +3812,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://slack.com"
+                role="button"
                 tabindex="-1"
                 title="Slack"
               >
@@ -3674,13 +3838,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://discord.com"
+                role="button"
                 tabindex="-1"
                 title="Discord"
               >
@@ -3696,13 +3864,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://github.com"
+                role="button"
                 tabindex="-1"
                 title="GitHub"
               >
@@ -3718,13 +3890,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://atlassian.com/software/jira"
+                role="button"
                 tabindex="-1"
                 title="Jira"
               >
@@ -3740,13 +3916,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://vercel.com"
+                role="button"
                 tabindex="-1"
                 title="Vercel"
               >
@@ -3762,13 +3942,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://figma.com"
+                role="button"
                 tabindex="-1"
                 title="Figma"
               >
@@ -3784,13 +3968,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://notion.so"
+                role="button"
                 tabindex="-1"
                 title="Notion"
               >
@@ -3806,13 +3994,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://linear.app"
+                role="button"
                 tabindex="-1"
                 title="Linear"
               >
@@ -3828,13 +4020,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://google.com/drive"
+                role="button"
                 tabindex="-1"
                 title="Google Drive"
               >
@@ -3850,13 +4046,17 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://mailchimp.com"
+                role="button"
                 tabindex="-1"
                 title="Mailchimp"
               >
@@ -6900,6 +7100,7 @@ exports[`Component Snapshots > dark theme > Specialized Components > Integration
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     
   "
+    data-testid="integration-logo"
     href="#"
     title="Figma"
   >
@@ -6937,6 +7138,7 @@ exports[`Component Snapshots > dark theme > Specialized Components > LogoCloud m
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     
   "
+        data-testid="integration-logo"
         href="#"
         title="Vercel"
       >
@@ -7184,6 +7386,7 @@ exports[`Component Snapshots > dark theme > Theme & Utils > ThemeToggle matches 
         active:scale-95
         
       "
+    data-testid="theme-toggle"
     title="Switch to light mode"
     type="button"
   >
@@ -7783,6 +7986,7 @@ exports[`Component Snapshots > light theme > Form Components > Input states matc
       </div>
       <p
         class="text-xs font-medium text-error-600 dark:text-error-400"
+        data-testid="input-error"
         id="error-error"
         role="alert"
         style="opacity: 0; transform: translateY(-10px);"
@@ -7829,6 +8033,7 @@ exports[`Component Snapshots > light theme > Form Components > NewsletterForm ma
   >
     <form
       class="flex flex-col gap-3 sm:flex-row sm:items-start"
+      data-testid="newsletter-form"
       novalidate=""
     >
       <div
@@ -7838,7 +8043,7 @@ exports[`Component Snapshots > light theme > Form Components > NewsletterForm ma
           class="relative flex items-center"
         >
           <div
-            class="absolute left-3 flex items-center justify-center pointer-events-none text-text-muted z-10"
+            class="absolute left-3 flex items-center justify-center text-text-muted z-20 pointer-events-none"
           >
             <svg
               aria-hidden="true"
@@ -7881,6 +8086,7 @@ exports[`Component Snapshots > light theme > Form Components > NewsletterForm ma
         aria-busy="false"
         aria-disabled="false"
         class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-700 text-white border-transparent hover:bg-primary-800 active:bg-primary-900 dark:bg-primary-600 dark:text-white dark:hover:bg-primary-500 dark:active:bg-primary-400 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg sm:mt-0"
+        data-testid="newsletter-submit"
         tabindex="0"
         type="submit"
       >
@@ -8488,6 +8694,7 @@ exports[`Component Snapshots > light theme > Sections > FeaturesOverview section
   <section
     aria-label="Features Overview"
     class="bg-bg-secondary py-16 md:py-24 py-20 lg:py-32"
+    data-testid="features-section"
     id="features"
   >
     <div
@@ -9274,31 +9481,18 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
             class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             style="opacity: 1; transform: none;"
           >
-            <button
-              aria-busy="false"
-              aria-disabled="false"
-              class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-700 text-white border-transparent hover:bg-primary-800 active:bg-primary-900 dark:bg-primary-600 dark:text-white dark:hover:bg-primary-500 dark:active:bg-primary-400 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 text-lg gap-2.5 rounded-lg px-8"
+            <a
+              class="inline-flex items-center gap-1 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary inline-flex items-center justify-center px-4 py-2 rounded-lg bg-primary-700 text-white hover:bg-primary-800 dark:bg-primary-600 dark:text-white dark:hover:bg-primary-500 font-medium shadow-sm hover:shadow active:scale-[0.98] transition-all duration-200 px-8"
               data-testid="hero-cta-primary"
-              tabindex="0"
-              type="button"
+              href="/signup/"
             >
-              <span
-                class="flex items-center justify-center w-full h-full"
-              >
-                <span>
-                  Get Started
-                </span>
-                <span
-                  aria-hidden="true"
-                  class="inline-flex shrink-0 ml-2"
-                >
-                  <div
-                    data-testid="icon-arrowright"
-                    size="20"
-                  />
-                </span>
-              </span>
-            </button>
+              Get Started
+              <div
+                class="ml-2"
+                data-testid="icon-arrowright"
+                size="20"
+              />
+            </a>
             <a
               class=""
               href="/features/"
@@ -9641,6 +9835,7 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
   <section
     aria-label="Integrations"
     class="bg-bg-primary py-16 md:py-24 py-20 lg:py-32 overflow-hidden"
+    data-testid="integrations-section"
     id="integrations"
   >
     <div
@@ -9847,13 +10042,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                 class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8"
               >
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://slack.com"
+                  role="button"
                   title="Slack"
                 >
                   <div
@@ -9868,13 +10067,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://discord.com"
+                  role="button"
                   title="Discord"
                 >
                   <div
@@ -9889,13 +10092,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://microsoft.com/teams"
+                  role="button"
                   title="Microsoft Teams"
                 >
                   <div
@@ -9910,13 +10117,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://github.com"
+                  role="button"
                   title="GitHub"
                 >
                   <div
@@ -9931,13 +10142,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://gitlab.com"
+                  role="button"
                   title="GitLab"
                 >
                   <div
@@ -9952,13 +10167,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://atlassian.com/software/jira"
+                  role="button"
                   title="Jira"
                 >
                   <div
@@ -9973,13 +10192,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://vercel.com"
+                  role="button"
                   title="Vercel"
                 >
                   <div
@@ -9994,13 +10217,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://figma.com"
+                  role="button"
                   title="Figma"
                 >
                   <div
@@ -10015,13 +10242,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://sketch.com"
+                  role="button"
                   title="Sketch"
                 >
                   <div
@@ -10036,13 +10267,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://notion.so"
+                  role="button"
                   title="Notion"
                 >
                   <div
@@ -10057,13 +10292,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://linear.app"
+                  role="button"
                   title="Linear"
                 >
                   <div
@@ -10078,13 +10317,17 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                   </div>
                 </a>
                 <a
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
                   class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors
   "
-                  href="#"
+                  data-testid="integration-logo"
+                  href="https://asana.com"
+                  role="button"
                   title="Asana"
                 >
                   <div
@@ -10222,13 +10465,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
               style="animation-duration: 40s;"
             >
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://slack.com"
+                role="button"
                 title="Slack"
               >
                 <div
@@ -10243,13 +10490,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://discord.com"
+                role="button"
                 title="Discord"
               >
                 <div
@@ -10264,13 +10515,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://github.com"
+                role="button"
                 title="GitHub"
               >
                 <div
@@ -10285,13 +10540,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://atlassian.com/software/jira"
+                role="button"
                 title="Jira"
               >
                 <div
@@ -10306,13 +10565,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://vercel.com"
+                role="button"
                 title="Vercel"
               >
                 <div
@@ -10327,13 +10590,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://figma.com"
+                role="button"
                 title="Figma"
               >
                 <div
@@ -10348,13 +10615,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://notion.so"
+                role="button"
                 title="Notion"
               >
                 <div
@@ -10369,13 +10640,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://linear.app"
+                role="button"
                 title="Linear"
               >
                 <div
@@ -10390,13 +10665,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://google.com/drive"
+                role="button"
                 title="Google Drive"
               >
                 <div
@@ -10411,13 +10690,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://mailchimp.com"
+                role="button"
                 title="Mailchimp"
               >
                 <div
@@ -10432,13 +10715,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://slack.com"
+                role="button"
                 title="Slack"
               >
                 <div
@@ -10453,13 +10740,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://discord.com"
+                role="button"
                 title="Discord"
               >
                 <div
@@ -10474,13 +10765,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://github.com"
+                role="button"
                 title="GitHub"
               >
                 <div
@@ -10495,13 +10790,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://atlassian.com/software/jira"
+                role="button"
                 title="Jira"
               >
                 <div
@@ -10516,13 +10815,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://vercel.com"
+                role="button"
                 title="Vercel"
               >
                 <div
@@ -10537,13 +10840,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://figma.com"
+                role="button"
                 title="Figma"
               >
                 <div
@@ -10558,13 +10865,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://notion.so"
+                role="button"
                 title="Notion"
               >
                 <div
@@ -10579,13 +10890,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://linear.app"
+                role="button"
                 title="Linear"
               >
                 <div
@@ -10600,13 +10915,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://google.com/drive"
+                role="button"
                 title="Google Drive"
               >
                 <div
@@ -10621,13 +10940,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://mailchimp.com"
+                role="button"
                 title="Mailchimp"
               >
                 <div
@@ -10648,13 +10971,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
               style="animation-duration: 40s;"
             >
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://slack.com"
+                role="button"
                 tabindex="-1"
                 title="Slack"
               >
@@ -10670,13 +10997,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://discord.com"
+                role="button"
                 tabindex="-1"
                 title="Discord"
               >
@@ -10692,13 +11023,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://github.com"
+                role="button"
                 tabindex="-1"
                 title="GitHub"
               >
@@ -10714,13 +11049,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://atlassian.com/software/jira"
+                role="button"
                 tabindex="-1"
                 title="Jira"
               >
@@ -10736,13 +11075,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://vercel.com"
+                role="button"
                 tabindex="-1"
                 title="Vercel"
               >
@@ -10758,13 +11101,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://figma.com"
+                role="button"
                 tabindex="-1"
                 title="Figma"
               >
@@ -10780,13 +11127,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://notion.so"
+                role="button"
                 tabindex="-1"
                 title="Notion"
               >
@@ -10802,13 +11153,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://linear.app"
+                role="button"
                 tabindex="-1"
                 title="Linear"
               >
@@ -10824,13 +11179,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://google.com/drive"
+                role="button"
                 tabindex="-1"
                 title="Google Drive"
               >
@@ -10846,13 +11205,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://mailchimp.com"
+                role="button"
                 tabindex="-1"
                 title="Mailchimp"
               >
@@ -10868,13 +11231,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://slack.com"
+                role="button"
                 tabindex="-1"
                 title="Slack"
               >
@@ -10890,13 +11257,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://discord.com"
+                role="button"
                 tabindex="-1"
                 title="Discord"
               >
@@ -10912,13 +11283,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://github.com"
+                role="button"
                 tabindex="-1"
                 title="GitHub"
               >
@@ -10934,13 +11309,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://atlassian.com/software/jira"
+                role="button"
                 tabindex="-1"
                 title="Jira"
               >
@@ -10956,13 +11335,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://vercel.com"
+                role="button"
                 tabindex="-1"
                 title="Vercel"
               >
@@ -10978,13 +11361,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://figma.com"
+                role="button"
                 tabindex="-1"
                 title="Figma"
               >
@@ -11000,13 +11387,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://notion.so"
+                role="button"
                 tabindex="-1"
                 title="Notion"
               >
@@ -11022,13 +11413,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://linear.app"
+                role="button"
                 tabindex="-1"
                 title="Linear"
               >
@@ -11044,13 +11439,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://google.com/drive"
+                role="button"
                 tabindex="-1"
                 title="Google Drive"
               >
@@ -11066,13 +11465,17 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
                 </div>
               </a>
               <a
+                aria-expanded="false"
+                aria-haspopup="dialog"
                 class="
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     shrink-0
   "
-                href="#"
+                data-testid="integration-logo"
+                href="https://mailchimp.com"
+                role="button"
                 tabindex="-1"
                 title="Mailchimp"
               >
@@ -14116,6 +14519,7 @@ exports[`Component Snapshots > light theme > Specialized Components > Integratio
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     
   "
+    data-testid="integration-logo"
     href="#"
     title="Figma"
   >
@@ -14153,6 +14557,7 @@ exports[`Component Snapshots > light theme > Specialized Components > LogoCloud 
     hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
     
   "
+        data-testid="integration-logo"
         href="#"
         title="Vercel"
       >
@@ -14400,6 +14805,7 @@ exports[`Component Snapshots > light theme > Theme & Utils > ThemeToggle matches
         active:scale-95
         
       "
+    data-testid="theme-toggle"
     title="Switch to dark mode"
     type="button"
   >

@@ -65,7 +65,7 @@ describe('Hero Component', () => {
 
   it('renders CTA buttons', () => {
     renderHero();
-    expect(screen.getByRole('button', { name: /Get Started/i })).toBeDefined();
+    expect(screen.getByRole('link', { name: /Get Started/i })).toBeDefined();
     expect(screen.getByRole('button', { name: /View Demo/i })).toBeDefined();
   });
 

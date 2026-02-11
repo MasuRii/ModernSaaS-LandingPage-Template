@@ -152,9 +152,9 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
           baseClasses.push(
             'inline-flex items-center justify-center',
             'px-4 py-2 rounded-lg',
-            'bg-primary-700 text-white!',
+            'bg-primary-700 text-white',
             'hover:bg-primary-800',
-            'dark:bg-primary-600 dark:text-white! dark:hover:bg-primary-500',
+            'dark:bg-primary-600 dark:text-white dark:hover:bg-primary-500',
             'font-medium',
             'shadow-sm hover:shadow',
             'active:scale-[0.98]',

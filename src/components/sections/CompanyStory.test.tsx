@@ -49,9 +49,9 @@ describe('CompanyStory', () => {
     expect(screen.getByText(company.vision)).toBeDefined();
   });
 
-  it('renders the image placeholder', () => {
+  it('renders the team image', () => {
     render(<CompanyStory />);
-    expect(screen.getByText(/Team \/ Office Photo Placeholder/i)).toBeDefined();
+    expect(screen.getByAltText(/Our team working together/i)).toBeDefined();
   });
 
   it('has correct accessibility labels', () => {

@@ -21,89 +21,91 @@
    CSS Reset & Normalize
    ------------------------------------------ */
 
-/* Box-sizing reset */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margins and padding */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Remove list styles */
-ul,
-ol {
-  list-style: none;
-}
-
-/* Remove default button styles */
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font: inherit;
-}
-
-/* Remove default anchor styles */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Remove default form element styles */
-input,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-}
-
-/* Image reset */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-/* Table reset */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* Remove default heading styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/* Paragraph reset */
-p {
-  margin: 0;
-}
-
-/* Address and cite reset */
-address,
-cite {
-  font-style: normal;
-}
-
 /* ------------------------------------------
-   Base Styles
+   Base Styles & Reset
    ------------------------------------------ */
 @layer base {
+  /* Box-sizing reset */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Remove default margins and padding */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove list styles */
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  /* Remove default button styles */
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Remove default anchor styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Remove default form element styles */
+  input,
+  textarea,
+  select {
+    font: inherit;
+    color: inherit;
+  }
+
+  /* Image reset */
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Table reset */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* Remove default heading styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  /* Paragraph reset */
+  p {
+    margin: 0;
+  }
+
+  /* Address and cite reset */
+  address,
+  cite {
+    font-style: normal;
+  }
+
   * {
     @apply border-border-default;
   }
@@ -194,10 +196,6 @@ cite {
   --color-accent-800: var(--primitive-color-accent-800);
   --color-accent-900: var(--primitive-color-accent-900);
   --color-accent-950: var(--primitive-color-accent-950);
-  --color-accent-700: var(--primitive-color-accent-700);
-  --color-accent-800: var(--primitive-color-accent-800);
-  --color-accent-900: var(--primitive-color-accent-900);
-  --color-accent-950: var(--primitive-color-accent-950);
 
   /* Neutral Gray Scale */
   --color-gray-50: var(--primitive-color-gray-50);
@@ -260,37 +258,33 @@ cite {
   --color-info-800: var(--primitive-color-info-800);
   --color-info-900: var(--primitive-color-info-900);
   --color-info-950: var(--primitive-color-info-950);
-  --color-info-700: var(--primitive-color-info-700);
-  --color-info-800: var(--primitive-color-info-800);
-  --color-info-900: var(--primitive-color-info-900);
-  --color-info-950: var(--primitive-color-info-950);
 
   /* ========================================
      SEMANTIC THEME-AWARE TOKENS
      ======================================== */
 
   /* Background Colors */
-  --color-bg-primary: var(--color-bg-primary);
-  --color-bg-secondary: var(--color-bg-secondary);
-  --color-bg-tertiary: var(--color-bg-tertiary);
-  --color-bg-elevated: var(--color-bg-elevated);
-  --color-bg-overlay: var(--color-bg-overlay);
+  --color-bg-primary: var(--token-bg-primary);
+  --color-bg-secondary: var(--token-bg-secondary);
+  --color-bg-tertiary: var(--token-bg-tertiary);
+  --color-bg-elevated: var(--token-bg-elevated);
+  --color-bg-overlay: var(--token-bg-overlay);
 
   /* Text Colors */
-  --color-text-primary: var(--color-text-primary);
-  --color-text-secondary: var(--color-text-secondary);
-  --color-text-tertiary: var(--color-text-tertiary);
-  --color-text-muted: var(--color-text-muted);
-  --color-text-inverse: var(--color-text-inverse);
+  --color-text-primary: var(--token-text-primary);
+  --color-text-secondary: var(--token-text-secondary);
+  --color-text-tertiary: var(--token-text-tertiary);
+  --color-text-muted: var(--token-text-muted);
+  --color-text-inverse: var(--token-text-inverse);
 
   /* Border Colors */
-  --color-border-default: var(--color-border-default);
-  --color-border-strong: var(--color-border-strong);
-  --color-border-subtle: var(--color-border-subtle);
+  --color-border-default: var(--token-border-default);
+  --color-border-strong: var(--token-border-strong);
+  --color-border-subtle: var(--token-border-subtle);
 
   /* Focus States */
-  --color-focus-ring: var(--color-focus-ring);
-  --color-focus-ring-offset: var(--color-focus-ring-offset);
+  --color-focus-ring: var(--token-focus-ring);
+  --color-focus-ring-offset: var(--token-focus-ring-offset);
 
   /* ========================================
      SPACING SCALE TOKENS

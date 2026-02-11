@@ -439,7 +439,7 @@ describe('DemoLinkButton Component', () => {
     );
 
     const link = screen.getByText('Test Button');
-    expect(link).toHaveClass('bg-secondary-600');
+    expect(link).toHaveClass('bg-secondary-700');
   });
 
   it('applies size styles', () => {

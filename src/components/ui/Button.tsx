@@ -119,13 +119,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     // Variant-specific styles
     const variantStyles: Record<ButtonVariant, string> = {
       primary: cn(
-        'bg-primary-700 text-white! border-transparent hover:bg-primary-800 active:bg-primary-900',
-        'dark:bg-primary-600 dark:text-white! dark:hover:bg-primary-500 dark:active:bg-primary-400 dark:focus-visible:ring-primary-400',
+        'bg-primary-700 text-white border-transparent hover:bg-primary-800 active:bg-primary-900',
+        'dark:bg-primary-600 dark:text-white dark:hover:bg-primary-500 dark:active:bg-primary-400 dark:focus-visible:ring-primary-400',
         !prefersReducedMotion && 'hover:shadow-md active:shadow-sm',
       ),
       secondary: cn(
-        'bg-secondary-700 text-white! border-transparent hover:bg-secondary-800 active:bg-secondary-900',
-        'dark:bg-secondary-600 dark:text-white! dark:hover:bg-secondary-500 dark:active:bg-secondary-400 dark:focus-visible:ring-secondary-400',
+        'bg-secondary-700 text-white border-transparent hover:bg-secondary-800 active:bg-secondary-900',
+        'dark:bg-secondary-600 dark:text-white dark:hover:bg-secondary-500 dark:active:bg-secondary-400 dark:focus-visible:ring-secondary-400',
         !prefersReducedMotion && 'hover:shadow-md active:shadow-sm',
       ),
       outline: cn(

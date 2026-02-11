@@ -126,37 +126,75 @@
    ------------------------------------------ */
 :root {
   /* Background Colors */
-  --color-bg-primary: var(--primitive-color-gray-50);
-  --color-bg-secondary: var(--primitive-color-gray-100);
-  --color-bg-tertiary: var(--primitive-color-gray-200);
-  --color-bg-elevated: #ffffff;
-  --color-bg-overlay: rgba(0, 0, 0, 0.5);
-  --color-bg-inverse: var(--primitive-color-gray-900);
+  --token-bg-primary: var(--primitive-color-gray-50);
+  --token-bg-secondary: var(--primitive-color-gray-100);
+  --token-bg-tertiary: var(--primitive-color-gray-200);
+  --token-bg-elevated: #ffffff;
+  --token-bg-overlay: rgba(0, 0, 0, 0.5);
+  --token-bg-inverse: var(--primitive-color-gray-900);
 
   /* Text Colors */
-  --color-text-primary: var(--primitive-color-gray-900);
-  --color-text-secondary: var(--primitive-color-gray-800);
-  --color-text-tertiary: var(--primitive-color-gray-700);
-  --color-text-muted: var(--primitive-color-gray-600);
-  --color-text-inverse: #ffffff;
-  --color-text-link: var(--primitive-color-primary-600);
-  --color-text-link-hover: var(--primitive-color-primary-700);
+  --token-text-primary: var(--primitive-color-gray-900);
+  --token-text-secondary: var(--primitive-color-gray-800);
+  --token-text-tertiary: var(--primitive-color-gray-700);
+  --token-text-muted: var(--primitive-color-gray-600);
+  --token-text-inverse: #ffffff;
+  --token-text-link: var(--primitive-color-primary-600);
+  --token-text-link-hover: var(--primitive-color-primary-700);
 
   /* Border Colors */
-  --color-border-default: var(--primitive-color-gray-200);
-  --color-border-strong: var(--primitive-color-gray-300);
-  --color-border-subtle: var(--primitive-color-gray-100);
-  --color-border-inverse: var(--primitive-color-gray-700);
+  --token-border-default: var(--primitive-color-gray-200);
+  --token-border-strong: var(--primitive-color-gray-300);
+  --token-border-subtle: var(--primitive-color-gray-100);
+  --token-border-inverse: var(--primitive-color-gray-700);
 
   /* Focus States */
-  --color-focus-ring: var(--primitive-color-primary-500);
-  --color-focus-ring-offset: #ffffff;
+  --token-focus-ring: var(--primitive-color-primary-500);
+  --token-focus-ring-offset: #ffffff;
 
   /* Interactive States */
-  --color-hover-bg: var(--primitive-color-gray-100);
-  --color-active-bg: var(--primitive-color-gray-200);
-  --color-disabled-bg: var(--primitive-color-gray-100);
-  --color-disabled-text: var(--primitive-color-gray-400);
+  --token-hover-bg: var(--primitive-color-gray-100);
+  --token-active-bg: var(--primitive-color-gray-200);
+  --token-disabled-bg: var(--primitive-color-gray-100);
+  --token-disabled-text: var(--primitive-color-gray-400);
+}
+
+/* ------------------------------------------
+   3. SEMANTIC TOKENS - Dark Mode
+   ------------------------------------------ */
+.dark {
+  /* Background Colors */
+  --token-bg-primary: var(--primitive-color-gray-950);
+  --token-bg-secondary: var(--primitive-color-gray-900);
+  --token-bg-tertiary: var(--primitive-color-gray-800);
+  --token-bg-elevated: var(--primitive-color-gray-800);
+  --token-bg-overlay: rgba(0, 0, 0, 0.75);
+  --token-bg-inverse: var(--primitive-color-gray-100);
+
+  /* Text Colors */
+  --token-text-primary: var(--primitive-color-gray-50);
+  --token-text-secondary: var(--primitive-color-gray-200);
+  --token-text-tertiary: var(--primitive-color-gray-300);
+  --token-text-muted: var(--primitive-color-gray-400);
+  --token-text-inverse: var(--primitive-color-gray-900);
+  --token-text-link: var(--primitive-color-primary-400);
+  --token-text-link-hover: var(--primitive-color-primary-300);
+
+  /* Border Colors */
+  --token-border-default: var(--primitive-color-gray-700);
+  --token-border-strong: var(--primitive-color-gray-600);
+  --token-border-subtle: var(--primitive-color-gray-800);
+  --token-border-inverse: var(--primitive-color-gray-300);
+
+  /* Focus States */
+  --token-focus-ring: var(--primitive-color-primary-400);
+  --token-focus-ring-offset: var(--primitive-color-gray-950);
+
+  /* Interactive States */
+  --token-hover-bg: var(--primitive-color-gray-800);
+  --token-active-bg: var(--primitive-color-gray-700);
+  --token-disabled-bg: var(--primitive-color-gray-800);
+  --token-disabled-text: var(--primitive-color-gray-600);
 }
 
 /* ------------------------------------------

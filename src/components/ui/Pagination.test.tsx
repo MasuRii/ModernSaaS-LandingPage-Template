@@ -27,7 +27,7 @@ describe('Pagination', () => {
 
     const activePage = screen.getByLabelText('Page 2');
     expect(activePage).toHaveAttribute('aria-current', 'page');
-    expect(activePage).toHaveClass('bg-primary-600'); // Based on Button component's primary variant
+    expect(activePage).toHaveClass('bg-primary-700'); // Based on Button component's primary variant
   });
 
   it('calls onPageChange when a page number is clicked', () => {

@@ -87,7 +87,7 @@ describe('Link Component', () => {
         </Link>,
       );
       const link = screen.getByText('Button Link');
-      expect(link).toHaveClass('bg-primary-600');
+      expect(link).toHaveClass('bg-primary-700');
       expect(link).toHaveClass('rounded-lg');
       expect(link).toHaveClass('px-4');
     });
@@ -225,7 +225,7 @@ describe('Link Component', () => {
         </Link>,
       );
       const link = screen.getByText('Combined Classes');
-      expect(link).toHaveClass('bg-primary-600');
+      expect(link).toHaveClass('bg-primary-700');
       expect(link).toHaveClass('my-custom-class');
     });
   });

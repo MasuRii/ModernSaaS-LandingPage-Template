@@ -190,6 +190,7 @@ export const SignupForm: React.FC = () => {
             error={errors.name}
             required
             fullWidth
+            floatingLabel
             leftIcon={<User className="h-4 w-4 text-text-muted" />}
             data-testid="signup-name"
           />
@@ -203,6 +204,7 @@ export const SignupForm: React.FC = () => {
             error={errors.email}
             required
             fullWidth
+            floatingLabel
             leftIcon={<Mail className="h-4 w-4 text-text-muted" />}
             data-testid="signup-email"
           />
@@ -216,6 +218,7 @@ export const SignupForm: React.FC = () => {
             error={errors.password}
             required
             fullWidth
+            floatingLabel
             leftIcon={<Lock className="h-4 w-4 text-text-muted" />}
             data-testid="signup-password"
           />

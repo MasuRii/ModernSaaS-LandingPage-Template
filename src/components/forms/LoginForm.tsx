@@ -175,6 +175,7 @@ export const LoginForm: React.FC = () => {
             error={errors.email}
             required
             fullWidth
+            floatingLabel
             leftIcon={<Mail className="h-4 w-4 text-text-muted" />}
           />
           <div className="space-y-1">
@@ -188,6 +189,7 @@ export const LoginForm: React.FC = () => {
               error={errors.password}
               required
               fullWidth
+              floatingLabel
               leftIcon={<Lock className="h-4 w-4 text-text-muted" />}
             />
             <div className="flex items-center justify-between">

@@ -180,6 +180,7 @@ export const ContactForm: React.FC = () => {
           error={errors.name}
           required
           fullWidth
+          floatingLabel
         />
         <Input
           label="Email Address"
@@ -191,6 +192,7 @@ export const ContactForm: React.FC = () => {
           error={errors.email}
           required
           fullWidth
+          floatingLabel
         />
       </div>
 
@@ -203,6 +205,7 @@ export const ContactForm: React.FC = () => {
           onChange={handleChange}
           error={errors.company}
           fullWidth
+          floatingLabel
         />
         <Select
           label="Inquiry Type"
@@ -213,6 +216,7 @@ export const ContactForm: React.FC = () => {
           error={errors.inquiryType}
           required
           fullWidth
+          floatingLabel
         />
       </div>
 
@@ -228,6 +232,7 @@ export const ContactForm: React.FC = () => {
         rows={5}
         showCharacterCount
         maxLength={1000}
+        floatingLabel
       />
 
       <Button

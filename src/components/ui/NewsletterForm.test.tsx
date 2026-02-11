@@ -54,7 +54,10 @@ describe('NewsletterForm', () => {
       expect(await screen.findByText(/email is required/i)).toBeInTheDocument();
 
       fireEvent.change(input, { target: { value: 't' } });
-      expect(screen.queryByText(/email is required/i)).not.toBeInTheDocument();
+      // Use waitFor because error message uses AnimatePresence and might still be in DOM during exit animation
+      await waitFor(() => {
+        expect(screen.queryByText(/email is required/i)).not.toBeInTheDocument();
+      });
     });
   });
 

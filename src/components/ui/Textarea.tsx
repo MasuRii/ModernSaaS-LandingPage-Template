@@ -1,5 +1,8 @@
 import * as React from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '../../utils/cn';
+import { useReducedMotion } from '../../utils/reducedMotion';
+import { PRESETS } from '../../config/animation';
 
 /**
  * Textarea Props Interface
@@ -19,6 +22,8 @@ export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextArea
   maxLength?: number | undefined;
   /** Additional CSS classes for the container */
   containerClassName?: string | undefined;
+  /** Whether to use a floating label animation */
+  floatingLabel?: boolean | undefined;
 }
 
 /**
@@ -26,26 +31,7 @@ export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextArea
  *
  * A versatile, accessible multi-line input component with support for labels,
  * helper text, error states, character counts, and full light/dark mode support.
- *
- * @example
- * ```tsx
- * // Default textarea
- * <Textarea placeholder="Enter your message" />
- *
- * // With label and character count
- * <Textarea
- *   label="Bio"
- *   placeholder="Tell us about yourself"
- *   showCharacterCount
- *   maxLength={500}
- * />
- *
- * // Error state
- * <Textarea
- *   label="Comment"
- *   error="Comment is too short."
- * />
- * ```
+ * Enhanced with modern animations including floating labels and error feedback.
  */
 const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   (
@@ -62,39 +48,88 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
       value,
       defaultValue,
       onChange,
+      onFocus,
+      onBlur,
+      floatingLabel = false,
       ...props
     },
     ref,
   ) => {
-    // Generate unique IDs for accessibility if not provided
+    const { prefersReducedMotion } = useReducedMotion();
     const generatedId = React.useId();
     const textareaId = id || generatedId;
     const helperId = `${textareaId}-helper`;
     const errorId = `${textareaId}-error`;
 
-    // Manage character count state if uncontrolled or controlled
+    const [isFocused, setIsFocused] = React.useState(false);
     const [charCount, setCharCount] = React.useState(String(value || defaultValue || '').length);
+    const [hasValue, setHasValue] = React.useState(charCount > 0);
 
     const handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-      setCharCount(e.target.value.length);
+      const val = e.target.value;
+      setCharCount(val.length);
+      setHasValue(val.length > 0);
       if (onChange) {
         onChange(e);
       }
     };
 
+    const handleFocus = (e: React.FocusEvent<HTMLTextAreaElement>) => {
+      setIsFocused(true);
+      if (onFocus) onFocus(e);
+    };
+
+    const handleBlur = (e: React.FocusEvent<HTMLTextAreaElement>) => {
+      setIsFocused(false);
+      setHasValue(e.target.value.length > 0);
+      if (onBlur) onBlur(e);
+    };
+
     // Update character count when value changes (for controlled component)
     React.useEffect(() => {
       if (value !== undefined) {
-        setCharCount(String(value).length);
+        const val = String(value);
+        setCharCount(val.length);
+        setHasValue(val.length > 0);
       }
     }, [value]);
+
+    const isFloating = floatingLabel && label;
+    const shouldFloat = isFloating && (isFocused || hasValue);
+
+    // Motion variants for the floating label
+    const labelVariants = {
+      idle: {
+        top: '1.25rem',
+        left: '0.75rem',
+        scale: 1,
+        y: '-50%',
+        color: 'var(--color-text-muted)',
+      },
+      floating: {
+        top: '0',
+        left: '0.5rem',
+        scale: 0.85,
+        y: '-50%',
+        color: error ? 'var(--color-error-500)' : 'var(--color-primary-500)',
+        backgroundColor: 'var(--color-bg-primary)',
+        padding: '0 0.25rem',
+      },
+    };
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const MotionTextarea = motion.textarea as any;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const MotionLabel = motion.label as any;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const MotionDiv = motion.div as any;
 
     return (
       <div
         className={cn('flex flex-col gap-1.5', fullWidth ? 'w-full' : 'w-auto', containerClassName)}
       >
         <div className="flex items-center justify-between">
-          {label && (
+          {!isFloating && label && (
             <label
               htmlFor={textareaId}
               className="text-sm font-medium text-text-primary select-none"
@@ -105,7 +140,7 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
           {showCharacterCount && maxLength && (
             <span
               className={cn(
-                'text-xs text-text-muted select-none',
+                'text-xs text-text-muted select-none ml-auto',
                 charCount > maxLength ? 'text-error-600 dark:text-error-400' : '',
               )}
             >
@@ -113,16 +148,25 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
             </span>
           )}
         </div>
-        <div className="relative">
-          <textarea
+        <MotionDiv
+          className="relative"
+          animate={error && !prefersReducedMotion && PRESETS.shake ? PRESETS.shake.animate : {}}
+          transition={
+            error && !prefersReducedMotion && PRESETS.shake ? PRESETS.shake.transition : {}
+          }
+        >
+          <MotionTextarea
             ref={ref}
             id={textareaId}
             maxLength={maxLength}
             onChange={handleTextareaChange}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
             value={value}
             defaultValue={defaultValue}
             className={cn(
               'flex min-h-[80px] w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400',
+              isFloating && 'placeholder:opacity-0 focus:placeholder:opacity-100',
               error
                 ? 'border-error-500 focus-visible:ring-error-500 dark:border-error-400 dark:focus-visible:ring-error-400'
                 : 'hover:border-border-primary',
@@ -130,22 +174,53 @@ const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
             )}
             aria-describedby={cn(helperText && !error && helperId, error && errorId)}
             aria-invalid={!!error}
+            whileFocus={!prefersReducedMotion ? { scale: 1.002 } : {}}
+            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
             {...props}
           />
-        </div>
-        {error ? (
-          <p
-            id={errorId}
-            className="text-xs font-medium text-error-600 dark:text-error-400 animate-in fade-in slide-in-from-top-1 duration-200"
-            role="alert"
-          >
-            {error}
-          </p>
-        ) : helperText ? (
-          <p id={helperId} className="text-xs text-text-muted">
-            {helperText}
-          </p>
-        ) : null}
+
+          {isFloating && (
+            <MotionLabel
+              htmlFor={textareaId}
+              className="absolute pointer-events-none select-none z-10 origin-left"
+              initial={shouldFloat ? 'floating' : 'idle'}
+              animate={shouldFloat ? 'floating' : 'idle'}
+              variants={labelVariants}
+              transition={
+                !prefersReducedMotion ? { duration: 0.2, ease: 'easeOut' } : { duration: 0.01 }
+              }
+            >
+              {label}
+            </MotionLabel>
+          )}
+        </MotionDiv>
+        <AnimatePresence mode="wait">
+          {error ? (
+            <motion.p
+              key="error"
+              id={errorId}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+              className="text-xs font-medium text-error-600 dark:text-error-400"
+              role="alert"
+            >
+              {error}
+            </motion.p>
+          ) : helperText ? (
+            <motion.p
+              key="helper"
+              id={helperId}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.2 }}
+              className="text-xs text-text-muted"
+            >
+              {helperText}
+            </motion.p>
+          ) : null}
+        </AnimatePresence>
       </div>
     );
   },

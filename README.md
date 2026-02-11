@@ -1,0 +1,123 @@
+# ModernSaaS Landing Page Template
+
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://MasuRii.github.io/ModernSaaS-LandingPage-Template/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Astro](https://img.shields.io/badge/Astro-5.17-orange)](https://astro.build/)
+[![React](https://img.shields.io/badge/React-19-blue)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8)](https://tailwindcss.com/)
+
+A production-ready, visually stunning SaaS startup landing page template
+featuring modern 2026 design trends, comprehensive light/dark mode support, Core
+Web Vitals optimization, and seamless GitHub Pages deployment.
+
+## ✨ Features
+
+- **🚀 High Performance**: Built with Astro 5 for near-zero JavaScript by
+  default. Perfect Lighthouse scores.
+- **🎨 Modern Design**: 2026 design trends including glassmorphism, bento grids,
+  and mesh gradients.
+- **🌓 Dark Mode**: First-class dark mode support with automatic system
+  preference detection and persistent toggle.
+- **📱 Fully Responsive**: Optimized for all devices from 320px mobile to
+  ultra-wide desktops.
+- **🔍 SEO Optimized**: Built-in JSON-LD structured data, automatic sitemaps,
+  and optimized meta tags.
+- **🧪 Production-Grade Testing**: 1,100+ unit tests and comprehensive E2E suite
+  using Playwright.
+- **📦 Atomic Components**: Highly reusable UI components built with React and
+  Tailwind CSS v4.
+- **🎬 Fluid Animations**: Smooth, hardware-accelerated animations using Motion
+  One with reduced motion support.
+- **📄 Content Driven**: Easily customizable via centralized data files.
+
+## 🛠️ Tech Stack
+
+| Technology                                      | Justification                                                                     |
+| ----------------------------------------------- | --------------------------------------------------------------------------------- |
+| **[Astro 5](https://astro.build/)**             | Zero-JS-by-default architecture for maximum performance and native static export. |
+| **[React 19](https://react.dev/)**              | Selective hydration for interactive components using the "Islands" architecture.  |
+| **[Tailwind CSS v4](https://tailwindcss.com/)** | Next-gen utility-first styling with zero-runtime overhead and excellent DX.       |
+| **[Motion One](https://motion.dev/)**           | High-performance animations built on the Web Animations API (WAAPI).              |
+| **[Radix UI](https://www.radix-ui.com/)**       | Accessible, unstyled primitives for robust interactive components.                |
+| **[Vitest](https://vitest.dev/)**               | Modern, fast unit testing framework compatible with Vite.                         |
+| **[Playwright](https://playwright.dev/)**       | Comprehensive E2E and visual regression testing across all major browsers.        |
+| **[Bun](https://bun.sh/)**                      | Ultra-fast package manager and test runner.                                       |
+
+## 📁 Project Structure
+
+```text
+├── .github/workflows/  # CI/CD (GitHub Actions)
+├── docs/               # Project documentation and research
+├── e2e/                # End-to-end tests (Playwright)
+├── public/             # Static assets (images, fonts, robots.txt)
+├── scripts/            # Utility scripts (image fetching, deployment)
+├── src/
+│   ├── assets/         # Project-specific assets
+│   ├── components/     # UI components (Atomic design)
+│   ├── config/         # Centralized configuration (site, paths, animation)
+│   ├── data/           # Content data files (JSON/TS)
+│   ├── layouts/        # Page layouts
+│   ├── pages/          # Astro pages and routing
+│   ├── styles/         # Global styles and tokens
+│   ├── utils/          # Shared utilities
+│   └── types/          # TypeScript definitions
+└── tests/              # Unit and integration tests (Vitest)
+```
+
+## 🚀 Quick Start
+
+Ensure you have [Bun](https://bun.sh/) installed.
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/MasuRii/ModernSaaS-LandingPage-Template.git
+   cd ModernSaaS-LandingPage-Template
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   bun install
+   ```
+
+3. **Start development server:**
+
+   ```bash
+   bun run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   bun run build
+   ```
+
+## 📸 Screenshots
+
+### Light Mode
+
+_Modern, clean, and professional interface with blue trust signals._
+![Homepage Light Mode](./docs/screenshots/home-light.png)
+
+### Dark Mode
+
+_Sleek, futuristic dark interface with vibrant purple accents and mesh
+gradients._ ![Homepage Dark Mode](./docs/screenshots/home-dark.png)
+
+## 📖 Documentation
+
+- [Test Summary](./docs/TEST_SUMMARY.md)
+- [Deployment Verification](./docs/DEPLOYMENT_VERIFICATION.md)
+- [Design Guidelines](./docs/research/DESIGN_GUIDELINES.md)
+- [Tech Stack Evaluation](./docs/research/CHOSEN_TECH_STACK.md)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
+for details.
+
+## ✨ Credits
+
+- Icons: [Lucide React](https://lucide.dev/)
+- Typography: [Inter Variable](https://rsms.me/inter/)
+- Images: [Unsplash](https://unsplash.com/) via automated fetching script.

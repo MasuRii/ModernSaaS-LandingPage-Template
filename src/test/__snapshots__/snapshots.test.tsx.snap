@@ -656,7 +656,7 @@ exports[`Component Snapshots > dark theme > Form Components > NewsletterForm mat
             aria-invalid="false"
             autocomplete="email"
             class="flex h-10 w-full rounded-lg border border-border-default bg-bg-primary px-3 py-2 text-base ring-offset-bg-primary transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-border-default dark:bg-bg-primary dark:focus-visible:ring-primary-400 pl-10 hover:border-border-primary sm:min-w-[280px]"
-            id="_r_t_"
+            id="_r_v_"
             placeholder="Enter your email"
             type="email"
             value=""
@@ -861,11 +861,11 @@ exports[`Component Snapshots > dark theme > Interactive Components > Tabs matche
       role="tablist"
     >
       <button
-        aria-controls="_r_10_-content-tab1"
+        aria-controls="_r_12_-content-tab1"
         aria-selected="true"
         class="relative inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 text-text-primary"
         data-value="tab1"
-        id="_r_10_-trigger-tab1"
+        id="_r_12_-trigger-tab1"
         role="tab"
         tabindex="0"
         type="button"
@@ -880,11 +880,11 @@ exports[`Component Snapshots > dark theme > Interactive Components > Tabs matche
         </span>
       </button>
       <button
-        aria-controls="_r_10_-content-tab2"
+        aria-controls="_r_12_-content-tab2"
         aria-selected="false"
         class="relative inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary"
         data-value="tab2"
-        id="_r_10_-trigger-tab2"
+        id="_r_12_-trigger-tab2"
         role="tab"
         tabindex="-1"
         type="button"
@@ -897,9 +897,9 @@ exports[`Component Snapshots > dark theme > Interactive Components > Tabs matche
       </button>
     </div>
     <div
-      aria-labelledby="_r_10_-trigger-tab1"
+      aria-labelledby="_r_12_-trigger-tab1"
       class="mt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
-      id="_r_10_-content-tab1"
+      id="_r_12_-content-tab1"
       role="tabpanel"
       tabindex="0"
     >
@@ -910,9 +910,9 @@ exports[`Component Snapshots > dark theme > Interactive Components > Tabs matche
       </div>
     </div>
     <div
-      aria-labelledby="_r_10_-trigger-tab2"
+      aria-labelledby="_r_12_-trigger-tab2"
       class="mt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden"
-      id="_r_10_-content-tab2"
+      id="_r_12_-content-tab2"
       role="tabpanel"
       tabindex="-1"
     />
@@ -2458,11 +2458,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
             role="tablist"
           >
             <button
-              aria-controls="_r_13_-content-all"
+              aria-controls="_r_17_-content-all"
               aria-selected="true"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="all"
-              id="_r_13_-trigger-all"
+              id="_r_17_-trigger-all"
               role="tab"
               tabindex="0"
               type="button"
@@ -2477,11 +2477,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
               </span>
             </button>
             <button
-              aria-controls="_r_13_-content-communication"
+              aria-controls="_r_17_-content-communication"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="communication"
-              id="_r_13_-trigger-communication"
+              id="_r_17_-trigger-communication"
               role="tab"
               tabindex="-1"
               type="button"
@@ -2493,11 +2493,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
               </span>
             </button>
             <button
-              aria-controls="_r_13_-content-development"
+              aria-controls="_r_17_-content-development"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="development"
-              id="_r_13_-trigger-development"
+              id="_r_17_-trigger-development"
               role="tab"
               tabindex="-1"
               type="button"
@@ -2509,11 +2509,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
               </span>
             </button>
             <button
-              aria-controls="_r_13_-content-design"
+              aria-controls="_r_17_-content-design"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="design"
-              id="_r_13_-trigger-design"
+              id="_r_17_-trigger-design"
               role="tab"
               tabindex="-1"
               type="button"
@@ -2525,11 +2525,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
               </span>
             </button>
             <button
-              aria-controls="_r_13_-content-productivity"
+              aria-controls="_r_17_-content-productivity"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="productivity"
-              id="_r_13_-trigger-productivity"
+              id="_r_17_-trigger-productivity"
               role="tab"
               tabindex="-1"
               type="button"
@@ -2541,11 +2541,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
               </span>
             </button>
             <button
-              aria-controls="_r_13_-content-analytics"
+              aria-controls="_r_17_-content-analytics"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="analytics"
-              id="_r_13_-trigger-analytics"
+              id="_r_17_-trigger-analytics"
               role="tab"
               tabindex="-1"
               type="button"
@@ -2557,11 +2557,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
               </span>
             </button>
             <button
-              aria-controls="_r_13_-content-storage"
+              aria-controls="_r_17_-content-storage"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="storage"
-              id="_r_13_-trigger-storage"
+              id="_r_17_-trigger-storage"
               role="tab"
               tabindex="-1"
               type="button"
@@ -2573,11 +2573,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
               </span>
             </button>
             <button
-              aria-controls="_r_13_-content-marketing"
+              aria-controls="_r_17_-content-marketing"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="marketing"
-              id="_r_13_-trigger-marketing"
+              id="_r_17_-trigger-marketing"
               role="tab"
               tabindex="-1"
               type="button"
@@ -2589,11 +2589,11 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
               </span>
             </button>
             <button
-              aria-controls="_r_13_-content-security"
+              aria-controls="_r_17_-content-security"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="security"
-              id="_r_13_-trigger-security"
+              id="_r_17_-trigger-security"
               role="tab"
               tabindex="-1"
               type="button"
@@ -2610,9 +2610,9 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
           class="min-h-[400px]"
         >
           <div
-            aria-labelledby="_r_13_-trigger-all"
+            aria-labelledby="_r_17_-trigger-all"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 mt-0"
-            id="_r_13_-content-all"
+            id="_r_17_-content-all"
             role="tabpanel"
             tabindex="0"
           >
@@ -2926,58 +2926,58 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
             </div>
           </div>
           <div
-            aria-labelledby="_r_13_-trigger-communication"
+            aria-labelledby="_r_17_-trigger-communication"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_13_-content-communication"
+            id="_r_17_-content-communication"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_13_-trigger-development"
+            aria-labelledby="_r_17_-trigger-development"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_13_-content-development"
+            id="_r_17_-content-development"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_13_-trigger-design"
+            aria-labelledby="_r_17_-trigger-design"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_13_-content-design"
+            id="_r_17_-content-design"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_13_-trigger-productivity"
+            aria-labelledby="_r_17_-trigger-productivity"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_13_-content-productivity"
+            id="_r_17_-content-productivity"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_13_-trigger-analytics"
+            aria-labelledby="_r_17_-trigger-analytics"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_13_-content-analytics"
+            id="_r_17_-content-analytics"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_13_-trigger-storage"
+            aria-labelledby="_r_17_-trigger-storage"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_13_-content-storage"
+            id="_r_17_-content-storage"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_13_-trigger-marketing"
+            aria-labelledby="_r_17_-trigger-marketing"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_13_-content-marketing"
+            id="_r_17_-content-marketing"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_13_-trigger-security"
+            aria-labelledby="_r_17_-trigger-security"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_13_-content-security"
+            id="_r_17_-content-security"
             role="tabpanel"
             tabindex="-1"
           />
@@ -7286,7 +7286,7 @@ exports[`Component Snapshots > dark theme > Theme & Utils > DemoLink matches sna
 <DocumentFragment>
   <a
     class=""
-    href="/demo"
+    href="/demo/"
   >
     Try Demo
   </a>
@@ -9877,11 +9877,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
             role="tablist"
           >
             <button
-              aria-controls="_r_g_-content-all"
+              aria-controls="_r_i_-content-all"
               aria-selected="true"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="all"
-              id="_r_g_-trigger-all"
+              id="_r_i_-trigger-all"
               role="tab"
               tabindex="0"
               type="button"
@@ -9896,11 +9896,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
               </span>
             </button>
             <button
-              aria-controls="_r_g_-content-communication"
+              aria-controls="_r_i_-content-communication"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="communication"
-              id="_r_g_-trigger-communication"
+              id="_r_i_-trigger-communication"
               role="tab"
               tabindex="-1"
               type="button"
@@ -9912,11 +9912,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
               </span>
             </button>
             <button
-              aria-controls="_r_g_-content-development"
+              aria-controls="_r_i_-content-development"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="development"
-              id="_r_g_-trigger-development"
+              id="_r_i_-trigger-development"
               role="tab"
               tabindex="-1"
               type="button"
@@ -9928,11 +9928,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
               </span>
             </button>
             <button
-              aria-controls="_r_g_-content-design"
+              aria-controls="_r_i_-content-design"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="design"
-              id="_r_g_-trigger-design"
+              id="_r_i_-trigger-design"
               role="tab"
               tabindex="-1"
               type="button"
@@ -9944,11 +9944,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
               </span>
             </button>
             <button
-              aria-controls="_r_g_-content-productivity"
+              aria-controls="_r_i_-content-productivity"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="productivity"
-              id="_r_g_-trigger-productivity"
+              id="_r_i_-trigger-productivity"
               role="tab"
               tabindex="-1"
               type="button"
@@ -9960,11 +9960,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
               </span>
             </button>
             <button
-              aria-controls="_r_g_-content-analytics"
+              aria-controls="_r_i_-content-analytics"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="analytics"
-              id="_r_g_-trigger-analytics"
+              id="_r_i_-trigger-analytics"
               role="tab"
               tabindex="-1"
               type="button"
@@ -9976,11 +9976,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
               </span>
             </button>
             <button
-              aria-controls="_r_g_-content-storage"
+              aria-controls="_r_i_-content-storage"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="storage"
-              id="_r_g_-trigger-storage"
+              id="_r_i_-trigger-storage"
               role="tab"
               tabindex="-1"
               type="button"
@@ -9992,11 +9992,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
               </span>
             </button>
             <button
-              aria-controls="_r_g_-content-marketing"
+              aria-controls="_r_i_-content-marketing"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="marketing"
-              id="_r_g_-trigger-marketing"
+              id="_r_i_-trigger-marketing"
               role="tab"
               tabindex="-1"
               type="button"
@@ -10008,11 +10008,11 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
               </span>
             </button>
             <button
-              aria-controls="_r_g_-content-security"
+              aria-controls="_r_i_-content-security"
               aria-selected="false"
               class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
               data-value="security"
-              id="_r_g_-trigger-security"
+              id="_r_i_-trigger-security"
               role="tab"
               tabindex="-1"
               type="button"
@@ -10029,9 +10029,9 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
           class="min-h-[400px]"
         >
           <div
-            aria-labelledby="_r_g_-trigger-all"
+            aria-labelledby="_r_i_-trigger-all"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 mt-0"
-            id="_r_g_-content-all"
+            id="_r_i_-content-all"
             role="tabpanel"
             tabindex="0"
           >
@@ -10345,58 +10345,58 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
             </div>
           </div>
           <div
-            aria-labelledby="_r_g_-trigger-communication"
+            aria-labelledby="_r_i_-trigger-communication"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_g_-content-communication"
+            id="_r_i_-content-communication"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_g_-trigger-development"
+            aria-labelledby="_r_i_-trigger-development"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_g_-content-development"
+            id="_r_i_-content-development"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_g_-trigger-design"
+            aria-labelledby="_r_i_-trigger-design"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_g_-content-design"
+            id="_r_i_-content-design"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_g_-trigger-productivity"
+            aria-labelledby="_r_i_-trigger-productivity"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_g_-content-productivity"
+            id="_r_i_-content-productivity"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_g_-trigger-analytics"
+            aria-labelledby="_r_i_-trigger-analytics"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_g_-content-analytics"
+            id="_r_i_-content-analytics"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_g_-trigger-storage"
+            aria-labelledby="_r_i_-trigger-storage"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_g_-content-storage"
+            id="_r_i_-content-storage"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_g_-trigger-marketing"
+            aria-labelledby="_r_i_-trigger-marketing"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_g_-content-marketing"
+            id="_r_i_-content-marketing"
             role="tabpanel"
             tabindex="-1"
           />
           <div
-            aria-labelledby="_r_g_-trigger-security"
+            aria-labelledby="_r_i_-trigger-security"
             class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 hidden mt-0"
-            id="_r_g_-content-security"
+            id="_r_i_-content-security"
             role="tabpanel"
             tabindex="-1"
           />
@@ -14705,7 +14705,7 @@ exports[`Component Snapshots > light theme > Theme & Utils > DemoLink matches sn
 <DocumentFragment>
   <a
     class=""
-    href="/demo"
+    href="/demo/"
   >
     Try Demo
   </a>

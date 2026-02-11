@@ -294,7 +294,7 @@ describe('DemoLink Component', () => {
 
       const link = screen.getByText('Test Link');
       expect(link.tagName.toLowerCase()).toBe('a');
-      expect(link).toHaveAttribute('href', '/test');
+      expect(link).toHaveAttribute('href', '/test/');
     });
 
     it('applies custom className', () => {
@@ -394,7 +394,7 @@ describe('DemoLink Component', () => {
       const link = screen.getByText('Dashboard');
       await userEvent.click(link);
 
-      expect(onModalOpen).toHaveBeenCalledWith('/dashboard');
+      expect(onModalOpen).toHaveBeenCalledWith('/dashboard/');
     });
 
     it('calls onModalClose when modal is closed', async () => {

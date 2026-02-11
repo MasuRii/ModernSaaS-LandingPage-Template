@@ -24,6 +24,7 @@ export const SupportCategories: React.FC<SupportCategoriesProps> = ({
   return (
     <Section padding="lg">
       <Container>
+        <h2 className="sr-only">Support Categories</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((category) => {
             const Icon = IconMap[category.icon] || HelpCircle;

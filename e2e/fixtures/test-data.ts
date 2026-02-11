@@ -11,6 +11,7 @@ export const testRoutes = {
   about: '/about/',
   blog: '/blog/',
   contact: '/contact/',
+  support: '/support/',
   changelog: '/changelog/',
   roadmap: '/roadmap/',
   privacy: '/privacy/',

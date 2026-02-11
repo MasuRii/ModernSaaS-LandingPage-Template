@@ -157,14 +157,14 @@ export const DemoLinkButton = ({
 }: DemoLinkButtonProps): React.ReactElement => {
   // Base button styles
   const baseStyles =
-    'inline-flex items-center justify-center font-medium rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2';
+    'inline-flex items-center justify-center font-medium rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-700 focus-visible:ring-offset-2';
 
   // Variant styles
   const variantStyles = {
-    primary: 'bg-primary-600 text-white hover:bg-primary-700',
-    secondary: 'bg-secondary-600 text-white hover:bg-secondary-700',
+    primary: 'bg-primary-700 text-white hover:bg-primary-800',
+    secondary: 'bg-secondary-700 text-white hover:bg-secondary-800',
     outline:
-      'border-2 border-primary-600 text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-950/30',
+      'border-2 border-primary-700 text-primary-700 hover:bg-primary-50 dark:hover:bg-primary-950/30',
     ghost: 'text-text-secondary hover:text-text-primary hover:bg-bg-secondary',
   };
 

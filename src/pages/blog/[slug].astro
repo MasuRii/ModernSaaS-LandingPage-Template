@@ -70,13 +70,7 @@ const crumbs = [
   ]}
 >
   <ArticleSchema post={post} />
-  <main
-    id="main-content"
-    tabindex="-1"
-    role="main"
-    aria-label={`Blog post: ${title}`}
-    transition:animate="fade"
-  >
+  <main id="main-content" class="flex flex-col" transition:animate="fade">
     {/* 1. Post Hero */}
     <Section background="transparent" padding="xl" className="pt-32 pb-12 sm:pt-40">
       <Container size="narrow">

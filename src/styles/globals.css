@@ -194,6 +194,10 @@ cite {
   --color-accent-800: var(--primitive-color-accent-800);
   --color-accent-900: var(--primitive-color-accent-900);
   --color-accent-950: var(--primitive-color-accent-950);
+  --color-accent-700: var(--primitive-color-accent-700);
+  --color-accent-800: var(--primitive-color-accent-800);
+  --color-accent-900: var(--primitive-color-accent-900);
+  --color-accent-950: var(--primitive-color-accent-950);
 
   /* Neutral Gray Scale */
   --color-gray-50: var(--primitive-color-gray-50);
@@ -252,6 +256,10 @@ cite {
   --color-info-400: var(--primitive-color-info-400);
   --color-info-500: var(--primitive-color-info-500);
   --color-info-600: var(--primitive-color-info-600);
+  --color-info-700: var(--primitive-color-info-700);
+  --color-info-800: var(--primitive-color-info-800);
+  --color-info-900: var(--primitive-color-info-900);
+  --color-info-950: var(--primitive-color-info-950);
   --color-info-700: var(--primitive-color-info-700);
   --color-info-800: var(--primitive-color-info-800);
   --color-info-900: var(--primitive-color-info-900);

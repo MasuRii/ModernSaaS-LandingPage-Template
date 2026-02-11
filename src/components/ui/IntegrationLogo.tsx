@@ -32,6 +32,8 @@ export interface IntegrationLogoProps {
   className?: string | undefined;
   /** Whether to resolve the href using path configuration */
   resolvePath?: boolean | undefined;
+  /** tabIndex for accessibility */
+  tabIndex?: number | undefined;
 }
 
 /**
@@ -56,6 +58,7 @@ export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
   showHoverBg = true,
   className = '',
   resolvePath = true,
+  tabIndex,
 }) => {
   // Resolve the href
   const resolvedHref = React.useMemo(() => {
@@ -91,7 +94,7 @@ export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
   `;
 
   return (
-    <DemoLink href={resolvedHref} className={containerClasses} title={name}>
+    <DemoLink href={resolvedHref} className={containerClasses} title={name} tabIndex={tabIndex}>
       <LazyImage
         src={getAssetPath(logo)}
         alt={`${name} logo`}

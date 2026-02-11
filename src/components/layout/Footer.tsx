@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { company, featureFlags, footer, siteNavigation, social } from '../../config/site';
 import { ROUTES, resolveHref } from '../../config/paths';
+import { Button } from '../ui/Button';
 
 /**
  * Props for the Footer component
@@ -129,24 +130,17 @@ function NewsletterSignup({ onSubmit }: { onSubmit?: (email: string) => void }) 
                    transition-all duration-200"
         aria-label="Email address for newsletter"
       />
-      <button
+      <Button
         type="submit"
         disabled={isLoading}
-        className="px-5 py-2.5 bg-primary-600 hover:bg-primary-700 text-white font-medium
-                   rounded-lg transition-all duration-200 flex items-center justify-center gap-2
-                   disabled:opacity-50 disabled:cursor-not-allowed
-                   focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 
-                   focus-visible:ring-offset-2 hover:scale-[1.02] active:scale-[0.98]"
+        loading={isLoading}
+        variant="primary"
+        size="md"
+        className="px-5"
       >
-        {isLoading ? (
-          <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-        ) : (
-          <>
-            Subscribe
-            <ArrowRight className="w-4 h-4" />
-          </>
-        )}
-      </button>
+        Subscribe
+        <ArrowRight className="w-4 h-4" />
+      </Button>
     </form>
   );
 }

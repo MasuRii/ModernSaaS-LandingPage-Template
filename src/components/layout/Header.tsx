@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Zap } from 'lucide-react';
 import { ThemeToggle } from '../ui/ThemeToggle';
+import { Button } from '../ui/Button';
 import { MobileMenuButton, MobileNavigation } from '../ui/MobileNavigation';
 import { company, siteNavigation } from '../../config/site';
 import { ROUTES, isActiveRoute, resolveHref } from '../../config/paths';
@@ -91,14 +92,6 @@ export function Header({
       document.removeEventListener('astro:after-navigation', handleNavigation);
     };
   }, [handleScroll]);
-
-  // Handle CTA click
-  const handleCtaClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (onCtaClick) {
-      e.preventDefault();
-      onCtaClick();
-    }
-  };
 
   // Toggle mobile menu
   const toggleMobileMenu = () => {
@@ -195,15 +188,21 @@ export function Header({
 
               {/* CTA Button - Desktop */}
               {showCta && (
-                <motion.a
-                  href={resolveHref(ctaHref)}
-                  onClick={handleCtaClick}
-                  whileHover={!prefersReducedMotion ? { scale: 1.05 } : {}}
-                  whileTap={!prefersReducedMotion ? { scale: 0.95 } : {}}
-                  className="hidden md:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-xl shadow-md shadow-primary-500/20 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+                <Button
+                  variant="primary"
+                  size="md"
+                  className="hidden md:inline-flex"
+                  onClick={(e) => {
+                    if (onCtaClick) {
+                      e.preventDefault();
+                      onCtaClick();
+                    } else {
+                      window.location.href = resolveHref(ctaHref);
+                    }
+                  }}
                 >
                   {ctaText}
-                </motion.a>
+                </Button>
               )}
 
               {/* Mobile Menu Button */}

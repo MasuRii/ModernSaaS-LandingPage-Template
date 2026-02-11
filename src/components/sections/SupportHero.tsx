@@ -15,8 +15,12 @@ export const SupportHero: React.FC<SupportHeroProps> = ({
   return (
     <Section background="gradient" padding="xl" className="relative overflow-hidden">
       <Container size="narrow" className="text-center relative z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">{title}</h1>
-        <p className="text-lg md:text-xl mb-10 text-white/90 max-w-2xl mx-auto">{description}</p>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-text-primary">
+          {title}
+        </h1>
+        <p className="text-lg md:text-xl mb-10 text-text-secondary max-w-2xl mx-auto">
+          {description}
+        </p>
 
         <div className="relative max-w-2xl mx-auto">
           <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">

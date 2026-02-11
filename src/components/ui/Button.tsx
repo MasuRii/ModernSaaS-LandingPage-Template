@@ -119,13 +119,13 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     // Variant-specific styles
     const variantStyles: Record<ButtonVariant, string> = {
       primary: cn(
-        'bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800',
-        'dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400',
+        'bg-primary-700 text-white! border-transparent hover:bg-primary-800 active:bg-primary-900',
+        'dark:bg-primary-600 dark:text-white! dark:hover:bg-primary-500 dark:active:bg-primary-400 dark:focus-visible:ring-primary-400',
         !prefersReducedMotion && 'hover:shadow-md active:shadow-sm',
       ),
       secondary: cn(
-        'bg-secondary-600 text-white border-transparent hover:bg-secondary-700 active:bg-secondary-800',
-        'dark:bg-secondary-500 dark:hover:bg-secondary-600 dark:active:bg-secondary-700 dark:focus-visible:ring-secondary-400',
+        'bg-secondary-700 text-white! border-transparent hover:bg-secondary-800 active:bg-secondary-900',
+        'dark:bg-secondary-600 dark:text-white! dark:hover:bg-secondary-500 dark:active:bg-secondary-400 dark:focus-visible:ring-secondary-400',
         !prefersReducedMotion && 'hover:shadow-md active:shadow-sm',
       ),
       outline: cn(
@@ -211,22 +211,22 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           ))}
         </AnimatePresence>
 
-        <span className="relative z-10 flex items-center justify-center gap-inherit w-full h-full">
+        <span className="flex items-center justify-center w-full h-full">
           {loading ? (
             <>
               {LoadingSpinner}
-              <span>{children}</span>
+              <span className="ml-2">{children}</span>
             </>
           ) : (
             <>
               {leftIcon && (
-                <span className="inline-flex shrink-0" aria-hidden="true">
+                <span className="inline-flex shrink-0 mr-2" aria-hidden="true">
                   {leftIcon}
                 </span>
               )}
               <span>{children}</span>
               {rightIcon && (
-                <span className="inline-flex shrink-0" aria-hidden="true">
+                <span className="inline-flex shrink-0 ml-2" aria-hidden="true">
                   {rightIcon}
                 </span>
               )}

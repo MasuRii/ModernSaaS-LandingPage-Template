@@ -25,7 +25,7 @@ export const SupportArticles: React.FC<SupportArticlesProps> = ({
               className="flex items-center justify-between p-5 rounded-xl border border-border-default bg-bg-primary hover:border-primary-500/50 hover:shadow-md transition-all group"
             >
               <div className="flex items-center gap-4">
-                <div className="p-2 rounded-lg bg-gray-500/10 text-gray-500">
+                <div className="p-2 rounded-lg bg-bg-secondary text-text-tertiary">
                   <FileText className="h-5 w-5" />
                 </div>
                 <div>
@@ -42,7 +42,7 @@ export const SupportArticles: React.FC<SupportArticlesProps> = ({
                   </p>
                 </div>
               </div>
-              <ChevronRight className="h-5 w-5 text-gray-400 group-hover:text-primary-500 transform group-hover:translate-x-1 transition-all" />
+              <ChevronRight className="h-5 w-5 text-text-muted group-hover:text-primary-500 transform group-hover:translate-x-1 transition-all" />
             </a>
           ))}
         </div>

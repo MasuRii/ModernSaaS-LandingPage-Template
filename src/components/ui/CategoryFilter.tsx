@@ -30,6 +30,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
         value={activeCategory}
         onValueChange={(value) => onCategoryChange(value as BlogCategory | 'all')}
         className="w-fit mx-auto"
+        hasPanels={false}
       >
         <TabsList className="bg-bg-secondary/50 backdrop-blur-sm border border-border-muted p-1 rounded-full h-auto flex-nowrap whitespace-nowrap">
           <TabsTrigger

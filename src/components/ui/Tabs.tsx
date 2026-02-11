@@ -7,6 +7,7 @@ interface TabsContextValue {
   setActiveTab: (value: string) => void;
   orientation?: 'horizontal' | 'vertical';
   baseId: string;
+  hasPanels: boolean;
 }
 
 const TabsContext = React.createContext<TabsContextValue | undefined>(undefined);
@@ -28,6 +29,8 @@ export interface TabsProps extends React.HTMLAttributes<HTMLDivElement> {
   onValueChange?: (value: string) => void;
   /** The orientation of the tabs */
   orientation?: 'horizontal' | 'vertical';
+  /** Whether the tabs have associated content panels */
+  hasPanels?: boolean;
   /** Children should contain TabsList and TabsContent */
   children: React.ReactNode;
 }
@@ -44,6 +47,7 @@ export const Tabs = React.forwardRef<HTMLDivElement, TabsProps>(
       value,
       onValueChange,
       orientation = 'horizontal',
+      hasPanels = true,
       className,
       children,
       ...props
@@ -66,7 +70,7 @@ export const Tabs = React.forwardRef<HTMLDivElement, TabsProps>(
     );
 
     return (
-      <TabsContext.Provider value={{ activeTab, setActiveTab, orientation, baseId }}>
+      <TabsContext.Provider value={{ activeTab, setActiveTab, orientation, baseId, hasPanels }}>
         <div
           ref={ref}
           className={cn('flex', orientation === 'horizontal' ? 'flex-col' : 'flex-row', className)}
@@ -162,7 +166,7 @@ export interface TabsTriggerProps extends React.ButtonHTMLAttributes<HTMLButtonE
  */
 export const TabsTrigger = React.forwardRef<HTMLButtonElement, TabsTriggerProps>(
   ({ value, className, children, ...props }, ref) => {
-    const { activeTab, setActiveTab, baseId } = useTabs();
+    const { activeTab, setActiveTab, baseId, hasPanels } = useTabs();
     const isActive = activeTab === value;
 
     return (
@@ -171,7 +175,7 @@ export const TabsTrigger = React.forwardRef<HTMLButtonElement, TabsTriggerProps>
         type="button"
         role="tab"
         aria-selected={isActive}
-        aria-controls={`${baseId}-content-${value}`}
+        aria-controls={hasPanels ? `${baseId}-content-${value}` : undefined}
         id={`${baseId}-trigger-${value}`}
         data-value={value}
         tabIndex={isActive ? 0 : -1}
@@ -215,31 +219,34 @@ export const TabsContent = React.forwardRef<HTMLDivElement, TabsContentProps>(
     const isActive = activeTab === value;
 
     return (
-      <AnimatePresence mode="wait">
-        {isActive && (
-          <motion.div
-            ref={ref}
-            key={value}
-            role="tabpanel"
-            id={`${baseId}-content-${value}`}
-            aria-labelledby={`${baseId}-trigger-${value}`}
-            tabIndex={0}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.2 }}
-            className={cn(
-              'mt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500',
-              className,
-            )}
-            // @ts-expect-error - motion.div style type mismatch with exactOptionalPropertyTypes
-            style={style}
-            {...props}
-          >
-            {children}
-          </motion.div>
+      <div
+        ref={ref}
+        role="tabpanel"
+        id={`${baseId}-content-${value}`}
+        aria-labelledby={`${baseId}-trigger-${value}`}
+        tabIndex={isActive ? 0 : -1}
+        className={cn(
+          'mt-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500',
+          !isActive && 'hidden',
+          className,
         )}
-      </AnimatePresence>
+        style={style}
+        {...props}
+      >
+        <AnimatePresence mode="wait">
+          {isActive && (
+            <motion.div
+              key={value}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+            >
+              {children}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     );
   },
 );

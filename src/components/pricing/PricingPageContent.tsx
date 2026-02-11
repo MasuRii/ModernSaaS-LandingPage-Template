@@ -25,7 +25,7 @@ export const PricingPageContent: React.FC = () => {
   };
 
   return (
-    <main id="main-content">
+    <>
       {/* 1. Pricing Hero with Toggle */}
       <PricingHero billingPeriod={billingPeriod} onBillingPeriodChange={handleBillingChange} />
 
@@ -51,7 +51,7 @@ export const PricingPageContent: React.FC = () => {
         primaryButton={{ text: 'Start Free Trial', href: '/signup' }}
         secondaryButton={{ text: 'Book Demo', href: '/contact' }}
       />
-    </main>
+    </>
   );
 };
 

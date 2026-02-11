@@ -137,19 +137,12 @@ export const PricingCard = React.forwardRef<HTMLDivElement, PricingCardProps>(
                   <div
                     className={cn(
                       'mt-1 shrink-0 rounded-full p-0.5',
-                      included
-                        ? 'text-primary-600 dark:text-primary-400'
-                        : 'text-text-muted opacity-50',
+                      included ? 'text-primary-600 dark:text-primary-400' : 'text-text-muted',
                     )}
                   >
                     <Check size={16} strokeWidth={3} aria-hidden="true" />
                   </div>
-                  <span
-                    className={cn(
-                      'text-sm',
-                      !included && 'text-text-muted line-through opacity-70',
-                    )}
-                  >
+                  <span className={cn('text-sm', !included && 'text-text-muted line-through')}>
                     {text}
                   </span>
                 </li>

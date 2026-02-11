@@ -237,7 +237,7 @@ export const seo: SEOConfig = {
   defaultOgImage: '/images/og-default.jpg',
   twitterCardType: 'summary_large_image',
   twitterSite: '@modernsaas',
-  themeColor: '#2563eb',
+  themeColor: '#1d4ed8',
   defaultKeywords: [
     'SaaS',
     'automation',

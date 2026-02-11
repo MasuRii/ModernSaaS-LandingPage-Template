@@ -111,7 +111,10 @@ export const FeaturedPost = React.forwardRef<HTMLDivElement, FeaturedPostProps>(
               </span>
             </div>
             <Link href={ROUTES.BLOG_POST(slug)} className="group/title">
-              <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-extrabold group-hover/title:text-primary-600 transition-colors leading-tight">
+              <CardTitle
+                as="h2"
+                className="text-3xl md:text-4xl lg:text-5xl font-extrabold group-hover/title:text-primary-600 transition-colors leading-tight"
+              >
                 {title}
               </CardTitle>
             </Link>

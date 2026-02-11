@@ -223,6 +223,8 @@ CardHeader.displayName = 'CardHeader';
  * Title styling for card headers.
  */
 export interface CardTitleProps extends React.HTMLAttributes<HTMLHeadingElement> {
+  /** The semantic heading level */
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   /** Additional CSS classes */
   className?: string;
   /** Children content */
@@ -230,9 +232,9 @@ export interface CardTitleProps extends React.HTMLAttributes<HTMLHeadingElement>
 }
 
 export const CardTitle = React.forwardRef<HTMLHeadingElement, CardTitleProps>(
-  ({ className = '', children, ...props }, ref) => {
+  ({ as: Component = 'h3', className = '', children, ...props }, ref) => {
     return (
-      <h3
+      <Component
         ref={ref}
         className={cn(
           'text-lg font-semibold',
@@ -243,7 +245,7 @@ export const CardTitle = React.forwardRef<HTMLHeadingElement, CardTitleProps>(
         {...props}
       >
         {children}
-      </h3>
+      </Component>
     );
   },
 );

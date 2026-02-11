@@ -8,10 +8,10 @@ export const SupportCTA: React.FC = () => {
   return (
     <Section padding="lg">
       <Container>
-        <div className="bg-primary-600 rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden">
+        <div className="bg-primary-700 rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Still need help?</h2>
-            <p className="text-xl text-primary-100 mb-10 max-w-2xl mx-auto">
+            <p className="text-xl mb-10 max-w-2xl mx-auto">
               Our support team is here to help you with any questions or issues you might have. We
               usually respond in less than 2 hours.
             </p>
@@ -23,7 +23,7 @@ export const SupportCTA: React.FC = () => {
               >
                 <MessageSquare className="h-8 w-8 mb-4" />
                 <span className="font-bold">Live Chat</span>
-                <span className="text-sm text-primary-200">Available 24/7</span>
+                <span className="text-sm">Available 24/7</span>
               </a>
 
               <a
@@ -32,7 +32,7 @@ export const SupportCTA: React.FC = () => {
               >
                 <Mail className="h-8 w-8 mb-4" />
                 <span className="font-bold">Email Us</span>
-                <span className="text-sm text-primary-200">support@modernsaas.dev</span>
+                <span className="text-sm">support@modernsaas.dev</span>
               </a>
 
               <a
@@ -41,7 +41,7 @@ export const SupportCTA: React.FC = () => {
               >
                 <Phone className="h-8 w-8 mb-4" />
                 <span className="font-bold">Call Us</span>
-                <span className="text-sm text-primary-200">+1 (555) 123-4567</span>
+                <span className="text-sm">+1 (555) 123-4567</span>
               </a>
             </div>
           </div>

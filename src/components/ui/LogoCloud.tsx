@@ -125,6 +125,7 @@ export const LogoCloud: React.FC<LogoCloudProps> = ({
                 {...logo}
                 size={logoSize}
                 className="shrink-0"
+                tabIndex={-1}
               />
             ))}
           </div>

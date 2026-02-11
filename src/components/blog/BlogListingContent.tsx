@@ -83,6 +83,9 @@ export const BlogListingContent: React.FC = () => {
       {/* Blog Grid */}
       <Section background="default" padding="sm" className="pt-0 min-h-[400px] pb-24">
         <Container>
+          {showHeroFeatured && (
+            <h2 className="text-2xl font-bold text-text-primary mb-8">Latest Articles</h2>
+          )}
           {!showHeroFeatured && !searchQuery && activeCategory === 'all' && (
             <h2 className="text-2xl font-bold text-text-primary mb-8">All Articles</h2>
           )}

@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/Accordion';
 import { type PricingFAQ, pricingFAQs } from '@/data/pricing';
+import { FAQSchema } from '@/components/seo/FAQSchema';
 
 /**
  * Props for the FAQSection component
@@ -44,6 +45,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({
       subheading={subheading}
       className={className}
     >
+      <FAQSchema faqs={faqs} />
       <Container size="narrow">
         <Accordion type="single" className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (

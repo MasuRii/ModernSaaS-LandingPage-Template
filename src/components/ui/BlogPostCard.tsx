@@ -63,6 +63,7 @@ export const BlogPostCard = React.forwardRef<HTMLDivElement, BlogPostCardProps>(
         variant="default"
         padding="none"
         radius="xl"
+        data-testid="blog-post-card"
         className={cn(
           'group flex flex-col h-full bg-bg-primary overflow-hidden border border-border-default hover:border-primary-500/30 transition-all duration-300',
           featured && 'md:flex-row md:items-stretch',

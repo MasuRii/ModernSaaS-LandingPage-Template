@@ -49,7 +49,10 @@ export const BlogSearch: React.FC<BlogSearchProps> = ({
   );
 
   return (
-    <div className={cn('relative', fullWidth ? 'w-full' : 'w-auto', className)}>
+    <div
+      className={cn('relative', fullWidth ? 'w-full' : 'w-auto', className)}
+      data-testid="blog-search"
+    >
       <Input
         type="text"
         placeholder={placeholder}

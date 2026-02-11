@@ -62,6 +62,7 @@ export const FeaturedPost = React.forwardRef<HTMLDivElement, FeaturedPostProps>(
         variant="default"
         padding="none"
         radius="xl"
+        data-testid="featured-post"
         className={cn(
           'group flex flex-col md:flex-row bg-bg-primary overflow-hidden border border-border-default hover:border-primary-500/30 transition-all duration-300 min-h-[400px]',
           className,

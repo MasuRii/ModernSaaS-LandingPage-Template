@@ -55,7 +55,7 @@ export const BlogListingContent: React.FC = () => {
   const showHeroFeatured = currentPage === 1 && !searchQuery && activeCategory === 'all';
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col" data-testid="blog-listing">
       {/* Category and Search Controls */}
       <Section background="default" padding="sm" className="pb-0">
         <Container>

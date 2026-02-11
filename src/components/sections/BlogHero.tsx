@@ -16,6 +16,7 @@ export const BlogHero: React.FC = () => {
       background="default"
       padding="lg"
       className="relative overflow-hidden border-b border-border-muted"
+      data-testid="blog-hero"
     >
       <GradientBackground variant="default" className="opacity-10" />
       <Container className="relative z-10 text-center py-8">

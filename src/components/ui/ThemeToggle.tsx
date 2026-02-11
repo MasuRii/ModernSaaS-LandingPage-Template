@@ -65,6 +65,7 @@ export function ThemeToggle({
       `}
       aria-label={ariaLabel}
       title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+      data-testid="theme-toggle"
     >
       <span className="sr-only">{isDark ? 'Switch to light mode' : 'Switch to dark mode'}</span>
 

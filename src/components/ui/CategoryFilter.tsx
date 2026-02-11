@@ -25,7 +25,10 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
   className,
 }) => {
   return (
-    <div className={cn('w-full overflow-x-auto pb-2 scrollbar-hide', className)}>
+    <div
+      className={cn('w-full overflow-x-auto pb-2 scrollbar-hide', className)}
+      data-testid="category-filter"
+    >
       <Tabs
         value={activeCategory}
         onValueChange={(value) => onCategoryChange(value as BlogCategory | 'all')}

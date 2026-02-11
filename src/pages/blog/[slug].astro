@@ -71,7 +71,12 @@ const crumbs = [
 >
   <ArticleSchema post={post} />
   {/* 1. Post Hero */}
-  <Section background="transparent" padding="xl" className="pt-32 pb-12 sm:pt-40">
+  <Section
+    background="transparent"
+    padding="xl"
+    className="pt-32 pb-12 sm:pt-40"
+    data-testid="blog-post-header"
+  >
     <Container size="narrow">
       <Link
         href={ROUTES.BLOG}
@@ -152,7 +157,7 @@ const crumbs = [
   {/* 3. Post Content */}
   <Section background="transparent" padding="lg">
     <Container size="narrow">
-      <article class="prose prose-lg prose-primary max-w-none">
+      <article class="prose prose-lg prose-primary max-w-none" data-testid="blog-post-content">
         {/* 1. Post Content */}
         <div class="content">
           {

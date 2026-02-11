@@ -32,7 +32,7 @@ export const RelatedPosts: React.FC<RelatedPostsProps> = ({ posts, className }) 
   const displayPosts = posts.slice(0, 3);
 
   return (
-    <Section background="muted" padding="lg" className={className}>
+    <Section background="muted" padding="lg" className={className} data-testid="related-posts">
       <Container>
         <div className="space-y-12">
           {/* Section Header */}

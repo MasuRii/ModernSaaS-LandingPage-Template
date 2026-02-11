@@ -95,6 +95,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   return (
     <nav
       aria-label="Pagination Navigation"
+      data-testid="pagination"
       className={twMerge('flex items-center justify-center gap-2 py-4', className)}
     >
       {/* Previous Button */}

@@ -24,7 +24,7 @@ export const testRoutes = {
 
 export const selectors = {
   navigation: {
-    header: 'header',
+    header: 'header[role="banner"]',
     logo: '[data-testid="logo"]',
     navLinks: 'nav a',
     themeToggle: '[data-testid="theme-toggle"]',

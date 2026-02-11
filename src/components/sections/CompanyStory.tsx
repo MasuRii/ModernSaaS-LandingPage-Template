@@ -71,7 +71,7 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
       {/* Company Story Section (Origin, Today, Future) */}
       <Section
         id="company-story"
-        className="py-16 lg:py-24"
+        className="py-16 lg:py-24 overflow-hidden"
         background="default"
         aria-label="Company Story - Our Journey"
       >

@@ -86,7 +86,7 @@ export const FeatureDetail: React.FC<FeatureDetailProps> = ({ className }) => {
             key={feature.id}
             id={feature.id}
             background={isEven ? 'default' : 'muted'}
-            className="py-16 lg:py-24"
+            className="py-16 lg:py-24 overflow-hidden"
             aria-label={`Detailed feature: ${feature.title}`}
           >
             <Container>

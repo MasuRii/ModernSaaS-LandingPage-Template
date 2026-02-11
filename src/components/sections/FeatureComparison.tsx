@@ -44,7 +44,7 @@ export const FeatureComparison: React.FC<FeatureComparisonProps> = ({
   return (
     <Section
       id="comparison"
-      className={cn('bg-bg-primary', className)}
+      className={cn('bg-bg-primary overflow-hidden', className)}
       aria-labelledby="comparison-title"
     >
       <Container>
@@ -60,8 +60,8 @@ export const FeatureComparison: React.FC<FeatureComparisonProps> = ({
           </FadeInUp>
         </div>
 
-        <FadeInUp triggerOnView delay={0.2}>
-          <div className="overflow-x-auto -mx-4 sm:-mx-0 pb-4 px-4 sm:px-0 scrollbar-hide">
+        <FadeInUp triggerOnView delay={0.2} className="w-full max-w-full overflow-hidden">
+          <div className="w-full overflow-x-auto pb-4 scrollbar-hide">
             <table className="w-full border-collapse text-left min-w-[640px]">
               <thead>
                 <tr className="border-b border-border-default">

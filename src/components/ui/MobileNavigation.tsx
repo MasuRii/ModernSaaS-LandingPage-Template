@@ -196,6 +196,7 @@ export function MobileNavigation({
           <motion.div
             ref={containerRef}
             id="mobile-navigation"
+            data-testid="mobile-menu"
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
@@ -311,6 +312,7 @@ export function MobileMenuButton({
     <button
       type="button"
       onClick={onClick}
+      data-testid="mobile-menu-button"
       className={`p-2 text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 ${className}`}
       aria-expanded={isOpen}
       aria-controls="mobile-navigation"

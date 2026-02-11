@@ -1051,6 +1051,11 @@ exports[`Component Snapshots > dark theme > Sections > FAQSection matches snapsh
         Everything you need to know about our product and pricing.
       </p>
     </div>
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I change my plan at any time?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, your new rate will apply at the next billing cycle."}},{"@type":"Question","name":"Do you offer a free trial?","acceptedAnswer":{"@type":"Answer","text":"Yes! Every paid plan comes with a 14-day free trial. No credit card required to start. You'll only be charged if you decide to continue after the trial period."}},{"@type":"Question","name":"What payment methods do you accept?","acceptedAnswer":{"@type":"Answer","text":"We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for annual Enterprise plans."}},{"@type":"Question","name":"Is there a discount for annual billing?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can save 20% by choosing annual billing instead of monthly. This discount is automatically applied when you select the annual option."}},{"@type":"Question","name":"Do you offer student or non-profit discounts?","acceptedAnswer":{"@type":"Answer","text":"Yes! We're committed to supporting education and social impact. Eligible students and non-profit organizations can receive an additional 30% discount on any plan. Contact our support team with your credentials to apply."}},{"@type":"Question","name":"What happens when I reach my plan limits?","acceptedAnswer":{"@type":"Answer","text":"We'll notify you when you're approaching your limits. You can upgrade your plan at any time, or contact us for custom options if you need temporary increases."}},{"@type":"Question","name":"Do you offer refunds?","acceptedAnswer":{"@type":"Answer","text":"We offer a 30-day money-back guarantee for all paid plans. If you're not satisfied, contact our support team within 30 days for a full refund."}},{"@type":"Question","name":"Can I invite external collaborators?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can invite external collaborators to specific projects. They won't count against your team member limit unless they need full account access."}},{"@type":"Question","name":"Do you have an API?","acceptedAnswer":{"@type":"Answer","text":"Yes, our REST and GraphQL APIs are available on Pro and Enterprise plans. Enterprise customers also get access to advanced webhooks and custom integrations."}}]}
+    </script>
     <div
       class="w-full px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto"
     >
@@ -1596,6 +1601,7 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
   <section
     aria-label="Hero Section"
     class="bg-transparent py-16 md:py-24 relative min-h-[calc(100vh-72px)] flex items-center overflow-hidden pt-20 pb-16 lg:pt-32 lg:pb-24"
+    data-testid="hero-section"
     id="hero"
   >
     <div
@@ -1738,7 +1744,8 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
             </div>
           </div>
           <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient"
+            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient will-change-transform"
+            data-testid="hero-headline"
             style="opacity: 0; transform: translateY(40px) scale(0.95);"
           >
             Build Faster with 
@@ -1749,7 +1756,8 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
             </span>
           </h1>
           <p
-            class="text-lg md:text-xl text-text-muted mb-10 max-w-[520px] leading-relaxed"
+            class="text-lg md:text-xl text-text-muted mb-10 max-w-[520px] leading-relaxed will-change-transform"
+            data-testid="hero-description"
             style="opacity: 0; transform: translateY(20px);"
           >
             Build faster with intelligent automation. The all-in-one platform for scaling your business with powerful automation tools.
@@ -1762,6 +1770,7 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
               aria-busy="false"
               aria-disabled="false"
               class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 text-lg gap-2.5 rounded-lg px-8"
+              data-testid="hero-cta-primary"
               tabindex="0"
               type="button"
             >
@@ -1790,6 +1799,7 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
                 aria-busy="false"
                 aria-disabled="false"
                 class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative text-text-primary border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 text-lg gap-2.5 rounded-lg px-8 bg-bg-primary/50 backdrop-blur-sm"
+                data-testid="hero-cta-secondary"
                 tabindex="0"
                 type="button"
               >
@@ -1841,7 +1851,7 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
           class="relative"
         >
           <div
-            class="relative perspective-1000 z-10"
+            class="relative perspective-1000 z-10 will-change-transform"
             style="opacity: 0; transform: translateX(20px) scale(0.9);"
           >
             <div
@@ -5212,6 +5222,46 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
           </div>
         </div>
       </div>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Alexandra Chen","jobTitle":"CEO & Co-Founder","description":"Former VP of Product at TechGiant. Built and scaled products used by millions. Passionate about creating tools that empower teams.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://twitter.com/alexchen","https://linkedin.com/in/alexchen"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Marcus Johnson","jobTitle":"CTO & Co-Founder","description":"Ex-Google engineer with 15+ years building distributed systems. Open source contributor and conference speaker.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://twitter.com/marcusj","https://linkedin.com/in/marcusj","https://github.com/marcusj"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Priya Sharma","jobTitle":"Head of Design","description":"Award-winning designer previously at Apple and Airbnb. Believes great design is invisible and intuitive.","image":"http://localhost:3000/images/team-03.jpg","sameAs":["https://twitter.com/priyas","https://linkedin.com/in/priyas","https://priyasharma.design"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"David Kim","jobTitle":"VP of Engineering","description":"Led engineering teams at multiple unicorn startups. Expert in scaling engineering organizations and technical architecture.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://linkedin.com/in/davidkim","https://github.com/davidkim"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Emily Rodriguez","jobTitle":"Head of Marketing","description":"Growth marketer with experience taking B2B SaaS companies from $0 to $100M ARR. Data-driven and creative.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://twitter.com/emilyr","https://linkedin.com/in/emilyr"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Thomas Anderson","jobTitle":"Senior Product Manager","description":"Product leader focused on user experience and market fit. Previously shipped products at Microsoft and Shopify.","image":"http://localhost:3000/images/team-03.jpg","sameAs":["https://linkedin.com/in/thomasanderson","https://twitter.com/thomasanderson"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Sarah Mitchell","jobTitle":"Lead Engineer","description":"Full-stack engineer specializing in performance and scalability. Open source maintainer and tech blogger.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://github.com/sarahmitchell","https://twitter.com/sarahcodes"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Jordan Lee","jobTitle":"Senior Designer","description":"UI/UX designer with a background in psychology. Focuses on creating accessible and inclusive digital experiences.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://jordanlee.design","https://linkedin.com/in/jordanlee"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
     </div>
   </section>
 </DocumentFragment>
@@ -7316,6 +7366,11 @@ exports[`Component Snapshots > light theme > Sections > FAQSection matches snaps
         Everything you need to know about our product and pricing.
       </p>
     </div>
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I change my plan at any time?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, your new rate will apply at the next billing cycle."}},{"@type":"Question","name":"Do you offer a free trial?","acceptedAnswer":{"@type":"Answer","text":"Yes! Every paid plan comes with a 14-day free trial. No credit card required to start. You'll only be charged if you decide to continue after the trial period."}},{"@type":"Question","name":"What payment methods do you accept?","acceptedAnswer":{"@type":"Answer","text":"We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for annual Enterprise plans."}},{"@type":"Question","name":"Is there a discount for annual billing?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can save 20% by choosing annual billing instead of monthly. This discount is automatically applied when you select the annual option."}},{"@type":"Question","name":"Do you offer student or non-profit discounts?","acceptedAnswer":{"@type":"Answer","text":"Yes! We're committed to supporting education and social impact. Eligible students and non-profit organizations can receive an additional 30% discount on any plan. Contact our support team with your credentials to apply."}},{"@type":"Question","name":"What happens when I reach my plan limits?","acceptedAnswer":{"@type":"Answer","text":"We'll notify you when you're approaching your limits. You can upgrade your plan at any time, or contact us for custom options if you need temporary increases."}},{"@type":"Question","name":"Do you offer refunds?","acceptedAnswer":{"@type":"Answer","text":"We offer a 30-day money-back guarantee for all paid plans. If you're not satisfied, contact our support team within 30 days for a full refund."}},{"@type":"Question","name":"Can I invite external collaborators?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can invite external collaborators to specific projects. They won't count against your team member limit unless they need full account access."}},{"@type":"Question","name":"Do you have an API?","acceptedAnswer":{"@type":"Answer","text":"Yes, our REST and GraphQL APIs are available on Pro and Enterprise plans. Enterprise customers also get access to advanced webhooks and custom integrations."}}]}
+    </script>
     <div
       class="w-full px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto"
     >
@@ -7861,6 +7916,7 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
   <section
     aria-label="Hero Section"
     class="bg-transparent py-16 md:py-24 relative min-h-[calc(100vh-72px)] flex items-center overflow-hidden pt-20 pb-16 lg:pt-32 lg:pb-24"
+    data-testid="hero-section"
     id="hero"
   >
     <div
@@ -8003,7 +8059,8 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
             </div>
           </div>
           <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient"
+            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient will-change-transform"
+            data-testid="hero-headline"
             style="opacity: 0; transform: translateY(40px) scale(0.95);"
           >
             Build Faster with 
@@ -8014,7 +8071,8 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
             </span>
           </h1>
           <p
-            class="text-lg md:text-xl text-text-muted mb-10 max-w-[520px] leading-relaxed"
+            class="text-lg md:text-xl text-text-muted mb-10 max-w-[520px] leading-relaxed will-change-transform"
+            data-testid="hero-description"
             style="opacity: 0; transform: translateY(20px);"
           >
             Build faster with intelligent automation. The all-in-one platform for scaling your business with powerful automation tools.
@@ -8027,6 +8085,7 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
               aria-busy="false"
               aria-disabled="false"
               class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 text-lg gap-2.5 rounded-lg px-8"
+              data-testid="hero-cta-primary"
               tabindex="0"
               type="button"
             >
@@ -8055,6 +8114,7 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
                 aria-busy="false"
                 aria-disabled="false"
                 class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative text-text-primary border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 text-lg gap-2.5 rounded-lg px-8 bg-bg-primary/50 backdrop-blur-sm"
+                data-testid="hero-cta-secondary"
                 tabindex="0"
                 type="button"
               >
@@ -8106,7 +8166,7 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
           class="relative"
         >
           <div
-            class="relative perspective-1000 z-10"
+            class="relative perspective-1000 z-10 will-change-transform"
             style="opacity: 0; transform: translateX(20px) scale(0.9);"
           >
             <div
@@ -11477,6 +11537,46 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
           </div>
         </div>
       </div>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Alexandra Chen","jobTitle":"CEO & Co-Founder","description":"Former VP of Product at TechGiant. Built and scaled products used by millions. Passionate about creating tools that empower teams.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://twitter.com/alexchen","https://linkedin.com/in/alexchen"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Marcus Johnson","jobTitle":"CTO & Co-Founder","description":"Ex-Google engineer with 15+ years building distributed systems. Open source contributor and conference speaker.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://twitter.com/marcusj","https://linkedin.com/in/marcusj","https://github.com/marcusj"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Priya Sharma","jobTitle":"Head of Design","description":"Award-winning designer previously at Apple and Airbnb. Believes great design is invisible and intuitive.","image":"http://localhost:3000/images/team-03.jpg","sameAs":["https://twitter.com/priyas","https://linkedin.com/in/priyas","https://priyasharma.design"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"David Kim","jobTitle":"VP of Engineering","description":"Led engineering teams at multiple unicorn startups. Expert in scaling engineering organizations and technical architecture.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://linkedin.com/in/davidkim","https://github.com/davidkim"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Emily Rodriguez","jobTitle":"Head of Marketing","description":"Growth marketer with experience taking B2B SaaS companies from $0 to $100M ARR. Data-driven and creative.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://twitter.com/emilyr","https://linkedin.com/in/emilyr"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Thomas Anderson","jobTitle":"Senior Product Manager","description":"Product leader focused on user experience and market fit. Previously shipped products at Microsoft and Shopify.","image":"http://localhost:3000/images/team-03.jpg","sameAs":["https://linkedin.com/in/thomasanderson","https://twitter.com/thomasanderson"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Sarah Mitchell","jobTitle":"Lead Engineer","description":"Full-stack engineer specializing in performance and scalability. Open source maintainer and tech blogger.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://github.com/sarahmitchell","https://twitter.com/sarahcodes"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Jordan Lee","jobTitle":"Senior Designer","description":"UI/UX designer with a background in psychology. Focuses on creating accessible and inclusive digital experiences.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://jordanlee.design","https://linkedin.com/in/jordanlee"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
     </div>
   </section>
 </DocumentFragment>

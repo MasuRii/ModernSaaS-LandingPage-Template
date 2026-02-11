@@ -54,8 +54,15 @@ export const getPathConfig = (): PathConfig => {
         ? String(import.meta.env.SITE)
         : 'https://localhost:4321';
 
+  const envBasePath = process?.env?.BASE_PATH || '/';
+  // Fix Windows path expansion where /repo-name becomes C:/Program Files/Git/repo-name
+  const cleanEnvBasePath =
+    envBasePath.includes(':\\') || envBasePath.includes(':/')
+      ? '/' + envBasePath.split(/[\\/]/).pop()
+      : envBasePath;
+
   return {
-    basePath: baseUrl || process?.env?.BASE_PATH || '/',
+    basePath: baseUrl || cleanEnvBasePath || '/',
     isGitHubPages: typeof process !== 'undefined' && process.env.GITHUB_PAGES === 'true',
     isProjectPage: !!githubRepo,
     siteUrl,

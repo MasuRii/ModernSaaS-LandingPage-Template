@@ -19,7 +19,11 @@ const getBasePath = () => {
     }
   }
   // Local development or user/org pages
-  return process.env.BASE_PATH || '/';
+  const basePath = process.env.BASE_PATH || '/';
+  // Fix Windows path expansion
+  return basePath.includes(':\\') || basePath.includes(':/')
+    ? '/' + basePath.split(/[\\/]/).pop()
+    : basePath;
 };
 
 // https://astro.build/config

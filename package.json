@@ -24,6 +24,7 @@
     "test:a11y": "node scripts/run-axe.js",
     "test:seo": "bun scripts/validate-schemas.ts",
     "test:deploy": "bun scripts/verify-deployment.ts",
+    "test:readme": "bun scripts/validate-readme.ts",
     "prepare": "husky"
   },
   "lint-staged": {

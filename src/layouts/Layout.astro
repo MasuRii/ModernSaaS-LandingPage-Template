@@ -6,6 +6,7 @@ import { ClientHeader } from '../components/ClientHeader';
 import { MinimalHeader } from '../components/layout/Header';
 import { Footer, MinimalFooter } from '../components/layout/Footer';
 import { Toaster } from '../components/ui/Toast';
+import { OrganizationSchema } from '../components/seo';
 
 interface Props {
   title: string;
@@ -32,6 +33,9 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title} | ModernSaaS</title>
     <meta name="description" content={description} />
+
+    <!-- SEO Schemas -->
+    <OrganizationSchema />
 
     <!-- Theme script to prevent flash of wrong theme -->
     <script is:inline set:html={getThemeScript('system')} />

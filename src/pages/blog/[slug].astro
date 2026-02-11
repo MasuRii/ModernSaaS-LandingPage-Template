@@ -55,7 +55,13 @@ const crumbs = [
 ];
 ---
 
-<Layout title={`${title} | ModernSaaS Blog`} description={excerpt} crumbs={crumbs}>
+<Layout
+  title={`${title} | ModernSaaS Blog`}
+  description={excerpt}
+  crumbs={crumbs}
+  ogType="article"
+  ogImage={coverImage}
+>
   <ArticleSchema post={post} />
   <main
     id="main-content"

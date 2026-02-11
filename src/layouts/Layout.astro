@@ -21,6 +21,9 @@ interface Props {
   headerVariant?: 'default' | 'minimal' | 'none';
   footerVariant?: 'default' | 'minimal' | 'none';
   crumbs?: BreadcrumbItem[];
+  ogType?: 'website' | 'article' | 'profile';
+  ogImage?: string;
+  robots?: string;
 }
 
 const {
@@ -29,6 +32,9 @@ const {
   headerVariant = 'default',
   footerVariant = 'default',
   crumbs,
+  ogType,
+  ogImage,
+  robots,
 } = Astro.props;
 
 // Auto-generate crumbs if not provided
@@ -56,7 +62,14 @@ const finalCrumbs = crumbs || defaultCrumbs;
     <meta name="generator" content={Astro.generator} />
 
     <!-- SEO Meta Tags -->
-    <MetaTags title={title} description={description} pathname={currentPath} />
+    <MetaTags
+      title={title}
+      description={description}
+      pathname={currentPath}
+      ogType={ogType}
+      ogImage={ogImage}
+      robots={robots}
+    />
 
     <!-- SEO Schemas -->
     <OrganizationSchema />

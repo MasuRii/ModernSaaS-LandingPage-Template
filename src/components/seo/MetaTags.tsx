@@ -13,6 +13,10 @@ export interface MetaTagsProps {
   robots?: string;
   /** Current page pathname for auto-canonical generation */
   pathname?: string;
+  /** Open Graph type (default: 'website') */
+  ogType?: 'website' | 'article' | 'profile' | undefined;
+  /** Page-specific OG image override */
+  ogImage?: string | undefined;
 }
 
 /**
@@ -20,6 +24,7 @@ export interface MetaTagsProps {
  *
  * Renders standard SEO meta tags including title, description,
  * canonical URL, and robots directives.
+ * Also includes Open Graph tags for social sharing.
  * Uses centralized configuration and path resolution.
  */
 export const MetaTags: React.FC<MetaTagsProps> = ({
@@ -28,6 +33,8 @@ export const MetaTags: React.FC<MetaTagsProps> = ({
   canonical,
   robots,
   pathname = '',
+  ogType = 'website',
+  ogImage,
 }) => {
   const { seo: defaultSeo, getPageTitle } = site;
 
@@ -43,6 +50,11 @@ export const MetaTags: React.FC<MetaTagsProps> = ({
   // Robots directive
   const finalRobots = robots || 'index, follow';
 
+  // OG Image resolution
+  const finalOgImage = ogImage
+    ? getCanonicalUrl(ogImage)
+    : getCanonicalUrl(defaultSeo.defaultOgImage);
+
   return (
     <>
       <title>{finalTitle}</title>
@@ -57,6 +69,15 @@ export const MetaTags: React.FC<MetaTagsProps> = ({
       {defaultSeo.defaultKeywords.length > 0 && (
         <meta name="keywords" content={defaultSeo.defaultKeywords.join(', ')} />
       )}
+
+      {/* Open Graph Tags */}
+      <meta property="og:site_name" content={site.company.name} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:title" content={finalTitle} />
+      <meta property="og:description" content={finalDescription} />
+      <meta property="og:url" content={finalCanonical} />
+      <meta property="og:image" content={finalOgImage} />
+      <meta property="og:locale" content={defaultSeo.locale} />
     </>
   );
 };

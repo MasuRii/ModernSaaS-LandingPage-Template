@@ -7,7 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/Accordion';
-import { type PricingFAQ, pricingFAQs } from '@/data/pricing';
+import { type FAQItem, homeFAQs } from '@/data/faq';
 import { FAQSchema } from '@/components/seo/FAQSchema';
 
 /**
@@ -19,7 +19,7 @@ export interface FAQSectionProps {
   /** Optional subheading override */
   subheading?: string;
   /** Optional FAQ data override */
-  faqs?: PricingFAQ[];
+  faqs?: FAQItem[];
   /** Additional CSS classes */
   className?: string;
 }
@@ -28,12 +28,12 @@ export interface FAQSectionProps {
  * FAQSection Component
  *
  * Displays a list of frequently asked questions using an Accordion component.
- * Uses pricingFAQs as the default data source.
+ * Uses homeFAQs as the default data source.
  */
 export const FAQSection: React.FC<FAQSectionProps> = ({
   heading = 'Frequently Asked Questions',
   subheading = 'Everything you need to know about our product and pricing.',
-  faqs = pricingFAQs,
+  faqs = homeFAQs,
   className,
 }) => {
   return (

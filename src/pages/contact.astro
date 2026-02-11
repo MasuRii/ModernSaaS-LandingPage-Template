@@ -4,35 +4,9 @@ import { pageSEO } from '../config/site';
 import { ContactHero, ContactInfo, FAQSection } from '../components/sections';
 import { ContactForm } from '../components/forms/ContactForm';
 import { Container, Section } from '../components/ui';
+import { supportFAQs } from '../data/faq';
 
 const seo = pageSEO.contact;
-
-const contactFAQs = [
-  {
-    question: 'How quickly will I receive a response?',
-    answer:
-      'Our team typically responds to all inquiries within 24 business hours. For urgent technical support, Pro and Enterprise customers can expect a response within 2-4 hours.',
-    category: 'plans' as const,
-  },
-  {
-    question: 'Do you offer custom enterprise solutions?',
-    answer:
-      'Yes, we provide custom enterprise plans tailored to your specific needs, including custom integrations, dedicated support, and specialized security requirements.',
-    category: 'plans' as const,
-  },
-  {
-    question: 'What are your support hours?',
-    answer:
-      'Our standard support hours are Monday through Friday, 9:00 AM to 6:00 PM PST. Live chat is available 24/7 for Pro and Enterprise plan subscribers.',
-    category: 'technical' as const,
-  },
-  {
-    question: 'Can I schedule a live product demo?',
-    answer:
-      "Absolutely! You can select 'Sales Question' in the contact form, and our team will reach out to schedule a personalized demo at your convenience.",
-    category: 'plans' as const,
-  },
-];
 ---
 
 <Layout title={seo.title} description={seo.description}>
@@ -152,7 +126,7 @@ const contactFAQs = [
       client:visible
       heading="Support FAQ"
       subheading="Quick answers to common questions about our support and services."
-      faqs={contactFAQs}
+      faqs={supportFAQs}
     />
   </main>
 </Layout>

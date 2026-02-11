@@ -3,30 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import { pageSEO, company } from '../config/site';
 import { RoadmapHero, RoadmapTimeline, FAQSection, FinalCTA } from '../components/sections';
 import { roadmapData, roadmapMetadata } from '../data/roadmap';
+import { roadmapFAQs } from '../data/faq';
 
 const seo = pageSEO.roadmap;
-
-// Simplified FAQs for the roadmap page
-const roadmapFAQs = [
-  {
-    question: 'How often is the roadmap updated?',
-    answer:
-      'We update our roadmap at the beginning of every quarter, or more frequently when major milestones are reached.',
-    category: 'plans' as const,
-  },
-  {
-    question: 'Can I request a feature?',
-    answer:
-      'Absolutely! We love hearing from our users. You can submit feature requests through our support portal or by contacting our team directly.',
-    category: 'plans' as const,
-  },
-  {
-    question: 'Are these dates guaranteed?',
-    answer:
-      'While we strive to meet our planned timelines, the roadmap is a dynamic document and subject to change based on user feedback and technical requirements.',
-    category: 'plans' as const,
-  },
-];
 ---
 
 <Layout title={`${seo.title} | ${company.name}`} description={seo.description}>

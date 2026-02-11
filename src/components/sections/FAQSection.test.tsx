@@ -2,7 +2,7 @@ import * as React from 'react';
 import { describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { FAQSection } from './FAQSection';
-import { pricingFAQs } from '@/data/pricing';
+import { homeFAQs } from '@/data/faq';
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 // Mock matchMedia for ThemeProvider
@@ -48,7 +48,7 @@ describe('FAQSection Component', () => {
 
   it('renders all FAQ questions', () => {
     renderFAQSection();
-    pricingFAQs.forEach((faq) => {
+    homeFAQs.forEach((faq) => {
       expect(screen.getByText(faq.question)).toBeDefined();
     });
   });
@@ -56,7 +56,7 @@ describe('FAQSection Component', () => {
   it('toggles FAQ content when a question is clicked', () => {
     renderFAQSection();
 
-    const firstFaq = pricingFAQs[0];
+    const firstFaq = homeFAQs[0];
     if (!firstFaq) throw new Error('No FAQs found');
 
     const trigger = screen.getByText(firstFaq.question);

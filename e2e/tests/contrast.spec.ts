@@ -33,17 +33,18 @@ test.describe('Color Contrast Verification', () => {
         await page.goto(route);
         await page.waitForLoadState('networkidle');
 
-        // Ensure light mode
-        const isDark = await page.evaluate(() =>
-          document.documentElement.classList.contains('dark'),
-        );
-        if (isDark) {
-          const themeToggle = page.locator('[data-testid="theme-toggle"]');
-          if (await themeToggle.isVisible()) {
-            await themeToggle.click();
-            await page.waitForTimeout(300);
-          }
-        }
+        // Force light mode via class
+        await page.evaluate(() => {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.setAttribute('data-theme', 'light');
+          document.documentElement.style.colorScheme = 'light';
+        });
+
+        // Scroll to make header solid
+        await page.evaluate(() => window.scrollTo(0, 500));
+        await page.waitForTimeout(500);
+        await page.evaluate(() => window.scrollTo(0, 0));
+        await page.waitForTimeout(500);
 
         const accessibilityScanResults = await new AxeBuilder({ page })
           .withRules(['color-contrast'])
@@ -56,17 +57,18 @@ test.describe('Color Contrast Verification', () => {
         await page.goto(route);
         await page.waitForLoadState('networkidle');
 
-        // Ensure dark mode
-        const isDark = await page.evaluate(() =>
-          document.documentElement.classList.contains('dark'),
-        );
-        if (!isDark) {
-          const themeToggle = page.locator('[data-testid="theme-toggle"]');
-          if (await themeToggle.isVisible()) {
-            await themeToggle.click();
-            await page.waitForTimeout(300);
-          }
-        }
+        // Force dark mode via class
+        await page.evaluate(() => {
+          document.documentElement.classList.add('dark');
+          document.documentElement.setAttribute('data-theme', 'dark');
+          document.documentElement.style.colorScheme = 'dark';
+        });
+
+        // Scroll to make header solid and ensure all elements are visible
+        await page.evaluate(() => window.scrollTo(0, 500));
+        await page.waitForTimeout(500);
+        await page.evaluate(() => window.scrollTo(0, 0));
+        await page.waitForTimeout(500);
 
         const accessibilityScanResults = await new AxeBuilder({ page })
           .withRules(['color-contrast'])

@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@variant dark (&:where(.dark, .dark *));
 @import './tokens.css';
 @import './prose.css';
 
@@ -154,6 +155,8 @@
    Theme Configuration for Tailwind v4
    ------------------------------------------ */
 @theme {
+  --dark-mode: selector;
+
   /* ========================================
      PRIMITIVE COLOR TOKENS
      ======================================== */

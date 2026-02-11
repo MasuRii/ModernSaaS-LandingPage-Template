@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
+import { type Variants, motion } from 'motion/react';
 import { Heart, type LucideIcon, Shield, Sparkles, Users, Zap } from 'lucide-react';
 import { Container, FeatureCard, Section } from '@/components/ui';
 import { companyValues } from '@/data/team';

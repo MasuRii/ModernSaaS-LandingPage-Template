@@ -1,15 +1,10 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
-import {
-  Container,
-  IntegrationLogo,
-  Link,
-  Section,
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from '@/components/ui';
+import { type Variants, motion } from 'motion/react';
+import { Container } from '@/components/ui/Container';
+import { IntegrationLogo } from '@/components/ui/IntegrationLogo';
+import { Link } from '@/components/ui/Link';
+import { Section } from '@/components/ui/Section';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/Tabs';
 import { integrationCategories, integrations } from '@/data/integrations';
 import { PRESETS } from '@/config/animation';
 import { cn } from '@/utils/cn';

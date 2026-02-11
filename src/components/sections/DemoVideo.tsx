@@ -9,7 +9,7 @@
 
 import * as React from 'react';
 import { Play } from 'lucide-react';
-import { type Variants, motion } from 'framer-motion';
+import { type Variants, motion } from 'motion/react';
 import { Container, DemoLink, Section } from '../ui';
 import { PRESETS } from '../../config/animation';
 import { getAssetPath } from '../../config/paths';

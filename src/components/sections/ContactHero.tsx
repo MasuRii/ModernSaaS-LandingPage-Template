@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
-import { Container, GradientBackground, Section } from '@/components/ui';
+import { type Variants, motion } from 'motion/react';
+import { Container } from '@/components/ui/Container';
+import { GradientBackground } from '@/components/ui/GradientBackground';
+import { Section } from '@/components/ui/Section';
 import { PRESETS } from '@/config/animation';
 import { pageSEO } from '@/config/site';
 import { cn } from '@/utils/cn';

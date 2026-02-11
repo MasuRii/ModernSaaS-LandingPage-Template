@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
+import { type Variants, motion } from 'motion/react';
 import { Container, GradientBackground, LazyImage, Section } from '@/components/ui';
 import { PRESETS } from '@/config/animation';
 import { company } from '@/config/site';

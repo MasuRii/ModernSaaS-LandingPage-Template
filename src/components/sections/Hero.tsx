@@ -1,16 +1,14 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
+import { type Variants, motion } from 'motion/react';
 import { ArrowRight, Play } from 'lucide-react';
-import {
-  Button,
-  Container,
-  DemoLink,
-  GradientBackground,
-  ProductMockup,
-  Section,
-  Skeleton,
-  SocialProofBadge,
-} from '@/components/ui';
+import { Button } from '@/components/ui/Button';
+import { Container } from '@/components/ui/Container';
+import { DemoLink } from '@/components/ui/DemoLink';
+import { GradientBackground } from '@/components/ui/GradientBackground';
+import { ProductMockup } from '@/components/ui/ProductMockup';
+import { Section } from '@/components/ui/Section';
+import { Skeleton } from '@/components/ui/Skeleton';
+import { SocialProofBadge } from '@/components/ui/SocialProofBadge';
 import { socialProofStats, testimonials } from '@/data';
 import { company } from '@/config/site';
 import { ROUTES } from '@/config/paths';

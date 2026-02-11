@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'motion/react';
 import { X } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import { siteNavigation } from '../../config/site';

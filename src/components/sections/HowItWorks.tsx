@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
+import { type Variants, motion } from 'motion/react';
 import { Plug, Rocket, Sparkles, Workflow, Zap } from 'lucide-react';
-import { Container, Section } from '@/components/ui';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
 import { howItWorksSteps } from '@/data/how-it-works';
 import { PRESETS, STAGGER } from '@/config/animation';
 import { cn } from '@/utils/cn';

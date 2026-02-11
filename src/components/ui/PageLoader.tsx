@@ -1,5 +1,5 @@
 import React from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'motion/react';
 import { Spinner } from './Spinner';
 import { useReducedMotion } from '@/utils/reducedMotion';
 import { cn } from '@/utils/cn';

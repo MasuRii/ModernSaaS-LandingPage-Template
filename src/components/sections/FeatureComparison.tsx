@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Check, X } from 'lucide-react';
-import { Container, Section } from '@/components/ui';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
 import { featureComparison } from '@/data/features';
 import { FadeInUp } from '@/components/animation/AnimatedElement';
 import { cn } from '@/utils/cn';

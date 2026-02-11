@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ChevronDown } from 'lucide-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'motion/react';
 import { cn } from '../../utils/cn';
 import { useReducedMotion } from '../../utils/reducedMotion';
 import { PRESETS } from '../../config/animation';

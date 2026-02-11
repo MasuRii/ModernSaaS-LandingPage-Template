@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
-import { AnimatedCounter, Container, Section } from '@/components/ui';
+import { type Variants, motion } from 'motion/react';
+import { AnimatedCounter } from '@/components/ui/AnimatedCounter';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
 import { featureStats } from '@/data';
 import { PRESETS } from '@/config/animation';
 import { cn } from '@/utils/cn';

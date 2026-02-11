@@ -6,7 +6,7 @@ import { BillingToggle } from '@/components/ui/BillingToggle';
 import { PricingCard } from '@/components/ui/PricingCard';
 import { Link } from '@/components/ui/Link';
 import { ROUTES } from '@/config/paths';
-import { type Variants, motion } from 'framer-motion';
+import { type Variants, motion } from 'motion/react';
 import { PRESETS } from '@/config/animation';
 
 /**

@@ -20,7 +20,8 @@ import {
   Workflow,
   Zap,
 } from 'lucide-react';
-import { Container, Section } from '@/components/ui';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
 import { featureDetails } from '@/data/features';
 import { FadeInUp } from '@/components/animation/AnimatedElement';
 import { cn } from '@/utils/cn';

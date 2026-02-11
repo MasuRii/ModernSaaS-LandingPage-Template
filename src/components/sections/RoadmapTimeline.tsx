@@ -2,7 +2,7 @@ import React from 'react';
 import { Section } from '../ui/Section';
 import { Container } from '../ui/Container';
 import { Badge } from '../ui/Badge';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { CheckCircle2, Circle, Clock } from 'lucide-react';
 import type { RoadmapQuarter, RoadmapStatus } from '../../data/roadmap';
 

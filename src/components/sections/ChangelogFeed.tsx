@@ -2,7 +2,7 @@ import React from 'react';
 import { Section } from '../ui/Section';
 import { Container } from '../ui/Container';
 import { Badge } from '../ui/Badge';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Bug, Calendar, TrendingUp, Zap } from 'lucide-react';
 import type { ChangelogEntry, ChangelogType } from '../../data/changelog';
 

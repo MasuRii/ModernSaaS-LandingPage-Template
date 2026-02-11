@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
-import { Container, Section } from '@/components/ui';
+import { type Variants, motion } from 'motion/react';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
 import { PricingCard } from '@/components/ui/PricingCard';
 import { type BillingPeriod, pricingTiers } from '@/data/pricing';
 import { PRESETS } from '@/config/animation';

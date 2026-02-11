@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
+import { type Variants, motion } from 'motion/react';
 import { ShieldCheck } from 'lucide-react';
-import { Container, Section } from '@/components/ui';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
 import { moneyBackGuarantee } from '@/data/pricing';
 import { PRESETS } from '@/config/animation';
 import { cn } from '@/utils/cn';

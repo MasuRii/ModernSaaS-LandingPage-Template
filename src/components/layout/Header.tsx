@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Zap } from 'lucide-react';
 import { ThemeToggle } from '../ui/ThemeToggle';
 import { MobileMenuButton, MobileNavigation } from '../ui/MobileNavigation';

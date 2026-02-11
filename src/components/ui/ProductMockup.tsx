@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { type HTMLMotionProps, type Variants, motion } from 'framer-motion';
+import { type HTMLMotionProps, type Variants, motion } from 'motion/react';
 import { cn } from '@/utils/cn';
 import { getAssetPath } from '@/config/paths';
 import { useReducedMotion } from '@/utils/reducedMotion';

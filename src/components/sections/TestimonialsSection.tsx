@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
-import { Container, Section, TestimonialCard } from '@/components/ui';
+import { type Variants, motion } from 'motion/react';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
+import { TestimonialCard } from '@/components/ui/TestimonialCard';
 import { testimonials } from '@/data';
 import { PRESETS } from '@/config/animation';
 import { cn } from '@/utils/cn';

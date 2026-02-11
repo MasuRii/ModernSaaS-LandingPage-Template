@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
-import { Container, Section, TeamMemberCard } from '@/components/ui';
+import { type Variants, motion } from 'motion/react';
+import { Container } from '@/components/ui/Container';
+import { Section } from '@/components/ui/Section';
+import { TeamMemberCard } from '@/components/ui/TeamMemberCard';
 import { PersonSchemaList } from '@/components/seo';
 import { teamMembers } from '@/data/team';
 import { PRESETS } from '@/config/animation';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Section } from '../ui/Section';
 import { Container } from '../ui/Container';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 export interface RoadmapHeroProps {
   title: string;

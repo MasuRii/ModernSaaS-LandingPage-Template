@@ -1,6 +1,8 @@
 import * as React from 'react';
-import { type Variants, motion } from 'framer-motion';
-import { Container, LogoCloud, Section } from '@/components/ui';
+import { type Variants, motion } from 'motion/react';
+import { Container } from '@/components/ui/Container';
+import { LogoCloud } from '@/components/ui/LogoCloud';
+import { Section } from '@/components/ui/Section';
 import { integrations } from '@/data';
 import { PRESETS } from '@/config/animation';
 import { cn } from '@/utils/cn';

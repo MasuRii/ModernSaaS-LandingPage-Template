@@ -15,11 +15,16 @@ exports[`Component Snapshots > dark theme > Basic Components > Button matches sn
   <button
     aria-busy="false"
     aria-disabled="false"
-    class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg"
+    class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg"
+    tabindex="0"
     type="button"
   >
-    <span>
-      Click me
+    <span
+      class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+    >
+      <span>
+        Click me
+      </span>
     </span>
   </button>
 </DocumentFragment>
@@ -33,61 +38,91 @@ exports[`Component Snapshots > dark theme > Basic Components > Button variants m
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Primary
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Primary
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-secondary-600 text-white border border-transparent hover:bg-secondary-700 hover:shadow-md active:bg-secondary-800 dark:bg-secondary-500 dark:hover:bg-secondary-600 dark:active:bg-secondary-700 dark:focus-visible:ring-secondary-400 h-10 px-4 text-base gap-2 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-secondary-600 text-white border-transparent hover:bg-secondary-700 active:bg-secondary-800 dark:bg-secondary-500 dark:hover:bg-secondary-600 dark:active:bg-secondary-700 dark:focus-visible:ring-secondary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Secondary
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Secondary
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-transparent text-text-primary border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Outline
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Outline
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-transparent hover:bg-bg-secondary active:bg-bg-tertiary dark:hover:bg-bg-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-transparent text-text-primary border-transparent hover:bg-bg-secondary active:bg-bg-tertiary dark:hover:bg-bg-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Ghost
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Ghost
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-8 px-3 text-sm gap-1.5 rounded-md"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-8 px-3 text-sm gap-1.5 rounded-md"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Small
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Small
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-12 px-6 text-lg gap-2.5 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 px-6 text-lg gap-2.5 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Large
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Large
+        </span>
       </span>
     </button>
   </div>
@@ -251,11 +286,16 @@ exports[`Component Snapshots > dark theme > Cards > PricingCard matches snapshot
       <button
         aria-busy="false"
         aria-disabled="false"
-        class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg w-full w-full py-3"
+        class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg w-full py-3"
+        tabindex="0"
         type="button"
       >
-        <span>
-          Get Started
+        <span
+          class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+        >
+          <span>
+            Get Started
+          </span>
         </span>
       </button>
     </div>
@@ -603,11 +643,16 @@ exports[`Component Snapshots > dark theme > Form Components > NewsletterForm mat
       <button
         aria-busy="false"
         aria-disabled="false"
-        class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg sm:mt-0"
+        class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg sm:mt-0"
+        tabindex="0"
         type="submit"
       >
-        <span>
-          Subscribe
+        <span
+          class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+        >
+          <span>
+            Subscribe
+          </span>
         </span>
       </button>
     </form>
@@ -1485,30 +1530,40 @@ exports[`Component Snapshots > dark theme > Sections > FinalCTA matches snapshot
             <button
               aria-busy="false"
               aria-disabled="false"
-              class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-12 px-6 text-lg gap-2.5 rounded-lg"
+              class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 px-6 text-lg gap-2.5 rounded-lg"
+              tabindex="0"
               type="button"
             >
-              <span>
-                Get Started for Free
-              </span>
               <span
-                aria-hidden="true"
-                class="inline-flex shrink-0"
+                class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
               >
-                <div
-                  data-testid="icon-arrowright"
-                  size="20"
-                />
+                <span>
+                  Get Started for Free
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="inline-flex shrink-0"
+                >
+                  <div
+                    data-testid="icon-arrowright"
+                    size="20"
+                  />
+                </span>
               </span>
             </button>
             <button
               aria-busy="false"
               aria-disabled="false"
-              class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 px-6 text-lg gap-2.5 rounded-lg bg-bg-primary/50 backdrop-blur-sm"
+              class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative text-text-primary border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 px-6 text-lg gap-2.5 rounded-lg bg-bg-primary/50 backdrop-blur-sm"
+              tabindex="0"
               type="button"
             >
-              <span>
-                Contact Sales
+              <span
+                class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+              >
+                <span>
+                  Contact Sales
+                </span>
               </span>
             </button>
           </div>
@@ -1704,20 +1759,25 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
             <button
               aria-busy="false"
               aria-disabled="false"
-              class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-12 px-6 text-lg gap-2.5 rounded-lg px-8"
+              class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 text-lg gap-2.5 rounded-lg px-8"
+              tabindex="0"
               type="button"
             >
-              <span>
-                Get Started
-              </span>
               <span
-                aria-hidden="true"
-                class="inline-flex shrink-0"
+                class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
               >
-                <div
-                  data-testid="icon-arrowright"
-                  size="20"
-                />
+                <span>
+                  Get Started
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="inline-flex shrink-0"
+                >
+                  <div
+                    data-testid="icon-arrowright"
+                    size="20"
+                  />
+                </span>
               </span>
             </button>
             <a
@@ -1727,21 +1787,26 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
               <button
                 aria-busy="false"
                 aria-disabled="false"
-                class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 px-6 text-lg gap-2.5 rounded-lg px-8 bg-bg-primary/50 backdrop-blur-sm"
+                class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative text-text-primary border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 text-lg gap-2.5 rounded-lg px-8 bg-bg-primary/50 backdrop-blur-sm"
+                tabindex="0"
                 type="button"
               >
                 <span
-                  aria-hidden="true"
-                  class="inline-flex shrink-0"
+                  class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
                 >
-                  <div
-                    class="fill-current"
-                    data-testid="icon-play"
-                    size="18"
-                  />
-                </span>
-                <span>
-                  View Demo
+                  <span
+                    aria-hidden="true"
+                    class="inline-flex shrink-0"
+                  >
+                    <div
+                      class="fill-current"
+                      data-testid="icon-play"
+                      size="18"
+                    />
+                  </span>
+                  <span>
+                    View Demo
+                  </span>
                 </span>
               </button>
             </a>
@@ -6213,11 +6278,16 @@ exports[`Component Snapshots > light theme > Basic Components > Button matches s
   <button
     aria-busy="false"
     aria-disabled="false"
-    class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg"
+    class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg"
+    tabindex="0"
     type="button"
   >
-    <span>
-      Click me
+    <span
+      class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+    >
+      <span>
+        Click me
+      </span>
     </span>
   </button>
 </DocumentFragment>
@@ -6231,61 +6301,91 @@ exports[`Component Snapshots > light theme > Basic Components > Button variants 
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Primary
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Primary
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-secondary-600 text-white border border-transparent hover:bg-secondary-700 hover:shadow-md active:bg-secondary-800 dark:bg-secondary-500 dark:hover:bg-secondary-600 dark:active:bg-secondary-700 dark:focus-visible:ring-secondary-400 h-10 px-4 text-base gap-2 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-secondary-600 text-white border-transparent hover:bg-secondary-700 active:bg-secondary-800 dark:bg-secondary-500 dark:hover:bg-secondary-600 dark:active:bg-secondary-700 dark:focus-visible:ring-secondary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Secondary
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Secondary
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-transparent text-text-primary border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Outline
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Outline
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-transparent hover:bg-bg-secondary active:bg-bg-tertiary dark:hover:bg-bg-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-transparent text-text-primary border-transparent hover:bg-bg-secondary active:bg-bg-tertiary dark:hover:bg-bg-secondary h-10 px-4 text-base gap-2 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Ghost
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Ghost
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-8 px-3 text-sm gap-1.5 rounded-md"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-8 px-3 text-sm gap-1.5 rounded-md"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Small
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Small
+        </span>
       </span>
     </button>
     <button
       aria-busy="false"
       aria-disabled="false"
-      class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-12 px-6 text-lg gap-2.5 rounded-lg"
+      class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 px-6 text-lg gap-2.5 rounded-lg"
+      tabindex="0"
       type="button"
     >
-      <span>
-        Large
+      <span
+        class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+      >
+        <span>
+          Large
+        </span>
       </span>
     </button>
   </div>
@@ -6449,11 +6549,16 @@ exports[`Component Snapshots > light theme > Cards > PricingCard matches snapsho
       <button
         aria-busy="false"
         aria-disabled="false"
-        class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg w-full w-full py-3"
+        class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg w-full py-3"
+        tabindex="0"
         type="button"
       >
-        <span>
-          Get Started
+        <span
+          class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+        >
+          <span>
+            Get Started
+          </span>
         </span>
       </button>
     </div>
@@ -6801,11 +6906,16 @@ exports[`Component Snapshots > light theme > Form Components > NewsletterForm ma
       <button
         aria-busy="false"
         aria-disabled="false"
-        class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-10 px-4 text-base gap-2 rounded-lg sm:mt-0"
+        class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-10 px-4 text-base gap-2 rounded-lg sm:mt-0"
+        tabindex="0"
         type="submit"
       >
-        <span>
-          Subscribe
+        <span
+          class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+        >
+          <span>
+            Subscribe
+          </span>
         </span>
       </button>
     </form>
@@ -7683,30 +7793,40 @@ exports[`Component Snapshots > light theme > Sections > FinalCTA matches snapsho
             <button
               aria-busy="false"
               aria-disabled="false"
-              class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-12 px-6 text-lg gap-2.5 rounded-lg"
+              class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 px-6 text-lg gap-2.5 rounded-lg"
+              tabindex="0"
               type="button"
             >
-              <span>
-                Get Started for Free
-              </span>
               <span
-                aria-hidden="true"
-                class="inline-flex shrink-0"
+                class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
               >
-                <div
-                  data-testid="icon-arrowright"
-                  size="20"
-                />
+                <span>
+                  Get Started for Free
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="inline-flex shrink-0"
+                >
+                  <div
+                    data-testid="icon-arrowright"
+                    size="20"
+                  />
+                </span>
               </span>
             </button>
             <button
               aria-busy="false"
               aria-disabled="false"
-              class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 px-6 text-lg gap-2.5 rounded-lg bg-bg-primary/50 backdrop-blur-sm"
+              class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative text-text-primary border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 px-6 text-lg gap-2.5 rounded-lg bg-bg-primary/50 backdrop-blur-sm"
+              tabindex="0"
               type="button"
             >
-              <span>
-                Contact Sales
+              <span
+                class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
+              >
+                <span>
+                  Contact Sales
+                </span>
               </span>
             </button>
           </div>
@@ -7902,20 +8022,25 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
             <button
               aria-busy="false"
               aria-disabled="false"
-              class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-primary-600 text-white border border-transparent hover:bg-primary-700 hover:shadow-md active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 h-12 px-6 text-lg gap-2.5 rounded-lg px-8"
+              class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800 dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400 hover:shadow-md active:shadow-sm h-12 text-lg gap-2.5 rounded-lg px-8"
+              tabindex="0"
               type="button"
             >
-              <span>
-                Get Started
-              </span>
               <span
-                aria-hidden="true"
-                class="inline-flex shrink-0"
+                class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
               >
-                <div
-                  data-testid="icon-arrowright"
-                  size="20"
-                />
+                <span>
+                  Get Started
+                </span>
+                <span
+                  aria-hidden="true"
+                  class="inline-flex shrink-0"
+                >
+                  <div
+                    data-testid="icon-arrowright"
+                    size="20"
+                  />
+                </span>
               </span>
             </button>
             <a
@@ -7925,21 +8050,26 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
               <button
                 aria-busy="false"
                 aria-disabled="false"
-                class="inline-flex items-center justify-center font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer shrink-0 bg-transparent text-text-primary border border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 px-6 text-lg gap-2.5 rounded-lg px-8 bg-bg-primary/50 backdrop-blur-sm"
+                class="inline-flex items-center justify-center font-medium shrink-0 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative text-text-primary border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary h-12 text-lg gap-2.5 rounded-lg px-8 bg-bg-primary/50 backdrop-blur-sm"
+                tabindex="0"
                 type="button"
               >
                 <span
-                  aria-hidden="true"
-                  class="inline-flex shrink-0"
+                  class="relative z-10 flex items-center justify-center gap-inherit w-full h-full"
                 >
-                  <div
-                    class="fill-current"
-                    data-testid="icon-play"
-                    size="18"
-                  />
-                </span>
-                <span>
-                  View Demo
+                  <span
+                    aria-hidden="true"
+                    class="inline-flex shrink-0"
+                  >
+                    <div
+                      class="fill-current"
+                      data-testid="icon-play"
+                      size="18"
+                    />
+                  </span>
+                  <span>
+                    View Demo
+                  </span>
                 </span>
               </button>
             </a>

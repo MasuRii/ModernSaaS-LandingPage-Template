@@ -217,6 +217,36 @@ describe('Button', () => {
     });
   });
 
+  describe('Micro-interactions', () => {
+    it('renders ripple elements on mouse down when ripple is true', () => {
+      render(<Button ripple>Ripple Me</Button>);
+      const button = screen.getByRole('button');
+
+      fireEvent.mouseDown(button);
+
+      // Ripple is rendered as a motion.span
+      const ripple = button.querySelector('span[style*="border-radius: 50%"]');
+      expect(ripple).toBeInTheDocument();
+    });
+
+    it('does not render ripple when ripple prop is false', () => {
+      render(<Button ripple={false}>No Ripple</Button>);
+      const button = screen.getByRole('button');
+
+      fireEvent.mouseDown(button);
+
+      const ripple = button.querySelector('span[style*="border-radius: 50%"]');
+      expect(ripple).not.toBeInTheDocument();
+    });
+
+    it('applies relative and overflow-hidden classes for ripple containment', () => {
+      render(<Button ripple>Container</Button>);
+      const button = screen.getByRole('button');
+      expect(button.className).toContain('relative');
+      expect(button.className).toContain('overflow-hidden');
+    });
+  });
+
   describe('Custom Classes', () => {
     it('applies custom className', () => {
       render(<Button className="custom-class">Custom</Button>);

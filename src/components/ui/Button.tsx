@@ -1,5 +1,9 @@
 import * as React from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+
 import { Loader2 } from 'lucide-react';
+import { useReducedMotion } from '@/utils/reducedMotion';
+import { cn } from '@/utils/cn';
 
 /**
  * Button Variants
@@ -40,6 +44,8 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   className?: string;
   /** Children content */
   children: React.ReactNode;
+  /** Enable ripple effect on click */
+  ripple?: boolean;
 }
 
 /**
@@ -83,79 +89,53 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       className = '',
       children,
       type = 'button',
+      ripple = false,
+      style,
       ...props
     },
     ref,
   ) => {
-    // Base styles shared across all variants
-    const baseStyles = `
-      inline-flex
-      items-center
-      justify-center
-      font-medium
-      transition-all
-      duration-200
-      ease-out
-      focus-visible:outline-none
-      focus-visible:ring-2
-      focus-visible:ring-primary-500
-      focus-visible:ring-offset-2
-      focus-visible:ring-offset-bg-primary
-      disabled:pointer-events-none
-      disabled:opacity-50
-      cursor-pointer
-      shrink-0
-    `;
+    const { prefersReducedMotion } = useReducedMotion();
+    const [ripples, setRipples] = React.useState<
+      { id: number; x: number; y: number; size: number }[]
+    >([]);
+
+    const handleMouseDown = (event: React.MouseEvent<HTMLButtonElement>) => {
+      if (!ripple || prefersReducedMotion || disabled || loading) return;
+
+      const button = event.currentTarget;
+      const rect = button.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height) * 2;
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+
+      setRipples((prev) => [...prev, { id: Date.now(), x, y, size }]);
+    };
+
+    const removeRipple = (id: number) => {
+      setRipples((prev) => prev.filter((r) => r.id !== id));
+    };
 
     // Variant-specific styles
     const variantStyles: Record<ButtonVariant, string> = {
-      primary: `
-        bg-primary-600
-        text-white
-        border
-        border-transparent
-        hover:bg-primary-700
-        hover:shadow-md
-        active:bg-primary-800
-        dark:bg-primary-500
-        dark:hover:bg-primary-600
-        dark:active:bg-primary-700
-        dark:focus-visible:ring-primary-400
-      `,
-      secondary: `
-        bg-secondary-600
-        text-white
-        border
-        border-transparent
-        hover:bg-secondary-700
-        hover:shadow-md
-        active:bg-secondary-800
-        dark:bg-secondary-500
-        dark:hover:bg-secondary-600
-        dark:active:bg-secondary-700
-        dark:focus-visible:ring-secondary-400
-      `,
-      outline: `
-        bg-transparent
-        text-text-primary
-        border
-        border-border-primary
-        hover:bg-bg-secondary
-        hover:border-border-secondary
-        active:bg-bg-tertiary
-        dark:border-border-primary
-        dark:hover:bg-bg-secondary
-        dark:hover:border-border-secondary
-      `,
-      ghost: `
-        bg-transparent
-        text-text-primary
-        border
-        border-transparent
-        hover:bg-bg-secondary
-        active:bg-bg-tertiary
-        dark:hover:bg-bg-secondary
-      `,
+      primary: cn(
+        'bg-primary-600 text-white border-transparent hover:bg-primary-700 active:bg-primary-800',
+        'dark:bg-primary-500 dark:hover:bg-primary-600 dark:active:bg-primary-700 dark:focus-visible:ring-primary-400',
+        !prefersReducedMotion && 'hover:shadow-md active:shadow-sm',
+      ),
+      secondary: cn(
+        'bg-secondary-600 text-white border-transparent hover:bg-secondary-700 active:bg-secondary-800',
+        'dark:bg-secondary-500 dark:hover:bg-secondary-600 dark:active:bg-secondary-700 dark:focus-visible:ring-secondary-400',
+        !prefersReducedMotion && 'hover:shadow-md active:shadow-sm',
+      ),
+      outline: cn(
+        'bg-transparent text-text-primary border-border-primary hover:bg-bg-secondary hover:border-border-secondary active:bg-bg-tertiary',
+        'dark:border-border-primary dark:hover:bg-bg-secondary dark:hover:border-border-secondary',
+      ),
+      ghost: cn(
+        'bg-transparent text-text-primary border-transparent hover:bg-bg-secondary active:bg-bg-tertiary',
+        'dark:hover:bg-bg-secondary',
+      ),
     };
 
     // Size-specific styles
@@ -172,55 +152,88 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       lg: 20,
     };
 
-    // Combine all classes
-    const classes = [
-      baseStyles,
+    // Combine all classes using cn
+    const classes = cn(
+      'inline-flex items-center justify-center font-medium shrink-0',
+      'transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2',
+      'focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary',
+      'disabled:pointer-events-none disabled:opacity-50 cursor-pointer overflow-hidden relative',
       variantStyles[variant],
       sizeStyles[size],
-      fullWidth ? 'w-full' : '',
-      loading ? 'cursor-wait' : '',
+      fullWidth && 'w-full',
+      loading && 'cursor-wait',
       className,
-    ]
-      .join(' ')
-      .replace(/\s+/g, ' ')
-      .trim();
+    );
 
-    // Loading spinner component
     const LoadingSpinner = (
       <Loader2 className="animate-spin" size={iconSizes[size]} aria-hidden="true" />
     );
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const MotionButton = motion.button as any;
+
     return (
-      <button
+      <MotionButton
         ref={ref}
         type={type}
         className={classes}
         disabled={disabled || loading}
         aria-disabled={disabled || loading}
         aria-busy={loading}
+        onMouseDown={handleMouseDown}
+        whileHover={!prefersReducedMotion ? { scale: 1.02 } : undefined}
+        whileTap={!prefersReducedMotion ? { scale: 0.98 } : undefined}
+        transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+        {...(style ? { style } : {})}
         {...props}
       >
-        {loading ? (
-          <>
-            {LoadingSpinner}
-            <span>{children}</span>
-          </>
-        ) : (
-          <>
-            {leftIcon && (
-              <span className="inline-flex shrink-0" aria-hidden="true">
-                {leftIcon}
-              </span>
-            )}
-            <span>{children}</span>
-            {rightIcon && (
-              <span className="inline-flex shrink-0" aria-hidden="true">
-                {rightIcon}
-              </span>
-            )}
-          </>
-        )}
-      </button>
+        <AnimatePresence>
+          {ripples.map((ripple) => (
+            <motion.span
+              key={ripple.id}
+              initial={{ scale: 0, opacity: 0.35 }}
+              animate={{ scale: 1, opacity: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, ease: 'linear' }}
+              onAnimationComplete={() => removeRipple(ripple.id)}
+              style={{
+                position: 'absolute',
+                top: ripple.y - ripple.size / 2,
+                left: ripple.x - ripple.size / 2,
+                width: ripple.size,
+                height: ripple.size,
+                borderRadius: '50%',
+                backgroundColor: 'currentColor',
+                pointerEvents: 'none',
+                zIndex: 0,
+              }}
+            />
+          ))}
+        </AnimatePresence>
+
+        <span className="relative z-10 flex items-center justify-center gap-inherit w-full h-full">
+          {loading ? (
+            <>
+              {LoadingSpinner}
+              <span>{children}</span>
+            </>
+          ) : (
+            <>
+              {leftIcon && (
+                <span className="inline-flex shrink-0" aria-hidden="true">
+                  {leftIcon}
+                </span>
+              )}
+              <span>{children}</span>
+              {rightIcon && (
+                <span className="inline-flex shrink-0" aria-hidden="true">
+                  {rightIcon}
+                </span>
+              )}
+            </>
+          )}
+        </span>
+      </MotionButton>
     );
   },
 );

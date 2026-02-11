@@ -1,13 +1,6 @@
 import React from 'react';
-import { type ClassValue, clsx } from 'clsx';
-import { twMerge } from 'tailwind-merge';
-
-/**
- * Utility to merge tailwind classes
- */
-function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
+import { useReducedMotion } from '@/utils/reducedMotion';
+import { cn } from '@/utils/cn';
 
 export interface SkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
   /**
@@ -22,10 +15,16 @@ export interface SkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
  */
 export const Skeleton = React.forwardRef<HTMLDivElement, SkeletonProps>(
   ({ className, pulse = true, ...props }, ref) => {
+    const { prefersReducedMotion } = useReducedMotion();
+
     return (
       <div
         ref={ref}
-        className={cn('bg-bg-tertiary rounded-md', pulse && 'animate-pulse', className)}
+        className={cn(
+          'bg-bg-tertiary rounded-md',
+          pulse && !prefersReducedMotion && 'animate-pulse',
+          className,
+        )}
         {...props}
       />
     );

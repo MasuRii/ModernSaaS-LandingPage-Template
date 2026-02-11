@@ -77,6 +77,10 @@ export { Toast, Toaster, toast } from './Toast';
 export type { ToastProps, ToastVariant, ToastOptions } from './Toast';
 
 // Specialized Components
+export { Spinner } from './Spinner';
+export type { SpinnerProps } from './Spinner';
+export { PageLoader } from './PageLoader';
+export type { PageLoaderProps } from './PageLoader';
 export { CodeBlock } from './CodeBlock';
 export type { CodeBlockProps } from './CodeBlock';
 export { Skeleton, SkeletonText, SkeletonAvatar, SkeletonCard } from './Skeleton';

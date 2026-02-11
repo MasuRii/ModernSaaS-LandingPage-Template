@@ -6,13 +6,20 @@ import { ClientHeader } from '../components/ClientHeader';
 import { MinimalHeader } from '../components/layout/Header';
 import { Footer, MinimalFooter } from '../components/layout/Footer';
 import { Toaster } from '../components/ui/Toast';
-import { OrganizationSchema, WebSiteSchema, ProductSchema } from '../components/seo';
+import {
+  OrganizationSchema,
+  WebSiteSchema,
+  ProductSchema,
+  BreadcrumbSchema,
+  type BreadcrumbItem,
+} from '../components/seo';
 
 interface Props {
   title: string;
   description?: string;
   headerVariant?: 'default' | 'minimal' | 'none';
   footerVariant?: 'default' | 'minimal' | 'none';
+  crumbs?: BreadcrumbItem[];
 }
 
 const {
@@ -20,7 +27,22 @@ const {
   description = 'A production-ready, visually stunning SaaS startup landing page template',
   headerVariant = 'default',
   footerVariant = 'default',
+  crumbs,
 } = Astro.props;
+
+// Auto-generate crumbs if not provided
+const currentPath = Astro.url.pathname;
+const pathSegments = currentPath.split('/').filter(Boolean);
+
+const defaultCrumbs: BreadcrumbItem[] = [{ name: 'Home', item: '/' }];
+
+pathSegments.forEach((segment, index) => {
+  const url = `/${pathSegments.slice(0, index + 1).join('/')}/`;
+  const name = segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' ');
+  defaultCrumbs.push({ name, item: url });
+});
+
+const finalCrumbs = crumbs || defaultCrumbs;
 ---
 
 <!doctype html>
@@ -38,6 +60,7 @@ const {
     <OrganizationSchema />
     <WebSiteSchema />
     <ProductSchema />
+    <BreadcrumbSchema crumbs={finalCrumbs} />
 
     <!-- Theme script to prevent flash of wrong theme -->
     <script is:inline set:html={getThemeScript('system')} />

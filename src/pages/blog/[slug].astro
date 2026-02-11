@@ -46,9 +46,16 @@ const formattedDate = new Date(publishedAt).toLocaleDateString('en-US', {
 
 // Get related post objects
 const relatedPosts = blogPosts.filter((p) => relatedPostIds?.includes(p.id));
+
+// Custom breadcrumbs for the blog post
+const crumbs = [
+  { name: 'Home', item: ROUTES.HOME },
+  { name: 'Blog', item: ROUTES.BLOG },
+  { name: title, item: ROUTES.BLOG_POST(post.slug) },
+];
 ---
 
-<Layout title={`${title} | ModernSaaS Blog`} description={excerpt}>
+<Layout title={`${title} | ModernSaaS Blog`} description={excerpt} crumbs={crumbs}>
   <ArticleSchema post={post} />
   <main
     id="main-content"

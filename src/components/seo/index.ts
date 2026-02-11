@@ -4,3 +4,4 @@ export * from './ProductSchema';
 export * from './FAQSchema';
 export * from './ArticleSchema';
 export * from './PersonSchema';
+export * from './BreadcrumbSchema';

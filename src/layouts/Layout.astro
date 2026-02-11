@@ -120,6 +120,12 @@ const finalCrumbs = crumbs || defaultCrumbs;
     <!-- Theme script to prevent flash of wrong theme -->
     <script is:inline set:html={getThemeScript('system')} />
 
+    <!-- Redirect handler for SPA routing on GitHub Pages -->
+    <script>
+      import { handleRedirect } from '../utils/routing';
+      handleRedirect();
+    </script>
+
     <!-- Page Transitions -->
     <ClientRouter />
 

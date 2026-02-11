@@ -62,6 +62,7 @@ export const testimonials: Testimonial[] = [
       avatar: '/images/team-01.jpg',
     },
     rating: 5,
+    companyLogo: '/images/integrations/vercel.svg',
     featured: true,
   },
   {
@@ -75,6 +76,7 @@ export const testimonials: Testimonial[] = [
       avatar: '/images/team-02.jpg',
     },
     rating: 5,
+    companyLogo: '/images/integrations/stripe.svg',
     featured: true,
   },
   {
@@ -88,6 +90,7 @@ export const testimonials: Testimonial[] = [
       avatar: '/images/team-03.jpg',
     },
     rating: 5,
+    companyLogo: '/images/integrations/notion.svg',
     featured: false,
   },
   {
@@ -98,9 +101,10 @@ export const testimonials: Testimonial[] = [
       name: 'David Kim',
       role: 'Director of IT',
       company: 'Enterprise Solutions',
-      avatar: '/images/team-01.jpg',
+      avatar: '/images/team-04.jpg',
     },
     rating: 5,
+    companyLogo: '/images/integrations/slack.svg',
     featured: false,
   },
   {
@@ -111,9 +115,10 @@ export const testimonials: Testimonial[] = [
       name: 'Lisa Thompson',
       role: 'Operations Lead',
       company: 'GrowthLabs',
-      avatar: '/images/team-02.jpg',
+      avatar: '/images/team-01.jpg',
     },
     rating: 4,
+    companyLogo: '/images/integrations/github.svg',
     featured: false,
   },
   {
@@ -124,10 +129,39 @@ export const testimonials: Testimonial[] = [
       name: 'James Wilson',
       role: 'CEO',
       company: 'FounderHub',
+      avatar: '/images/team-02.jpg',
+    },
+    rating: 5,
+    companyLogo: '/images/integrations/figma.svg',
+    featured: true,
+  },
+  {
+    id: '7',
+    quote:
+      "The analytics dashboard is a game-changer. We can finally see exactly where our bottlenecks are and address them in real-time. It's saved us hundreds of hours.",
+    author: {
+      name: 'Rachel Adams',
+      role: 'Data Analyst',
+      company: 'DataStream',
       avatar: '/images/team-03.jpg',
     },
     rating: 5,
-    featured: true,
+    companyLogo: '/images/integrations/linear.svg',
+    featured: false,
+  },
+  {
+    id: '8',
+    quote:
+      "The automation workflows are incredibly flexible. We've automated our entire onboarding process using ModernSaaS, reducing manual effort by 90%.",
+    author: {
+      name: 'Kevin Park',
+      role: 'Head of Growth',
+      company: 'ScaleForce',
+      avatar: '/images/team-04.jpg',
+    },
+    rating: 5,
+    companyLogo: '/images/integrations/discord.svg',
+    featured: false,
   },
 ];
 

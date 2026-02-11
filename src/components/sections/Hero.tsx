@@ -52,6 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
       background="transparent"
       id="hero"
       aria-label="Hero Section"
+      data-testid="hero-section"
     >
       {/* Background with mesh gradient */}
       <GradientBackground
@@ -94,7 +95,8 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
             {/* Headline */}
             <motion.h1
               variants={PRESETS.heroEntrance as unknown as Variants}
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient"
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient will-change-transform"
+              data-testid="hero-headline"
             >
               Build Faster with{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400">
@@ -105,7 +107,8 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
             {/* Subheadline */}
             <motion.p
               variants={PRESETS.fadeInUp as unknown as Variants}
-              className="text-lg md:text-xl text-text-muted mb-10 max-w-[520px] leading-relaxed"
+              className="text-lg md:text-xl text-text-muted mb-10 max-w-[520px] leading-relaxed will-change-transform"
+              data-testid="hero-description"
             >
               {company.tagline}. The all-in-one platform for scaling your business with powerful
               automation tools.
@@ -116,7 +119,12 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               variants={PRESETS.fadeInUp as unknown as Variants}
               className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
-              <Button size="lg" className="px-8" rightIcon={<ArrowRight size={20} />}>
+              <Button
+                size="lg"
+                className="px-8"
+                rightIcon={<ArrowRight size={20} />}
+                data-testid="hero-cta-primary"
+              >
                 Get Started
               </Button>
               <DemoLink href={ROUTES.FEATURES}>
@@ -125,6 +133,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
                   size="lg"
                   className="px-8 bg-bg-primary/50 backdrop-blur-sm"
                   leftIcon={<Play size={18} className="fill-current" />}
+                  data-testid="hero-cta-secondary"
                 >
                   View Demo
                 </Button>
@@ -156,7 +165,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               loading="eager"
               fetchPriority="high"
               variants={PRESETS.mockupEntrance as unknown as Variants}
-              className="z-10"
+              className="z-10 will-change-transform"
               initial={prefersReducedMotion ? false : 'initial'}
               animate="animate"
             />

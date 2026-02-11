@@ -72,7 +72,10 @@ export const PricingHero: React.FC<PricingHeroProps> = ({
             animate="animate"
             variants={PRESETS.fadeInUp as unknown as Variants}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 leading-[1.1]">
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 leading-[1.1]"
+              data-testid="pricing-hero-title"
+            >
               Simple, transparent{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400">
                 pricing for everyone

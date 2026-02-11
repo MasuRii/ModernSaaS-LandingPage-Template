@@ -14,22 +14,14 @@ const seo = pageSEO.support;
 ---
 
 <Layout title={seo.title} description={seo.description}>
-  <main
-    id="main-content"
-    tabindex="-1"
-    role="main"
-    aria-label="Main content"
-    transition:animate="fade"
-  >
-    <SupportHero client:load />
-    <SupportCategories client:load />
-    <SupportArticles client:load />
-    <FAQSection
-      client:visible
-      heading="Frequently Asked Support Questions"
-      subheading="Common technical and account questions to help you get unstuck."
-      faqs={supportFAQs}
-    />
-    <SupportCTA client:load />
-  </main>
+  <SupportHero client:load />
+  <SupportCategories client:load />
+  <SupportArticles client:load />
+  <FAQSection
+    client:visible
+    heading="Frequently Asked Support Questions"
+    subheading="Common technical and account questions to help you get unstuck."
+    faqs={supportFAQs}
+  />
+  <SupportCTA client:load />
 </Layout>

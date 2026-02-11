@@ -2,6 +2,7 @@ import * as React from 'react';
 import { type Variants, motion } from 'motion/react';
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { Link } from '@/components/ui/Link';
 import { Container } from '@/components/ui/Container';
 import { DemoLink } from '@/components/ui/DemoLink';
 import { GradientBackground } from '@/components/ui/GradientBackground';
@@ -121,14 +122,17 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               variants={PRESETS.fadeInUp as unknown as Variants}
               className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
-              <Button
+              <Link
+                href={ROUTES.SIGNUP}
+                variant="button"
                 size="lg"
                 className="px-8"
-                rightIcon={<ArrowRight size={20} />}
                 data-testid="hero-cta-primary"
+                useDemoModal={false}
               >
                 Get Started
-              </Button>
+                <ArrowRight size={20} className="ml-2" />
+              </Link>
               <DemoLink href={ROUTES.FEATURES}>
                 <Button
                   variant="outline"

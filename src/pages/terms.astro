@@ -8,17 +8,9 @@ const seo = pageSEO.terms;
 ---
 
 <Layout title={`${seo.title} | ${company.name}`} description={seo.description}>
-  <main
-    id="main-content"
-    tabindex="-1"
-    role="main"
-    aria-label="Main content"
-    transition:animate="fade"
-  >
-    <LegalHero title={termsData.title} lastUpdated={termsData.lastUpdated} />
+  <LegalHero title={termsData.title} lastUpdated={termsData.lastUpdated} />
 
-    <LegalContent sections={termsData.sections} />
+  <LegalContent sections={termsData.sections} />
 
-    <FinalCTA client:visible />
-  </main>
+  <FinalCTA client:visible />
 </Layout>

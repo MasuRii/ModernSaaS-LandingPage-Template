@@ -8,17 +8,9 @@ const seo = pageSEO.privacy;
 ---
 
 <Layout title={`${seo.title} | ${company.name}`} description={seo.description}>
-  <main
-    id="main-content"
-    tabindex="-1"
-    role="main"
-    aria-label="Main content"
-    transition:animate="fade"
-  >
-    <LegalHero title={privacyData.title} lastUpdated={privacyData.lastUpdated} />
+  <LegalHero title={privacyData.title} lastUpdated={privacyData.lastUpdated} />
 
-    <LegalContent sections={privacyData.sections} />
+  <LegalContent sections={privacyData.sections} />
 
-    <FinalCTA client:visible />
-  </main>
+  <FinalCTA client:visible />
 </Layout>

@@ -17,20 +17,12 @@ import { getAssetPath } from '../../config/paths';
     },
   ]}
 >
-  <main
-    id="main-content"
-    tabindex="-1"
-    role="main"
-    aria-label="Blog Listing"
-    transition:animate="fade"
-  >
-    {/* 1. Blog Hero */}
-    <BlogHero />
+  {/* 1. Blog Hero */}
+  <BlogHero />
 
-    {/* 2. Blog Interactive Listing (Search, Filter, Featured, Grid, Pagination) */}
-    <BlogListingContent client:idle />
+  {/* 2. Blog Interactive Listing (Search, Filter, Featured, Grid, Pagination) */}
+  <BlogListingContent client:idle />
 
-    {/* 3. Blog Newsletter Section */}
-    <BlogNewsletter client:visible />
-  </main>
+  {/* 3. Blog Newsletter Section */}
+  <BlogNewsletter client:visible />
 </Layout>

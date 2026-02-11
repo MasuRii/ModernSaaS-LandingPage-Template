@@ -34,6 +34,8 @@ export interface PricingCardProps extends React.HTMLAttributes<HTMLDivElement> {
   ctaText: string;
   /** Optional URL for the call-to-action link */
   ctaHref?: string;
+  /** Whether to use demo link modal for the CTA */
+  useDemoModal?: boolean;
   /** Whether to highlight this as the most popular tier */
   isPopular?: boolean;
   /** Callback for CTA button click (if ctaHref is not provided) */
@@ -77,6 +79,7 @@ export const PricingCard = React.forwardRef<HTMLDivElement, PricingCardProps>(
       features,
       ctaText,
       ctaHref,
+      useDemoModal = true,
       isPopular = false,
       onCtaClick,
       className,
@@ -157,6 +160,7 @@ export const PricingCard = React.forwardRef<HTMLDivElement, PricingCardProps>(
             <Link
               href={ctaHref}
               variant="button"
+              useDemoModal={useDemoModal}
               className={cn(
                 'w-full py-3 text-center transition-all duration-200',
                 !isPopular &&

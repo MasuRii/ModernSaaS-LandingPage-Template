@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { Zap } from 'lucide-react';
 import { ThemeToggle } from '../ui/ThemeToggle';
-import { Button } from '../ui/Button';
+import { Link } from '../ui/Link';
 import { MobileMenuButton, MobileNavigation } from '../ui/MobileNavigation';
 import { company, siteNavigation } from '../../config/site';
 import { ROUTES, isActiveRoute, resolveHref } from '../../config/paths';
@@ -188,21 +188,21 @@ export function Header({
 
               {/* CTA Button - Desktop */}
               {showCta && (
-                <Button
-                  variant="primary"
+                <Link
+                  href={ctaHref}
+                  variant="button"
                   size="md"
                   className="hidden md:inline-flex"
+                  useDemoModal={false}
                   onClick={(e) => {
                     if (onCtaClick) {
                       e.preventDefault();
                       onCtaClick();
-                    } else {
-                      window.location.href = resolveHref(ctaHref);
                     }
                   }}
                 >
                   {ctaText}
-                </Button>
+                </Link>
               )}
 
               {/* Mobile Menu Button */}

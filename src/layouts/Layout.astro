@@ -36,6 +36,7 @@ interface Props {
   twitterCard?: 'summary' | 'summary_large_image';
   robots?: string;
   preloadImages?: PreloadImage[];
+  transitionAnimate?: 'fade' | 'slide' | 'none';
 }
 
 const {
@@ -49,6 +50,7 @@ const {
   twitterCard,
   robots,
   preloadImages = [],
+  transitionAnimate = 'fade',
 } = Astro.props as Props;
 
 // Auto-generate crumbs if not provided
@@ -178,7 +180,16 @@ const finalCrumbs = crumbs || defaultCrumbs;
       {headerVariant === 'default' && <ClientHeader client:load transition:persist />}
       {headerVariant === 'minimal' && <MinimalHeader client:load transition:persist />}
 
-      <slot />
+      <main
+        id="main-content"
+        class="outline-none"
+        tabindex="-1"
+        role="main"
+        aria-label="Main content"
+        transition:animate={transitionAnimate !== 'none' ? transitionAnimate : undefined}
+      >
+        <slot />
+      </main>
 
       {footerVariant === 'default' && <Footer client:load transition:persist />}
       {footerVariant === 'minimal' && <MinimalFooter client:load transition:persist />}

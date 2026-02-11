@@ -76,6 +76,7 @@ export const FeaturesOverview: React.FC<FeaturesOverviewProps> = ({ className })
       className={cn('py-20 lg:py-32', className)}
       background="muted"
       aria-label="Features Overview"
+      data-testid="features-section"
     >
       <Container>
         {/* Section Header */}

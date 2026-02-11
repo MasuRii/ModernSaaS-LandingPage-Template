@@ -69,7 +69,7 @@ test.describe('Keyboard Navigation', () => {
 
     // CTA button
     await page.keyboard.press('Tab');
-    const ctaButton = page.locator('header').getByRole('button', { name: /Get Started/i });
+    const ctaButton = page.locator('header').getByRole('link', { name: /Get Started/i });
     await expect(ctaButton).toBeFocused();
   });
 

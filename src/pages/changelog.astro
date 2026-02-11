@@ -8,18 +8,10 @@ const seo = pageSEO.changelog;
 ---
 
 <Layout title={seo.title} description={seo.description}>
-  <main
-    id="main-content"
-    tabindex="-1"
-    role="main"
-    aria-label="Main content"
-    transition:animate="fade"
-  >
-    <ChangelogHero
-      client:load
-      title={changelogMetadata.title}
-      description={changelogMetadata.subheading}
-    />
-    <ChangelogFeed client:load entries={changelogEntries} />
-  </main>
+  <ChangelogHero
+    client:load
+    title={changelogMetadata.title}
+    description={changelogMetadata.subheading}
+  />
+  <ChangelogFeed client:load entries={changelogEntries} />
 </Layout>

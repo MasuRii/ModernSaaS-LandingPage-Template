@@ -15,33 +15,25 @@ const seo = pageSEO.features;
 ---
 
 <Layout title={seo.title} description={seo.description}>
-  <main
-    id="main-content"
-    tabindex="-1"
-    role="main"
-    aria-label="Main content"
-    transition:animate="fade"
-  >
-    {/* 1. Features Hero Section */}
-    <FeaturesHero client:idle />
+  {/* 1. Features Hero Section */}
+  <FeaturesHero client:idle />
 
-    {/* 2. Detailed Feature Sections (Alternating) */}
-    <FeatureDetail client:visible />
+  {/* 2. Detailed Feature Sections (Alternating) */}
+  <FeatureDetail client:visible />
 
-    {/* 3. Use Cases Section */}
-    <UseCases client:visible />
+  {/* 3. Use Cases Section */}
+  <UseCases client:visible />
 
-    {/* 4. Feature Comparison Section */}
-    <FeatureComparison client:visible />
+  {/* 4. Feature Comparison Section */}
+  <FeatureComparison client:visible />
 
-    {/* 5. Demo Video Section */}
-    <DemoVideo client:visible />
+  {/* 5. Demo Video Section */}
+  <DemoVideo client:visible />
 
-    {/* 6. Final CTA Section (linking to pricing as per requirements) */}
-    <FinalCTA
-      client:visible
-      primaryButton={{ text: 'View Pricing', href: ROUTES.PRICING }}
-      secondaryButton={{ text: 'Contact Sales', href: ROUTES.CONTACT }}
-    />
-  </main>
+  {/* 6. Final CTA Section (linking to pricing as per requirements) */}
+  <FinalCTA
+    client:visible
+    primaryButton={{ text: 'View Pricing', href: ROUTES.PRICING }}
+    secondaryButton={{ text: 'Contact Sales', href: ROUTES.CONTACT }}
+  />
 </Layout>

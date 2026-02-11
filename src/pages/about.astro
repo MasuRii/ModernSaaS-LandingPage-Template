@@ -26,29 +26,21 @@ const seo = pageSEO.about;
 ---
 
 <Layout title={seo.title} description={seo.description}>
-  <main
-    id="main-content"
-    tabindex="-1"
-    role="main"
-    aria-label="Main content"
-    transition:animate="fade"
-  >
-    {/* 1. Company Story Section (Hero + Origin) */}
-    <CompanyStory client:idle />
+  {/* 1. Company Story Section (Hero + Origin) */}
+  <CompanyStory client:idle />
 
-    {/* 2. Company Values Section */}
-    <CompanyValues client:visible />
+  {/* 2. Company Values Section */}
+  <CompanyValues client:visible />
 
-    {/* 3. Team Section */}
-    <TeamSection client:visible />
+  {/* 3. Team Section */}
+  <TeamSection client:visible />
 
-    {/* 4. Company Statistics Section */}
-    <AboutStats client:visible />
+  {/* 4. Company Statistics Section */}
+  <AboutStats client:visible />
 
-    {/* 5. Investors Section */}
-    <InvestorsSection client:visible />
+  {/* 5. Investors Section */}
+  <InvestorsSection client:visible />
 
-    {/* 6. Careers CTA Section */}
-    <CareersCTA client:visible />
-  </main>
+  {/* 6. Careers CTA Section */}
+  <CareersCTA client:visible />
 </Layout>

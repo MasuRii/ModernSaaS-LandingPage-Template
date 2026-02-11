@@ -56,7 +56,7 @@ export const selectors = {
   },
   pricing: {
     section: '[data-testid="pricing-section"]',
-    tiers: '[data-testid="pricing-tier"]',
+    tiers: '[data-testid="pricing-card"]',
     billingToggle: '[data-testid="billing-toggle"]',
   },
   forms: {

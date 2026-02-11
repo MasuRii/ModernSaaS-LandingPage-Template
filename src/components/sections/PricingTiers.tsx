@@ -43,6 +43,7 @@ export const PricingTiers: React.FC<PricingTiersProps> = ({ className, billingPe
       className={cn('py-16 lg:py-24', className)}
       background="default"
       aria-labelledby="pricing-tiers-title"
+      data-testid="pricing-section"
     >
       <Container>
         <h2 id="pricing-tiers-title" className="sr-only">
@@ -90,6 +91,7 @@ export const PricingTiers: React.FC<PricingTiersProps> = ({ className, billingPe
                   isPopular={tier.isPopular}
                   ctaText={tier.cta.text}
                   ctaHref={tier.cta.href}
+                  useDemoModal={false}
                   features={tier.features.map((f) => ({
                     text: f.name,
                     included: f.included,

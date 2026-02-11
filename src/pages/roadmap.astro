@@ -9,24 +9,16 @@ const seo = pageSEO.roadmap;
 ---
 
 <Layout title={`${seo.title} | ${company.name}`} description={seo.description}>
-  <main
-    id="main-content"
-    tabindex="-1"
-    role="main"
-    aria-label="Main content"
-    transition:animate="fade"
-  >
-    <RoadmapHero title={roadmapMetadata.title} subheading={roadmapMetadata.subheading} />
+  <RoadmapHero title={roadmapMetadata.title} subheading={roadmapMetadata.subheading} />
 
-    <RoadmapTimeline quarters={roadmapData} client:visible />
+  <RoadmapTimeline quarters={roadmapData} client:visible />
 
-    <FAQSection
-      heading="Roadmap FAQ"
-      subheading="Common questions about our product direction and planning process."
-      faqs={roadmapFAQs}
-      client:visible
-    />
+  <FAQSection
+    heading="Roadmap FAQ"
+    subheading="Common questions about our product direction and planning process."
+    faqs={roadmapFAQs}
+    client:visible
+  />
 
-    <FinalCTA client:visible />
-  </main>
+  <FinalCTA client:visible />
 </Layout>

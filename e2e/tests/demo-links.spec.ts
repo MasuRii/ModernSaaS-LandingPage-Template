@@ -74,6 +74,55 @@ test.describe('Demo Link Modal', () => {
     await expect(page.locator(selectors.modal.content)).toContainText('Authentication Required');
   });
 
+  test('should trigger modal for external CTAs in footer', async ({ page }) => {
+    // Find "Status" link in the footer resources column
+    // It's a button role because it triggers a modal
+    const statusLink = page.getByRole('button', { name: 'Status' });
+    await statusLink.scrollIntoViewIfNeeded();
+    await expect(statusLink).toBeVisible();
+
+    // Click it and verify modal appears
+    await statusLink.click({ force: true });
+    await expect(page.locator(selectors.modal.overlay)).toBeVisible({ timeout: 10000 });
+
+    // Verify external-specific messaging
+    await expect(page.locator(selectors.modal.content)).toContainText('External Link');
+  });
+
+  test('should display correctly in both themes', async ({ page, toggleTheme, getTheme }) => {
+    // Trigger modal in default theme (light)
+    const socialLink = page.locator(selectors.footer.socialLinks).first();
+    await socialLink.scrollIntoViewIfNeeded();
+    await socialLink.click({ force: true });
+    await expect(page.locator(selectors.modal.overlay)).toBeVisible({ timeout: 10000 });
+
+    // Verify modal content visibility and basic styles in light mode
+    const modalContent = page.locator(selectors.modal.content);
+    await expect(modalContent).toBeVisible();
+
+    // The actual background is on the inner div
+    const modalInner = modalContent.locator('> div').first();
+    await expect(modalInner).toHaveCSS('background-color', 'rgb(249, 250, 251)'); // --token-bg-primary (gray-50)
+
+    // Close modal
+    await page.keyboard.press('Escape');
+    await expect(page.locator(selectors.modal.overlay)).not.toBeVisible();
+
+    // Switch to dark theme
+    await toggleTheme();
+    const currentTheme = await getTheme();
+    expect(currentTheme).toBe('dark');
+
+    // Trigger modal again in dark mode
+    await socialLink.click({ force: true });
+    await expect(page.locator(selectors.modal.overlay)).toBeVisible({ timeout: 10000 });
+
+    // Verify modal content visibility and basic styles in dark mode
+    await expect(modalContent).toBeVisible();
+    // Verify it matches dark mode token (gray-950: #030712)
+    await expect(modalInner).toHaveCSS('background-color', 'rgb(3, 7, 18)');
+  });
+
   test('should be able to close the modal using close button', async ({ page }) => {
     // Trigger modal
     const socialLink = page.locator(selectors.footer.socialLinks).first();

@@ -80,6 +80,7 @@ export function GradientBackground({
 }: GradientBackgroundProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { prefersReducedMotion } = useReducedMotion();
+  const reactId = React.useId().replace(/:/g, '');
 
   // Calculate opacity based on intensity (0.2 - 0.8 range)
   const baseOpacity = Math.max(0.2, Math.min(0.8, intensity));
@@ -119,7 +120,7 @@ export function GradientBackground({
   const shouldAnimate = animated && !prefersReducedMotion;
 
   // Generate unique animation IDs for this instance
-  const instanceId = useRef(id || Math.random().toString(36).substr(2, 9)).current;
+  const instanceId = id || reactId;
 
   useEffect(() => {
     // Inject animation keyframes if animation is enabled
@@ -194,7 +195,7 @@ export function GradientBackground({
             className={`absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full ${blobStyles.blob1} opacity-[calc(var(--intensity)*0.4)] blur-[100px]`}
             style={
               {
-                '--intensity': baseOpacity,
+                '--intensity': String(baseOpacity),
                 ...getAnimationStyle(1),
               } as React.CSSProperties
             }
@@ -203,7 +204,7 @@ export function GradientBackground({
             className={`absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full ${blobStyles.blob2} opacity-[calc(var(--intensity)*0.35)] blur-[80px]`}
             style={
               {
-                '--intensity': baseOpacity,
+                '--intensity': String(baseOpacity),
                 ...getAnimationStyle(2),
               } as React.CSSProperties
             }
@@ -212,7 +213,7 @@ export function GradientBackground({
             className={`absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full ${blobStyles.blob3} opacity-[calc(var(--intensity)*0.3)] blur-[60px]`}
             style={
               {
-                '--intensity': baseOpacity,
+                '--intensity': String(baseOpacity),
                 ...getAnimationStyle(3),
               } as React.CSSProperties
             }
@@ -238,7 +239,7 @@ export function GradientBackground({
             className={`absolute -left-[10%] -top-[10%] h-[60%] w-[50%] rounded-full ${blobStyles.blob1} opacity-[calc(var(--intensity)*0.25)] blur-[100px]`}
             style={
               {
-                '--intensity': baseOpacity,
+                '--intensity': String(baseOpacity),
                 ...getAnimationStyle(1),
               } as React.CSSProperties
             }
@@ -247,7 +248,7 @@ export function GradientBackground({
             className={`absolute -bottom-[10%] right-[5%] h-[50%] w-[40%] rounded-full ${blobStyles.blob2} opacity-[calc(var(--intensity)*0.2)] blur-[80px]`}
             style={
               {
-                '--intensity': baseOpacity,
+                '--intensity': String(baseOpacity),
                 ...getAnimationStyle(2),
               } as React.CSSProperties
             }
@@ -256,7 +257,7 @@ export function GradientBackground({
             className={`absolute bottom-[20%] left-[10%] h-[40%] w-[35%] rounded-full ${blobStyles.blob3} opacity-[calc(var(--intensity)*0.15)] blur-[60px]`}
             style={
               {
-                '--intensity': baseOpacity,
+                '--intensity': String(baseOpacity),
                 ...getAnimationStyle(3),
               } as React.CSSProperties
             }

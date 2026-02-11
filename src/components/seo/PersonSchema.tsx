@@ -45,6 +45,7 @@ export const PersonSchema: React.FC<PersonSchemaProps> = ({ member }) => {
   return (
     <script
       type="application/ld+json"
+      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   );

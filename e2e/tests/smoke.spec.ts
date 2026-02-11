@@ -14,9 +14,51 @@ test.describe('Smoke Tests', () => {
   );
 
   for (const [name, path] of pagesToTest) {
-    test(`Page "${name}" (${path}) should be accessible`, async ({ page }) => {
+    test(`Page "${name}" (${path}) should be accessible and have no asset errors`, async ({
+      page,
+    }) => {
+      const consoleErrors: string[] = [];
+      const failedRequests: string[] = [];
+
+      // Monitor console for errors
+      page.on('console', (msg) => {
+        const text = msg.text();
+        // Ignore HMR and common dev server noise
+        if (
+          msg.type() === 'error' &&
+          !text.includes('WebSocket') &&
+          !text.includes('ERR_CONNECTION_REFUSED') &&
+          !text.includes('localhost:4321') &&
+          !text.includes('hmr')
+        ) {
+          consoleErrors.push(text);
+        }
+      });
+
+      // Monitor network requests
+      page.on('requestfailed', (request) => {
+        const url = request.url();
+        const error = request.failure()?.errorText || 'unknown error';
+        // Ignore HMR and dev server noise
+        if (
+          !url.includes('token=') &&
+          !url.includes('hmr') &&
+          !error.includes('NS_ERROR_CONNECTION_REFUSED') &&
+          !error.includes('ERR_CONNECTION_REFUSED')
+        ) {
+          failedRequests.push(`${url}: ${error}`);
+        }
+      });
+
+      page.on('response', (response) => {
+        const url = response.url();
+        if (response.status() >= 400 && !url.includes('token=') && !url.includes('hmr')) {
+          failedRequests.push(`${url}: ${response.status()}`);
+        }
+      });
+
       // Use relative path to respect baseURL with subdirectory
-      const response = await page.goto(path);
+      const response = await page.goto(path, { waitUntil: 'networkidle' });
 
       // Verify response status
       expect(response?.status()).toBe(200);
@@ -25,8 +67,56 @@ test.describe('Smoke Tests', () => {
       await expect(page.locator(selectors.navigation.header)).toBeVisible();
       await expect(page.locator(selectors.footer.section)).toBeVisible();
 
+      // Trigger lazy loading
+      await page.evaluate(async () => {
+        const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+        const scrollStep = 800;
+        const totalHeight = document.body.scrollHeight;
+        let currentScroll = 0;
+
+        while (currentScroll < totalHeight) {
+          window.scrollBy(0, scrollStep);
+          currentScroll += scrollStep;
+          await delay(50);
+        }
+        await delay(500);
+        window.scrollTo(0, 0);
+      });
+
+      // Wait for any remaining assets
+      await page.waitForTimeout(1000);
+
       // Verify no critical errors in console
-      // Note: Some third-party warnings might exist, but we check for errors
+      expect(
+        consoleErrors,
+        `Found console errors on ${name}: ${consoleErrors.join(', ')}`,
+      ).toHaveLength(0);
+
+      // Verify no failed network requests
+      expect(
+        failedRequests,
+        `Found failed network requests on ${name}: ${failedRequests.join(', ')}`,
+      ).toHaveLength(0);
+
+      // Verify images are loaded correctly
+      const imagesLocator = page.locator('img[src]');
+      const count = await imagesLocator.count();
+      for (let i = 0; i < count; i++) {
+        const img = imagesLocator.nth(i);
+        const naturalWidth = await img.evaluate((node: HTMLImageElement) => node.naturalWidth);
+        const src = await img.getAttribute('src');
+        expect(
+          naturalWidth,
+          `Image ${src} failed to load on ${name} (naturalWidth is 0)`,
+        ).toBeGreaterThan(0);
+      }
+
+      // Verify fonts are loaded
+      const fontsLoaded = await page.evaluate(async () => {
+        await document.fonts.ready;
+        return Array.from(document.fonts).filter((font) => font.status === 'loaded').length;
+      });
+      expect(fontsLoaded).toBeGreaterThan(0);
     });
   }
 

@@ -1,0 +1,107 @@
+---
+import '../styles/globals.css';
+import { ClientRouter } from 'astro:transitions';
+import { getThemeScript, ThemeProvider } from '../components/ThemeProvider';
+import { ClientHeader } from '../components/ClientHeader';
+import { MinimalHeader } from '../components/layout/Header';
+import { Footer, MinimalFooter } from '../components/layout/Footer';
+import { Toaster } from '../components/ui/Toast';
+
+interface Props {
+  title: string;
+  description?: string;
+  headerVariant?: 'default' | 'minimal' | 'none';
+  footerVariant?: 'default' | 'minimal' | 'none';
+}
+
+const {
+  title,
+  description = 'A production-ready, visually stunning SaaS startup landing page template',
+  headerVariant = 'default',
+  footerVariant = 'default',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | ModernSaaS</title>
+    <meta name="description" content={description} />
+
+    <!-- Theme script to prevent flash of wrong theme -->
+    <script is:inline set:html={getThemeScript('system')} />
+
+    <!-- Page Transitions -->
+    <ClientRouter />
+
+    <style is:global>
+      /* Custom Page Transitions matching Animation Strategy */
+      ::view-transition-old(root) {
+        animation:
+          200ms ease-in both fade-out,
+          200ms ease-in both slide-to-top;
+      }
+
+      ::view-transition-new(root) {
+        animation:
+          400ms cubic-bezier(0.22, 1, 0.36, 1) both fade-in,
+          400ms cubic-bezier(0.22, 1, 0.36, 1) both slide-from-bottom;
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+      }
+      @keyframes fade-out {
+        to {
+          opacity: 0;
+        }
+      }
+      @keyframes slide-from-bottom {
+        from {
+          transform: translateY(20px);
+        }
+      }
+      @keyframes slide-to-top {
+        to {
+          transform: translateY(-20px);
+        }
+      }
+
+      /* Respect reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        ::view-transition-old(root),
+        ::view-transition-new(root) {
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-bg-primary text-text-primary antialiased">
+    <ThemeProvider client:load>
+      <!-- Skip to content link for accessibility -->
+      <a
+        href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary-600 focus:text-white focus:rounded-lg focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 transition-all"
+      >
+        Skip to content
+      </a>
+
+      {headerVariant === 'default' && <ClientHeader client:load transition:persist />}
+      {headerVariant === 'minimal' && <MinimalHeader client:load transition:persist />}
+
+      <slot />
+
+      {footerVariant === 'default' && <Footer client:load transition:persist />}
+      {footerVariant === 'minimal' && <MinimalFooter client:load transition:persist />}
+
+      <Toaster client:load />
+    </ThemeProvider>
+  </body>
+</html>

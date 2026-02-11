@@ -1681,7 +1681,7 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
             </div>
           </div>
           <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1]"
+            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient"
             style="opacity: 0; transform: translateY(40px) scale(0.95);"
           >
             Build Faster with 
@@ -7879,7 +7879,7 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
             </div>
           </div>
           <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1]"
+            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient"
             style="opacity: 0; transform: translateY(40px) scale(0.95);"
           >
             Build Faster with 

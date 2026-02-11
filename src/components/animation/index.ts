@@ -39,6 +39,7 @@ export {
 } from './ScrollReveal';
 
 // Hooks (re-exported from hooks directory)
+
 export {
   useAnimation,
   useScrollAnimation,

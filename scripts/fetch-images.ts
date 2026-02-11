@@ -250,6 +250,13 @@ function validateDiversity(
   newImage: DownloadedImage,
   threshold: number = 0.3,
 ): boolean {
+  // 1. Author diversity check
+  const authorOccurrences = images.filter((img) => img.attribution === newImage.attribution).length;
+  if (authorOccurrences >= 2 && newImage.attribution !== 'Placeholder (Generated)') {
+    return false;
+  }
+
+  // 2. Color diversity check (within category)
   const sameCategory = images.filter((img) => img.category === newImage.category);
 
   for (const existing of sameCategory) {

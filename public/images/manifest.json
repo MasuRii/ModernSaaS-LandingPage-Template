@@ -1,5 +1,5 @@
 {
-  "generated": "2026-02-08T23:07:38.324Z",
+  "generated": "2026-02-11T03:47:54.028Z",
   "totalImages": 20,
   "categories": {
     "tech": 4,
@@ -66,10 +66,10 @@
     {
       "filename": "abstract-03.jpg",
       "category": "abstract",
-      "attribution": "Milad Fakurian (@fakurian)",
+      "attribution": "Sean Sinclair (@seanwsinclair)",
       "dimensions": {
-        "width": 4096,
-        "height": 3112
+        "width": 6000,
+        "height": 4000
       }
     },
     {
@@ -84,10 +84,10 @@
     {
       "filename": "team-01.jpg",
       "category": "team",
-      "attribution": "Curated Lifestyle (@curatedlifestyle)",
+      "attribution": "Getty Images (@gettyimages)",
       "dimensions": {
-        "width": 3984,
-        "height": 3149
+        "width": 6016,
+        "height": 4016
       }
     },
     {
@@ -102,10 +102,10 @@
     {
       "filename": "team-03.jpg",
       "category": "team",
-      "attribution": "Memento Media (@heymemento)",
+      "attribution": "Vitaly Gariev (@silverkblack)",
       "dimensions": {
-        "width": 4096,
-        "height": 2730
+        "width": 3800,
+        "height": 2138
       }
     },
     {
@@ -122,26 +122,26 @@
       "category": "office",
       "attribution": "Toa Heftiba (@heftiba)",
       "dimensions": {
-        "width": 6000,
-        "height": 4000
+        "width": 5533,
+        "height": 3617
       }
     },
     {
       "filename": "office-02.jpg",
       "category": "office",
-      "attribution": "Lance Anderson (@lanceanderson)",
+      "attribution": "Bernd 📷 Dittrich (@hdbernd)",
       "dimensions": {
-        "width": 6000,
-        "height": 4000
+        "width": 6240,
+        "height": 3354
       }
     },
     {
-      "filename": "office-03.svg",
+      "filename": "office-03.jpg",
       "category": "office",
-      "attribution": "Placeholder (Generated)",
+      "attribution": "Curated Lifestyle (@curatedlifestyle)",
       "dimensions": {
-        "width": 1200,
-        "height": 800
+        "width": 10404,
+        "height": 4710
       }
     },
     {
@@ -185,8 +185,8 @@
       "category": "devices",
       "attribution": "Andrey Matveev (@zelebb)",
       "dimensions": {
-        "width": 5824,
-        "height": 4368
+        "width": 8192,
+        "height": 6144
       }
     }
   ]

@@ -136,6 +136,41 @@ Most page content is centralized in `src/data/`:
 - **Logo Icon**: The default `Zap` icon is used in `Header.tsx`. Replace it with
   your own SVG or icon component in `src/components/layout/Header.tsx`.
 
+## ⚙️ Configuration
+
+Beyond visual customization, the template provides several configuration hooks.
+
+### 1. Site Configuration
+
+The `src/config/site.ts` file contains more than just branding.
+
+- **Analytics**: Set your IDs for `googleAnalyticsId`, `plausibleDomain`, or
+  `posthogKey` in the `analytics` object.
+- **Feature Flags**: Toggle core features (e.g., `newsletter`, `search`,
+  `darkMode`) in the `featureFlags` object.
+- **Demo Mode**: Set `demoMode: true` to intercept placeholder links with
+  informational modals.
+
+### 2. Environment Variables
+
+The template uses environment variables to control build behavior:
+
+- `SITE_URL`: The production URL (e.g., `https://my-saas.com`). Used for
+  sitemaps and canonical URLs.
+- `BASE_PATH`: The subdirectory path (e.g., `/my-repo`). Defaults to `/` unless
+  running in GitHub Actions.
+- `GITHUB_PAGES`: Set to `true` by GitHub Actions to automatically detect
+  project subdirectory names.
+
+### 3. Astro Configuration
+
+Key settings in `astro.config.mjs`:
+
+- `trailingSlash`: Set to `'always'` to ensure consistent URL patterns.
+- `compressHTML`: Set to `true` for optimized production builds.
+- `image.service`: Configured to use Sharp for high-performance image
+  processing.
+
 ## 📸 Screenshots
 
 ### Light Mode

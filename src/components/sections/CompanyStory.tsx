@@ -50,9 +50,8 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
         <Container className="relative z-10">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
             <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
+              initial={false}
+              animate="animate"
               variants={PRESETS.fadeInUp as unknown as Variants}
             >
               <h2 className="text-sm font-semibold uppercase tracking-wider text-primary-600 dark:text-primary-400 mb-4">

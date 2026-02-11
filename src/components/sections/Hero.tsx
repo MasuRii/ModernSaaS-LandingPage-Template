@@ -65,7 +65,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content Column */}
           <motion.div
-            initial={prefersReducedMotion ? false : 'initial'}
+            initial={false}
             animate="animate"
             variants={
               {
@@ -92,6 +92,8 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
 
             {/* Headline */}
             <motion.h1
+              initial={false}
+              animate="animate"
               variants={PRESETS.heroEntrance as unknown as Variants}
               className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient will-change-transform"
               data-testid="hero-headline"
@@ -104,6 +106,8 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
 
             {/* Subheadline */}
             <motion.p
+              initial={false}
+              animate="animate"
               variants={PRESETS.fadeInUp as unknown as Variants}
               className="text-lg md:text-xl text-text-muted mb-10 max-w-[520px] leading-relaxed will-change-transform"
               data-testid="hero-description"
@@ -164,7 +168,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               fetchPriority="high"
               variants={PRESETS.mockupEntrance as unknown as Variants}
               className="z-10 will-change-transform"
-              initial={prefersReducedMotion ? false : 'initial'}
+              initial={false}
               animate="animate"
             />
 

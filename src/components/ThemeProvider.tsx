@@ -127,20 +127,31 @@ export function ThemeProvider({
   disableTransitionOnChange = false,
 }: ThemeProviderProps) {
   const [theme, setThemeState] = useState<Theme>(defaultTheme);
-  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>(getResolvedTheme(defaultTheme));
+  // Always initialize with 'light' (or the explicit theme) to match SSR and prevent hydration mismatch.
+  // The actual theme will be resolved in useEffect after mounting.
+  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>(
+    defaultTheme === 'system' ? 'light' : defaultTheme,
+  );
   const [mounted, setMounted] = useState(false);
 
   // Load stored theme preference on mount
   useEffect(() => {
     const stored = getStorageItem(storageKey) as Theme | null;
+    const activeTheme = stored || defaultTheme;
+
     if (stored) {
       setThemeState(stored);
-      setResolvedTheme(getResolvedTheme(stored));
-    } else {
-      setResolvedTheme(getResolvedTheme(defaultTheme));
     }
+
+    // Now we can safely resolve the theme on the client
+    const resolved = getResolvedTheme(activeTheme);
+    setResolvedTheme(resolved);
+
+    // Apply the theme to the document (though the inline script should have handled it)
+    applyTheme(resolved, disableTransitionOnChange);
+
     setMounted(true);
-  }, [storageKey, defaultTheme]);
+  }, [storageKey, defaultTheme, disableTransitionOnChange]);
 
   // Listen for system theme changes
   useEffect(() => {

@@ -52,7 +52,7 @@ export const FeaturesHero: React.FC<FeaturesHeroProps> = ({ className }) => {
       <Container className="relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <motion.div
-            initial="initial"
+            initial={false}
             animate="animate"
             variants={PRESETS.fadeInUp as unknown as Variants}
           >

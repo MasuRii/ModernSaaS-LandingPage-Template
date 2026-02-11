@@ -23,7 +23,7 @@ const seo = pageSEO.features;
     transition:animate="fade"
   >
     {/* 1. Features Hero Section */}
-    <FeaturesHero client:load />
+    <FeaturesHero client:idle />
 
     {/* 2. Detailed Feature Sections (Alternating) */}
     <FeatureDetail client:visible />

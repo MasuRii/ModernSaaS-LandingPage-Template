@@ -77,6 +77,11 @@ export const selectors = {
     nameInput: 'input[name="name"], input[id="name"]',
     messageInput: 'textarea[name="message"], textarea[id="message"]',
     submitButton: 'button[type="submit"]',
+    githubAuth: '[data-testid="github-auth"]',
+    googleAuth: '[data-testid="google-auth"]',
+  },
+  integrations: {
+    logo: '[data-testid="integration-logo"]',
   },
 } as const;
 

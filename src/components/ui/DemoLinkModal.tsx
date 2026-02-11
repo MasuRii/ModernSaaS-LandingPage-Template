@@ -20,7 +20,12 @@ import {
   Sparkles,
   X,
 } from 'lucide-react';
-import { type DemoLinkModalContent, getDemoLinkContent } from '../../config/demoLinks';
+import {
+  type DemoLinkCategory,
+  type DemoLinkModalContent,
+  demoLinkContent,
+  getDemoLinkContent,
+} from '../../config/demoLinks';
 
 /**
  * Icon mapping for demo link categories
@@ -44,6 +49,8 @@ export interface DemoLinkModalProps {
   onClose: () => void;
   /** The URL that triggered the modal */
   url: string;
+  /** Optional category override */
+  category?: DemoLinkCategory | undefined;
   /** Optional custom title override */
   title?: string | undefined;
   /** Optional custom message override */
@@ -141,6 +148,7 @@ export const DemoLinkModal = ({
   isOpen,
   onClose,
   url,
+  category: categoryOverride,
   title: customTitle,
   message: customMessage,
   description: customDescription,
@@ -153,8 +161,10 @@ export const DemoLinkModal = ({
   // Apply focus trap
   useFocusTrap(containerRef as React.RefObject<HTMLElement | null>, isOpen, onClose);
 
-  // Get content based on URL
-  const content: DemoLinkModalContent = getDemoLinkContent(url);
+  // Get content based on URL or category override
+  const content: DemoLinkModalContent = categoryOverride
+    ? demoLinkContent[categoryOverride]
+    : getDemoLinkContent(url);
 
   // Use custom values if provided, otherwise use defaults
   const title = customTitle ?? content.title;
@@ -261,7 +271,11 @@ export const DemoLinkModal = ({
             </h2>
 
             {/* Message */}
-            <p id="demo-link-modal-description" className="text-text-secondary text-center">
+            <p
+              id="demo-link-modal-description"
+              className="text-text-secondary text-center"
+              data-testid="demo-message"
+            >
               {message}
             </p>
 

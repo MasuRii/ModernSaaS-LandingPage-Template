@@ -62,6 +62,7 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
       className={cn('py-20 lg:py-32 overflow-hidden', className)}
       background="default"
       aria-label="Integrations"
+      data-testid="integrations-section"
     >
       <Container>
         {/* Section Header */}
@@ -129,6 +130,7 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
                     key={integration.id}
                     name={integration.name}
                     logo={integration.logo}
+                    href={integration.website}
                     size="md"
                     className="w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors"
                   />
@@ -144,6 +146,7 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
                       key={integration.id}
                       name={integration.name}
                       logo={integration.logo}
+                      href={integration.website}
                       size="md"
                       className="w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors"
                     />

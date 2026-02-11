@@ -154,6 +154,7 @@ export const SignupForm: React.FC = () => {
           variant="outline"
           className="flex w-full items-center justify-center gap-2"
           forceDemo
+          data-testid="github-auth"
         >
           <Github className="h-5 w-5" />
           <span className="text-sm font-medium">GitHub</span>
@@ -163,6 +164,7 @@ export const SignupForm: React.FC = () => {
           variant="outline"
           className="flex w-full items-center justify-center gap-2"
           forceDemo
+          data-testid="google-auth"
         >
           <Chrome className="h-5 w-5" />
           <span className="text-sm font-medium">Google</span>

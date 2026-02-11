@@ -71,6 +71,7 @@ function SocialLink({ href, label, icon }: SocialLinkProps) {
     <Link
       href={href}
       aria-label={label}
+      data-testid="social-link"
       className="w-10 h-10 rounded-full bg-bg-secondary hover:bg-primary-100 dark:hover:bg-primary-900/30 
                  flex items-center justify-center text-text-secondary hover:text-primary-600 
                  transition-all duration-200 hover:scale-110 focus:outline-none 

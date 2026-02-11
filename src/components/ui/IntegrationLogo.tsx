@@ -94,7 +94,14 @@ export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
   `;
 
   return (
-    <DemoLink href={resolvedHref} className={containerClasses} title={name} tabIndex={tabIndex}>
+    <DemoLink
+      href={resolvedHref}
+      className={containerClasses}
+      title={name}
+      tabIndex={tabIndex}
+      data-testid="integration-logo"
+      _category="integration"
+    >
       <LazyImage
         src={getAssetPath(logo)}
         alt={`${name} logo`}

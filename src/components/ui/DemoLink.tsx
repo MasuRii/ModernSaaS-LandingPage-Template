@@ -118,6 +118,7 @@ export const DemoLink = React.forwardRef<HTMLAnchorElement, DemoLinkProps>(
             isOpen={isModalOpen}
             onClose={handleClose}
             url={href}
+            category={_category}
             title={modalTitle}
             message={modalMessage}
             description={modalDescription}

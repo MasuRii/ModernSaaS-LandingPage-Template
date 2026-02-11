@@ -114,6 +114,54 @@ export const featuresOverview: Feature[] = [
       'Leverage machine learning for automated workflows, smart recommendations, and natural language processing.',
     href: '/features#ai',
   },
+  {
+    id: '7',
+    icon: 'Code',
+    title: 'Developer Friendly',
+    description:
+      'Comprehensive APIs, SDKs, and webhooks to integrate with your existing workflows and tools.',
+    href: '/features#developer-tools',
+  },
+  {
+    id: '8',
+    icon: 'Workflow',
+    title: 'Smart Automation',
+    description:
+      'Build complex multi-step workflows with our intuitive drag-and-drop interface and triggers.',
+    href: '/features#automation',
+  },
+  {
+    id: '9',
+    icon: 'Cloud',
+    title: 'Cloud Native',
+    description:
+      'Designed for the modern cloud with native support for containers, serverless, and edge computing.',
+    href: '/features#infrastructure',
+  },
+  {
+    id: '10',
+    icon: 'Users',
+    title: 'Team Collaboration',
+    description:
+      'Manage teams, permissions, and shared resources with ease across your entire organization.',
+    href: '/features#collaboration',
+  },
+  {
+    id: '11',
+    icon: 'Database',
+    title: 'Data Sovereignty',
+    description:
+      'Choose where your data resides with support for multiple regions and global compliance standards.',
+    href: '/features#security',
+  },
+  {
+    id: '12',
+    icon: 'Smartphone',
+    title: 'Mobile Optimized',
+    description:
+      'Manage your entire operation on the go with our fully featured mobile applications for iOS and Android.',
+    href: '/features',
+  },
 ];
 
 /** Detailed features for Features page */
@@ -176,6 +224,66 @@ export const featureDetails: FeatureDetail[] = [
       'Custom API and webhook support',
       'No-code automation builder',
       'Two-way data synchronization',
+    ],
+  },
+  {
+    id: 'automation',
+    icon: 'Workflow',
+    title: 'Advanced Automation',
+    description:
+      'Automate repetitive tasks and complex business processes with our powerful workflow engine. Connect different services and create intelligent triggers to save time and reduce manual errors.',
+    image: '/images/tech-03.jpg',
+    imageAlt: 'Visual workflow builder interface',
+    subFeatures: [
+      'Visual drag-and-drop builder',
+      'Intelligent conditional logic',
+      'Cross-platform service triggers',
+      'Detailed automation audit logs',
+    ],
+  },
+  {
+    id: 'collaboration',
+    icon: 'Users',
+    title: 'Real-time Collaboration',
+    description:
+      'Break down silos and work better together. Our platform provides real-time updates, shared workspaces, and granular permission controls for teams of all sizes.',
+    image: '/images/office-01.jpg',
+    imageAlt: 'Team collaborating in a shared workspace',
+    subFeatures: [
+      'Shared project workspaces',
+      'Granular role-based access',
+      'Real-time activity feeds',
+      'Contextual comments and mentions',
+    ],
+  },
+  {
+    id: 'infrastructure',
+    icon: 'Cloud',
+    title: 'Resilient Infrastructure',
+    description:
+      'Built on top of world-class infrastructure, our platform offers unparalleled reliability and scalability. With automatic failover and multi-region redundancy, your business stays online 24/7.',
+    image: '/images/tech-04.jpg',
+    imageAlt: 'Global server network map',
+    subFeatures: [
+      'Multi-region redundancy',
+      'Automatic failover systems',
+      'DDoS protection and mitigation',
+      'Elastic scaling for traffic spikes',
+    ],
+  },
+  {
+    id: 'developer-tools',
+    icon: 'Code',
+    title: 'Modern Developer Tools',
+    description:
+      'Build faster with tools designed for developers. From robust REST APIs to comprehensive SDKs and interactive documentation, we provide everything you need to build great things.',
+    image: '/images/abstract-02.jpg',
+    imageAlt: 'API documentation and code snippets',
+    subFeatures: [
+      'Robust REST and GraphQL APIs',
+      'SDKs for major programming languages',
+      'Interactive API playgrounds',
+      'Custom webhook notifications',
     ],
   },
 ];

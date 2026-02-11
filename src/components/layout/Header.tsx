@@ -258,7 +258,7 @@ export function MinimalHeader({ className = '', logoHref = ROUTES.HOME }: Minima
       role="banner"
       aria-label="Site header"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a
           href={resolveHref(logoHref)}
           className="inline-flex items-center gap-2 text-text-primary hover:opacity-80 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded-lg"
@@ -269,6 +269,9 @@ export function MinimalHeader({ className = '', logoHref = ROUTES.HOME }: Minima
           </div>
           <span className="text-lg font-bold tracking-tight">{company.name}</span>
         </a>
+
+        {/* Theme Toggle - Minimal variant */}
+        <ThemeToggle aria-label="Toggle theme" />
       </div>
     </header>
   );

@@ -52,32 +52,23 @@ test.describe('Theme Persistence', () => {
     expect(restoredTheme).toBe(initialTheme);
   });
 
-  test('should persist theme across navigation', async ({ page }) => {
+  test('should persist theme across navigation to all major pages', async ({ page }) => {
     const toggleButton = page.locator(selectors.navigation.themeToggle);
 
-    // Ensure we are in dark mode (or just switch to something different)
+    // Switch theme
     await toggleButton.click();
     await page.waitForTimeout(300);
     const newTheme = await getTheme(page);
 
-    // Verify it's stored in localStorage
-    const storedTheme = await page.evaluate((key) => localStorage.getItem(key), THEME_STORAGE_KEY);
-    expect(storedTheme).toBe(newTheme);
+    // Iterate through all routes to verify persistence
+    const routesToTest = Object.values(testRoutes);
 
-    // Navigate to Pricing page
-    await page.goto(testRoutes.pricing);
-    await expect(page.locator(selectors.navigation.themeToggle)).toBeVisible();
-
-    // Verify theme is still the same
-    const navigatedTheme = await getTheme(page);
-    expect(navigatedTheme).toBe(newTheme);
-
-    // Navigate to Blog page
-    await page.goto(testRoutes.blog);
-    await expect(page.locator(selectors.navigation.themeToggle)).toBeVisible();
-
-    const blogTheme = await getTheme(page);
-    expect(blogTheme).toBe(newTheme);
+    for (const route of routesToTest) {
+      await page.goto(route);
+      await expect(page.locator(selectors.navigation.themeToggle)).toBeVisible();
+      const currentTheme = await getTheme(page);
+      expect(currentTheme).toBe(newTheme);
+    }
   });
 
   test('should persist theme across page refresh', async ({ page }) => {
@@ -122,5 +113,35 @@ test.describe('Theme Persistence', () => {
 
     const lightTheme = await getTheme(page);
     expect(lightTheme).toBe('light');
+  });
+
+  test('should respect system preference (dark)', async ({ page }) => {
+    // Clear localStorage to ensure system preference is used
+    await page.evaluate((key) => localStorage.removeItem(key), THEME_STORAGE_KEY);
+
+    // Set system preference to dark
+    await page.emulateMedia({ colorScheme: 'dark' });
+
+    // Reload to pick up the change
+    await page.reload();
+    await page.waitForLoadState('networkidle');
+
+    const theme = await getTheme(page);
+    expect(theme).toBe('dark');
+  });
+
+  test('should respect system preference (light)', async ({ page }) => {
+    // Clear localStorage
+    await page.evaluate((key) => localStorage.removeItem(key), THEME_STORAGE_KEY);
+
+    // Set system preference to light
+    await page.emulateMedia({ colorScheme: 'light' });
+
+    // Reload to pick up the change
+    await page.reload();
+    await page.waitForLoadState('networkidle');
+
+    const theme = await getTheme(page);
+    expect(theme).toBe('light');
   });
 });

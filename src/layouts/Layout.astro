@@ -3,7 +3,7 @@ import '../styles/globals.css';
 import { ClientRouter } from 'astro:transitions';
 import { getThemeScript } from '../components/ThemeProvider';
 import { ClientHeader } from '../components/ClientHeader';
-import { MinimalHeader } from '../components/layout/Header';
+import { ClientMinimalHeader } from '../components/ClientMinimalHeader';
 import { Footer, MinimalFooter } from '../components/layout/Footer';
 import { Toaster } from '../components/ui/Toast';
 import {
@@ -183,7 +183,7 @@ const finalCrumbs = crumbs || defaultCrumbs;
     </a>
 
     {headerVariant === 'default' && <ClientHeader client:load transition:persist />}
-    {headerVariant === 'minimal' && <MinimalHeader client:load transition:persist />}
+    {headerVariant === 'minimal' && <ClientMinimalHeader client:load transition:persist />}
 
     <main
       id="main-content"

@@ -223,6 +223,68 @@ When using a custom domain:
 3. Follow your provider's instructions for DNS configuration (A records, CNAME,
    etc.).
 
+## 🧪 Testing
+
+The template includes a comprehensive testing suite ensuring production quality
+and accessibility compliance.
+
+### 1. Unit & Integration Tests
+
+Built with **Vitest**, these tests cover atomic components, hooks, and
+utilities.
+
+```bash
+# Run all unit tests
+bun run test
+
+# Generate coverage report
+bun run test:coverage
+```
+
+### 2. End-to-End (E2E) Tests
+
+Powered by **Playwright**, covering user journeys, theme switching, and form
+validations across all major browser engines.
+
+```bash
+# Run all E2E tests
+bun run test:e2e
+
+# Run tests in UI mode
+bun run test:e2e:ui
+
+# Run production smoke tests
+bun run test:e2e:prod
+```
+
+### 3. Accessibility & SEO
+
+Automated audits using **Axe-core** and schema validators.
+
+```bash
+# Run accessibility audit
+bun run test:a11y
+
+# Validate JSON-LD structured data
+bun run test:seo
+```
+
+### 4. Performance & Quality
+
+Core Web Vitals and build integrity checks.
+
+```bash
+# Run Lighthouse audit
+bun run test:perf
+
+# Verify deployment build (checks for broken links/assets)
+bun run test:deploy
+
+# Run type checking and linting
+bun run typecheck
+bun run lint
+```
+
 ## 📸 Screenshots
 
 ### Light Mode

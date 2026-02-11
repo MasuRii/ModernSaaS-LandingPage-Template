@@ -19,6 +19,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
     "test:perf": "node scripts/run-lighthouse.js",
     "test:a11y": "node scripts/run-axe.js",
+    "test:seo": "bun scripts/validate-schemas.ts",
     "prepare": "husky"
   },
   "lint-staged": {

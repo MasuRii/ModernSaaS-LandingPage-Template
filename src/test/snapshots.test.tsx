@@ -350,8 +350,16 @@ describe('Component Snapshots', () => {
         it('ProductMockup matches snapshot', () => {
           const { asFragment } = render(
             <div className="space-y-8">
-              <UI.ProductMockup src="/images/dashboard-mockup.svg" variant="laptop" />
-              <UI.ProductMockup src="/images/dashboard-mockup.svg" variant="phone" />
+              <UI.ProductMockup
+                src="/images/dashboard-mockup.svg"
+                variant="laptop"
+                alt="Laptop Dashboard"
+              />
+              <UI.ProductMockup
+                src="/images/dashboard-mockup.svg"
+                variant="phone"
+                alt="Phone Dashboard"
+              />
             </div>,
             { wrapper },
           );

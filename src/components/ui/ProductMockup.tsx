@@ -15,7 +15,7 @@ export interface ProductMockupProps extends HTMLMotionProps<'div'> {
   /**
    * The image alt text
    */
-  alt?: string;
+  alt: string;
   /**
    * The mockup variant
    * @default 'laptop'
@@ -49,7 +49,7 @@ export interface ProductMockupProps extends HTMLMotionProps<'div'> {
  */
 export const ProductMockup: React.FC<ProductMockupProps> = ({
   src,
-  alt = 'Product mockup',
+  alt,
   variant = 'laptop',
   floating = true,
   loading = 'lazy',

@@ -1054,7 +1054,7 @@ exports[`Component Snapshots > dark theme > Sections > FAQSection matches snapsh
     <script
       type="application/ld+json"
     >
-      {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I change my plan at any time?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, your new rate will apply at the next billing cycle."}},{"@type":"Question","name":"Do you offer a free trial?","acceptedAnswer":{"@type":"Answer","text":"Yes! Every paid plan comes with a 14-day free trial. No credit card required to start. You'll only be charged if you decide to continue after the trial period."}},{"@type":"Question","name":"What payment methods do you accept?","acceptedAnswer":{"@type":"Answer","text":"We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for annual Enterprise plans."}},{"@type":"Question","name":"Is there a discount for annual billing?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can save 20% by choosing annual billing instead of monthly. This discount is automatically applied when you select the annual option."}},{"@type":"Question","name":"Do you offer student or non-profit discounts?","acceptedAnswer":{"@type":"Answer","text":"Yes! We're committed to supporting education and social impact. Eligible students and non-profit organizations can receive an additional 30% discount on any plan. Contact our support team with your credentials to apply."}},{"@type":"Question","name":"What happens when I reach my plan limits?","acceptedAnswer":{"@type":"Answer","text":"We'll notify you when you're approaching your limits. You can upgrade your plan at any time, or contact us for custom options if you need temporary increases."}},{"@type":"Question","name":"Do you offer refunds?","acceptedAnswer":{"@type":"Answer","text":"We offer a 30-day money-back guarantee for all paid plans. If you're not satisfied, contact our support team within 30 days for a full refund."}},{"@type":"Question","name":"Can I invite external collaborators?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can invite external collaborators to specific projects. They won't count against your team member limit unless they need full account access."}},{"@type":"Question","name":"Do you have an API?","acceptedAnswer":{"@type":"Answer","text":"Yes, our REST and GraphQL APIs are available on Pro and Enterprise plans. Enterprise customers also get access to advanced webhooks and custom integrations."}}]}
+      {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is ModernSaaS?","acceptedAnswer":{"@type":"Answer","text":"ModernSaaS is a comprehensive landing page template designed for high-growth SaaS startups. It features modern design trends, robust components, and optimized performance to help you launch faster."}},{"@type":"Question","name":"How do I get started?","acceptedAnswer":{"@type":"Answer","text":"Getting started is easy! Simply choose a plan that fits your needs, sign up for an account, and follow our quick setup guide to integrate ModernSaaS with your existing workflow."}},{"@type":"Question","name":"Is there a free version?","acceptedAnswer":{"@type":"Answer","text":"While we don't have a permanent free version, we offer a 14-day free trial on all our paid plans so you can explore the full power of ModernSaaS without any risk."}},{"@type":"Question","name":"Can I use this for client projects?","acceptedAnswer":{"@type":"Answer","text":"Yes! Our Enterprise and Pro plans include licenses that allow you to use the template for client projects. Please check our licensing page for more specific details."}},{"@type":"Question","name":"Can I change my plan at any time?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, your new rate will apply at the next billing cycle."}},{"@type":"Question","name":"Do you offer a free trial?","acceptedAnswer":{"@type":"Answer","text":"Yes! Every paid plan comes with a 14-day free trial. No credit card required to start. You'll only be charged if you decide to continue after the trial period."}},{"@type":"Question","name":"What payment methods do you accept?","acceptedAnswer":{"@type":"Answer","text":"We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for annual Enterprise plans."}},{"@type":"Question","name":"Is there a discount for annual billing?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can save 20% by choosing annual billing instead of monthly. This discount is automatically applied when you select the annual option."}},{"@type":"Question","name":"How quickly will I receive a response?","acceptedAnswer":{"@type":"Answer","text":"Our team typically responds to all inquiries within 24 business hours. For urgent technical support, Pro and Enterprise customers can expect a response within 2-4 hours."}},{"@type":"Question","name":"Do you offer custom enterprise solutions?","acceptedAnswer":{"@type":"Answer","text":"Yes, we provide custom enterprise plans tailored to your specific needs, including custom integrations, dedicated support, and specialized security requirements."}}]}
     </script>
     <div
       class="w-full px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto"
@@ -1062,6 +1062,74 @@ exports[`Component Snapshots > dark theme > Sections > FAQSection matches snapsh
       <div
         class="w-full space-y-2 max-w-3xl mx-auto"
       >
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            What is ModernSaaS?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            How do I get started?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Is there a free version?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Can I use this for client projects?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
         <div
           class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
           data-state="closed"
@@ -1140,7 +1208,7 @@ exports[`Component Snapshots > dark theme > Sections > FAQSection matches snapsh
             data-state="closed"
             type="button"
           >
-            Do you offer student or non-profit discounts?
+            How quickly will I receive a response?
             <div
               class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
               data-testid="icon-chevrondown"
@@ -1157,58 +1225,7 @@ exports[`Component Snapshots > dark theme > Sections > FAQSection matches snapsh
             data-state="closed"
             type="button"
           >
-            What happens when I reach my plan limits?
-            <div
-              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
-              data-testid="icon-chevrondown"
-            />
-          </button>
-        </div>
-        <div
-          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
-          data-state="closed"
-        >
-          <button
-            aria-expanded="false"
-            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
-            data-state="closed"
-            type="button"
-          >
-            Do you offer refunds?
-            <div
-              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
-              data-testid="icon-chevrondown"
-            />
-          </button>
-        </div>
-        <div
-          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
-          data-state="closed"
-        >
-          <button
-            aria-expanded="false"
-            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
-            data-state="closed"
-            type="button"
-          >
-            Can I invite external collaborators?
-            <div
-              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
-              data-testid="icon-chevrondown"
-            />
-          </button>
-        </div>
-        <div
-          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
-          data-state="closed"
-        >
-          <button
-            aria-expanded="false"
-            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
-            data-state="closed"
-            type="button"
-          >
-            Do you have an API?
+            Do you offer custom enterprise solutions?
             <div
               class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
               data-testid="icon-chevrondown"
@@ -1464,6 +1481,210 @@ exports[`Component Snapshots > dark theme > Sections > FeaturesOverview section 
               />
             </div>
           </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-code"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Developer Friendly
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Comprehensive APIs, SDKs, and webhooks to integrate with your existing workflows and tools.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-workflow"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Smart Automation
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Build complex multi-step workflows with our intuitive drag-and-drop interface and triggers.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-cloud"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Cloud Native
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Designed for the modern cloud with native support for containers, serverless, and edge computing.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-users"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Team Collaboration
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Manage teams, permissions, and shared resources with ease across your entire organization.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-database"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Data Sovereignty
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Choose where your data resides with support for multiple regions and global compliance standards.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-smartphone"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Mobile Optimized
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Manage your entire operation on the go with our fully featured mobile applications for iOS and Android.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1692,7 +1913,7 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
                 class="w-6 h-6 rounded-full border-2 border-bg-secondary bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center overflow-hidden"
               >
                 <img
-                  alt="User 1"
+                  alt="User profile"
                   class="w-full h-full object-cover"
                   src="/images/team-01.jpg"
                 />
@@ -1701,7 +1922,7 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
                 class="w-6 h-6 rounded-full border-2 border-bg-secondary bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center overflow-hidden"
               >
                 <img
-                  alt="User 2"
+                  alt="User profile"
                   class="w-full h-full object-cover"
                   src="/images/team-02.jpg"
                 />
@@ -1710,7 +1931,7 @@ exports[`Component Snapshots > dark theme > Sections > Hero section matches snap
                 class="w-6 h-6 rounded-full border-2 border-bg-secondary bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center overflow-hidden"
               >
                 <img
-                  alt="User 3"
+                  alt="User profile"
                   class="w-full h-full object-cover"
                   src="/images/team-03.jpg"
                 />
@@ -2288,6 +2509,38 @@ exports[`Component Snapshots > dark theme > Sections > IntegrationsSection match
                 Storage
               </span>
             </button>
+            <button
+              aria-controls="_r_13_-content-marketing"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="marketing"
+              id="_r_13_-trigger-marketing"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Marketing
+              </span>
+            </button>
+            <button
+              aria-controls="_r_13_-content-security"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="security"
+              id="_r_13_-trigger-security"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Security
+              </span>
+            </button>
           </div>
         </div>
         <div
@@ -2858,6 +3111,29 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
     shrink-0
   "
                 href="#"
+                title="Mailchimp"
+              >
+                <img
+                  alt="Mailchimp logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/mailchimp.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
                 title="Slack"
               >
                 <img
@@ -3055,6 +3331,29 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
   "
                   loading="lazy"
                   src="/images/integrations/google-drive.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Mailchimp"
+              >
+                <img
+                  alt="Mailchimp logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/mailchimp.svg"
                 />
               </a>
             </div>
@@ -3278,6 +3577,29 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
     shrink-0
   "
                 href="#"
+                title="Mailchimp"
+              >
+                <img
+                  alt="Mailchimp logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/mailchimp.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
                 title="Slack"
               >
                 <img
@@ -3475,6 +3797,29 @@ exports[`Component Snapshots > dark theme > Sections > LogoCloudSection matches 
   "
                   loading="lazy"
                   src="/images/integrations/google-drive.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Mailchimp"
+              >
+                <img
+                  alt="Mailchimp logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/mailchimp.svg"
                 />
               </a>
             </div>
@@ -4549,7 +4894,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
                       alt="Thomas Anderson"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-03.jpg"
+                      src="/images/team-02.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -4801,7 +5146,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
                       alt="David Kim"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-01.jpg"
+                      src="/images/team-04.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -4917,7 +5262,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
                       alt="Emily Rodriguez"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-02.jpg"
+                      src="/images/team-01.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -5030,7 +5375,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
                       alt="Sarah Mitchell"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-01.jpg"
+                      src="/images/team-03.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -5135,7 +5480,7 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
                       alt="Jordan Lee"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-02.jpg"
+                      src="/images/team-04.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -5219,6 +5564,235 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
                 </div>
               </div>
             </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Nathan Wright"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-01.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      NW
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Nathan Wright
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Senior DevOps Engineer
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Cloud infrastructure expert with a focus on automation and security. Former SRE at high-traffic fintech platforms.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Nathan Wright's github"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://github.com/nathanwright"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-github"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        />
+                        <path
+                          d="M9 18c-4.51 2-5-2-7-2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Nathan Wright's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/nathanwright"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Sophia Lopez"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-02.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      SL
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Sophia Lopez
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Customer Success Lead
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Dedicated to helping customers achieve their goals. Background in communications and relationship management.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Sophia Lopez's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/sophial"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Sophia Lopez's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/sophial"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -5240,27 +5814,37 @@ exports[`Component Snapshots > dark theme > Sections > TeamSection matches snaps
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"David Kim","jobTitle":"VP of Engineering","description":"Led engineering teams at multiple unicorn startups. Expert in scaling engineering organizations and technical architecture.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://linkedin.com/in/davidkim","https://github.com/davidkim"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"David Kim","jobTitle":"VP of Engineering","description":"Led engineering teams at multiple unicorn startups. Expert in scaling engineering organizations and technical architecture.","image":"http://localhost:3000/images/team-04.jpg","sameAs":["https://linkedin.com/in/davidkim","https://github.com/davidkim"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"Emily Rodriguez","jobTitle":"Head of Marketing","description":"Growth marketer with experience taking B2B SaaS companies from $0 to $100M ARR. Data-driven and creative.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://twitter.com/emilyr","https://linkedin.com/in/emilyr"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"Emily Rodriguez","jobTitle":"Head of Marketing","description":"Growth marketer with experience taking B2B SaaS companies from $0 to $100M ARR. Data-driven and creative.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://twitter.com/emilyr","https://linkedin.com/in/emilyr"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"Thomas Anderson","jobTitle":"Senior Product Manager","description":"Product leader focused on user experience and market fit. Previously shipped products at Microsoft and Shopify.","image":"http://localhost:3000/images/team-03.jpg","sameAs":["https://linkedin.com/in/thomasanderson","https://twitter.com/thomasanderson"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"Thomas Anderson","jobTitle":"Senior Product Manager","description":"Product leader focused on user experience and market fit. Previously shipped products at Microsoft and Shopify.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://linkedin.com/in/thomasanderson","https://twitter.com/thomasanderson"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"Sarah Mitchell","jobTitle":"Lead Engineer","description":"Full-stack engineer specializing in performance and scalability. Open source maintainer and tech blogger.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://github.com/sarahmitchell","https://twitter.com/sarahcodes"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"Sarah Mitchell","jobTitle":"Lead Engineer","description":"Full-stack engineer specializing in performance and scalability. Open source maintainer and tech blogger.","image":"http://localhost:3000/images/team-03.jpg","sameAs":["https://github.com/sarahmitchell","https://twitter.com/sarahcodes"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"Jordan Lee","jobTitle":"Senior Designer","description":"UI/UX designer with a background in psychology. Focuses on creating accessible and inclusive digital experiences.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://jordanlee.design","https://linkedin.com/in/jordanlee"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"Jordan Lee","jobTitle":"Senior Designer","description":"UI/UX designer with a background in psychology. Focuses on creating accessible and inclusive digital experiences.","image":"http://localhost:3000/images/team-04.jpg","sameAs":["https://jordanlee.design","https://linkedin.com/in/jordanlee"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Nathan Wright","jobTitle":"Senior DevOps Engineer","description":"Cloud infrastructure expert with a focus on automation and security. Former SRE at high-traffic fintech platforms.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://github.com/nathanwright","https://linkedin.com/in/nathanwright"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Sophia Lopez","jobTitle":"Customer Success Lead","description":"Dedicated to helping customers achieve their goals. Background in communications and relationship management.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://twitter.com/sophial","https://linkedin.com/in/sophial"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
     </div>
   </section>
@@ -5337,6 +5921,16 @@ exports[`Component Snapshots > dark theme > Sections > TestimonialsSection match
                   class="fill-current text-accent-500"
                   data-testid="icon-star"
                   size="16"
+                />
+              </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="TechCorp Inc. logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
                 />
               </div>
             </div>
@@ -5439,6 +6033,16 @@ exports[`Component Snapshots > dark theme > Sections > TestimonialsSection match
                   size="16"
                 />
               </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="StartupXYZ logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/stripe.svg"
+                />
+              </div>
             </div>
             <div
               class="flex-grow pt-2"
@@ -5537,6 +6141,16 @@ exports[`Component Snapshots > dark theme > Sections > TestimonialsSection match
                   class="fill-current text-accent-500"
                   data-testid="icon-star"
                   size="16"
+                />
+              </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="InnovateCo logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
                 />
               </div>
             </div>
@@ -5639,6 +6253,16 @@ exports[`Component Snapshots > dark theme > Sections > TestimonialsSection match
                   size="16"
                 />
               </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="Enterprise Solutions logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </div>
             </div>
             <div
               class="flex-grow pt-2"
@@ -5669,7 +6293,7 @@ exports[`Component Snapshots > dark theme > Sections > TestimonialsSection match
                   alt="David Kim"
                   class="w-full h-full object-cover"
                   loading="lazy"
-                  src="/images/team-01.jpg"
+                  src="/images/team-04.jpg"
                 />
               </div>
               <div
@@ -5739,6 +6363,16 @@ exports[`Component Snapshots > dark theme > Sections > TestimonialsSection match
                   size="16"
                 />
               </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="GrowthLabs logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </div>
             </div>
             <div
               class="flex-grow pt-2"
@@ -5769,7 +6403,7 @@ exports[`Component Snapshots > dark theme > Sections > TestimonialsSection match
                   alt="Lisa Thompson"
                   class="w-full h-full object-cover"
                   loading="lazy"
-                  src="/images/team-02.jpg"
+                  src="/images/team-01.jpg"
                 />
               </div>
               <div
@@ -5839,6 +6473,16 @@ exports[`Component Snapshots > dark theme > Sections > TestimonialsSection match
                   size="16"
                 />
               </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="FounderHub logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </div>
             </div>
             <div
               class="flex-grow pt-2"
@@ -5869,7 +6513,7 @@ exports[`Component Snapshots > dark theme > Sections > TestimonialsSection match
                   alt="James Wilson"
                   class="w-full h-full object-cover"
                   loading="lazy"
-                  src="/images/team-03.jpg"
+                  src="/images/team-02.jpg"
                 />
               </div>
               <div
@@ -6070,7 +6714,7 @@ exports[`Component Snapshots > dark theme > Specialized Components > ProductMock
           class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
         >
           <img
-            alt="Product mockup"
+            alt="Laptop Dashboard"
             class="w-full h-full object-cover object-top"
             decoding="async"
             loading="lazy"
@@ -6098,7 +6742,7 @@ exports[`Component Snapshots > dark theme > Specialized Components > ProductMock
           class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
         >
           <img
-            alt="Product mockup"
+            alt="Phone Dashboard"
             class="w-full h-full object-cover object-top"
             decoding="async"
             loading="lazy"
@@ -7369,7 +8013,7 @@ exports[`Component Snapshots > light theme > Sections > FAQSection matches snaps
     <script
       type="application/ld+json"
     >
-      {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I change my plan at any time?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, your new rate will apply at the next billing cycle."}},{"@type":"Question","name":"Do you offer a free trial?","acceptedAnswer":{"@type":"Answer","text":"Yes! Every paid plan comes with a 14-day free trial. No credit card required to start. You'll only be charged if you decide to continue after the trial period."}},{"@type":"Question","name":"What payment methods do you accept?","acceptedAnswer":{"@type":"Answer","text":"We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for annual Enterprise plans."}},{"@type":"Question","name":"Is there a discount for annual billing?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can save 20% by choosing annual billing instead of monthly. This discount is automatically applied when you select the annual option."}},{"@type":"Question","name":"Do you offer student or non-profit discounts?","acceptedAnswer":{"@type":"Answer","text":"Yes! We're committed to supporting education and social impact. Eligible students and non-profit organizations can receive an additional 30% discount on any plan. Contact our support team with your credentials to apply."}},{"@type":"Question","name":"What happens when I reach my plan limits?","acceptedAnswer":{"@type":"Answer","text":"We'll notify you when you're approaching your limits. You can upgrade your plan at any time, or contact us for custom options if you need temporary increases."}},{"@type":"Question","name":"Do you offer refunds?","acceptedAnswer":{"@type":"Answer","text":"We offer a 30-day money-back guarantee for all paid plans. If you're not satisfied, contact our support team within 30 days for a full refund."}},{"@type":"Question","name":"Can I invite external collaborators?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can invite external collaborators to specific projects. They won't count against your team member limit unless they need full account access."}},{"@type":"Question","name":"Do you have an API?","acceptedAnswer":{"@type":"Answer","text":"Yes, our REST and GraphQL APIs are available on Pro and Enterprise plans. Enterprise customers also get access to advanced webhooks and custom integrations."}}]}
+      {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is ModernSaaS?","acceptedAnswer":{"@type":"Answer","text":"ModernSaaS is a comprehensive landing page template designed for high-growth SaaS startups. It features modern design trends, robust components, and optimized performance to help you launch faster."}},{"@type":"Question","name":"How do I get started?","acceptedAnswer":{"@type":"Answer","text":"Getting started is easy! Simply choose a plan that fits your needs, sign up for an account, and follow our quick setup guide to integrate ModernSaaS with your existing workflow."}},{"@type":"Question","name":"Is there a free version?","acceptedAnswer":{"@type":"Answer","text":"While we don't have a permanent free version, we offer a 14-day free trial on all our paid plans so you can explore the full power of ModernSaaS without any risk."}},{"@type":"Question","name":"Can I use this for client projects?","acceptedAnswer":{"@type":"Answer","text":"Yes! Our Enterprise and Pro plans include licenses that allow you to use the template for client projects. Please check our licensing page for more specific details."}},{"@type":"Question","name":"Can I change my plan at any time?","acceptedAnswer":{"@type":"Answer","text":"Yes, you can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, your new rate will apply at the next billing cycle."}},{"@type":"Question","name":"Do you offer a free trial?","acceptedAnswer":{"@type":"Answer","text":"Yes! Every paid plan comes with a 14-day free trial. No credit card required to start. You'll only be charged if you decide to continue after the trial period."}},{"@type":"Question","name":"What payment methods do you accept?","acceptedAnswer":{"@type":"Answer","text":"We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for annual Enterprise plans."}},{"@type":"Question","name":"Is there a discount for annual billing?","acceptedAnswer":{"@type":"Answer","text":"Yes! You can save 20% by choosing annual billing instead of monthly. This discount is automatically applied when you select the annual option."}},{"@type":"Question","name":"How quickly will I receive a response?","acceptedAnswer":{"@type":"Answer","text":"Our team typically responds to all inquiries within 24 business hours. For urgent technical support, Pro and Enterprise customers can expect a response within 2-4 hours."}},{"@type":"Question","name":"Do you offer custom enterprise solutions?","acceptedAnswer":{"@type":"Answer","text":"Yes, we provide custom enterprise plans tailored to your specific needs, including custom integrations, dedicated support, and specialized security requirements."}}]}
     </script>
     <div
       class="w-full px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto"
@@ -7377,6 +8021,74 @@ exports[`Component Snapshots > light theme > Sections > FAQSection matches snaps
       <div
         class="w-full space-y-2 max-w-3xl mx-auto"
       >
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            What is ModernSaaS?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            How do I get started?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Is there a free version?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
+        <div
+          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
+          data-state="closed"
+        >
+          <button
+            aria-expanded="false"
+            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
+            data-state="closed"
+            type="button"
+          >
+            Can I use this for client projects?
+            <div
+              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
+              data-testid="icon-chevrondown"
+            />
+          </button>
+        </div>
         <div
           class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
           data-state="closed"
@@ -7455,7 +8167,7 @@ exports[`Component Snapshots > light theme > Sections > FAQSection matches snaps
             data-state="closed"
             type="button"
           >
-            Do you offer student or non-profit discounts?
+            How quickly will I receive a response?
             <div
               class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
               data-testid="icon-chevrondown"
@@ -7472,58 +8184,7 @@ exports[`Component Snapshots > light theme > Sections > FAQSection matches snaps
             data-state="closed"
             type="button"
           >
-            What happens when I reach my plan limits?
-            <div
-              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
-              data-testid="icon-chevrondown"
-            />
-          </button>
-        </div>
-        <div
-          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
-          data-state="closed"
-        >
-          <button
-            aria-expanded="false"
-            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
-            data-state="closed"
-            type="button"
-          >
-            Do you offer refunds?
-            <div
-              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
-              data-testid="icon-chevrondown"
-            />
-          </button>
-        </div>
-        <div
-          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
-          data-state="closed"
-        >
-          <button
-            aria-expanded="false"
-            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
-            data-state="closed"
-            type="button"
-          >
-            Can I invite external collaborators?
-            <div
-              class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
-              data-testid="icon-chevrondown"
-            />
-          </button>
-        </div>
-        <div
-          class="border border-border-default rounded-lg overflow-hidden transition-all duration-200 bg-bg-primary hover:bg-bg-secondary"
-          data-state="closed"
-        >
-          <button
-            aria-expanded="false"
-            class="flex w-full items-center justify-between px-5 text-left font-medium transition-all hover:bg-bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 text-text-primary text-lg md:text-xl py-5"
-            data-state="closed"
-            type="button"
-          >
-            Do you have an API?
+            Do you offer custom enterprise solutions?
             <div
               class="h-4 w-4 shrink-0 transition-transform duration-200 text-text-secondary"
               data-testid="icon-chevrondown"
@@ -7779,6 +8440,210 @@ exports[`Component Snapshots > light theme > Sections > FeaturesOverview section
               />
             </div>
           </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-code"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Developer Friendly
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Comprehensive APIs, SDKs, and webhooks to integrate with your existing workflows and tools.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-workflow"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Smart Automation
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Build complex multi-step workflows with our intuitive drag-and-drop interface and triggers.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-cloud"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Cloud Native
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Designed for the modern cloud with native support for containers, serverless, and edge computing.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-users"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Team Collaboration
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Manage teams, permissions, and shared resources with ease across your entire organization.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-database"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Data Sovereignty
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Choose where your data resides with support for multiple regions and global compliance standards.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:col-span-1"
+            style="opacity: 0; transform: translateY(20px);"
+          >
+            <div
+              class="group/bento relative overflow-hidden flex flex-col justify-between p-4 bg-bg-primary border border-border-default rounded-xl transition-all duration-300 ease-out hover:shadow-xl hover:shadow-shadow-default/10 hover:border-border-strong md:col-span-1 md:row-span-1 h-full"
+            >
+              <div
+                class="transition-all duration-300 group-hover/bento:translate-x-1"
+              >
+                <div
+                  class="mb-2 text-primary-500 dark:text-primary-400 transition-colors duration-300 group-hover/bento:text-primary-600"
+                >
+                  <div
+                    data-testid="icon-smartphone"
+                    size="24"
+                  />
+                </div>
+                <div
+                  class="font-bold text-text-primary mb-1 mt-2 text-lg tracking-tight"
+                >
+                  Mobile Optimized
+                </div>
+                <div
+                  class="font-normal text-text-secondary text-sm leading-relaxed"
+                >
+                  Manage your entire operation on the go with our fully featured mobile applications for iOS and Android.
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary-500/0 via-transparent to-primary-500/0 opacity-0 group-hover/bento:opacity-5 transition-opacity duration-500"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -8007,7 +8872,7 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
                 class="w-6 h-6 rounded-full border-2 border-bg-secondary bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center overflow-hidden"
               >
                 <img
-                  alt="User 1"
+                  alt="User profile"
                   class="w-full h-full object-cover"
                   src="/images/team-01.jpg"
                 />
@@ -8016,7 +8881,7 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
                 class="w-6 h-6 rounded-full border-2 border-bg-secondary bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center overflow-hidden"
               >
                 <img
-                  alt="User 2"
+                  alt="User profile"
                   class="w-full h-full object-cover"
                   src="/images/team-02.jpg"
                 />
@@ -8025,7 +8890,7 @@ exports[`Component Snapshots > light theme > Sections > Hero section matches sna
                 class="w-6 h-6 rounded-full border-2 border-bg-secondary bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center overflow-hidden"
               >
                 <img
-                  alt="User 3"
+                  alt="User profile"
                   class="w-full h-full object-cover"
                   src="/images/team-03.jpg"
                 />
@@ -8603,6 +9468,38 @@ exports[`Component Snapshots > light theme > Sections > IntegrationsSection matc
                 Storage
               </span>
             </button>
+            <button
+              aria-controls="_r_g_-content-marketing"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="marketing"
+              id="_r_g_-trigger-marketing"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Marketing
+              </span>
+            </button>
+            <button
+              aria-controls="_r_g_-content-security"
+              aria-selected="false"
+              class="relative inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 disabled:pointer-events-none disabled:opacity-50 hover:text-text-primary px-6 py-2 rounded-full text-sm font-medium transition-all"
+              data-value="security"
+              id="_r_g_-trigger-security"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="relative z-10"
+              >
+                Security
+              </span>
+            </button>
           </div>
         </div>
         <div
@@ -9173,6 +10070,29 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
     shrink-0
   "
                 href="#"
+                title="Mailchimp"
+              >
+                <img
+                  alt="Mailchimp logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/mailchimp.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
                 title="Slack"
               >
                 <img
@@ -9370,6 +10290,29 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
   "
                   loading="lazy"
                   src="/images/integrations/google-drive.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Mailchimp"
+              >
+                <img
+                  alt="Mailchimp logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/mailchimp.svg"
                 />
               </a>
             </div>
@@ -9593,6 +10536,29 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
     shrink-0
   "
                 href="#"
+                title="Mailchimp"
+              >
+                <img
+                  alt="Mailchimp logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/mailchimp.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
                 title="Slack"
               >
                 <img
@@ -9790,6 +10756,29 @@ exports[`Component Snapshots > light theme > Sections > LogoCloudSection matches
   "
                   loading="lazy"
                   src="/images/integrations/google-drive.svg"
+                />
+              </a>
+              <a
+                class="
+    group relative flex items-center justify-center 
+    px-4 py-3 rounded-xl transition-all duration-300
+    hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20
+    shrink-0
+  "
+                href="#"
+                title="Mailchimp"
+              >
+                <img
+                  alt="Mailchimp logo"
+                  class="
+    h-8 md:h-12 w-auto max-w-full
+    transition-all duration-500 ease-out
+    group-hover:scale-110
+    grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+    dark:invert-[0.2] dark:group-hover:invert-0
+  "
+                  loading="lazy"
+                  src="/images/integrations/mailchimp.svg"
                 />
               </a>
             </div>
@@ -10864,7 +11853,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
                       alt="Thomas Anderson"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-03.jpg"
+                      src="/images/team-02.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -11116,7 +12105,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
                       alt="David Kim"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-01.jpg"
+                      src="/images/team-04.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -11232,7 +12221,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
                       alt="Emily Rodriguez"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-02.jpg"
+                      src="/images/team-01.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -11345,7 +12334,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
                       alt="Sarah Mitchell"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-01.jpg"
+                      src="/images/team-03.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -11450,7 +12439,7 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
                       alt="Jordan Lee"
                       class="w-full h-full object-cover"
                       loading="lazy"
-                      src="/images/team-02.jpg"
+                      src="/images/team-04.jpg"
                     />
                     <div
                       class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
@@ -11534,6 +12523,235 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
                 </div>
               </div>
             </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Nathan Wright"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-01.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      NW
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Nathan Wright
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Senior DevOps Engineer
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Cloud infrastructure expert with a focus on automation and security. Former SRE at high-traffic fintech platforms.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Nathan Wright's github"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://github.com/nathanwright"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-github"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        />
+                        <path
+                          d="M9 18c-4.51 2-5-2-7-2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Nathan Wright's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/nathanwright"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="opacity: 0; transform: translateY(20px);"
+            >
+              <div
+                class="relative border shadow-md shadow-shadow-default rounded-2xl group flex flex-col items-center text-center overflow-hidden transition-all duration-300 bg-bg-primary border-border-default hover:border-primary-500/30 hover:shadow-xl hover:-translate-y-1 h-full"
+              >
+                <div
+                  class="p-8 flex flex-col items-center"
+                >
+                  <div
+                    class="relative mb-6 rounded-full overflow-hidden border-4 border-bg-primary shadow-inner bg-bg-secondary transition-transform duration-500 group-hover:scale-105 w-40 h-40 md:w-48 md:h-48"
+                  >
+                    <img
+                      alt="Sophia Lopez"
+                      class="w-full h-full object-cover"
+                      loading="lazy"
+                      src="/images/team-02.jpg"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none"
+                    >
+                      SL
+                    </div>
+                  </div>
+                  <div
+                    class="space-y-1 mb-4"
+                  >
+                    <h4
+                      class="text-text-primary font-bold text-xl"
+                    >
+                      Sophia Lopez
+                    </h4>
+                    <p
+                      class="text-primary-600 dark:text-primary-400 font-medium text-sm md:text-base"
+                    >
+                      Customer Success Lead
+                    </p>
+                  </div>
+                  <p
+                    class="text-text-muted text-sm leading-relaxed mb-6 max-w-xs"
+                  >
+                    Dedicated to helping customers achieve their goals. Background in communications and relationship management.
+                  </p>
+                  <div
+                    class="flex items-center justify-center gap-3"
+                  >
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Sophia Lopez's twitter"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://twitter.com/sophial"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-twitter"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      aria-expanded="false"
+                      aria-haspopup="dialog"
+                      aria-label="Sophia Lopez's linkedin"
+                      class="p-2 rounded-full transition-colors duration-200 text-text-muted hover:text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20"
+                      href="https://linkedin.com/in/sophial"
+                      role="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="lucide lucide-linkedin"
+                        fill="none"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        />
+                        <rect
+                          height="12"
+                          width="4"
+                          x="2"
+                          y="9"
+                        />
+                        <circle
+                          cx="4"
+                          cy="4"
+                          r="2"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -11555,27 +12773,37 @@ exports[`Component Snapshots > light theme > Sections > TeamSection matches snap
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"David Kim","jobTitle":"VP of Engineering","description":"Led engineering teams at multiple unicorn startups. Expert in scaling engineering organizations and technical architecture.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://linkedin.com/in/davidkim","https://github.com/davidkim"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"David Kim","jobTitle":"VP of Engineering","description":"Led engineering teams at multiple unicorn startups. Expert in scaling engineering organizations and technical architecture.","image":"http://localhost:3000/images/team-04.jpg","sameAs":["https://linkedin.com/in/davidkim","https://github.com/davidkim"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"Emily Rodriguez","jobTitle":"Head of Marketing","description":"Growth marketer with experience taking B2B SaaS companies from $0 to $100M ARR. Data-driven and creative.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://twitter.com/emilyr","https://linkedin.com/in/emilyr"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"Emily Rodriguez","jobTitle":"Head of Marketing","description":"Growth marketer with experience taking B2B SaaS companies from $0 to $100M ARR. Data-driven and creative.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://twitter.com/emilyr","https://linkedin.com/in/emilyr"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"Thomas Anderson","jobTitle":"Senior Product Manager","description":"Product leader focused on user experience and market fit. Previously shipped products at Microsoft and Shopify.","image":"http://localhost:3000/images/team-03.jpg","sameAs":["https://linkedin.com/in/thomasanderson","https://twitter.com/thomasanderson"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"Thomas Anderson","jobTitle":"Senior Product Manager","description":"Product leader focused on user experience and market fit. Previously shipped products at Microsoft and Shopify.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://linkedin.com/in/thomasanderson","https://twitter.com/thomasanderson"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"Sarah Mitchell","jobTitle":"Lead Engineer","description":"Full-stack engineer specializing in performance and scalability. Open source maintainer and tech blogger.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://github.com/sarahmitchell","https://twitter.com/sarahcodes"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"Sarah Mitchell","jobTitle":"Lead Engineer","description":"Full-stack engineer specializing in performance and scalability. Open source maintainer and tech blogger.","image":"http://localhost:3000/images/team-03.jpg","sameAs":["https://github.com/sarahmitchell","https://twitter.com/sarahcodes"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
       <script
         type="application/ld+json"
       >
-        {"@context":"https://schema.org","@type":"Person","name":"Jordan Lee","jobTitle":"Senior Designer","description":"UI/UX designer with a background in psychology. Focuses on creating accessible and inclusive digital experiences.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://jordanlee.design","https://linkedin.com/in/jordanlee"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+        {"@context":"https://schema.org","@type":"Person","name":"Jordan Lee","jobTitle":"Senior Designer","description":"UI/UX designer with a background in psychology. Focuses on creating accessible and inclusive digital experiences.","image":"http://localhost:3000/images/team-04.jpg","sameAs":["https://jordanlee.design","https://linkedin.com/in/jordanlee"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Nathan Wright","jobTitle":"Senior DevOps Engineer","description":"Cloud infrastructure expert with a focus on automation and security. Former SRE at high-traffic fintech platforms.","image":"http://localhost:3000/images/team-01.jpg","sameAs":["https://github.com/nathanwright","https://linkedin.com/in/nathanwright"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
+      </script>
+      <script
+        type="application/ld+json"
+      >
+        {"@context":"https://schema.org","@type":"Person","name":"Sophia Lopez","jobTitle":"Customer Success Lead","description":"Dedicated to helping customers achieve their goals. Background in communications and relationship management.","image":"http://localhost:3000/images/team-02.jpg","sameAs":["https://twitter.com/sophial","https://linkedin.com/in/sophial"],"worksFor":{"@type":"Organization","name":"ModernSaaS"}}
       </script>
     </div>
   </section>
@@ -11652,6 +12880,16 @@ exports[`Component Snapshots > light theme > Sections > TestimonialsSection matc
                   class="fill-current text-accent-500"
                   data-testid="icon-star"
                   size="16"
+                />
+              </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="TechCorp Inc. logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/vercel.svg"
                 />
               </div>
             </div>
@@ -11754,6 +12992,16 @@ exports[`Component Snapshots > light theme > Sections > TestimonialsSection matc
                   size="16"
                 />
               </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="StartupXYZ logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/stripe.svg"
+                />
+              </div>
             </div>
             <div
               class="flex-grow pt-2"
@@ -11852,6 +13100,16 @@ exports[`Component Snapshots > light theme > Sections > TestimonialsSection matc
                   class="fill-current text-accent-500"
                   data-testid="icon-star"
                   size="16"
+                />
+              </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="InnovateCo logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/notion.svg"
                 />
               </div>
             </div>
@@ -11954,6 +13212,16 @@ exports[`Component Snapshots > light theme > Sections > TestimonialsSection matc
                   size="16"
                 />
               </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="Enterprise Solutions logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/slack.svg"
+                />
+              </div>
             </div>
             <div
               class="flex-grow pt-2"
@@ -11984,7 +13252,7 @@ exports[`Component Snapshots > light theme > Sections > TestimonialsSection matc
                   alt="David Kim"
                   class="w-full h-full object-cover"
                   loading="lazy"
-                  src="/images/team-01.jpg"
+                  src="/images/team-04.jpg"
                 />
               </div>
               <div
@@ -12054,6 +13322,16 @@ exports[`Component Snapshots > light theme > Sections > TestimonialsSection matc
                   size="16"
                 />
               </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="GrowthLabs logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/github.svg"
+                />
+              </div>
             </div>
             <div
               class="flex-grow pt-2"
@@ -12084,7 +13362,7 @@ exports[`Component Snapshots > light theme > Sections > TestimonialsSection matc
                   alt="Lisa Thompson"
                   class="w-full h-full object-cover"
                   loading="lazy"
-                  src="/images/team-02.jpg"
+                  src="/images/team-01.jpg"
                 />
               </div>
               <div
@@ -12154,6 +13432,16 @@ exports[`Component Snapshots > light theme > Sections > TestimonialsSection matc
                   size="16"
                 />
               </div>
+              <div
+                class="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <img
+                  alt="FounderHub logo"
+                  class="h-full w-auto object-contain"
+                  loading="lazy"
+                  src="/images/integrations/figma.svg"
+                />
+              </div>
             </div>
             <div
               class="flex-grow pt-2"
@@ -12184,7 +13472,7 @@ exports[`Component Snapshots > light theme > Sections > TestimonialsSection matc
                   alt="James Wilson"
                   class="w-full h-full object-cover"
                   loading="lazy"
-                  src="/images/team-03.jpg"
+                  src="/images/team-02.jpg"
                 />
               </div>
               <div
@@ -12385,7 +13673,7 @@ exports[`Component Snapshots > light theme > Specialized Components > ProductMoc
           class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
         >
           <img
-            alt="Product mockup"
+            alt="Laptop Dashboard"
             class="w-full h-full object-cover object-top"
             decoding="async"
             loading="lazy"
@@ -12413,7 +13701,7 @@ exports[`Component Snapshots > light theme > Specialized Components > ProductMoc
           class="absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden"
         >
           <img
-            alt="Product mockup"
+            alt="Phone Dashboard"
             class="w-full h-full object-cover object-top"
             decoding="async"
             loading="lazy"

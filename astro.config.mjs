@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
+import sitemap from '@astrojs/sitemap';
 
 /**
  * Determines the base path for deployment
@@ -23,7 +24,16 @@ const getBasePath = () => {
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
+  integrations: [
+    react(),
+    sitemap({
+      serialize(item) {
+        // Automatically add lastmod date for all pages
+        item.lastmod = new Date().toISOString();
+        return item;
+      },
+    }),
+  ],
   site: process.env.SITE_URL || 'https://example.com',
   base: getBasePath(),
   output: 'static',

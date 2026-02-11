@@ -207,7 +207,7 @@ export const LoginForm: React.FC = () => {
                 </label>
               </div>
               <DemoLink
-                href="/forgot-password"
+                href={ROUTES.FORGOT_PASSWORD}
                 className="text-sm font-medium text-primary-600 hover:text-primary-500 dark:text-primary-400"
                 forceDemo
               >

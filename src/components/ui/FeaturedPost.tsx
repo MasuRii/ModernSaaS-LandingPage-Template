@@ -13,6 +13,7 @@ import {
 import { Badge } from './Badge';
 import { Link } from './Link';
 import type { BlogPost } from '@/data/blog';
+import { ROUTES } from '@/config/paths';
 
 /**
  * FeaturedPost Props Interface
@@ -108,7 +109,7 @@ export const FeaturedPost = React.forwardRef<HTMLDivElement, FeaturedPostProps>(
                 <span>{readingTime} min read</span>
               </span>
             </div>
-            <Link href={`/blog/${slug}/`} className="group/title">
+            <Link href={ROUTES.BLOG_POST(slug)} className="group/title">
               <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-extrabold group-hover/title:text-primary-600 transition-colors leading-tight">
                 {title}
               </CardTitle>
@@ -146,7 +147,7 @@ export const FeaturedPost = React.forwardRef<HTMLDivElement, FeaturedPostProps>(
 
             {/* Read More Link */}
             <Link
-              href={`/blog/${slug}/`}
+              href={ROUTES.BLOG_POST(slug)}
               className="hidden sm:inline-flex items-center gap-2 text-base font-bold text-primary-600 hover:text-primary-700 transition-colors"
             >
               Read Article

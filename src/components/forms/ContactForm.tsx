@@ -7,6 +7,8 @@ import { Input } from '../ui/Input';
 import { Select } from '../ui/Select';
 import { Textarea } from '../ui/Textarea';
 import { toast } from '../ui/Toast';
+import { Link } from '../ui';
+import { ROUTES } from '../../config/paths';
 
 /**
  * Contact Form State Interface
@@ -248,9 +250,12 @@ export const ContactForm: React.FC = () => {
 
       <p className="text-center text-xs text-text-muted sm:text-left">
         By submitting this form, you agree to our{' '}
-        <a href="/privacy/" className="text-primary-600 hover:underline dark:text-primary-400">
+        <Link
+          href={ROUTES.PRIVACY}
+          className="text-primary-600 hover:underline dark:text-primary-400"
+        >
           Privacy Policy
-        </a>
+        </Link>
         .
       </p>
     </form>

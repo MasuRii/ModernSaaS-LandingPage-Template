@@ -11,7 +11,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { company, featureFlags, footer, siteNavigation, social } from '../../config/site';
-import { ROUTES } from '../../config/paths';
+import { ROUTES, resolveHref } from '../../config/paths';
 
 /**
  * Props for the Footer component
@@ -49,9 +49,13 @@ interface SocialLinkProps {
  * Individual footer link component with hover effects
  */
 function FooterLink({ href, children, external, onClick }: FooterLinkProps) {
+  const resolvedHref = React.useMemo(() => {
+    return external ? href : resolveHref(href);
+  }, [href, external]);
+
   return (
     <a
-      href={href}
+      href={resolvedHref}
       className="text-text-secondary hover:text-text-primary transition-colors duration-200 text-sm"
       {...(external && { target: '_blank', rel: 'noopener noreferrer' })}
       onClick={onClick}
@@ -217,7 +221,7 @@ export function Footer({ className = '', showNewsletter = true, onDemoLinkClick 
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
             {/* Logo */}
             <a
-              href={ROUTES.HOME}
+              href={resolveHref(ROUTES.HOME)}
               className="inline-flex items-center gap-2 text-text-primary hover:opacity-80 transition-opacity 
                          focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 
                          focus-visible:ring-offset-2 rounded-lg mb-4"

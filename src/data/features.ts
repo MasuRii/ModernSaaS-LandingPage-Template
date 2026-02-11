@@ -24,6 +24,8 @@ export type IconName =
   | 'Settings'
   | 'Rocket';
 
+import { ROUTES } from '../config/paths';
+
 /** Single feature item */
 export interface Feature {
   id: string;
@@ -72,7 +74,7 @@ export const featuresOverview: Feature[] = [
     title: 'Lightning Fast',
     description:
       'Optimized for speed with sub-second response times and edge caching for global performance.',
-    href: '/features#performance',
+    href: `${ROUTES.FEATURES}#performance`,
   },
   {
     id: '2',
@@ -80,7 +82,7 @@ export const featuresOverview: Feature[] = [
     title: 'Enterprise Security',
     description:
       'SOC 2 Type II certified with end-to-end encryption, SSO support, and advanced audit logs.',
-    href: '/features#security',
+    href: `${ROUTES.FEATURES}#security`,
   },
   {
     id: '3',
@@ -88,7 +90,7 @@ export const featuresOverview: Feature[] = [
     title: 'Advanced Analytics',
     description:
       'Real-time insights with customizable dashboards, automated reports, and predictive analytics.',
-    href: '/features#analytics',
+    href: `${ROUTES.FEATURES}#analytics`,
   },
   {
     id: '4',
@@ -96,7 +98,7 @@ export const featuresOverview: Feature[] = [
     title: 'Global Scale',
     description:
       'Deploy across 35+ regions worldwide with automatic scaling and 99.99% uptime SLA.',
-    href: '/features#infrastructure',
+    href: `${ROUTES.FEATURES}#infrastructure`,
   },
   {
     id: '5',
@@ -104,7 +106,7 @@ export const featuresOverview: Feature[] = [
     title: 'Seamless Integration',
     description:
       'Connect with 100+ tools including Slack, GitHub, Jira, and custom API integrations.',
-    href: '/features#integrations',
+    href: `${ROUTES.FEATURES}#integrations`,
   },
   {
     id: '6',
@@ -112,7 +114,7 @@ export const featuresOverview: Feature[] = [
     title: 'AI-Powered',
     description:
       'Leverage machine learning for automated workflows, smart recommendations, and natural language processing.',
-    href: '/features#ai',
+    href: `${ROUTES.FEATURES}#ai`,
   },
   {
     id: '7',
@@ -120,7 +122,7 @@ export const featuresOverview: Feature[] = [
     title: 'Developer Friendly',
     description:
       'Comprehensive APIs, SDKs, and webhooks to integrate with your existing workflows and tools.',
-    href: '/features#developer-tools',
+    href: `${ROUTES.FEATURES}#developer-tools`,
   },
   {
     id: '8',
@@ -128,7 +130,7 @@ export const featuresOverview: Feature[] = [
     title: 'Smart Automation',
     description:
       'Build complex multi-step workflows with our intuitive drag-and-drop interface and triggers.',
-    href: '/features#automation',
+    href: `${ROUTES.FEATURES}#automation`,
   },
   {
     id: '9',
@@ -136,7 +138,7 @@ export const featuresOverview: Feature[] = [
     title: 'Cloud Native',
     description:
       'Designed for the modern cloud with native support for containers, serverless, and edge computing.',
-    href: '/features#infrastructure',
+    href: `${ROUTES.FEATURES}#infrastructure`,
   },
   {
     id: '10',
@@ -144,7 +146,7 @@ export const featuresOverview: Feature[] = [
     title: 'Team Collaboration',
     description:
       'Manage teams, permissions, and shared resources with ease across your entire organization.',
-    href: '/features#collaboration',
+    href: `${ROUTES.FEATURES}#collaboration`,
   },
   {
     id: '11',
@@ -152,7 +154,7 @@ export const featuresOverview: Feature[] = [
     title: 'Data Sovereignty',
     description:
       'Choose where your data resides with support for multiple regions and global compliance standards.',
-    href: '/features#security',
+    href: `${ROUTES.FEATURES}#security`,
   },
   {
     id: '12',
@@ -160,7 +162,7 @@ export const featuresOverview: Feature[] = [
     title: 'Mobile Optimized',
     description:
       'Manage your entire operation on the go with our fully featured mobile applications for iOS and Android.',
-    href: '/features',
+    href: ROUTES.FEATURES,
   },
 ];
 

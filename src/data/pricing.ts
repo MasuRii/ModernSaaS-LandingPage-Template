@@ -15,6 +15,8 @@ export type BillingPeriod = 'monthly' | 'annual';
 /** Pricing tier types */
 export type TierType = 'starter' | 'pro' | 'enterprise';
 
+import { ROUTES } from '../config/paths';
+
 /** Individual pricing tier */
 export interface PricingTier {
   id: string;
@@ -75,7 +77,7 @@ export const pricingTiers: PricingTier[] = [
     isPopular: false,
     cta: {
       text: 'Start Free Trial',
-      href: '/signup',
+      href: ROUTES.SIGNUP,
       variant: 'secondary',
     },
     features: [
@@ -108,7 +110,7 @@ export const pricingTiers: PricingTier[] = [
     isPopular: true,
     cta: {
       text: 'Start Free Trial',
-      href: '/signup',
+      href: ROUTES.SIGNUP,
       variant: 'primary',
     },
     features: [
@@ -141,7 +143,7 @@ export const pricingTiers: PricingTier[] = [
     isPopular: false,
     cta: {
       text: 'Contact Sales',
-      href: '/contact',
+      href: ROUTES.CONTACT,
       variant: 'secondary',
     },
     features: [

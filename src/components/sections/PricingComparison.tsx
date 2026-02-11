@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { Check, X } from 'lucide-react';
-import { Container, Section } from '@/components/ui';
+import { Container, Link, Section } from '@/components/ui';
 import { comparisonFeatures } from '@/data/pricing';
 import { FadeInUp } from '@/components/animation/AnimatedElement';
 import { cn } from '@/utils/cn';
+import { ROUTES } from '@/config/paths';
 
 /**
  * Props for the PricingComparison component
@@ -132,12 +133,12 @@ export const PricingComparison: React.FC<PricingComparisonProps> = ({
         <div className="mt-12 text-center">
           <p className="text-sm text-text-muted">
             All prices are in USD. Custom plans available for large organizations.{' '}
-            <a
-              href="/contact"
+            <Link
+              href={ROUTES.CONTACT}
               className="text-primary-600 dark:text-primary-400 font-medium hover:underline"
             >
               Contact sales
-            </a>{' '}
+            </Link>{' '}
             for more information.
           </p>
         </div>

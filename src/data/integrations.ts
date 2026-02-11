@@ -3,6 +3,8 @@
  * Used for Integrations section and Features page
  */
 
+import { ROUTES } from '../config/paths';
+
 /** Integration category */
 export type IntegrationCategory =
   | 'communication'
@@ -385,6 +387,6 @@ export const apiIntegration = {
   ],
   cta: {
     text: 'View API Docs',
-    href: '/docs/api',
+    href: ROUTES.DOCS_API,
   },
 } as const;

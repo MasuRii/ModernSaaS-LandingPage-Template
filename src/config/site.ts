@@ -323,15 +323,15 @@ export const siteNavigation = {
         { label: 'About', href: ROUTES.ABOUT },
         { label: 'Blog', href: ROUTES.BLOG },
         { label: 'Contact', href: ROUTES.CONTACT },
-        { label: 'Careers', href: ROUTES.ABOUT },
+        { label: 'Careers', href: ROUTES.CAREERS },
       ],
     },
     resources: {
       title: 'Resources',
       links: [
-        { label: 'Documentation', href: ROUTES.FEATURES },
+        { label: 'Documentation', href: ROUTES.DOCS },
         { label: 'Help Center', href: ROUTES.SUPPORT },
-        { label: 'API Reference', href: ROUTES.FEATURES },
+        { label: 'API Reference', href: ROUTES.DOCS_API },
         { label: 'Status', href: footer.statusPageUrl, external: true },
       ],
     },

@@ -13,6 +13,7 @@ import {
 import { Badge } from './Badge';
 import { Link } from './Link';
 import type { BlogPost } from '@/data/blog';
+import { ROUTES } from '@/config/paths';
 
 /**
  * BlogPostCard Props Interface
@@ -101,7 +102,7 @@ export const BlogPostCard = React.forwardRef<HTMLDivElement, BlogPostCardProps>(
                 <span>{readingTime} min read</span>
               </span>
             </div>
-            <Link href={`/blog/${slug}/`} className="group/title">
+            <Link href={ROUTES.BLOG_POST(slug)} className="group/title">
               <CardTitle className="text-xl md:text-2xl font-bold group-hover/title:text-primary-600 transition-colors line-clamp-2">
                 {title}
               </CardTitle>
@@ -138,7 +139,7 @@ export const BlogPostCard = React.forwardRef<HTMLDivElement, BlogPostCardProps>(
 
             {/* Read More Link */}
             <Link
-              href={`/blog/${slug}/`}
+              href={ROUTES.BLOG_POST(slug)}
               className="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors inline-flex items-center gap-1"
             >
               Read More

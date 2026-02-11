@@ -8,7 +8,7 @@
  */
 
 import React from 'react';
-import { getAssetPath } from '../../config/paths';
+import { getAssetPath, resolveHref } from '../../config/paths';
 import { DemoLink } from './DemoLink';
 
 /**
@@ -29,6 +29,8 @@ export interface IntegrationLogoProps {
   showHoverBg?: boolean | undefined;
   /** Additional CSS classes for the container */
   className?: string | undefined;
+  /** Whether to resolve the href using path configuration */
+  resolvePath?: boolean | undefined;
 }
 
 /**
@@ -52,7 +54,13 @@ export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
   grayscale = true,
   showHoverBg = true,
   className = '',
+  resolvePath = true,
 }) => {
+  // Resolve the href
+  const resolvedHref = React.useMemo(() => {
+    return resolvePath ? resolveHref(href) : href;
+  }, [href, resolvePath]);
+
   // Size-specific height classes
   const sizeClasses = {
     sm: 'h-6 md:h-8',
@@ -82,7 +90,7 @@ export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
   `;
 
   return (
-    <DemoLink href={href} className={containerClasses} title={name}>
+    <DemoLink href={resolvedHref} className={containerClasses} title={name}>
       <img src={getAssetPath(logo)} alt={`${name} logo`} className={imageClasses} loading="lazy" />
     </DemoLink>
   );

@@ -185,6 +185,7 @@ export const ROUTES = {
   CONTACT: '/contact/',
   SUPPORT: '/support/',
   BLOG: '/blog/',
+  INTEGRATIONS: '/integrations/',
 
   // Blog
   BLOG_POST: (slug: string): string => `/blog/${slug}/`,
@@ -194,10 +195,17 @@ export const ROUTES = {
   ROADMAP: '/roadmap/',
   PRIVACY: '/privacy/',
   TERMS: '/terms/',
+  DOCS: '/docs/',
+  DOCS_API: '/docs/api/',
 
   // Auth mockups (demo modal triggered)
   LOGIN: '/login/',
   SIGNUP: '/signup/',
+  FORGOT_PASSWORD: '/forgot-password/',
+
+  // App mockups
+  DASHBOARD: '/dashboard/',
+  SETTINGS: '/settings/',
 
   // 404
   NOT_FOUND: '/404/',
@@ -254,7 +262,15 @@ export const ASSETS = {
  * @returns True if it's a demo route
  */
 export const isDemoRoute = (path: string): boolean => {
-  const demoRoutes = [ROUTES.LOGIN, ROUTES.SIGNUP];
+  const demoRoutes = [
+    ROUTES.LOGIN,
+    ROUTES.SIGNUP,
+    ROUTES.FORGOT_PASSWORD,
+    ROUTES.DASHBOARD,
+    ROUTES.SETTINGS,
+    ROUTES.INTEGRATIONS,
+    ROUTES.CAREERS,
+  ];
   return demoRoutes.some((route) => path === route || path.startsWith(route));
 };
 

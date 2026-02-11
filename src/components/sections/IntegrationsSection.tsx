@@ -3,6 +3,7 @@ import { type Variants, motion } from 'framer-motion';
 import {
   Container,
   IntegrationLogo,
+  Link,
   Section,
   Tabs,
   TabsContent,
@@ -12,6 +13,7 @@ import {
 import { integrationCategories, integrations } from '@/data/integrations';
 import { PRESETS } from '@/config/animation';
 import { cn } from '@/utils/cn';
+import { ROUTES } from '@/config/paths';
 
 /**
  * Props for the IntegrationsSection component
@@ -171,8 +173,8 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
             variants={PRESETS.fadeInUp as unknown as Variants}
             className="flex justify-center mt-12"
           >
-            <a
-              href="/integrations"
+            <Link
+              href={ROUTES.INTEGRATIONS}
               className="text-primary-600 dark:text-primary-400 font-semibold hover:underline flex items-center gap-2"
             >
               View all 100+ integrations
@@ -191,7 +193,7 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </Link>
           </motion.div>
         )}
       </Container>

@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { X } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import { siteNavigation } from '../../config/site';
-import { ROUTES, isActiveRoute } from '../../config/paths';
+import { ROUTES, isActiveRoute, resolveHref } from '../../config/paths';
 import { useReducedMotion } from '../../utils/reducedMotion';
 
 /**
@@ -240,7 +240,7 @@ export function MobileNavigation({
                       transition={{ delay: 0.1 + index * 0.05 }}
                     >
                       <a
-                        href={item.href}
+                        href={resolveHref(item.href)}
                         onClick={handleNavClick}
                         className={`block px-5 py-4 text-lg font-semibold rounded-2xl transition-all ${
                           active
@@ -269,7 +269,7 @@ export function MobileNavigation({
               {/* CTA Button */}
               {showCta && (
                 <a
-                  href={ctaHref}
+                  href={resolveHref(ctaHref)}
                   onClick={handleCtaClick}
                   className="block w-full px-6 py-4 text-center text-lg font-bold text-white bg-primary-600 hover:bg-primary-700 rounded-2xl shadow-lg shadow-primary-500/20 transition-all active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
                 >

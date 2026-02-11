@@ -4,7 +4,7 @@ import { Zap } from 'lucide-react';
 import { ThemeToggle } from '../ui/ThemeToggle';
 import { MobileMenuButton, MobileNavigation } from '../ui/MobileNavigation';
 import { company, siteNavigation } from '../../config/site';
-import { ROUTES, isActiveRoute } from '../../config/paths';
+import { ROUTES, isActiveRoute, resolveHref } from '../../config/paths';
 import { useReducedMotion } from '../../utils/reducedMotion';
 
 /**
@@ -128,7 +128,7 @@ export function Header({
           >
             {/* Logo */}
             <a
-              href={ROUTES.HOME}
+              href={resolveHref(ROUTES.HOME)}
               className="flex items-center gap-2 text-text-primary hover:opacity-80 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded-lg"
               aria-label={`${company.name} - Home`}
             >
@@ -151,7 +151,7 @@ export function Header({
                 return (
                   <a
                     key={item.href}
-                    href={item.href}
+                    href={resolveHref(item.href)}
                     className={`relative px-4 py-2 text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded-lg ${
                       active
                         ? 'text-text-primary'
@@ -196,7 +196,7 @@ export function Header({
               {/* CTA Button - Desktop */}
               {showCta && (
                 <motion.a
-                  href={ctaHref}
+                  href={resolveHref(ctaHref)}
                   onClick={handleCtaClick}
                   whileHover={!prefersReducedMotion ? { scale: 1.05 } : {}}
                   whileTap={!prefersReducedMotion ? { scale: 0.95 } : {}}
@@ -261,7 +261,7 @@ export function MinimalHeader({ className = '', logoHref = ROUTES.HOME }: Minima
     >
       <div className="max-w-7xl mx-auto">
         <a
-          href={logoHref}
+          href={resolveHref(logoHref)}
           className="inline-flex items-center gap-2 text-text-primary hover:opacity-80 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded-lg"
           aria-label={`${company.name} - Home`}
         >

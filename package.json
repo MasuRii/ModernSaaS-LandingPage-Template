@@ -21,6 +21,7 @@
     "test:perf": "node scripts/run-lighthouse.js",
     "test:a11y": "node scripts/run-axe.js",
     "test:seo": "bun scripts/validate-schemas.ts",
+    "test:deploy": "bun scripts/verify-deployment.ts",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -54,6 +55,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
+    "@types/jsdom": "^27.0.0",
     "@types/node": "^25.2.2",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",

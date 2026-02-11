@@ -92,10 +92,20 @@ export interface ImagePathOptions {
 }
 
 export const getImagePath = (filename: string, options?: ImagePathOptions): string => {
-  const ext = options?.format ? `.${options.format}` : options?.ext || '';
+  const originalExt = filename.match(/\.[^/.]+$/)?.[0] || '';
+  const ext = options?.format ? `.${options.format}` : options?.ext || originalExt;
   const size = options?.size ? `-${options.size}` : '';
-  const cleanFilename = filename.replace(/\.[^/.]+$/, ''); // Remove existing extension
-  return getAssetPath(`images/${cleanFilename}${size}${ext}`);
+
+  // Remove existing extension from filename if it has one
+  const nameWithoutExt = filename.replace(/\.[^/.]+$/, '');
+
+  // If the filename already contains 'images/', don't prepend it again
+  if (nameWithoutExt.includes('images/')) {
+    const relativeName = nameWithoutExt.startsWith('/') ? nameWithoutExt.slice(1) : nameWithoutExt;
+    return getAssetPath(`${relativeName}${size}${ext}`);
+  }
+
+  return getAssetPath(`images/${nameWithoutExt}${size}${ext}`);
 };
 
 /**

@@ -13,6 +13,7 @@ import { useCallback, useState } from 'react';
 import { DemoLinkModal } from './DemoLinkModal';
 import { type DemoLinkCategory, isDemoLink } from '../../config/demoLinks';
 import { featureFlags } from '../../config/site';
+import { resolveHref } from '../../config/paths';
 
 /**
  * Props for the DemoLink component
@@ -42,6 +43,8 @@ export interface DemoLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElem
   onModalClose?: (() => void) | undefined;
   /** Callback when URL is copied from modal */
   onModalCopy?: ((url: string) => void) | undefined;
+  /** Whether to resolve the href using path configuration */
+  resolvePath?: boolean | undefined;
 }
 
 /**
@@ -63,14 +66,21 @@ export const DemoLink = React.forwardRef<HTMLAnchorElement, DemoLinkProps>(
       onModalClose,
       onModalCopy,
       onClick,
+      resolvePath = true,
       ...anchorProps
     },
     ref,
   ) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+    // Resolve the href using path configuration
+    const resolvedHref = React.useMemo(() => {
+      if (!resolvePath) return href;
+      return resolveHref(href);
+    }, [href, resolvePath]);
+
     // Check if this link should trigger the demo modal
-    const shouldTriggerDemo = forceDemo || (featureFlags.demoMode && isDemoLink(href));
+    const shouldTriggerDemo = forceDemo || (featureFlags.demoMode && isDemoLink(resolvedHref));
 
     // Handle click event
     const handleClick = useCallback(
@@ -78,12 +88,12 @@ export const DemoLink = React.forwardRef<HTMLAnchorElement, DemoLinkProps>(
         if (shouldTriggerDemo) {
           event.preventDefault();
           setIsModalOpen(true);
-          onModalOpen?.(href);
+          onModalOpen?.(resolvedHref);
         }
         // Call the original onClick if provided
         onClick?.(event);
       },
-      [shouldTriggerDemo, href, onModalOpen, onClick],
+      [shouldTriggerDemo, resolvedHref, onModalOpen, onClick],
     );
 
     // Handle modal close
@@ -96,7 +106,7 @@ export const DemoLink = React.forwardRef<HTMLAnchorElement, DemoLinkProps>(
       <>
         <a
           ref={ref}
-          href={href}
+          href={resolvedHref}
           onClick={handleClick}
           className={className}
           title={title}
@@ -117,7 +127,7 @@ export const DemoLink = React.forwardRef<HTMLAnchorElement, DemoLinkProps>(
           <DemoLinkModal
             isOpen={isModalOpen}
             onClose={handleClose}
-            url={href}
+            url={resolvedHref}
             category={_category}
             title={modalTitle}
             message={modalMessage}

@@ -219,6 +219,7 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
           onModalOpen={onModalOpen}
           onModalClose={onModalClose}
           onModalCopy={onModalCopy}
+          resolvePath={false}
           {...externalProps}
           {...props}
         >

@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { ArticleSchema } from '../../components/seo';
 import { BlogNewsletter, RelatedPosts } from '../../components/sections';
 import { AuthorBio } from '../../components/blog/AuthorBio';
 import { blogPosts, type BlogPost } from '../../data/blog';
@@ -48,6 +49,7 @@ const relatedPosts = blogPosts.filter((p) => relatedPostIds?.includes(p.id));
 ---
 
 <Layout title={`${title} | ModernSaaS Blog`} description={excerpt}>
+  <ArticleSchema post={post} />
   <main
     id="main-content"
     tabindex="-1"

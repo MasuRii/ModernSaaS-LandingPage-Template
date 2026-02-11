@@ -38,6 +38,7 @@ export default defineConfig({
   base: getBasePath(),
   output: 'static',
   trailingSlash: 'always',
+  compressHTML: true,
 
   // Image optimization configuration
   image: {

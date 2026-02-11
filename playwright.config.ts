@@ -118,6 +118,25 @@ export default defineConfig({
       },
     },
 
+    // Branded Browsers
+    {
+      name: 'google-chrome',
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chrome',
+        viewport: { width: 1280, height: 720 },
+      },
+    },
+
+    {
+      name: 'microsoft-edge',
+      use: {
+        ...devices['Desktop Edge'],
+        channel: 'msedge',
+        viewport: { width: 1280, height: 720 },
+      },
+    },
+
     // ============================================
     // RESPONSIVE VIEWPORT SIZES
     // ============================================

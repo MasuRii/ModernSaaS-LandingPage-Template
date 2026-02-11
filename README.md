@@ -311,6 +311,8 @@ for details.
 
 ## ✨ Credits
 
-- Icons: [Lucide React](https://lucide.dev/)
-- Typography: [Inter Variable](https://rsms.me/inter/)
-- Images: [Unsplash](https://unsplash.com/) via automated fetching script.
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Typography**: [Inter Variable](https://rsms.me/inter/)
+- **Images**: [Unsplash](https://unsplash.com/) for high-quality placeholder
+  photography.
+- **Author**: [MasuRii](https://github.com/MasuRii)

@@ -61,7 +61,7 @@ export default defineConfig({
   // Shared settings for all projects
   use: {
     // Base URL for all tests
-    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:4321',
+    baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:4321/',
 
     // Collect trace when retrying failed tests
     trace: 'on-first-retry',
@@ -240,6 +240,20 @@ export default defineConfig({
         },
       },
     },
+
+    // ============================================
+    // PRODUCTION SMOKE TESTS
+    // ============================================
+
+    {
+      name: 'production-smoke',
+      testMatch: '**/smoke.spec.ts',
+      use: {
+        ...devices['Desktop Chrome'],
+        // Ensure we use the production URL if provided, otherwise fallback
+        baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://localhost:4321/',
+      },
+    },
   ],
 
   // ============================================
@@ -248,7 +262,7 @@ export default defineConfig({
 
   webServer: {
     command: 'bun run dev',
-    url: 'http://localhost:4321',
+    url: 'http://localhost:4321/',
     reuseExistingServer: !process.env.CI,
     timeout: 120000,
   },

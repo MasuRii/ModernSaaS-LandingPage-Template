@@ -16,6 +16,7 @@
     "test:e2e:chromium": "playwright test --project=chromium-desktop",
     "test:e2e:firefox": "playwright test --project=firefox-desktop",
     "test:e2e:webkit": "playwright test --project=webkit-desktop",
+    "test:e2e:prod": "playwright test --project=production-smoke",
     "typecheck": "astro check",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
     "test:perf": "node scripts/run-lighthouse.js",

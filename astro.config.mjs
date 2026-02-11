@@ -19,7 +19,7 @@ const getBasePath = () => {
     }
   }
   // Local development or user/org pages
-  return process.env.BASE_PATH || '/ModernSaaS-LandingPage-Template';
+  return process.env.BASE_PATH || '/';
 };
 
 // https://astro.build/config

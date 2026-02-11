@@ -76,6 +76,11 @@ export const getAssetPath = (path: string): string => {
     return `/${cleanPath}`;
   }
 
+  // If path already starts with cleanBase, don't prepend it again
+  if (path.startsWith(cleanBase)) {
+    return path;
+  }
+
   return `${cleanBase}/${cleanPath}`;
 };
 
@@ -130,6 +135,11 @@ export const getPagePath = (route: string = ''): string => {
 
   if (cleanBase === '' || cleanBase === '/') {
     return cleanRoute ? `/${cleanRoute}/` : '/';
+  }
+
+  // If route already starts with cleanBase, don't prepend it again
+  if (route.startsWith(cleanBase)) {
+    return route.endsWith('/') ? route : `${route}/`;
   }
 
   return cleanRoute ? `${cleanBase}/${cleanRoute}/` : `${cleanBase}/`;

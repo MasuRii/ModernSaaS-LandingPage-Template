@@ -10,7 +10,7 @@ import { expect, test } from '@playwright/test';
  */
 test.describe('E2E Setup Verification', () => {
   test('dev server is accessible', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('.');
     await expect(page).toHaveTitle(/ModernSaaS|Astro/);
   });
 
@@ -23,14 +23,14 @@ test.describe('E2E Setup Verification', () => {
       }
     });
 
-    await page.goto('/');
+    await page.goto('.');
     await page.waitForLoadState('networkidle');
 
     expect(consoleErrors).toHaveLength(0);
   });
 
   test('responsive meta tags are present', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('.');
 
     const viewport = await page.locator('meta[name="viewport"]').getAttribute('content');
     expect(viewport).toBeTruthy();

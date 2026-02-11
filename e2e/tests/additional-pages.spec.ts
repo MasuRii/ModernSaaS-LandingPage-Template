@@ -45,7 +45,7 @@ test.describe('Additional Pages', () => {
 
   test('404 page renders correctly', async ({ page }) => {
     // Go to 404 page explicitly to ensure it renders
-    await page.goto('/404/');
+    await page.goto('404/');
 
     await expect(page.getByText('404')).toBeVisible();
     await expect(page.getByText(/Page Not Found/i)).toBeVisible();

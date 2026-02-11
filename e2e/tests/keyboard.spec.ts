@@ -11,7 +11,7 @@ test.describe('Keyboard Navigation', () => {
   test.beforeEach(async ({ page }) => {
     // Disable animations for stability
     await page.emulateMedia({ reducedMotion: 'reduce' });
-    await page.goto('/');
+    await page.goto('.');
     await page.waitForLoadState('networkidle');
   });
 
@@ -149,7 +149,7 @@ test.describe('Keyboard Navigation', () => {
   });
 
   test('contact form keyboard interaction', async ({ page }) => {
-    await page.goto('/contact/');
+    await page.goto('contact/');
     await page.waitForLoadState('networkidle');
 
     const form = page.getByTestId('contact-form');

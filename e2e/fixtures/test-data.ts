@@ -5,21 +5,21 @@
  */
 
 export const testRoutes = {
-  home: '/',
-  features: '/features/',
-  pricing: '/pricing/',
-  about: '/about/',
-  blog: '/blog/',
-  contact: '/contact/',
-  support: '/support/',
-  changelog: '/changelog/',
-  roadmap: '/roadmap/',
-  privacy: '/privacy/',
-  terms: '/terms/',
-  signup: '/signup/',
-  login: '/login/',
-  dashboard: '/dashboard/',
-  settings: '/settings/',
+  home: '',
+  features: 'features/',
+  pricing: 'pricing/',
+  about: 'about/',
+  blog: 'blog/',
+  contact: 'contact/',
+  support: 'support/',
+  changelog: 'changelog/',
+  roadmap: 'roadmap/',
+  privacy: 'privacy/',
+  terms: 'terms/',
+  signup: 'signup/',
+  login: 'login/',
+  dashboard: 'dashboard/',
+  settings: 'settings/',
 } as const;
 
 export const selectors = {

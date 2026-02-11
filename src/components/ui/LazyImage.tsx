@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { cn } from '@/utils/cn';
 import { Skeleton } from './Skeleton';
+import { getAssetPath, isExternalUrl } from '@/config/paths';
 
 export interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   /**
@@ -61,6 +62,9 @@ export const LazyImage = React.forwardRef<HTMLImageElement, LazyImageProps>(
     // If no src, we can't show much
     if (!src) return null;
 
+    // Resolve src if it's a relative path
+    const resolvedSrc = src && !isExternalUrl(src) ? getAssetPath(src) : src;
+
     return (
       <div
         className={cn('relative overflow-hidden bg-bg-tertiary/20', containerClassName)}
@@ -87,7 +91,7 @@ export const LazyImage = React.forwardRef<HTMLImageElement, LazyImageProps>(
         {/* Actual Image */}
         <img
           ref={ref}
-          src={src}
+          src={resolvedSrc}
           alt={alt}
           loading={loading}
           onLoad={handleLoad}

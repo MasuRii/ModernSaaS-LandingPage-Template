@@ -75,7 +75,7 @@ test.describe('Theme Switching', () => {
 
   test.beforeEach(async ({ page }) => {
     // Clear any stored theme preference before each test
-    await page.goto('/');
+    await page.goto('.');
     await clearThemeStorage(page);
     await page.reload();
     await page.waitForLoadState('networkidle');

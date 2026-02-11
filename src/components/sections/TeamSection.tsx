@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { type Variants, motion } from 'framer-motion';
 import { Container, Section, TeamMemberCard } from '@/components/ui';
+import { PersonSchemaList } from '@/components/seo';
 import { teamMembers } from '@/data/team';
 import { PRESETS } from '@/config/animation';
 import { cn } from '@/utils/cn';
@@ -139,6 +140,9 @@ export const TeamSection: React.FC<TeamSectionProps> = ({
             </div>
           )}
         </div>
+
+        {/* SEO Structured Data */}
+        <PersonSchemaList members={teamMembers} />
       </Container>
     </Section>
   );

@@ -21,6 +21,7 @@ export const SupportArticles: React.FC<SupportArticlesProps> = ({
           {articles.map((article) => (
             <a
               key={article.id}
+              id={`article-${article.id}`}
               href={`#article-${article.id}`}
               className="flex items-center justify-between p-5 rounded-xl border border-border-default bg-bg-primary hover:border-primary-500/50 hover:shadow-md transition-all group"
             >

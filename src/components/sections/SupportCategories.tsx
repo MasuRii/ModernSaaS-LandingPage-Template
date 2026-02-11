@@ -31,6 +31,7 @@ export const SupportCategories: React.FC<SupportCategoriesProps> = ({
             return (
               <a
                 key={category.id}
+                id={category.id}
                 href={`#${category.id}`}
                 className={cn(
                   'group p-6 rounded-2xl border border-border-default bg-bg-secondary',

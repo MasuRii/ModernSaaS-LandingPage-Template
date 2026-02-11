@@ -21,6 +21,7 @@ const getBasePath = () => {
 
 const BASE_PATH = getBasePath();
 const verifiedAssets = new Set<string>();
+const pageIdCache = new Map<string, Set<string>>();
 
 /**
  * Demo link patterns to ignore (should match src/config/demoLinks.ts)
@@ -79,6 +80,9 @@ async function verifyDeployment() {
     const relativePath = path.relative(DIST_DIR, file);
     // console.log(`\n🔍 Verifying ${relativePath}...`);
 
+    // Collect all IDs in the document for hash verification
+    const allIds = new Set(Array.from(document.querySelectorAll('[id]')).map((el) => el.id));
+
     // Check Links
     const links = Array.from(document.querySelectorAll('a[href]'));
     for (const link of links as HTMLAnchorElement[]) {
@@ -91,9 +95,42 @@ async function verifyDeployment() {
           continue;
         }
 
-        if (!verifyInternalPath(href, file)) {
+        const parts = href.split('#');
+        const pathPart = parts[0] as string;
+        const hashPart = parts[1];
+
+        if (!verifyInternalPath(pathPart, file)) {
           console.error(`  ❌ Broken link in ${relativePath}: ${href}`);
           errorCount++;
+          continue;
+        }
+
+        // Verify hash if present
+        if (hashPart) {
+          if (
+            !pathPart ||
+            pathPart === '/' ||
+            pathPart === BASE_PATH ||
+            pathPart === `${BASE_PATH}/`
+          ) {
+            // Check in current file if it's index.html, or if path is empty
+            const isRoot =
+              pathPart === '/' || pathPart === BASE_PATH || pathPart === `${BASE_PATH}/`;
+            const isCurrentFileIndex = relativePath === 'index.html';
+
+            if (!pathPart || (isRoot && isCurrentFileIndex)) {
+              if (!allIds.has(hashPart)) {
+                console.error(`  ❌ Broken anchor in ${relativePath}: #${hashPart}`);
+                errorCount++;
+              }
+            } else {
+              // Hash on another page
+              if (!verifyAnchorOnPage(pathPart, hashPart, file)) {
+                console.error(`  ❌ Broken anchor in ${relativePath}: ${href}`);
+                errorCount++;
+              }
+            }
+          }
         }
       }
     }
@@ -180,24 +217,62 @@ function isInternal(url: string): boolean {
   );
 }
 
-function verifyInternalPath(href: string, currentFile: string): boolean {
-  // Remove hash
-  const cleanPath = href.split('#')[0];
-  if (!cleanPath) return true; // Just a hash
+function verifyAnchorOnPage(pathPart: string, hashPart: string, currentFile: string): boolean {
+  const absolutePath = getAbsolutePath(pathPart, currentFile);
+  if (!absolutePath) return false;
 
-  // Handle root and base path
-  if (cleanPath === '/' || cleanPath === BASE_PATH || cleanPath === `${BASE_PATH}/`) {
-    return fs.existsSync(path.join(DIST_DIR, 'index.html'));
-  }
-
-  let absolutePath: string;
-  if (cleanPath.startsWith(BASE_PATH)) {
-    absolutePath = path.join(DIST_DIR, cleanPath.replace(BASE_PATH, ''));
-  } else if (cleanPath.startsWith('/')) {
-    absolutePath = path.join(DIST_DIR, cleanPath);
+  let targetHtmlFile: string;
+  if (fs.existsSync(absolutePath)) {
+    if (fs.statSync(absolutePath).isDirectory()) {
+      targetHtmlFile = path.join(absolutePath, 'index.html');
+    } else {
+      targetHtmlFile = absolutePath;
+    }
+  } else if (fs.existsSync(`${absolutePath}.html`)) {
+    targetHtmlFile = `${absolutePath}.html`;
+  } else if (fs.existsSync(path.join(absolutePath, 'index.html'))) {
+    targetHtmlFile = path.join(absolutePath, 'index.html');
   } else {
-    absolutePath = path.resolve(path.dirname(currentFile), cleanPath);
+    return false;
   }
+
+  if (!fs.existsSync(targetHtmlFile)) return false;
+
+  let ids = pageIdCache.get(targetHtmlFile);
+  if (!ids) {
+    const content = fs.readFileSync(targetHtmlFile, 'utf-8');
+    const dom = new JSDOM(content);
+    const { document } = dom.window;
+    ids = new Set(Array.from(document.querySelectorAll('[id]')).map((el) => el.id));
+    pageIdCache.set(targetHtmlFile, ids);
+  }
+
+  return ids.has(hashPart);
+}
+
+function getAbsolutePath(href: string, currentFile: string): string | null {
+  const cleanPath = href.split('#')[0];
+  if (!cleanPath && href.includes('#')) {
+    return currentFile;
+  }
+  if (!cleanPath) return null;
+
+  if (cleanPath === '/' || cleanPath === BASE_PATH || cleanPath === `${BASE_PATH}/`) {
+    return path.join(DIST_DIR, 'index.html');
+  }
+
+  if (cleanPath.startsWith(BASE_PATH)) {
+    return path.join(DIST_DIR, cleanPath.replace(BASE_PATH, ''));
+  } else if (cleanPath.startsWith('/')) {
+    return path.join(DIST_DIR, cleanPath);
+  } else {
+    return path.resolve(path.dirname(currentFile), cleanPath);
+  }
+}
+
+function verifyInternalPath(href: string, currentFile: string): boolean {
+  const absolutePath = getAbsolutePath(href, currentFile);
+  if (!absolutePath) return true; // Just a hash
 
   // Check if it's a file or a directory with index.html
   if (fs.existsSync(absolutePath)) {

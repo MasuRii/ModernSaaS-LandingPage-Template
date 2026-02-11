@@ -114,7 +114,7 @@ export const FeaturedPost = React.forwardRef<HTMLDivElement, FeaturedPostProps>(
             <Link href={ROUTES.BLOG_POST(slug)} className="group/title">
               <CardTitle
                 as="h2"
-                className="text-3xl md:text-4xl lg:text-5xl font-extrabold group-hover/title:text-primary-600 transition-colors leading-tight"
+                className="text-3xl md:text-4xl lg:text-5xl font-extrabold group-hover/title:text-primary-600 dark:group-hover/title:text-primary-400 transition-colors leading-tight"
               >
                 {title}
               </CardTitle>
@@ -130,7 +130,7 @@ export const FeaturedPost = React.forwardRef<HTMLDivElement, FeaturedPostProps>(
           <CardFooter className="p-0 pt-8 mt-8 border-t border-border-default flex items-center justify-between">
             {/* Author */}
             <div className="flex items-center gap-4">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden bg-bg-secondary border border-border-default flex items-center justify-center text-sm font-bold text-primary-600 shrink-0">
+              <div className="relative w-12 h-12 rounded-full overflow-hidden bg-bg-secondary border border-border-default flex items-center justify-center text-sm font-bold text-primary-600 dark:text-primary-400 shrink-0">
                 {author.avatar ? (
                   <LazyImage
                     src={author.avatar}
@@ -155,7 +155,7 @@ export const FeaturedPost = React.forwardRef<HTMLDivElement, FeaturedPostProps>(
             {/* Read More Link */}
             <Link
               href={ROUTES.BLOG_POST(slug)}
-              className="hidden sm:inline-flex items-center gap-2 text-base font-bold text-primary-600 hover:text-primary-700 transition-colors"
+              className="hidden sm:inline-flex items-center gap-2 text-base font-bold text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors"
             >
               Read Article
               <ArrowRight

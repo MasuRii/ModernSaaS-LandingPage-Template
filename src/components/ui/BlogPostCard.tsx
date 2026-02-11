@@ -104,7 +104,7 @@ export const BlogPostCard = React.forwardRef<HTMLDivElement, BlogPostCardProps>(
               </span>
             </div>
             <Link href={ROUTES.BLOG_POST(slug)} className="group/title">
-              <CardTitle className="text-xl md:text-2xl font-bold group-hover/title:text-primary-600 transition-colors line-clamp-2">
+              <CardTitle className="text-xl md:text-2xl font-bold group-hover/title:text-primary-600 dark:group-hover/title:text-primary-400 transition-colors line-clamp-2">
                 {title}
               </CardTitle>
             </Link>
@@ -119,7 +119,7 @@ export const BlogPostCard = React.forwardRef<HTMLDivElement, BlogPostCardProps>(
           <CardFooter className="p-0 pt-6 mt-6 border-t border-border-default flex items-center justify-between">
             {/* Author */}
             <div className="flex items-center gap-3">
-              <div className="relative w-8 h-8 rounded-full overflow-hidden bg-bg-secondary border border-border-default flex items-center justify-center text-[10px] font-bold text-primary-600 shrink-0">
+              <div className="relative w-8 h-8 rounded-full overflow-hidden bg-bg-secondary border border-border-default flex items-center justify-center text-[10px] font-bold text-primary-600 dark:text-primary-400 shrink-0">
                 {author.avatar ? (
                   <img
                     src={author.avatar}
@@ -141,7 +141,7 @@ export const BlogPostCard = React.forwardRef<HTMLDivElement, BlogPostCardProps>(
             {/* Read More Link */}
             <Link
               href={ROUTES.BLOG_POST(slug)}
-              className="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors inline-flex items-center gap-1"
+              className="text-sm font-medium text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 transition-colors inline-flex items-center gap-1"
             >
               Read More
               <span className="transition-transform group-hover:translate-x-1" aria-hidden="true">

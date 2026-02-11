@@ -172,10 +172,12 @@ export const DemoLinkButton = ({
 
   // Variant styles
   const variantStyles = {
-    primary: 'bg-primary-700 text-white hover:bg-primary-800',
-    secondary: 'bg-secondary-700 text-white hover:bg-secondary-800',
+    primary:
+      'bg-primary-700 text-white hover:bg-primary-800 dark:bg-primary-600 dark:hover:bg-primary-500',
+    secondary:
+      'bg-secondary-700 text-white hover:bg-secondary-800 dark:bg-secondary-600 dark:hover:bg-secondary-500',
     outline:
-      'border-2 border-primary-700 text-primary-700 hover:bg-primary-50 dark:hover:bg-primary-950/30',
+      'border-2 border-primary-700 text-primary-700 hover:bg-primary-50 dark:border-primary-500 dark:text-primary-400 dark:hover:bg-primary-950/30',
     ghost: 'text-text-secondary hover:text-text-primary hover:bg-bg-secondary',
   };
 

@@ -243,7 +243,7 @@ export const SignupForm: React.FC = () => {
                   I agree to the{' '}
                   <DemoLink
                     href={ROUTES.TERMS}
-                    className="font-medium text-primary-600 hover:text-primary-500"
+                    className="font-medium text-primary-600 hover:text-primary-500 dark:text-primary-400 dark:hover:text-primary-300"
                     forceDemo
                   >
                     Terms of Service
@@ -251,7 +251,7 @@ export const SignupForm: React.FC = () => {
                   and{' '}
                   <DemoLink
                     href={ROUTES.PRIVACY}
-                    className="font-medium text-primary-600 hover:text-primary-500"
+                    className="font-medium text-primary-600 hover:text-primary-500 dark:text-primary-400 dark:hover:text-primary-300"
                     forceDemo
                   >
                     Privacy Policy

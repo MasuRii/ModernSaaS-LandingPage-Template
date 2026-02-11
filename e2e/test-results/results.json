@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-desktop",
         "name": "chromium-desktop",
@@ -34,7 +34,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "firefox-desktop",
         "name": "firefox-desktop",
@@ -48,7 +48,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "webkit-desktop",
         "name": "webkit-desktop",
@@ -62,7 +62,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-large-desktop",
         "name": "chromium-large-desktop",
@@ -76,7 +76,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-standard-desktop",
         "name": "chromium-standard-desktop",
@@ -90,7 +90,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-small-desktop",
         "name": "chromium-small-desktop",
@@ -104,7 +104,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-tablet",
         "name": "chromium-tablet",
@@ -118,7 +118,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-mobile-large",
         "name": "chromium-mobile-large",
@@ -132,7 +132,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-mobile-medium",
         "name": "chromium-mobile-medium",
@@ -146,7 +146,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-mobile-small",
         "name": "chromium-mobile-small",
@@ -160,7 +160,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-mobile-xs",
         "name": "chromium-mobile-xs",
@@ -174,7 +174,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-dark-mode",
         "name": "chromium-dark-mode",
@@ -188,7 +188,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium-high-contrast",
         "name": "chromium-high-contrast",
@@ -234,60 +234,397 @@
   },
   "suites": [
     {
-      "title": "tests\\contrast.spec.ts",
-      "file": "tests/contrast.spec.ts",
+      "title": "tests\\keyboard.spec.ts",
+      "file": "tests/keyboard.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Color Contrast Verification",
-          "file": "tests/contrast.spec.ts",
-          "line": 14,
+          "title": "Keyboard Navigation",
+          "file": "tests/keyboard.spec.ts",
+          "line": 10,
           "column": 6,
-          "specs": [],
-          "suites": [
+          "specs": [
             {
-              "title": "Page: /features/",
-              "file": "tests/contrast.spec.ts",
-              "line": 31,
-              "column": 10,
-              "specs": [
+              "title": "skip to content link works",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "title": "should pass contrast checks in light mode",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
                     {
-                      "timeout": 30000,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5518,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:43.847Z",
                       "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "chromium-desktop",
-                      "projectName": "chromium-desktop",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 3334,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-02-11T06:28:14.548Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
+                      "attachments": []
                     }
                   ],
-                  "id": "15562abe492cebdf69da-45834e24f0a6e3d94740",
-                  "file": "tests/contrast.spec.ts",
-                  "line": 32,
-                  "column": 7
+                  "status": "expected"
                 }
-              ]
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-695ede3da6402812c56a",
+              "file": "tests/keyboard.spec.ts",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "tab navigation through header links",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7197,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:43.918Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-585a98dc698a71f340b2",
+              "file": "tests/keyboard.spec.ts",
+              "line": 42,
+              "column": 3
+            },
+            {
+              "title": "demo link modal focus trap",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6673,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:43.919Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-7e11532ee0f8055e4291",
+              "file": "tests/keyboard.spec.ts",
+              "line": 76,
+              "column": 3
+            },
+            {
+              "title": "mobile navigation focus trap",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Mobile menu is hidden",
+                      "location": {
+                        "file": "C:\\Repository\\ModernSaaS-LandingPage-Template\\e2e\\tests\\keyboard.spec.ts",
+                        "line": 116,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "skipped",
+                      "duration": 5336,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:43.891Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Mobile menu is hidden",
+                          "location": {
+                            "file": "C:\\Repository\\ModernSaaS-LandingPage-Template\\e2e\\tests\\keyboard.spec.ts",
+                            "line": 116,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-3475ba1bd899b4da1967",
+              "file": "tests/keyboard.spec.ts",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "contact form keyboard interaction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-desktop",
+                  "projectName": "chromium-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8068,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:49.466Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-bac750433ecdab7c8ec7",
+              "file": "tests/keyboard.spec.ts",
+              "line": 151,
+              "column": 3
+            },
+            {
+              "title": "skip to content link works",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox-desktop",
+                  "projectName": "firefox-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7223,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:51.338Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-bba6a97bf2ace20df010",
+              "file": "tests/keyboard.spec.ts",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "tab navigation through header links",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox-desktop",
+                  "projectName": "firefox-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10081,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:53.334Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-cada41888c5b333eeb84",
+              "file": "tests/keyboard.spec.ts",
+              "line": 42,
+              "column": 3
+            },
+            {
+              "title": "demo link modal focus trap",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox-desktop",
+                  "projectName": "firefox-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12433,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:54.220Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-245a331b55e40d61e0b9",
+              "file": "tests/keyboard.spec.ts",
+              "line": 76,
+              "column": 3
+            },
+            {
+              "title": "mobile navigation focus trap",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Mobile menu is hidden",
+                      "location": {
+                        "file": "C:\\Repository\\ModernSaaS-LandingPage-Template\\e2e\\tests\\keyboard.spec.ts",
+                        "line": 116,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "firefox-desktop",
+                  "projectName": "firefox-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 3,
+                      "status": "skipped",
+                      "duration": 6587,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:59.119Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Mobile menu is hidden",
+                          "location": {
+                            "file": "C:\\Repository\\ModernSaaS-LandingPage-Template\\e2e\\tests\\keyboard.spec.ts",
+                            "line": 116,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-3523da65b5a15bc21e68",
+              "file": "tests/keyboard.spec.ts",
+              "line": 113,
+              "column": 3
+            },
+            {
+              "title": "contact form keyboard interaction",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox-desktop",
+                  "projectName": "firefox-desktop",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11170,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T10:09:59.315Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6f3cfa16ee64cc9e9e95-4e146bc58af06b5b75f8",
+              "file": "tests/keyboard.spec.ts",
+              "line": 151,
+              "column": 3
             }
           ]
         }
@@ -296,10 +633,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-11T06:27:57.715Z",
-    "duration": 20600.793999999998,
-    "expected": 1,
-    "skipped": 0,
+    "startTime": "2026-02-11T10:09:26.829Z",
+    "duration": 44466.223,
+    "expected": 8,
+    "skipped": 2,
     "unexpected": 0,
     "flaky": 0
   }

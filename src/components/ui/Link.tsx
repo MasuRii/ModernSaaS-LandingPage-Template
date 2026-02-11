@@ -113,7 +113,7 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
     const isExternal = isExternalUrl(resolvedHref);
 
     // Determine if we should use the DemoLink wrapper
-    const shouldUseDemoLink = useDemoModal && !isExternal;
+    const shouldUseDemoLink = useDemoModal;
 
     // Build the CSS class string
     const classes = React.useMemo(() => {

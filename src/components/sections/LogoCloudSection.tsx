@@ -50,7 +50,14 @@ export const LogoCloudSection: React.FC<LogoCloudSectionProps> = ({
   id = 'partners',
 }) => {
   // Use a subset of integrations for the homepage logo cloud (popular ones)
-  const homeLogos = integrations.filter((i) => i.popular).slice(0, 10);
+  const homeLogos = integrations
+    .filter((i) => i.popular)
+    .slice(0, 10)
+    .map((i) => ({
+      name: i.name,
+      logo: i.logo,
+      href: i.website,
+    }));
 
   return (
     <Section

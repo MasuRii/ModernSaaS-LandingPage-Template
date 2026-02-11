@@ -22,8 +22,6 @@ export interface FooterProps {
   className?: string;
   /** Whether to show the newsletter section */
   showNewsletter?: boolean;
-  /** Callback when a demo link is clicked (e.g., social media, external links) */
-  onDemoLinkClick?: (linkType: string, url: string) => void;
 }
 
 /**
@@ -46,42 +44,41 @@ interface SocialLinkProps {
   onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
+import { Link } from '../ui/Link';
+
 /**
  * Individual footer link component with hover effects
  */
-function FooterLink({ href, children, external, onClick }: FooterLinkProps) {
-  const resolvedHref = React.useMemo(() => {
-    return external ? href : resolveHref(href);
-  }, [href, external]);
-
+function FooterLink({ href, children, external }: FooterLinkProps) {
   return (
-    <a
-      href={resolvedHref}
-      className="text-text-secondary hover:text-text-primary transition-colors duration-200 text-sm"
-      {...(external && { target: '_blank', rel: 'noopener noreferrer' })}
-      onClick={onClick}
+    <Link
+      href={href}
+      variant="subtle"
+      className="text-text-secondary hover:text-text-primary text-sm"
+      showExternalIcon={false}
+      openExternalInNewTab={!!external}
     >
       {children}
-    </a>
+    </Link>
   );
 }
 
 /**
  * Social media link component with icon and hover effect
  */
-function SocialLink({ href, label, icon, onClick }: SocialLinkProps) {
+function SocialLink({ href, label, icon }: SocialLinkProps) {
   return (
-    <a
+    <Link
       href={href}
       aria-label={label}
       className="w-10 h-10 rounded-full bg-bg-secondary hover:bg-primary-100 dark:hover:bg-primary-900/30 
                  flex items-center justify-center text-text-secondary hover:text-primary-600 
                  transition-all duration-200 hover:scale-110 focus:outline-none 
                  focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-      onClick={onClick}
+      showExternalIcon={false}
     >
       {icon}
-    </a>
+    </Link>
   );
 }
 
@@ -168,17 +165,9 @@ function NewsletterSignup({ onSubmit }: { onSubmit?: (email: string) => void }) 
  * <Footer showNewsletter={false} onDemoLinkClick={(type) => console.log(type)} />
  * ```
  */
-export function Footer({ className = '', showNewsletter = true, onDemoLinkClick }: FooterProps) {
+export function Footer({ className = '', showNewsletter = true }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const copyrightText = footer.copyright.replace('{year}', String(currentYear));
-
-  // Handle demo link clicks (for social media and external links in demo mode)
-  const handleDemoLinkClick = (linkType: string, url: string) => (e: React.MouseEvent) => {
-    if (featureFlags.demoMode && onDemoLinkClick) {
-      e.preventDefault();
-      onDemoLinkClick(linkType, url);
-    }
-  };
 
   return (
     <footer
@@ -238,31 +227,26 @@ export function Footer({ className = '', showNewsletter = true, onDemoLinkClick 
                 href={social.twitterUrl}
                 label="Follow us on Twitter"
                 icon={<Twitter className="w-4 h-4" />}
-                onClick={handleDemoLinkClick('social', 'twitter')}
               />
               <SocialLink
                 href={social.githubUrl}
                 label="View our GitHub"
                 icon={<Github className="w-4 h-4" />}
-                onClick={handleDemoLinkClick('social', 'github')}
               />
               <SocialLink
                 href={social.linkedinUrl}
                 label="Connect on LinkedIn"
                 icon={<Linkedin className="w-4 h-4" />}
-                onClick={handleDemoLinkClick('social', 'linkedin')}
               />
               <SocialLink
                 href={social.discordUrl}
                 label="Join our Discord"
                 icon={<MessageCircle className="w-4 h-4" />}
-                onClick={handleDemoLinkClick('social', 'discord')}
               />
               <SocialLink
                 href={social.youtubeUrl}
                 label="Subscribe on YouTube"
                 icon={<Youtube className="w-4 h-4" />}
-                onClick={handleDemoLinkClick('social', 'youtube')}
               />
             </div>
           </div>
@@ -277,15 +261,7 @@ export function Footer({ className = '', showNewsletter = true, onDemoLinkClick 
                 const linkWithExternal = link as typeof link & { external?: boolean };
                 return (
                   <li key={link.label}>
-                    <FooterLink
-                      href={link.href}
-                      external={linkWithExternal.external}
-                      onClick={
-                        linkWithExternal.external
-                          ? handleDemoLinkClick('external', link.href)
-                          : undefined
-                      }
-                    >
+                    <FooterLink href={link.href} external={linkWithExternal.external}>
                       {link.label}
                     </FooterLink>
                   </li>
@@ -318,15 +294,7 @@ export function Footer({ className = '', showNewsletter = true, onDemoLinkClick 
                 const linkWithExternal = link as typeof link & { external?: boolean };
                 return (
                   <li key={link.label}>
-                    <FooterLink
-                      href={link.href}
-                      external={linkWithExternal.external}
-                      onClick={
-                        linkWithExternal.external
-                          ? handleDemoLinkClick('external', link.href)
-                          : undefined
-                      }
-                    >
+                    <FooterLink href={link.href} external={linkWithExternal.external}>
                       {link.label}
                     </FooterLink>
                   </li>
@@ -364,16 +332,16 @@ export function Footer({ className = '', showNewsletter = true, onDemoLinkClick 
 
             {/* Contact Links */}
             <div className="flex items-center gap-4 text-sm">
-              <a
+              <Link
                 href={`mailto:${siteNavigation.contact[0].value}`}
                 className="text-text-secondary hover:text-text-primary transition-colors 
                            flex items-center gap-1.5 focus:outline-none focus-visible:ring-2 
                            focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded"
-                onClick={handleDemoLinkClick('contact', 'email')}
+                showExternalIcon={false}
               >
                 <Mail className="w-4 h-4" />
                 <span className="hidden sm:inline">{siteNavigation.contact[0].value}</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

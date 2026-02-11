@@ -3,6 +3,7 @@ import { Github, Globe, Linkedin, Twitter } from 'lucide-react';
 import { cn } from '@/utils/cn';
 import { Card, CardContent } from './Card';
 import { DemoLink } from './DemoLink';
+import { LazyImage } from './LazyImage';
 
 /**
  * TeamMemberCard Props Interface
@@ -78,20 +79,22 @@ export const TeamMemberCard = React.forwardRef<HTMLDivElement, TeamMemberCardPro
               isLeadership ? 'w-48 h-48 md:w-56 md:h-56' : 'w-40 h-40 md:w-48 md:h-48',
             )}
           >
-            <img
+            <LazyImage
               src={avatar}
               alt={name}
+              containerClassName="w-full h-full"
               className="w-full h-full object-cover"
               loading="lazy"
+              placeholder={
+                <div className="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none">
+                  {initials}
+                </div>
+              }
               onError={(e) => {
                 // Fallback to initials if image fails to load
                 (e.target as HTMLImageElement).style.display = 'none';
               }}
             />
-            {/* Fallback initials */}
-            <div className="absolute inset-0 flex items-center justify-center text-primary-600 font-bold text-4xl select-none">
-              {initials}
-            </div>
           </div>
 
           {/* Member Info */}

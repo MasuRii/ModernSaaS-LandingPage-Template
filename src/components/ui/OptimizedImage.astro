@@ -21,9 +21,10 @@
  * ```
  */
 
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import { getImagePath } from '@/config/paths';
-import { IMAGE_BREAKPOINTS, IMAGE_QUALITY, IMAGE_PRESETS } from '@/config/images';
+import { IMAGE_BREAKPOINTS, IMAGE_QUALITY, IMAGE_PRESETS, PLACEHOLDER } from '@/config/images';
+import { cn } from '@/utils/cn';
 
 // Type for ImageMetadata (matches Astro's internal type)
 interface ImageMetadata {
@@ -63,6 +64,8 @@ interface Props {
   rounded?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
   /** Fetch priority */
   fetchpriority?: 'high' | 'low' | 'auto';
+  /** Whether to show a blur-up placeholder */
+  blurUp?: boolean;
 }
 
 const {
@@ -80,6 +83,7 @@ const {
   class: className = '',
   rounded = 'none',
   fetchpriority,
+  blurUp = true,
 } = Astro.props;
 
 // Apply preset dimensions if provided
@@ -118,11 +122,31 @@ const combinedClasses = [fitClasses[fit], roundedClasses[rounded], className]
 const isLocalImage = typeof resolvedSrc === 'object' && 'src' in resolvedSrc;
 // Check if we have a remote string URL
 const isRemoteString = typeof resolvedSrc === 'string';
+
+// Generate blur placeholder if enabled
+let placeholderSrc = '';
+if (blurUp && isLocalImage && loading === 'lazy') {
+  const lowResImage = await getImage({
+    src: resolvedSrc as ImageMetadata,
+    width: 20,
+    height: 20,
+    format: 'webp',
+    quality: 10,
+  });
+  placeholderSrc = lowResImage.src;
+}
 ---
 
 {
   isLocalImage ? (
-    <div class="image-wrapper">
+    <div
+      class={cn('image-wrapper relative overflow-hidden', className)}
+      style={
+        placeholderSrc
+          ? `background-image: url(${placeholderSrc}); background-size: cover; filter: blur(${PLACEHOLDER.blurAmount}px);`
+          : ''
+      }
+    >
       <Image
         src={resolvedSrc}
         alt={alt}
@@ -132,10 +156,20 @@ const isRemoteString = typeof resolvedSrc === 'string';
         quality={quality}
         loading={loading}
         decoding={loading === 'eager' ? 'sync' : 'async'}
-        class={combinedClasses}
+        class={cn(
+          fitClasses[fit],
+          roundedClasses[rounded],
+          'transition-opacity duration-500',
+          loading === 'lazy' ? 'opacity-0' : 'opacity-100',
+        )}
         widths={responsive ? [...IMAGE_BREAKPOINTS] : [finalWidth]}
         sizes={sizes}
         fetchpriority={fetchpriority}
+        onload={
+          loading === 'lazy'
+            ? "this.style.opacity='1'; this.parentElement.style.filter='none';"
+            : ''
+        }
       />
     </div>
   ) : isRemoteString ? (

@@ -107,7 +107,14 @@ const crumbs = [
           <div class="flex flex-wrap items-center gap-6 pt-4 text-sm text-text-muted">
             <div class="flex items-center gap-2">
               <div class="w-8 h-8 rounded-full overflow-hidden border border-border-default">
-                <img src={author.avatar} alt={author.name} class="w-full h-full object-cover" />
+                <OptimizedImage
+                  src={author.avatar}
+                  alt={author.name}
+                  class="w-full h-full object-cover"
+                  width={32}
+                  height={32}
+                  rounded="full"
+                />
               </div>
               <span class="font-medium text-text-secondary">{author.name}</span>
             </div>

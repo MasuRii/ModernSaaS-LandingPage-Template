@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { type Variants, motion } from 'framer-motion';
-import { Container, GradientBackground, Section } from '@/components/ui';
+import { Container, GradientBackground, LazyImage, Section } from '@/components/ui';
 import { PRESETS } from '@/config/animation';
 import { company } from '@/config/site';
 import { getAssetPath } from '@/config/paths';
@@ -86,11 +86,13 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
               variants={PRESETS.fadeInRight as unknown as Variants}
               className="relative aspect-[5/6] w-full max-w-[500px] mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-bg-secondary border border-border-default shadow-lg"
             >
-              <img
+              <LazyImage
                 src={getAssetPath('images/team-01.jpg')}
                 alt="Our team working together"
+                containerClassName="w-full h-full"
                 className="w-full h-full object-cover"
                 loading="lazy"
+                aspectRatio="5/6"
               />
               {/* Subtle gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />

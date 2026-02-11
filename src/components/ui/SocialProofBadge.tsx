@@ -3,6 +3,7 @@ import { type Variants, motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import { cn } from '@/utils/cn';
 import { PRESETS } from '@/config/animation';
+import { LazyImage } from './LazyImage';
 
 /**
  * Props for the SocialProofBadge component
@@ -68,11 +69,17 @@ export const SocialProofBadge: React.FC<SocialProofBadgeProps> = ({
                   className="w-6 h-6 rounded-full border-2 border-bg-secondary bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center overflow-hidden"
                 >
                   {avatar ? (
-                    <img
+                    <LazyImage
                       src={avatar}
                       alt="User profile"
+                      containerClassName="w-full h-full"
                       className="w-full h-full object-cover"
                       loading="eager"
+                      placeholder={
+                        <span className="text-[10px] text-primary-600 dark:text-primary-400 font-bold uppercase">
+                          {String.fromCharCode(65 + i)}
+                        </span>
+                      }
                     />
                   ) : (
                     <span className="text-[10px] text-primary-600 dark:text-primary-400 font-bold uppercase">

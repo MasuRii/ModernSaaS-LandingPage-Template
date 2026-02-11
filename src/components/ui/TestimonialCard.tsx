@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Star } from 'lucide-react';
 import { cn } from '@/utils/cn';
 import { Card, CardContent, CardFooter, CardHeader } from './Card';
+import { LazyImage } from './LazyImage';
 
 /**
  * TestimonialCard Props Interface
@@ -90,9 +91,10 @@ export const TestimonialCard = React.forwardRef<HTMLDivElement, TestimonialCardP
           {/* Optional Company Logo */}
           {companyLogo && (
             <div className="h-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
-              <img
+              <LazyImage
                 src={companyLogo}
                 alt={`${author.company} logo`}
+                containerClassName="h-full w-auto"
                 className="h-full w-auto object-contain"
                 loading="lazy"
               />
@@ -119,11 +121,13 @@ export const TestimonialCard = React.forwardRef<HTMLDivElement, TestimonialCardP
           {/* Author Avatar */}
           <div className="shrink-0 w-12 h-12 rounded-full overflow-hidden border-2 border-border-default bg-bg-secondary flex items-center justify-center text-primary-600 font-bold text-sm shadow-sm">
             {author.avatar ? (
-              <img
+              <LazyImage
                 src={author.avatar}
                 alt={author.name}
+                containerClassName="w-full h-full"
                 className="w-full h-full object-cover"
                 loading="lazy"
+                placeholder={<span>{initials}</span>}
                 onError={(e) => {
                   // Fallback to initials if image fails to load
                   (e.target as HTMLImageElement).style.display = 'none';

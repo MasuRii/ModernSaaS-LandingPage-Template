@@ -12,6 +12,7 @@ import {
 } from './Card';
 import { Badge } from './Badge';
 import { Link } from './Link';
+import { LazyImage } from './LazyImage';
 import type { BlogPost } from '@/data/blog';
 import { ROUTES } from '@/config/paths';
 
@@ -127,11 +128,13 @@ export const FeaturedPost = React.forwardRef<HTMLDivElement, FeaturedPostProps>(
             <div className="flex items-center gap-4">
               <div className="relative w-12 h-12 rounded-full overflow-hidden bg-bg-secondary border border-border-default flex items-center justify-center text-sm font-bold text-primary-600 shrink-0">
                 {author.avatar ? (
-                  <img
+                  <LazyImage
                     src={author.avatar}
                     alt={author.name}
+                    containerClassName="w-full h-full"
                     className="w-full h-full object-cover"
                     loading="lazy"
+                    placeholder={<span>{initials}</span>}
                   />
                 ) : (
                   <span>{initials}</span>

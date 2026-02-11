@@ -10,6 +10,7 @@
 import React from 'react';
 import { getAssetPath, resolveHref } from '../../config/paths';
 import { DemoLink } from './DemoLink';
+import { LazyImage } from './LazyImage';
 
 /**
  * Props for the IntegrationLogo component
@@ -91,7 +92,14 @@ export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
 
   return (
     <DemoLink href={resolvedHref} className={containerClasses} title={name}>
-      <img src={getAssetPath(logo)} alt={`${name} logo`} className={imageClasses} loading="lazy" />
+      <LazyImage
+        src={getAssetPath(logo)}
+        alt={`${name} logo`}
+        className={imageClasses}
+        loading="lazy"
+        containerClassName="bg-transparent"
+        placeholder={false}
+      />
     </DemoLink>
   );
 };

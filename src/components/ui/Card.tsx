@@ -2,6 +2,7 @@ import * as React from 'react';
 import { motion } from 'framer-motion';
 import { useReducedMotion } from '@/utils/reducedMotion';
 import { cn } from '@/utils/cn';
+import { LazyImage } from './LazyImage';
 
 /**
  * Card Variants
@@ -364,21 +365,29 @@ export const CardImage = React.forwardRef<HTMLImageElement, CardImageProps>(
     };
 
     return (
-      <div className={cn('relative overflow-hidden', aspectRatioStyles[aspectRatio])}>
-        <img
-          ref={ref}
-          src={src}
-          alt={alt}
-          className={cn(
-            'w-full h-full',
-            objectFitStyles[objectFit],
-            'transition-transform duration-300 ease-out',
-            'group-hover:scale-105',
-            className,
-          )}
-          {...props}
-        />
-      </div>
+      <LazyImage
+        ref={ref}
+        src={src}
+        alt={alt}
+        containerClassName={cn('relative overflow-hidden', aspectRatioStyles[aspectRatio])}
+        className={cn(
+          'w-full h-full',
+          objectFitStyles[objectFit],
+          'transition-transform duration-300 ease-out',
+          'group-hover:scale-105',
+          className,
+        )}
+        aspectRatio={
+          aspectRatio === 'auto'
+            ? undefined
+            : aspectRatio === 'video'
+              ? '16/9'
+              : aspectRatio === 'square'
+                ? '1/1'
+                : '3/4'
+        }
+        {...props}
+      />
     );
   },
 );

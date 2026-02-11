@@ -159,16 +159,22 @@ export const resolveHref = (href: string): string => {
  */
 export const getCanonicalUrl = (path: string = ''): string => {
   const { siteUrl, basePath } = getPathConfig();
-  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-  const cleanBase = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
 
-  const url =
-    cleanBase === '' || cleanBase === '/'
-      ? `${siteUrl}/${cleanPath}`
-      : `${siteUrl}${cleanBase}/${cleanPath}`;
+  const cleanSiteUrl = siteUrl.endsWith('/') ? siteUrl.slice(0, -1) : siteUrl;
+  const cleanBase =
+    basePath === '/' ? '' : basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
 
-  // Replace double slashes while preserving the protocol double slash
-  return url.replace(/([^:])\/\//g, '$1/').replace(/([^:])\/\//g, '$1/');
+  let normalizedPath = path;
+  if (!normalizedPath.startsWith('/')) {
+    normalizedPath = '/' + normalizedPath;
+  }
+
+  // If normalizedPath already starts with cleanBase, don't prepend it
+  if (cleanBase && normalizedPath.startsWith(cleanBase)) {
+    return `${cleanSiteUrl}${normalizedPath}`;
+  }
+
+  return `${cleanSiteUrl}${cleanBase}${normalizedPath}`;
 };
 
 /**

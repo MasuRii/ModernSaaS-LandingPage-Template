@@ -253,7 +253,7 @@ export const moneyBackGuarantee = {
 
 /** Pricing page metadata */
 export const pricingMetadata = {
-  title: 'Simple, Transparent Pricing | ModernSaaS',
+  title: 'Simple, Transparent Pricing',
   description:
     "Choose the plan that's right for you. Start with a 14-day free trial. No credit card required.",
   keywords: ['pricing', 'plans', 'subscription', 'SaaS pricing', 'enterprise'],

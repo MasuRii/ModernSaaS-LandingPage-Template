@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Github, Globe, Linkedin, Twitter } from 'lucide-react';
+import { Globe } from 'lucide-react';
+import { GithubIcon, LinkedinIcon, TwitterIcon } from '@/components/icons/BrandIcons';
 import { cn } from '@/utils/cn';
 import { Card, CardContent } from './Card';
 import { DemoLink } from './DemoLink';
@@ -34,9 +35,9 @@ export interface TeamMemberCardProps extends React.HTMLAttributes<HTMLDivElement
  * Icon mapping for social platforms
  */
 const platformIcons = {
-  twitter: Twitter,
-  linkedin: Linkedin,
-  github: Github,
+  twitter: TwitterIcon,
+  linkedin: LinkedinIcon,
+  github: GithubIcon,
   website: Globe,
 };
 

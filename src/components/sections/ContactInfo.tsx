@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { type Variants, motion } from 'motion/react';
-import { Github, Linkedin, Mail, MapPin, MessageSquare, Phone, Twitter } from 'lucide-react';
+import { Mail, MapPin, MessageSquare, Phone } from 'lucide-react';
+import { GithubIcon, LinkedinIcon, TwitterIcon } from '@/components/icons/BrandIcons';
 import { Card, CardContent, Container, DemoLink, Section } from '@/components/ui';
 import { PRESETS } from '@/config/animation';
 import { cn } from '@/utils/cn';
@@ -59,11 +60,16 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({ className, id = 'conta
   ];
 
   const socialLinks = [
-    { name: 'Twitter', icon: Twitter, href: site.social.twitterUrl, label: 'Follow us on Twitter' },
-    { name: 'GitHub', icon: Github, href: site.social.githubUrl, label: 'Star us on GitHub' },
+    {
+      name: 'Twitter',
+      icon: TwitterIcon,
+      href: site.social.twitterUrl,
+      label: 'Follow us on Twitter',
+    },
+    { name: 'GitHub', icon: GithubIcon, href: site.social.githubUrl, label: 'Star us on GitHub' },
     {
       name: 'LinkedIn',
-      icon: Linkedin,
+      icon: LinkedinIcon,
       href: site.social.linkedinUrl,
       label: 'Connect on LinkedIn',
     },

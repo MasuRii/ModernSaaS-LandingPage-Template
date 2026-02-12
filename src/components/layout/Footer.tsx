@@ -1,15 +1,6 @@
 import React, { useState } from 'react';
-import {
-  ArrowRight,
-  CheckCircle,
-  Github,
-  Linkedin,
-  Mail,
-  MessageCircle,
-  Twitter,
-  Youtube,
-  Zap,
-} from 'lucide-react';
+import { ArrowRight, CheckCircle, Mail, MessageCircle, Zap } from 'lucide-react';
+import { GithubIcon, LinkedinIcon, TwitterIcon, YoutubeIcon } from '@/components/icons/BrandIcons';
 import { company, featureFlags, footer, siteNavigation, social } from '../../config/site';
 import { ROUTES, resolveHref } from '../../config/paths';
 import { Button } from '../ui/Button';
@@ -227,17 +218,17 @@ export function Footer({ className = '', showNewsletter = true }: FooterProps) {
               <SocialLink
                 href={social.twitterUrl}
                 label="Follow us on Twitter"
-                icon={<Twitter className="w-4 h-4" />}
+                icon={<TwitterIcon className="w-4 h-4" />}
               />
               <SocialLink
                 href={social.githubUrl}
                 label="View our GitHub"
-                icon={<Github className="w-4 h-4" />}
+                icon={<GithubIcon className="w-4 h-4" />}
               />
               <SocialLink
                 href={social.linkedinUrl}
                 label="Connect on LinkedIn"
-                icon={<Linkedin className="w-4 h-4" />}
+                icon={<LinkedinIcon className="w-4 h-4" />}
               />
               <SocialLink
                 href={social.discordUrl}
@@ -247,7 +238,7 @@ export function Footer({ className = '', showNewsletter = true }: FooterProps) {
               <SocialLink
                 href={social.youtubeUrl}
                 label="Subscribe on YouTube"
-                icon={<Youtube className="w-4 h-4" />}
+                icon={<YoutubeIcon className="w-4 h-4" />}
               />
             </div>
           </div>

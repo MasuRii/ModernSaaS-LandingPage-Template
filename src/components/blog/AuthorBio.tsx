@@ -1,7 +1,7 @@
 import React from 'react';
 import { type BlogAuthor } from '../../data/blog';
 import { Card, CardContent } from '../ui/Card';
-import { Linkedin, Twitter } from 'lucide-react';
+import { LinkedinIcon, TwitterIcon } from '@/components/icons/BrandIcons';
 
 interface AuthorBioProps {
   author: BlogAuthor;
@@ -66,7 +66,7 @@ export const AuthorBio: React.FC<AuthorBioProps> = ({ author, className }) => {
                     className="p-2 rounded-full bg-bg-secondary text-text-secondary hover:text-primary-600 hover:bg-primary-50 transition-colors"
                     aria-label={`${name}'s Twitter`}
                   >
-                    <Twitter className="w-4 h-4" />
+                    <TwitterIcon className="w-4 h-4" />
                   </a>
                 )}
                 {social.linkedin && (
@@ -77,7 +77,7 @@ export const AuthorBio: React.FC<AuthorBioProps> = ({ author, className }) => {
                     className="p-2 rounded-full bg-bg-secondary text-text-secondary hover:text-primary-600 hover:bg-primary-50 transition-colors"
                     aria-label={`${name}'s LinkedIn`}
                   >
-                    <Linkedin className="w-4 h-4" />
+                    <LinkedinIcon className="w-4 h-4" />
                   </a>
                 )}
               </div>

@@ -1,7 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import { Chrome, Github, Lock, Mail } from 'lucide-react';
+import { Lock, Mail } from 'lucide-react';
+import { ChromeIcon, GithubIcon } from '@/components/icons/BrandIcons';
 import { Button } from '../ui/Button';
 import { Input } from '../ui/Input';
 import { DemoLink, DemoLinkButton } from '../ui/DemoLink';
@@ -141,7 +142,7 @@ export const LoginForm: React.FC = () => {
           forceDemo
           data-testid="github-auth"
         >
-          <Github className="h-5 w-5" />
+          <GithubIcon className="h-5 w-5" />
           <span className="text-sm font-medium">GitHub</span>
         </DemoLinkButton>
         <DemoLinkButton
@@ -151,7 +152,7 @@ export const LoginForm: React.FC = () => {
           forceDemo
           data-testid="google-auth"
         >
-          <Chrome className="h-5 w-5" />
+          <ChromeIcon className="h-5 w-5" />
           <span className="text-sm font-medium">Google</span>
         </DemoLinkButton>
       </div>

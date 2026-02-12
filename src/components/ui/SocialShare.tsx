@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Facebook, Link as LinkIcon, Linkedin, Twitter } from 'lucide-react';
+import { Link as LinkIcon } from 'lucide-react';
+import { FacebookIcon, LinkedinIcon, TwitterIcon } from '@/components/icons/BrandIcons';
 import { DemoLink } from './DemoLink';
 import { IconButton } from './Button';
 import { toast } from './Toast';
@@ -64,21 +65,21 @@ export const SocialShare: React.FC<SocialShareProps> = ({
   const shareLinks = [
     {
       name: 'Twitter',
-      icon: Twitter,
+      icon: TwitterIcon,
       href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(title)}`,
       color: 'hover:text-[#1DA1F2] dark:hover:text-[#1DA1F2]',
       label: 'Share on Twitter',
     },
     {
       name: 'LinkedIn',
-      icon: Linkedin,
+      icon: LinkedinIcon,
       href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`,
       color: 'hover:text-[#0A66C2] dark:hover:text-[#0A66C2]',
       label: 'Share on LinkedIn',
     },
     {
       name: 'Facebook',
-      icon: Facebook,
+      icon: FacebookIcon,
       href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`,
       color: 'hover:text-[#1877F2] dark:hover:text-[#1877F2]',
       label: 'Share on Facebook',

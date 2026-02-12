@@ -143,4 +143,110 @@ describe('Select', () => {
       expect(container.firstChild).toHaveClass('custom-wrapper');
     });
   });
+
+  describe('Floating Label with Placeholder', () => {
+    const placeholderOptions = [
+      { label: 'Select an option', value: '' },
+      { label: 'Option 1', value: '1' },
+      { label: 'Option 2', value: '2' },
+    ];
+
+    // Note: The component also handles undefined values for placeholders,
+    // but SelectOption type requires string | number, so we test with empty string
+
+    it('floating label should be in floating position when placeholder option is present with empty string value', () => {
+      render(
+        <Select
+          label="Test Label"
+          floatingLabel
+          options={placeholderOptions}
+          data-testid="select"
+        />,
+      );
+      const label = screen.getByText('Test Label');
+      // The label should be floated immediately due to the placeholder option
+      // Check that the label has the floating animation state (via aria-label or styling)
+      expect(label).toBeInTheDocument();
+      // The label should have the motion label classes indicating it's floating
+      expect(label).toHaveClass('absolute');
+    });
+
+    it('floating label should be in floating position when using different placeholder label', () => {
+      const customPlaceholderOptions = [
+        { label: 'Please choose...', value: '' },
+        { label: 'Option A', value: 'a' },
+        { label: 'Option B', value: 'b' },
+      ];
+      render(
+        <Select
+          label="Test Label"
+          floatingLabel
+          options={customPlaceholderOptions}
+          data-testid="select"
+        />,
+      );
+      const label = screen.getByText('Test Label');
+      expect(label).toBeInTheDocument();
+      expect(label).toHaveClass('absolute');
+    });
+
+    it('floating label should not overlap with placeholder text', () => {
+      render(
+        <Select
+          label="Inquiry Type"
+          floatingLabel
+          options={[
+            { label: 'Select an inquiry type', value: '' },
+            { label: 'General', value: 'general' },
+            { label: 'Support', value: 'support' },
+          ]}
+        />,
+      );
+      const label = screen.getByText('Inquiry Type');
+      const select = screen.getByRole('combobox');
+
+      // Verify both elements are in the document
+      expect(label).toBeInTheDocument();
+      expect(select).toBeInTheDocument();
+
+      // The label should be absolutely positioned (floating)
+      expect(label).toHaveClass('absolute');
+
+      // The select should have the placeholder option
+      expect(screen.getByText('Select an inquiry type')).toBeInTheDocument();
+    });
+
+    it('floating label stays floated when user selects a value', () => {
+      render(<Select label="Test Label" floatingLabel options={placeholderOptions} />);
+      const select = screen.getByRole('combobox');
+      const label = screen.getByText('Test Label');
+
+      // Initially label should be floating due to placeholder
+      expect(label).toHaveClass('absolute');
+
+      // Change to a real value
+      fireEvent.change(select, { target: { value: '1' } });
+
+      // Label should still be floating
+      expect(label).toHaveClass('absolute');
+      expect((select as HTMLSelectElement).value).toBe('1');
+    });
+
+    it('floating label stays floated when user clears selection back to placeholder', () => {
+      render(
+        <Select label="Test Label" floatingLabel options={placeholderOptions} defaultValue="1" />,
+      );
+      const select = screen.getByRole('combobox');
+      const label = screen.getByText('Test Label');
+
+      // Initially has a value, so label should be floating
+      expect(label).toHaveClass('absolute');
+
+      // Clear back to placeholder
+      fireEvent.change(select, { target: { value: '' } });
+
+      // Label should still be floating because placeholder is present
+      expect(label).toHaveClass('absolute');
+    });
+  });
 });

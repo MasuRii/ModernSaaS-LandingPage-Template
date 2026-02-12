@@ -19,20 +19,20 @@ const seo = pageSEO.features;
   <FeaturesHero client:load />
 
   {/* 2. Detailed Feature Sections (Alternating) */}
-  <FeatureDetail client:visible />
+  <FeatureDetail client:load />
 
   {/* 3. Use Cases Section */}
-  <UseCases client:visible />
+  <UseCases client:load />
 
   {/* 4. Feature Comparison Section */}
-  <FeatureComparison client:visible />
+  <FeatureComparison client:load />
 
   {/* 5. Demo Video Section */}
-  <DemoVideo client:visible />
+  <DemoVideo client:load />
 
   {/* 6. Final CTA Section (linking to pricing as per requirements) */}
   <FinalCTA
-    client:visible
+    client:load
     primaryButton={{ text: 'View Pricing', href: ROUTES.PRICING }}
     secondaryButton={{ text: 'Contact Sales', href: ROUTES.CONTACT }}
   />

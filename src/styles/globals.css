@@ -152,6 +152,44 @@
 }
 
 /* ------------------------------------------
+   Animation Safeguards
+   ------------------------------------------
+   These classes ensure animations don't cause
+   content to disappear or become inaccessible.
+   ------------------------------------------ */
+
+/**
+ * Applied during animation for hardware acceleration.
+ * Will-change is removed after animation completes to
+ * prevent memory overhead.
+ */
+.animate-will-change {
+  will-change: transform, opacity;
+}
+
+/**
+ * Ensures content remains visible after animation.
+ * Applied as a safeguard to prevent elements from
+ * disappearing due to animation cleanup issues.
+ */
+.animate-visible-safeguard {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/**
+ * Reduced motion: immediately show content.
+ * Applied when user prefers reduced motion.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .animate-reduced-motion-visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ------------------------------------------
    Theme Configuration for Tailwind v4
    ------------------------------------------ */
 @theme {

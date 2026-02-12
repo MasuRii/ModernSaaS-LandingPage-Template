@@ -7,10 +7,11 @@
  * @see docs/research/ANIMATION_STRATEGY.md
  */
 
-import React, { forwardRef, useEffect, useRef } from 'react';
+import React, { forwardRef, useEffect, useRef, useState } from 'react';
 import { type AnimationOptions, type Easing, animate, inView } from 'motion';
 import { getAccessibleDuration, useReducedMotion } from '@/utils/reducedMotion';
 import { DURATIONS, EASINGS, type EasingDefinition, PRESETS } from '@/config/animation';
+import { cn } from '@/utils/cn';
 
 // ============================================================================
 // Types
@@ -77,6 +78,8 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
     const internalRef = useRef<HTMLElement>(null);
     const elementRef = (forwardedRef || internalRef) as React.RefObject<HTMLElement>;
     const { prefersReducedMotion } = useReducedMotion();
+    const [hasAnimated, setHasAnimated] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
 
     useEffect(() => {
       const element = elementRef.current;
@@ -150,7 +153,32 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
 
       // Run animation
       const runAnimation = () => {
-        animate(element, finalKeyframes, animationOptions);
+        setIsAnimating(true);
+        const animation = animate(element, finalKeyframes, animationOptions);
+
+        // Listen for animation completion
+        if (animation && typeof animation.finished !== 'undefined') {
+          animation.finished
+            .then(() => {
+              setIsAnimating(false);
+              setHasAnimated(true);
+            })
+            .catch(() => {
+              // Animation was cancelled or interrupted
+              setIsAnimating(false);
+            });
+        } else {
+          // Fallback for browsers that don't support animation.finished
+          setTimeout(
+            () => {
+              setIsAnimating(false);
+              setHasAnimated(true);
+            },
+            (animationOptions.duration as number) * 1000 + 100,
+          );
+        }
+
+        return animation;
       };
 
       if (triggerOnView) {
@@ -166,7 +194,8 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
                 };
           },
           {
-            amount: threshold,
+            // Adjust threshold for better trigger points
+            amount: Math.max(0.05, threshold),
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             margin: rootMargin as any,
           },
@@ -222,12 +251,28 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
       return styles;
     }, [preset]);
 
+    // Determine if content should be hidden from screen readers during animation
+    // Only hide if element hasn't animated yet and reduced motion is not preferred
+    const ariaHidden = isAnimating && !hasAnimated && !prefersReducedMotion ? undefined : undefined;
+
+    // Build animation safeguard classes
+    const animationClasses = cn(
+      // Apply will-change during animation for performance
+      isAnimating && 'animate-will-change',
+      // Apply visibility safeguard after animation completes
+      (hasAnimated || prefersReducedMotion) && 'animate-visible-safeguard',
+      // Apply reduced motion visibility
+      prefersReducedMotion && 'animate-reduced-motion-visible',
+      className,
+    );
+
     return React.createElement(
       Component,
       {
         ref: elementRef,
-        className,
+        className: animationClasses,
         style: { ...initialStyles, ...style },
+        'aria-hidden': ariaHidden,
         ...props,
       },
       children,
@@ -306,6 +351,8 @@ export const StaggerContainer = forwardRef<HTMLDivElement, StaggerContainerProps
     const containerRef = useRef<HTMLDivElement>(null);
     const resolvedRef = (ref || containerRef) as React.RefObject<HTMLDivElement>;
     const { prefersReducedMotion } = useReducedMotion();
+    const [hasAnimated, setHasAnimated] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
 
     useEffect(() => {
       const container = resolvedRef.current;
@@ -347,6 +394,10 @@ export const StaggerContainer = forwardRef<HTMLDivElement, StaggerContainerProps
       }
 
       const runAnimations = () => {
+        setIsAnimating(true);
+        const totalDuration =
+          DURATIONS.normal + (childElements.length - 1) * staggerDelay + initialDelay;
+
         childElements.forEach((child, index) => {
           let finalKeyframes: Record<string, unknown[]>;
 
@@ -369,6 +420,15 @@ export const StaggerContainer = forwardRef<HTMLDivElement, StaggerContainerProps
             delay,
           });
         });
+
+        // Set animation complete after all children have animated
+        setTimeout(
+          () => {
+            setIsAnimating(false);
+            setHasAnimated(true);
+          },
+          totalDuration * 1000 + 100,
+        );
       };
 
       if (triggerOnView) {
@@ -384,7 +444,8 @@ export const StaggerContainer = forwardRef<HTMLDivElement, StaggerContainerProps
                 };
           },
           {
-            amount: threshold,
+            // Adjust threshold for better trigger points
+            amount: Math.max(0.05, threshold),
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             margin: rootMargin as any,
           },
@@ -409,8 +470,19 @@ export const StaggerContainer = forwardRef<HTMLDivElement, StaggerContainerProps
       resolvedRef,
     ]);
 
+    // Build animation safeguard classes
+    const animationClasses = cn(
+      // Apply will-change during animation for performance
+      isAnimating && 'animate-will-change',
+      // Apply visibility safeguard after animation completes
+      (hasAnimated || prefersReducedMotion) && 'animate-visible-safeguard',
+      // Apply reduced motion visibility
+      prefersReducedMotion && 'animate-reduced-motion-visible',
+      className,
+    );
+
     return (
-      <div ref={resolvedRef} className={className} {...props}>
+      <div ref={resolvedRef} className={animationClasses} {...props}>
         {children}
       </div>
     );

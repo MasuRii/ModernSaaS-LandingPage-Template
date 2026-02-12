@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
-import { ArrowRight, CheckCircle, Mail, MessageCircle, Zap } from 'lucide-react';
-import { GithubIcon, LinkedinIcon, TwitterIcon, YoutubeIcon } from '@/components/icons/BrandIcons';
+import { ArrowRight, CheckCircle, Mail, Zap } from 'lucide-react';
+import {
+  DiscordIcon,
+  GithubIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  YoutubeIcon,
+} from '@/components/icons/BrandIcons';
 import { company, featureFlags, footer, siteNavigation, social } from '../../config/site';
 import { ROUTES, resolveHref } from '../../config/paths';
 import { Button } from '../ui/Button';
@@ -233,7 +239,7 @@ export function Footer({ className = '', showNewsletter = true }: FooterProps) {
               <SocialLink
                 href={social.discordUrl}
                 label="Join our Discord"
-                icon={<MessageCircle className="w-4 h-4" />}
+                icon={<DiscordIcon className="w-4 h-4" />}
               />
               <SocialLink
                 href={social.youtubeUrl}

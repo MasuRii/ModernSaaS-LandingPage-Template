@@ -132,6 +132,7 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
                     logo={integration.logo}
                     href={integration.website}
                     size="md"
+                    colored={true}
                     className="w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors"
                   />
                 ))}
@@ -148,6 +149,7 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
                       logo={integration.logo}
                       href={integration.website}
                       size="md"
+                      colored={true}
                       className="w-full aspect-square max-w-[160px] bg-bg-secondary/30 border border-border-muted/50 hover:border-primary-500/30 transition-colors"
                     />
                   ))}

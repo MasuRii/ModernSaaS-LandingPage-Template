@@ -26,6 +26,8 @@ export interface IntegrationLogoProps {
   size?: 'sm' | 'md' | 'lg' | undefined;
   /** Whether to apply grayscale effect by default (toggles on hover) */
   grayscale?: boolean | undefined;
+  /** Whether to show full brand colors (disables grayscale filter) */
+  colored?: boolean | undefined;
   /** Whether to show a background on hover */
   showHoverBg?: boolean | undefined;
   /** Additional CSS classes for the container */
@@ -55,6 +57,7 @@ export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
   href = '#',
   size = 'md',
   grayscale = true,
+  colored = false,
   showHoverBg = true,
   className = '',
   resolvePath = true,
@@ -81,16 +84,19 @@ export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
   `;
 
   // Image styles with grayscale and scale transitions
+  // When colored=true, show full brand colors without grayscale filter
   const imageClasses = `
     ${sizeClasses[size]} w-auto max-w-full
     transition-all duration-500 ease-out
     group-hover:scale-110
     ${
-      grayscale
-        ? 'grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100'
-        : 'opacity-100'
+      colored
+        ? 'opacity-100'
+        : grayscale
+          ? 'grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100'
+          : 'opacity-100'
     }
-    dark:invert-[0.2] dark:group-hover:invert-0
+    ${colored ? '' : 'dark:invert-[0.2] dark:group-hover:invert-0'}
   `;
 
   return (

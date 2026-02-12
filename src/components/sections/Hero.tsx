@@ -149,15 +149,30 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
             {/* Secondary Social Proof */}
             <motion.div
               variants={PRESETS.fadeInUp as unknown as Variants}
-              className="mt-10 flex flex-wrap items-center gap-6 opacity-60 grayscale"
+              className="mt-10 flex flex-wrap items-center gap-6"
             >
               <div className="text-xs font-semibold uppercase tracking-wider text-text-muted">
                 Featured In
               </div>
-              <div className="flex gap-6 items-center">
-                <div className="h-6 w-20 bg-text-muted/20 rounded-md" />
-                <div className="h-5 w-24 bg-text-muted/20 rounded-md" />
-                <div className="h-6 w-16 bg-text-muted/20 rounded-md" />
+              <div className="flex gap-6 items-center opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+                <img
+                  src="/images/publications/techcrunch.svg"
+                  alt="TechCrunch"
+                  className="h-6 w-auto"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/publications/forbes.svg"
+                  alt="Forbes"
+                  className="h-5 w-auto"
+                  loading="lazy"
+                />
+                <img
+                  src="/images/publications/producthunt.svg"
+                  alt="Product Hunt"
+                  className="h-6 w-auto"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
           </motion.div>

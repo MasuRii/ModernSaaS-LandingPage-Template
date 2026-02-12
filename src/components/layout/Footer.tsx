@@ -126,9 +126,9 @@ function NewsletterSignup({ onSubmit }: { onSubmit?: (email: string) => void }) 
         variant="primary"
         size="md"
         className="px-5"
+        rightIcon={<ArrowRight className="w-4 h-4" />}
       >
         Subscribe
-        <ArrowRight className="w-4 h-4" />
       </Button>
     </form>
   );

@@ -86,7 +86,7 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
               className="relative aspect-[5/6] w-full max-w-[500px] mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-bg-secondary border border-border-default shadow-lg"
             >
               <LazyImage
-                src={getAssetPath('images/team-01.jpg')}
+                src={getAssetPath('images/team/person-01.jpg')}
                 alt="Our team working together"
                 containerClassName="w-full h-full"
                 className="w-full h-full object-cover"

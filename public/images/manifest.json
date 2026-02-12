@@ -1,10 +1,10 @@
 {
   "generated": "2026-02-11T03:47:54.028Z",
-  "totalImages": 20,
+  "totalImages": 22,
   "categories": {
     "tech": 4,
     "abstract": 4,
-    "team": 4,
+    "team": 22,
     "office": 4,
     "devices": 4
   },
@@ -82,39 +82,39 @@
       }
     },
     {
-      "filename": "team-01.jpg",
+      "filename": "team/person-01.jpg",
       "category": "team",
-      "attribution": "Getty Images (@gettyimages)",
+      "attribution": "Unsplash",
       "dimensions": {
-        "width": 6016,
-        "height": 4016
+        "width": 400,
+        "height": 400
       }
     },
     {
-      "filename": "team-02.jpg",
+      "filename": "team/person-02.jpg",
       "category": "team",
-      "attribution": "Vitaly Gariev (@silverkblack)",
+      "attribution": "Unsplash",
       "dimensions": {
-        "width": 3840,
-        "height": 2160
+        "width": 400,
+        "height": 400
       }
     },
     {
-      "filename": "team-03.jpg",
+      "filename": "team/person-03.jpg",
       "category": "team",
-      "attribution": "Vitaly Gariev (@silverkblack)",
+      "attribution": "Unsplash",
       "dimensions": {
-        "width": 3800,
-        "height": 2138
+        "width": 400,
+        "height": 400
       }
     },
     {
-      "filename": "team-04.svg",
+      "filename": "team/person-04.jpg",
       "category": "team",
-      "attribution": "Placeholder (Generated)",
+      "attribution": "Unsplash",
       "dimensions": {
-        "width": 1200,
-        "height": 800
+        "width": 400,
+        "height": 400
       }
     },
     {

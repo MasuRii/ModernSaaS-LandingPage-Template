@@ -241,7 +241,7 @@ export const featuredTestimonial: Testimonial = {
     name: 'Amanda Foster',
     role: 'CEO',
     company: 'ScaleUp Inc.',
-    avatar: '/images/team-01.jpg',
+    avatar: '/images/team/person-19.jpg',
   },
   rating: 5,
   featured: true,

@@ -326,6 +326,15 @@ export function Footer({ className = '', showNewsletter = true }: FooterProps) {
               <span>{copyrightText}</span>
               <span className="hidden sm:inline">·</span>
               <span>{footer.registrationNumber}</span>
+              <span className="hidden sm:inline">·</span>
+              <a
+                href={footer.attributionUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-text-secondary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 rounded"
+              >
+                {footer.attributionText}
+              </a>
             </div>
 
             {/* Contact Links */}

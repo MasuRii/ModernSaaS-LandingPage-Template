@@ -90,6 +90,10 @@ export interface FooterConfig {
   registrationNumber: string;
   /** Status page URL */
   statusPageUrl: string;
+  /** Template attribution text */
+  attributionText: string;
+  /** Template attribution URL */
+  attributionUrl: string;
 }
 
 /**
@@ -224,6 +228,8 @@ export const footer: FooterConfig = {
   copyright: '© {year} ModernSaaS Inc. All rights reserved.',
   registrationNumber: 'Registered in Delaware, USA',
   statusPageUrl: '/status/',
+  attributionText: 'Template created by MasuRii',
+  attributionUrl: 'https://github.com/MasuRii',
 } as const;
 
 /**

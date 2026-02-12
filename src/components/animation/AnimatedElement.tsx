@@ -136,6 +136,18 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
         finalKeyframes = { opacity: [0, 1] };
       }
 
+      // Helper to apply final keyframe values for visibility preservation
+      const applyFinalState = () => {
+        Object.entries(finalKeyframes).forEach(([key, values]) => {
+          const lastValue = values[values.length - 1];
+          if (typeof lastValue === 'number' || typeof lastValue === 'string') {
+            (element.style as unknown as Record<string, string>)[key] = String(lastValue);
+          }
+        });
+        // Ensure visibility is preserved
+        element.style.visibility = 'visible';
+      };
+
       // Run animation
       const runAnimation = () => {
         animate(element, finalKeyframes, animationOptions);
@@ -146,7 +158,12 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
           element,
           () => {
             runAnimation();
-            return once ? undefined : () => {};
+            // Return cleanup that preserves final state, not resets it
+            return once
+              ? undefined
+              : () => {
+                  applyFinalState();
+                };
           },
           {
             amount: threshold,
@@ -160,7 +177,10 @@ export const AnimatedElement = forwardRef<HTMLElement, AnimatedElementProps>(
         runAnimation();
       }
 
-      return undefined;
+      return () => {
+        // Preserve final state on unmount
+        applyFinalState();
+      };
     }, [
       preset,
       keyframes,
@@ -293,18 +313,36 @@ export const StaggerContainer = forwardRef<HTMLDivElement, StaggerContainerProps
 
       const childElements = Array.from(container.children) as HTMLElement[];
 
+      // Helper to apply final keyframe values to all children
+      const applyFinalStateToChildren = () => {
+        childElements.forEach((child) => {
+          let finalKeyframes: Record<string, unknown[]>;
+
+          if (childKeyframes) {
+            finalKeyframes = childKeyframes;
+          } else {
+            const preset = PRESETS[childPreset];
+            if (!preset) return;
+            finalKeyframes = {};
+            Object.entries(preset.initial).forEach(([key]) => {
+              finalKeyframes[key] = [preset.initial[key], preset.animate[key]];
+            });
+          }
+
+          Object.entries(finalKeyframes).forEach(([key, values]) => {
+            const lastValue = values[values.length - 1];
+            if (typeof lastValue === 'number' || typeof lastValue === 'string') {
+              (child.style as unknown as Record<string, string>)[key] = String(lastValue);
+            }
+          });
+          // Ensure visibility is preserved
+          child.style.visibility = 'visible';
+        });
+      };
+
       if (prefersReducedMotion) {
         // Set final state immediately
-        const preset = PRESETS[childPreset];
-        if (preset) {
-          childElements.forEach((child) => {
-            Object.entries(preset.animate).forEach(([key, value]) => {
-              if (typeof value === 'number' || typeof value === 'string') {
-                (child.style as unknown as Record<string, string>)[key] = String(value);
-              }
-            });
-          });
-        }
+        applyFinalStateToChildren();
         return undefined;
       }
 
@@ -334,17 +372,32 @@ export const StaggerContainer = forwardRef<HTMLDivElement, StaggerContainerProps
       };
 
       if (triggerOnView) {
-        const cleanup = inView(container, runAnimations, {
-          amount: threshold,
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          margin: rootMargin as any,
-        });
+        const cleanup = inView(
+          container,
+          () => {
+            runAnimations();
+            // Return cleanup that preserves final state
+            return once
+              ? undefined
+              : () => {
+                  applyFinalStateToChildren();
+                };
+          },
+          {
+            amount: threshold,
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            margin: rootMargin as any,
+          },
+        );
         return () => cleanup();
       } else {
         runAnimations();
       }
 
-      return undefined;
+      return () => {
+        // Preserve final state on unmount
+        applyFinalStateToChildren();
+      };
     }, [
       childPreset,
       childKeyframes,

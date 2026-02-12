@@ -99,6 +99,18 @@ export function useAnimation(
 
     const finalDuration = getAccessibleDuration(duration, prefersReducedMotion);
 
+    // Helper to apply final keyframe values for visibility preservation
+    const applyFinalState = () => {
+      Object.entries(keyframes).forEach(([key, values]) => {
+        const lastValue = values[values.length - 1];
+        if (typeof lastValue === 'number' || typeof lastValue === 'string') {
+          (element.style as unknown as Record<string, string>)[key] = String(lastValue);
+        }
+      });
+      // Ensure visibility is preserved
+      element.style.visibility = 'visible';
+    };
+
     const runAnimation = () => {
       animationRef.current = animate(element, keyframes, {
         duration: finalDuration,
@@ -113,8 +125,13 @@ export function useAnimation(
         element,
         () => {
           runAnimation();
-          // Return cleanup if once is false
-          return once ? undefined : () => animationRef.current?.stop();
+          // Return cleanup if once is false - preserve final state, don't reset
+          return once
+            ? undefined
+            : () => {
+                // Preserve final animated state instead of stopping/reverting
+                applyFinalState();
+              };
         },
         {
           amount: threshold,
@@ -129,7 +146,8 @@ export function useAnimation(
     }
 
     return () => {
-      animationRef.current?.stop();
+      // Preserve final state on unmount instead of stopping
+      applyFinalState();
     };
   }, [
     keyframes,

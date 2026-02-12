@@ -105,7 +105,11 @@ const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
     };
 
     const isFloating = floatingLabel && label;
-    const shouldFloat = isFloating && (isFocused || hasValue);
+    // Check if there's a placeholder option (first option with empty value)
+    const hasPlaceholder =
+      options.length > 0 && (options[0]?.value === '' || options[0]?.value === undefined);
+    // Float label when focused, has value, or has placeholder (to avoid overlap with placeholder text)
+    const shouldFloat = isFloating && (isFocused || hasValue || hasPlaceholder);
 
     // Motion variants for the floating label
     const labelVariants = {

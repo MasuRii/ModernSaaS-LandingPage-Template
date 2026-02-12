@@ -121,6 +121,34 @@ const finalCrumbs = crumbs || defaultCrumbs;
     <!-- Theme script to prevent flash of wrong theme -->
     <script is:inline set:html={getThemeScript('system')} />
 
+    <!-- Theme persistence during Astro View Transitions -->
+    <script>
+      // Reapply theme after each page transition to prevent flash of wrong theme
+      document.addEventListener('astro:after-swap', () => {
+        try {
+          const stored = localStorage.getItem('theme');
+          let theme = 'light';
+
+          if (stored === 'light' || stored === 'dark') {
+            theme = stored;
+          } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            theme = 'dark';
+          }
+
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.style.colorScheme = theme;
+
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch {
+          // Silent fail if localStorage is not available
+        }
+      });
+    </script>
+
     <!-- Redirect handler for SPA routing on GitHub Pages -->
     <script>
       import { handleRedirect } from '../utils/routing';

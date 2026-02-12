@@ -230,6 +230,7 @@ export const ROUTES = {
   TERMS: '/terms/',
   DOCS: '/docs/',
   DOCS_API: '/docs/api/',
+  STATUS: '/status/',
 
   // Auth mockups (demo modal triggered)
   LOGIN: '/login/',
@@ -269,9 +270,9 @@ export const NAVIGATION = {
       { label: 'Careers', href: ROUTES.CAREERS },
     ],
     resources: [
-      { label: 'Documentation', href: ROUTES.FEATURES },
+      { label: 'Documentation', href: ROUTES.DOCS },
       { label: 'Help Center', href: ROUTES.SUPPORT },
-      { label: 'API Reference', href: ROUTES.FEATURES },
+      { label: 'API Reference', href: ROUTES.DOCS_API },
     ],
     legal: [
       { label: 'Privacy Policy', href: ROUTES.PRIVACY },
@@ -302,7 +303,6 @@ export const isDemoRoute = (path: string): boolean => {
     ROUTES.DASHBOARD,
     ROUTES.SETTINGS,
     ROUTES.INTEGRATIONS,
-    ROUTES.CAREERS,
   ];
   return demoRoutes.some((route) => path === route || path.startsWith(route));
 };

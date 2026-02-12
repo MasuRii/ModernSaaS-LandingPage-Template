@@ -223,7 +223,7 @@ export const footer: FooterConfig = {
   newsletterPrivacy: 'We respect your privacy. Unsubscribe at any time.',
   copyright: '© {year} ModernSaaS Inc. All rights reserved.',
   registrationNumber: 'Registered in Delaware, USA',
-  statusPageUrl: 'https://status.modernsaas.dev',
+  statusPageUrl: '/status/',
 } as const;
 
 /**
@@ -332,7 +332,7 @@ export const siteNavigation = {
         { label: 'Documentation', href: ROUTES.DOCS },
         { label: 'Help Center', href: ROUTES.SUPPORT },
         { label: 'API Reference', href: ROUTES.DOCS_API },
-        { label: 'Status', href: footer.statusPageUrl, external: true },
+        { label: 'Status', href: ROUTES.STATUS },
       ],
     },
     legal: {
@@ -430,6 +430,22 @@ export const pageSEO = {
     title: 'Page Not Found',
     description: `Sorry, we couldn't find the page you're looking for.`,
     robots: 'noindex, nofollow',
+  },
+  careers: {
+    title: 'Careers',
+    description: `Join the ${company.name} team. We're hiring passionate people who want to build the future of work.`,
+  },
+  docs: {
+    title: 'Documentation',
+    description: `Get started with ${company.name}. Explore our guides, API reference, and tutorials.`,
+  },
+  docsApi: {
+    title: 'API Reference',
+    description: `Complete API documentation for ${company.name}. REST endpoints, authentication, and code examples.`,
+  },
+  status: {
+    title: 'Status',
+    description: `Check the current status of ${company.name} services, uptime, and incident history.`,
   },
 } as const;
 

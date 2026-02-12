@@ -15,6 +15,43 @@ import { ROUTES } from '../config/paths';
 ---
 
 <Layout title="404 - Page Not Found">
+  {/* SPA redirect for GitHub Pages: redirects valid routes before page renders */}
+  <script is:inline slot="head">
+    // Single Page Apps for GitHub Pages
+    // https://github.com/rafgraph/spa-github-pages
+
+    (function () {
+      // Get the repository name from the path
+      const pathSegments = window.location.pathname.split('/');
+      const repoName = pathSegments[1]; // First segment after domain
+
+      // Check if we're on a project page (subdirectory)
+      // On GitHub Pages, hostname is user.github.io
+      const isProjectPage =
+        window.location.hostname.includes('github.io') &&
+        pathSegments.length > 1 &&
+        repoName &&
+        !repoName.includes('.');
+
+      // Build the redirect URL
+      let redirectUrl;
+      if (isProjectPage) {
+        // Project page: /repo-name/path -> /repo-name/?redirect=/path
+        const remainingPath = pathSegments.slice(2).join('/');
+        redirectUrl = '/' + repoName + '/?redirect=/' + remainingPath + window.location.hash;
+      } else {
+        // Root page: /path -> /?redirect=/path
+        redirectUrl = '/?redirect=' + window.location.pathname + window.location.hash;
+      }
+
+      // Preserve query parameters
+      if (window.location.search) {
+        redirectUrl += '&' + window.location.search.slice(1);
+      }
+
+      window.location.replace(redirectUrl);
+    })();
+  </script>
   <Container size="narrow" className="py-20 md:py-32 text-center">
     <div class="space-y-8">
       {/* 404 Error Code */}

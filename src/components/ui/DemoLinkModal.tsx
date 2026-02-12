@@ -225,103 +225,111 @@ export const DemoLinkModal = ({
         }}
       />
 
-      {/* Modal dialog */}
+      {/* Modal dialog container - flexbox centering to avoid transform conflicts */}
       <div
-        ref={containerRef}
-        className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md mx-4 z-50"
+        className="fixed inset-0 flex items-center justify-center z-50 p-4"
         role="dialog"
         aria-modal="true"
         aria-labelledby="demo-link-modal-title"
         aria-describedby="demo-link-modal-description"
         data-testid="modal-content"
-        style={{
-          animation: prefersReducedMotion ? undefined : `modalEnter ${animationDuration} ease-out`,
-        }}
       >
-        <div className="bg-bg-primary border border-border-default rounded-2xl shadow-2xl overflow-hidden">
-          {/* Header with icon and close button */}
-          <div className="relative bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-primary-950/30 dark:to-secondary-950/30 p-6">
-            {/* Close button */}
-            <button
-              type="button"
-              onClick={onClose}
-              className="absolute top-4 right-4 p-2 text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
-              aria-label="Close modal"
-              data-testid="modal-close"
-            >
-              <X className="w-5 h-5" aria-hidden="true" />
-            </button>
-
-            {/* Icon */}
-            <div className="flex justify-center">
-              <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900/50 rounded-2xl flex items-center justify-center">
-                <IconComponent className="w-8 h-8 text-primary-600 dark:text-primary-400" />
-              </div>
-            </div>
-          </div>
-
-          {/* Content */}
-          <div className="p-6 space-y-4">
-            {/* Title */}
-            <h2
-              id="demo-link-modal-title"
-              className="text-xl font-bold text-text-primary text-center"
-            >
-              {title}
-            </h2>
-
-            {/* Message */}
-            <p
-              id="demo-link-modal-description"
-              className="text-text-secondary text-center"
-              data-testid="demo-message"
-            >
-              {message}
-            </p>
-
-            {/* Additional description if provided */}
-            {description && <p className="text-sm text-text-tertiary text-center">{description}</p>}
-
-            {/* URL display */}
-            <div className="bg-bg-secondary rounded-lg p-3 flex items-center gap-3">
-              <ExternalLink className="w-4 h-4 text-text-tertiary flex-shrink-0" />
-              <code className="flex-1 text-sm text-text-secondary truncate font-mono">{url}</code>
-            </div>
-
-            {/* Actions */}
-            <div className="flex gap-3 pt-2">
-              {/* Copy URL button */}
-              <button
-                type="button"
-                onClick={handleCopy}
-                className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 ${
-                  copied
-                    ? 'bg-success-100 text-success-700 dark:bg-success-900/30 dark:text-success-400'
-                    : 'bg-primary-600 text-white hover:bg-primary-700'
-                }`}
-                aria-label={copied ? 'URL copied to clipboard' : actionText}
-              >
-                {copied ? (
-                  <>
-                    <Check className="w-4 h-4" aria-hidden="true" />
-                    <span>Copied!</span>
-                  </>
-                ) : (
-                  <>
-                    <Copy className="w-4 h-4" aria-hidden="true" />
-                    <span>{actionText}</span>
-                  </>
-                )}
-              </button>
-
+        <div
+          ref={containerRef}
+          className="w-full max-w-md"
+          style={{
+            animation: prefersReducedMotion
+              ? undefined
+              : `modalEnter ${animationDuration} ease-out`,
+          }}
+        >
+          <div className="bg-bg-primary border border-border-default rounded-2xl shadow-2xl overflow-hidden">
+            {/* Header with icon and close button */}
+            <div className="relative bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-primary-950/30 dark:to-secondary-950/30 p-6">
               {/* Close button */}
               <button
                 type="button"
                 onClick={onClose}
-                className="px-4 py-2.5 text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+                className="absolute top-4 right-4 p-2 text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+                aria-label="Close modal"
+                data-testid="modal-close"
               >
-                Close
+                <X className="w-5 h-5" aria-hidden="true" />
               </button>
+
+              {/* Icon */}
+              <div className="flex justify-center">
+                <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900/50 rounded-2xl flex items-center justify-center">
+                  <IconComponent className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+                </div>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="p-6 space-y-4">
+              {/* Title */}
+              <h2
+                id="demo-link-modal-title"
+                className="text-xl font-bold text-text-primary text-center"
+              >
+                {title}
+              </h2>
+
+              {/* Message */}
+              <p
+                id="demo-link-modal-description"
+                className="text-text-secondary text-center"
+                data-testid="demo-message"
+              >
+                {message}
+              </p>
+
+              {/* Additional description if provided */}
+              {description && (
+                <p className="text-sm text-text-tertiary text-center">{description}</p>
+              )}
+
+              {/* URL display */}
+              <div className="bg-bg-secondary rounded-lg p-3 flex items-center gap-3">
+                <ExternalLink className="w-4 h-4 text-text-tertiary flex-shrink-0" />
+                <code className="flex-1 text-sm text-text-secondary truncate font-mono">{url}</code>
+              </div>
+
+              {/* Actions */}
+              <div className="flex gap-3 pt-2">
+                {/* Copy URL button */}
+                <button
+                  type="button"
+                  onClick={handleCopy}
+                  className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-medium transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2 ${
+                    copied
+                      ? 'bg-success-100 text-success-700 dark:bg-success-900/30 dark:text-success-400'
+                      : 'bg-primary-600 text-white hover:bg-primary-700'
+                  }`}
+                  aria-label={copied ? 'URL copied to clipboard' : actionText}
+                >
+                  {copied ? (
+                    <>
+                      <Check className="w-4 h-4" aria-hidden="true" />
+                      <span>Copied!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-4 h-4" aria-hidden="true" />
+                      <span>{actionText}</span>
+                    </>
+                  )}
+                </button>
+
+                {/* Close button */}
+                <button
+                  type="button"
+                  onClick={onClose}
+                  className="px-4 py-2.5 text-text-secondary hover:text-text-primary hover:bg-bg-secondary rounded-lg font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-600 focus-visible:ring-offset-2"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -341,11 +349,11 @@ export const DemoLinkModal = ({
         @keyframes modalEnter {
           from {
             opacity: 0;
-            transform: translate(-50%, -50%) scale(0.95);
+            transform: scale(0.95);
           }
           to {
             opacity: 1;
-            transform: translate(-50%, -50%) scale(1);
+            transform: scale(1);
           }
         }
       `}</style>

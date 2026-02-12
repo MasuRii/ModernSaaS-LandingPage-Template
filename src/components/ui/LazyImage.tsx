@@ -48,6 +48,7 @@ export const LazyImage = React.forwardRef<HTMLImageElement, LazyImageProps>(
   ) => {
     const [isLoaded, setIsLoaded] = React.useState(false);
     const [hasError, setHasError] = React.useState(false);
+    const imgRef = React.useRef<HTMLImageElement>(null);
 
     const handleLoad = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
       setIsLoaded(true);
@@ -58,6 +59,25 @@ export const LazyImage = React.forwardRef<HTMLImageElement, LazyImageProps>(
       setHasError(true);
       if (onError) onError(event);
     };
+
+    // Check if image is already cached on mount - handles race condition where
+    // onLoad never fires for cached images during React hydration
+    React.useEffect(() => {
+      if (imgRef.current?.complete && !isLoaded) {
+        setIsLoaded(true);
+      }
+    }, [isLoaded]);
+
+    // Fallback: force show image after 5 seconds to prevent perpetual skeleton state
+    React.useEffect(() => {
+      if (isLoaded) return;
+
+      const timeoutId = setTimeout(() => {
+        setIsLoaded(true);
+      }, 5000);
+
+      return () => clearTimeout(timeoutId);
+    }, [isLoaded]);
 
     // If no src, we can't show much
     if (!src) return null;
@@ -90,7 +110,15 @@ export const LazyImage = React.forwardRef<HTMLImageElement, LazyImageProps>(
 
         {/* Actual Image */}
         <img
-          ref={ref}
+          ref={(node) => {
+            // Compose refs: set both forwarded ref and internal ref
+            imgRef.current = node;
+            if (typeof ref === 'function') {
+              ref(node);
+            } else if (ref) {
+              ref.current = node;
+            }
+          }}
           src={resolvedSrc}
           alt={alt}
           loading={loading}

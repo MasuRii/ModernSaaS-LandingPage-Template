@@ -197,12 +197,15 @@ if (blurUp && isLocalImage && loading === 'lazy') {
   function initLazyImages() {
     const lazyImages = document.querySelectorAll('img[data-lazy-image="true"]');
 
-    lazyImages.forEach((img) => {
+    lazyImages.forEach((element) => {
+      const img = element as HTMLImageElement;
+
       // If image is already loaded (cached), show it immediately
       if (img.complete && img.naturalHeight !== 0) {
         img.style.opacity = '1';
-        const wrapper = img.closest('.image-wrapper');
-        if (wrapper) {
+        const wrapperElement = img.closest('.image-wrapper');
+        if (wrapperElement) {
+          const wrapper = wrapperElement as HTMLElement;
           wrapper.style.filter = 'none';
         }
         return;
@@ -211,8 +214,9 @@ if (blurUp && isLocalImage && loading === 'lazy') {
       // Set up load handler
       img.addEventListener('load', () => {
         img.style.opacity = '1';
-        const wrapper = img.closest('.image-wrapper');
-        if (wrapper) {
+        const wrapperElement = img.closest('.image-wrapper');
+        if (wrapperElement) {
+          const wrapper = wrapperElement as HTMLElement;
           wrapper.style.filter = 'none';
         }
       });
@@ -221,8 +225,9 @@ if (blurUp && isLocalImage && loading === 'lazy') {
       setTimeout(() => {
         if (img.style.opacity !== '1') {
           img.style.opacity = '1';
-          const wrapper = img.closest('.image-wrapper');
-          if (wrapper) {
+          const wrapperElement = img.closest('.image-wrapper');
+          if (wrapperElement) {
+            const wrapper = wrapperElement as HTMLElement;
             wrapper.style.filter = 'none';
           }
         }

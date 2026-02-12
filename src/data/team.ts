@@ -59,7 +59,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Alexandra Chen',
     role: 'CEO & Co-Founder',
     bio: 'Former VP of Product at TechGiant. Built and scaled products used by millions. Passionate about creating tools that empower teams.',
-    avatar: '/images/team-01.jpg',
+    avatar: '/images/team/person-01.jpg',
     social: [
       { platform: 'twitter', url: 'https://twitter.com/alexchen' },
       { platform: 'linkedin', url: 'https://linkedin.com/in/alexchen' },
@@ -72,7 +72,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Marcus Johnson',
     role: 'CTO & Co-Founder',
     bio: 'Ex-Google engineer with 15+ years building distributed systems. Open source contributor and conference speaker.',
-    avatar: '/images/team-02.jpg',
+    avatar: '/images/team/person-02.jpg',
     social: [
       { platform: 'twitter', url: 'https://twitter.com/marcusj' },
       { platform: 'linkedin', url: 'https://linkedin.com/in/marcusj' },
@@ -86,7 +86,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Priya Sharma',
     role: 'Head of Design',
     bio: 'Award-winning designer previously at Apple and Airbnb. Believes great design is invisible and intuitive.',
-    avatar: '/images/team-03.jpg',
+    avatar: '/images/team/person-03.jpg',
     social: [
       { platform: 'twitter', url: 'https://twitter.com/priyas' },
       { platform: 'linkedin', url: 'https://linkedin.com/in/priyas' },
@@ -100,7 +100,7 @@ export const teamMembers: TeamMember[] = [
     name: 'David Kim',
     role: 'VP of Engineering',
     bio: 'Led engineering teams at multiple unicorn startups. Expert in scaling engineering organizations and technical architecture.',
-    avatar: '/images/team-04.jpg',
+    avatar: '/images/team/person-04.jpg',
     social: [
       { platform: 'linkedin', url: 'https://linkedin.com/in/davidkim' },
       { platform: 'github', url: 'https://github.com/davidkim' },
@@ -113,7 +113,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Emily Rodriguez',
     role: 'Head of Marketing',
     bio: 'Growth marketer with experience taking B2B SaaS companies from $0 to $100M ARR. Data-driven and creative.',
-    avatar: '/images/team-01.jpg',
+    avatar: '/images/team/person-05.jpg',
     social: [
       { platform: 'twitter', url: 'https://twitter.com/emilyr' },
       { platform: 'linkedin', url: 'https://linkedin.com/in/emilyr' },
@@ -126,7 +126,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Thomas Anderson',
     role: 'Senior Product Manager',
     bio: 'Product leader focused on user experience and market fit. Previously shipped products at Microsoft and Shopify.',
-    avatar: '/images/team-02.jpg',
+    avatar: '/images/team/person-06.jpg',
     social: [
       { platform: 'linkedin', url: 'https://linkedin.com/in/thomasanderson' },
       { platform: 'twitter', url: 'https://twitter.com/thomasanderson' },
@@ -139,7 +139,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Sarah Mitchell',
     role: 'Lead Engineer',
     bio: 'Full-stack engineer specializing in performance and scalability. Open source maintainer and tech blogger.',
-    avatar: '/images/team-03.jpg',
+    avatar: '/images/team/person-07.jpg',
     social: [
       { platform: 'github', url: 'https://github.com/sarahmitchell' },
       { platform: 'twitter', url: 'https://twitter.com/sarahcodes' },
@@ -152,7 +152,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Jordan Lee',
     role: 'Senior Designer',
     bio: 'UI/UX designer with a background in psychology. Focuses on creating accessible and inclusive digital experiences.',
-    avatar: '/images/team-04.jpg',
+    avatar: '/images/team/person-08.jpg',
     social: [
       { platform: 'website', url: 'https://jordanlee.design' },
       { platform: 'linkedin', url: 'https://linkedin.com/in/jordanlee' },
@@ -165,7 +165,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Nathan Wright',
     role: 'Senior DevOps Engineer',
     bio: 'Cloud infrastructure expert with a focus on automation and security. Former SRE at high-traffic fintech platforms.',
-    avatar: '/images/team-01.jpg',
+    avatar: '/images/team/person-09.jpg',
     social: [
       { platform: 'github', url: 'https://github.com/nathanwright' },
       { platform: 'linkedin', url: 'https://linkedin.com/in/nathanwright' },
@@ -178,7 +178,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Sophia Lopez',
     role: 'Customer Success Lead',
     bio: 'Dedicated to helping customers achieve their goals. Background in communications and relationship management.',
-    avatar: '/images/team-02.jpg',
+    avatar: '/images/team/person-10.jpg',
     social: [
       { platform: 'twitter', url: 'https://twitter.com/sophial' },
       { platform: 'linkedin', url: 'https://linkedin.com/in/sophial' },

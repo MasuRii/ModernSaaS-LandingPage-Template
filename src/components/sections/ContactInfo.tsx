@@ -81,11 +81,11 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({ className, id = 'conta
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
           {/* Header Content */}
           <motion.div
-            initial="initial"
+            initial={false}
             whileInView="animate"
             viewport={{ once: true, margin: '-100px' }}
             variants={PRESETS.fadeInUp as unknown as Variants}
-            className="lg:col-span-1"
+            className="will-change-transform lg:col-span-1"
           >
             <h2 className="mb-4 text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
               Other ways to connect
@@ -117,11 +117,11 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({ className, id = 'conta
 
           {/* Contact Methods Grid */}
           <motion.div
-            initial="initial"
+            initial={false}
             whileInView="animate"
             viewport={{ once: true, margin: '-100px' }}
             variants={PRESETS.stagger as unknown as Variants}
-            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2"
+            className="will-change-transform grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2"
           >
             {contactMethods.map((method) => (
               <motion.div key={method.title} variants={PRESETS.fadeInUp as unknown as Variants}>

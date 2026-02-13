@@ -56,11 +56,11 @@ export const ChangelogFeed: React.FC<ChangelogFeedProps> = ({ entries }) => {
           {entries.map((entry, index) => (
             <motion.div
               key={entry.version}
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative pl-8 md:pl-0"
+              className="relative pl-8 md:pl-0 will-change-transform"
             >
               {/* Timeline Connector */}
               {index !== entries.length - 1 && (

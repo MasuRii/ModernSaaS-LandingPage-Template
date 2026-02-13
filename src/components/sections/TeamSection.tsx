@@ -73,7 +73,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({
                 {leadership.map((member, index) => (
                   <motion.div
                     key={member.id}
-                    initial="initial"
+                    initial={false}
                     whileInView="animate"
                     viewport={{ once: true, margin: '-50px' }}
                     variants={
@@ -88,6 +88,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({
                         },
                       } as unknown as Variants
                     }
+                    className="will-change-transform"
                   >
                     <TeamMemberCard
                       name={member.name}
@@ -112,7 +113,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({
                 {others.map((member, index) => (
                   <motion.div
                     key={member.id}
-                    initial="initial"
+                    initial={false}
                     whileInView="animate"
                     viewport={{ once: true, margin: '-50px' }}
                     variants={
@@ -127,6 +128,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({
                         },
                       } as unknown as Variants
                     }
+                    className="will-change-transform"
                   >
                     <TeamMemberCard
                       name={member.name}

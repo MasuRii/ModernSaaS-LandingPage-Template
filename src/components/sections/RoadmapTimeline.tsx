@@ -57,11 +57,11 @@ export const RoadmapTimeline: React.FC<RoadmapTimelineProps> = ({ quarters }) =>
             <div key={quarter.quarter} className="relative">
               {/* Quarter Header */}
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
+                initial={false}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="flex items-center gap-4 mb-8"
+                className="flex items-center gap-4 mb-8 will-change-transform"
               >
                 <div className="h-px flex-1 bg-border-default hidden md:block" />
                 <h2 className="text-2xl font-bold text-text-primary px-4 py-2 rounded-full border border-border-default bg-bg-secondary shrink-0">
@@ -75,11 +75,11 @@ export const RoadmapTimeline: React.FC<RoadmapTimelineProps> = ({ quarters }) =>
                 {quarter.items.map((item, iIndex) => (
                   <motion.div
                     key={item.id}
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={false}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: iIndex * 0.1 }}
-                    className="group relative bg-bg-primary border border-border-default rounded-2xl p-6 hover:shadow-lg hover:border-primary-500/30 transition-all duration-300"
+                    className="group relative bg-bg-primary border border-border-default rounded-2xl p-6 hover:shadow-lg hover:border-primary-500/30 transition-all duration-300 will-change-transform"
                   >
                     <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                       <div className="flex gap-4">

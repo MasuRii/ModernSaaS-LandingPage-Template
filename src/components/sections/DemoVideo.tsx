@@ -70,10 +70,10 @@ export const DemoVideo: React.FC<DemoVideoProps> = ({
       <Container>
         <motion.div
           variants={PRESETS.fadeInUp as unknown as Variants}
-          initial="initial"
+          initial={false}
           whileInView="animate"
           viewport={{ once: true }}
-          className="relative max-w-4xl mx-auto group"
+          className="relative max-w-4xl mx-auto group will-change-transform"
         >
           <DemoLink
             href={demoUrl}

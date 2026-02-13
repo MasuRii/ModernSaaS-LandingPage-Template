@@ -65,9 +65,10 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
           {displayTestimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
-              initial="initial"
+              initial={false}
               whileInView="animate"
               viewport={{ once: true, margin: '-50px' }}
+              className="will-change-transform"
               variants={
                 {
                   initial: PRESETS.fadeInUp?.initial,

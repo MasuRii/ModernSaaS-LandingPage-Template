@@ -76,10 +76,11 @@ export const EnterpriseContact: React.FC<EnterpriseContactProps> = ({
         <div className="relative z-10 grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           {/* Content & CTA */}
           <motion.div
-            initial="initial"
+            initial={false}
             whileInView="animate"
             viewport={{ once: true, margin: '-100px' }}
             variants={PRESETS.fadeInUp as unknown as Variants}
+            className="will-change-transform"
           >
             <h2
               id={`${id}-heading`}
@@ -118,11 +119,11 @@ export const EnterpriseContact: React.FC<EnterpriseContactProps> = ({
 
           {/* Features Grid */}
           <motion.div
-            initial="initial"
+            initial={false}
             whileInView="animate"
             viewport={{ once: true, margin: '-100px' }}
             variants={PRESETS.stagger as unknown as Variants}
-            className="grid grid-cols-1 gap-6 sm:grid-cols-2"
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2 will-change-transform"
           >
             {enterpriseFeatures.map((feature, index) => {
               const IconComponent = ICON_MAP[feature.icon as keyof typeof ICON_MAP] || Settings;

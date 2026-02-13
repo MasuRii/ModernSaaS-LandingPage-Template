@@ -25,11 +25,11 @@ export const MoneyBackGuarantee: React.FC<{ className?: string }> = ({ className
     >
       <Container>
         <motion.div
-          initial="initial"
+          initial={false}
           whileInView="animate"
           viewport={{ once: true }}
           variants={PRESETS.fadeInUp as unknown as Variants}
-          className="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-6 md:gap-10 max-w-4xl mx-auto p-8 rounded-3xl bg-bg-primary border border-border-default shadow-sm"
+          className="flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-6 md:gap-10 max-w-4xl mx-auto p-8 rounded-3xl bg-bg-primary border border-border-default shadow-sm will-change-transform"
         >
           <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-primary-50 dark:bg-primary-900/20 flex items-center justify-center">
             <ShieldCheck className="w-10 h-10 text-primary-600 dark:text-primary-400" />

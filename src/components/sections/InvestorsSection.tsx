@@ -49,10 +49,11 @@ export const InvestorsSection: React.FC<InvestorsSectionProps> = ({
     >
       <Container>
         <motion.div
-          initial="initial"
+          initial={false}
           whileInView="animate"
           viewport={{ once: true, margin: '-100px' }}
           variants={PRESETS.fadeInUp as unknown as Variants}
+          className="will-change-transform"
         >
           <LogoCloud title={title} logos={investors} marquee={false} cols={3} className="py-0" />
         </motion.div>

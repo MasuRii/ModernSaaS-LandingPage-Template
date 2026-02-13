@@ -52,11 +52,11 @@ export const AboutStats: React.FC<AboutStatsProps> = ({
       <Container>
         {/* Section Header */}
         <motion.div
-          initial="initial"
+          initial={false}
           whileInView="animate"
           viewport={{ once: true, margin: '-100px' }}
           variants={PRESETS.fadeInUp as unknown as Variants}
-          className="mx-auto mb-16 max-w-2xl text-center"
+          className="mx-auto mb-16 max-w-2xl text-center will-change-transform"
         >
           <h2
             id={`${id}-heading`}
@@ -69,11 +69,11 @@ export const AboutStats: React.FC<AboutStatsProps> = ({
 
         {/* Stats Grid */}
         <motion.div
-          initial="initial"
+          initial={false}
           whileInView="animate"
           viewport={{ once: true, margin: '-100px' }}
           variants={PRESETS.stagger as unknown as Variants}
-          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 will-change-transform"
         >
           {companyStats.map((stat, index) => (
             <motion.div

@@ -74,9 +74,10 @@ export const CompanyValues: React.FC<CompanyValuesProps> = ({
             return (
               <motion.div
                 key={value.id}
-                initial="initial"
+                initial={false}
                 whileInView="animate"
                 viewport={{ once: true, margin: '-50px' }}
+                className="will-change-transform"
                 variants={
                   {
                     initial: PRESETS.fadeInUp?.initial,

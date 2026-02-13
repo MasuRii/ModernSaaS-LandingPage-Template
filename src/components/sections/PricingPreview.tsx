@@ -59,11 +59,11 @@ export const PricingPreview: React.FC<PricingPreviewProps> = ({
       <Container>
         {showToggle && (
           <motion.div
-            initial="initial"
+            initial={false}
             whileInView="animate"
             viewport={{ once: true }}
             variants={PRESETS.fadeInUp as unknown as Variants}
-            className="mb-12 flex justify-center"
+            className="mb-12 flex justify-center will-change-transform"
           >
             <BillingToggle
               value={billingPeriod}
@@ -89,7 +89,7 @@ export const PricingPreview: React.FC<PricingPreviewProps> = ({
             return (
               <motion.div
                 key={tier.id}
-                initial="initial"
+                initial={false}
                 whileInView="animate"
                 viewport={{ once: true }}
                 variants={{
@@ -100,7 +100,7 @@ export const PricingPreview: React.FC<PricingPreviewProps> = ({
                     transition: { duration: 0.5, delay: index * 0.1 },
                   },
                 }}
-                className="h-full"
+                className="h-full will-change-transform"
               >
                 <PricingCard
                   tier={tier.name}
@@ -121,11 +121,11 @@ export const PricingPreview: React.FC<PricingPreviewProps> = ({
         </div>
 
         <motion.div
-          initial="initial"
+          initial={false}
           whileInView="animate"
           viewport={{ once: true }}
           variants={PRESETS.fadeInUp as unknown as Variants}
-          className="mt-16 text-center"
+          className="mt-16 text-center will-change-transform"
         >
           <Link
             href={ROUTES.PRICING}

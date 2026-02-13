@@ -50,10 +50,11 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ className }) => {
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16 lg:mb-24">
           <motion.div
-            initial="initial"
+            initial={false}
             whileInView="animate"
             viewport={{ once: true }}
             variants={PRESETS.fadeInUp as unknown as Variants}
+            className="will-change-transform"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-text-primary mb-4">
               Get started in{' '}
@@ -77,8 +78,8 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ className }) => {
           />
 
           <motion.div
-            className="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-8"
-            initial="initial"
+            className="grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-8 will-change-transform"
+            initial={false}
             whileInView="animate"
             viewport={{ once: true, margin: '-100px' }}
             variants={

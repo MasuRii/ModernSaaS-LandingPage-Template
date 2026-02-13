@@ -191,6 +191,114 @@ export const PRESETS: Record<string, AnimationPreset> = {
 };
 
 // ============================================================================
+// Visibility-First Animation Presets
+// ============================================================================
+
+/**
+ * VISIBLE_PRESETS - Animation presets that start with visible elements.
+ *
+ * These presets are designed for scroll-triggered animations (whileInView) where
+ * elements should remain visible by default to prevent the "disappearing on scroll" bug.
+ *
+ * Key differences from PRESETS:
+ * - All initial states use `opacity: 1` instead of `opacity: 0`
+ * - Elements start visible but still animate on scroll
+ * - Use with `initial={false}` on motion components for best results
+ *
+ * @see AGENTS.md - Animation System - Scroll Animation Visibility Bug
+ */
+export const VISIBLE_PRESETS: Record<string, AnimationPreset> = {
+  /** Fade in - subtle opacity transition (starts visible) */
+  fadeIn: {
+    initial: { opacity: 1 },
+    animate: { opacity: 1 },
+    transition: { duration: DURATIONS.normal, ease: EASINGS.easeOut },
+  },
+
+  /** Fade in up - entrance from below (starts visible) */
+  fadeInUp: {
+    initial: { opacity: 1, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: DURATIONS.normal, ease: EASINGS.easeOut },
+  },
+
+  /** Fade in down - entrance from above (starts visible) */
+  fadeInDown: {
+    initial: { opacity: 1, y: -20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: DURATIONS.normal, ease: EASINGS.easeOut },
+  },
+
+  /** Fade in left - entrance from right (starts visible) */
+  fadeInLeft: {
+    initial: { opacity: 1, x: 20 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: DURATIONS.normal, ease: EASINGS.easeOut },
+  },
+
+  /** Fade in right - entrance from left (starts visible) */
+  fadeInRight: {
+    initial: { opacity: 1, x: -20 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: DURATIONS.normal, ease: EASINGS.easeOut },
+  },
+
+  /** Scale in - grow from small (starts visible) */
+  scaleIn: {
+    initial: { opacity: 1, scale: 0.9 },
+    animate: { opacity: 1, scale: 1 },
+    transition: { duration: DURATIONS.normal, ease: EASINGS.spring },
+  },
+
+  /** Scale in up - grow and rise (starts visible) */
+  scaleInUp: {
+    initial: { opacity: 1, scale: 0.95, y: 10 },
+    animate: { opacity: 1, scale: 1, y: 0 },
+    transition: { duration: DURATIONS.slow, ease: EASINGS.spring },
+  },
+
+  /** Slide up - vertical entrance (starts visible) */
+  slideUp: {
+    initial: { y: 30, opacity: 1 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: DURATIONS.slow, ease: EASINGS.easeOut },
+  },
+
+  /** Stagger children - for lists and grids (starts visible) */
+  stagger: {
+    initial: { opacity: 1, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: {
+      duration: DURATIONS.normal,
+      ease: EASINGS.easeOut,
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+
+  /** Pop - bouncy scale effect (starts visible) */
+  pop: {
+    initial: { scale: 0.8, opacity: 1 },
+    animate: { scale: 1, opacity: 1 },
+    transition: { duration: DURATIONS.slow, ease: EASINGS.spring },
+  },
+
+  /** Hero entrance - dramatic reveal (starts visible) */
+  heroEntrance: {
+    initial: { opacity: 1, y: 40, scale: 0.95 },
+    animate: { opacity: 1, y: 0, scale: 1 },
+    transition: { duration: DURATIONS.slower, ease: EASINGS.easeOut },
+  },
+
+  /** Mockup entrance - scale and fade (starts visible) */
+  mockupEntrance: {
+    initial: { opacity: 1, scale: 0.9, x: 20 },
+    animate: { opacity: 1, scale: 1, x: 0 },
+    transition: { duration: DURATIONS.slower, ease: EASINGS.easeOut },
+  },
+};
+
+// ============================================================================
 // Stagger Configuration
 // ============================================================================
 
@@ -273,6 +381,7 @@ export default {
   DURATIONS,
   EASINGS,
   PRESETS,
+  VISIBLE_PRESETS,
   STAGGER,
   PERFORMANCE,
   ACCESSIBILITY,

@@ -68,10 +68,11 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-12 lg:mb-16">
           <motion.div
-            initial="initial"
+            initial={false}
             whileInView="animate"
             viewport={{ once: true }}
             variants={PRESETS.fadeInUp as unknown as Variants}
+            className="will-change-transform"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-text-primary mb-4">
               Works with{' '}
@@ -95,11 +96,11 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
           {/* Category Filters */}
           {showFilters && (
             <motion.div
-              initial="initial"
+              initial={false}
               whileInView="animate"
               viewport={{ once: true }}
               variants={PRESETS.fadeInUp as unknown as Variants}
-              className="flex justify-center mb-12"
+              className="flex justify-center mb-12 will-change-transform"
             >
               <TabsList className="flex flex-wrap justify-center h-auto p-1 bg-bg-secondary/50 backdrop-blur-sm border border-border-muted rounded-full">
                 <TabsTrigger
@@ -167,11 +168,11 @@ export const IntegrationsSection: React.FC<IntegrationsSectionProps> = ({
         {/* View All Button (Optional) */}
         {integrations.length > limit && activeCategory === 'all' && (
           <motion.div
-            initial="initial"
+            initial={false}
             whileInView="animate"
             viewport={{ once: true }}
             variants={PRESETS.fadeInUp as unknown as Variants}
-            className="flex justify-center mt-12"
+            className="flex justify-center mt-12 will-change-transform"
           >
             <Link
               href={ROUTES.INTEGRATIONS}

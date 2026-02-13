@@ -204,6 +204,74 @@
 }
 
 /**
+ * Defensive CSS: Default visibility for all motion elements.
+ * Ensures Framer Motion elements are visible by default before JS executes.
+ * This prevents the "disappearing on scroll" bug by establishing visible
+ * baseline states that Framer Motion can then animate from.
+ */
+[data-framer-motion],
+[data-framer-motion] *,
+[data-motion],
+[data-motion] *,
+[class*='motion-'] {
+  visibility: visible;
+  opacity: 1;
+}
+
+/**
+ * Defensive CSS: Section visibility baseline.
+ * Ensures all section elements are visible by default.
+ * This provides CSS-level protection before JavaScript hydration.
+ */
+section,
+section > div,
+section > div > div {
+  visibility: visible;
+  opacity: 1;
+}
+
+/**
+ * Defensive CSS: Animation container visibility.
+ * Targets common animation wrapper patterns to ensure
+ * content remains visible during and after animations.
+ */
+[class*='animate-'],
+[class*='animate-'] > *,
+[class*='fade'],
+[class*='fade'] > *,
+[class*='scale'],
+[class*='scale'] > *,
+[class*='slide'],
+[class*='slide'] > * {
+  visibility: visible;
+  opacity: 1;
+}
+
+/**
+ * Defensive CSS: will-change-transform visibility safeguard.
+ * Elements using will-change-transform (GPU acceleration) should
+ * remain visible at all times to prevent disappearing on scroll.
+ */
+.will-change-transform,
+[class*='will-change'] {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/**
+ * Defensive CSS: Scroll-triggered animation containers.
+ * Ensures viewport-triggered animation containers are visible
+ * before intersection observer activates.
+ */
+[data-motion-while-in-view],
+[data-motion-while-in-view] *,
+[data-motion-viewport],
+[data-motion-viewport] * {
+  visibility: visible;
+  opacity: 1;
+}
+
+/**
  * Reduced motion: immediately show content.
  * Applied when user prefers reduced motion.
  * All animated elements are forced visible with no transforms.

@@ -87,6 +87,7 @@ export const FeaturesOverview: React.FC<FeaturesOverviewProps> = ({ className })
             viewport={{ once: true }}
             variants={PRESETS.fadeInUp as unknown as Variants}
             className="will-change-transform"
+            style={{ opacity: 1 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-text-primary mb-4">
               Everything you need to{' '}
@@ -116,6 +117,7 @@ export const FeaturesOverview: React.FC<FeaturesOverviewProps> = ({ className })
             } as unknown as Variants
           }
           className="will-change-transform"
+          style={{ opacity: 1 }}
         >
           <BentoGrid cols={3} gap={6}>
             {featuresOverview.map((feature, index) => {

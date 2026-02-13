@@ -73,6 +73,7 @@ export const LogoCloudSection: React.FC<LogoCloudSectionProps> = ({
           viewport={{ once: true, margin: '-100px' }}
           variants={PRESETS.fadeInUp as unknown as Variants}
           className="will-change-transform"
+          style={{ opacity: 1 }}
         >
           <LogoCloud
             title={title}

@@ -84,6 +84,7 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
               viewport={{ once: true, margin: '-100px' }}
               variants={PRESETS.fadeInRight as unknown as Variants}
               className="relative aspect-[5/6] w-full max-w-[500px] mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-bg-secondary border border-border-default shadow-lg will-change-transform"
+              style={{ opacity: 1 }}
             >
               <LazyImage
                 src={getAssetPath('images/team/person-01.jpg')}
@@ -104,6 +105,7 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
               viewport={{ once: true, margin: '-100px' }}
               variants={PRESETS.fadeInLeft as unknown as Variants}
               className="flex flex-col will-change-transform"
+              style={{ opacity: 1 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-8">
                 Where We Started

@@ -101,9 +101,10 @@ export const UseCases: React.FC<UseCasesProps> = ({ className }) => {
               className="mt-0 focus-visible:outline-none"
             >
               <motion.div
-                initial="initial"
+                initial={false}
                 animate="animate"
                 variants={PRESETS.fadeIn as unknown as Variants}
+                className="will-change-transform"
               >
                 <Card className="max-w-4xl mx-auto border-none shadow-xl bg-bg-primary/80 backdrop-blur-md overflow-hidden">
                   <div className="grid md:grid-cols-2 gap-0">

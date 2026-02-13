@@ -47,9 +47,10 @@ export const ContactHero: React.FC<ContactHeroProps> = ({ className }) => {
       <Container className="relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <motion.div
-            initial="initial"
+            initial={false}
             animate="animate"
             variants={PRESETS.fadeInUp as unknown as Variants}
+            className="will-change-transform"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 leading-[1.1]">
               Get in{' '}

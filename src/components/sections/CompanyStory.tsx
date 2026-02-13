@@ -79,11 +79,11 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
             {/* Left Column: Image */}
             <motion.div
-              initial="initial"
+              initial={false}
               whileInView="animate"
               viewport={{ once: true, margin: '-100px' }}
               variants={PRESETS.fadeInRight as unknown as Variants}
-              className="relative aspect-[5/6] w-full max-w-[500px] mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-bg-secondary border border-border-default shadow-lg"
+              className="relative aspect-[5/6] w-full max-w-[500px] mx-auto lg:mx-0 rounded-2xl overflow-hidden bg-bg-secondary border border-border-default shadow-lg will-change-transform"
             >
               <LazyImage
                 src={getAssetPath('images/team/person-01.jpg')}
@@ -99,11 +99,11 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
 
             {/* Right Column: Text Content */}
             <motion.div
-              initial="initial"
+              initial={false}
               whileInView="animate"
               viewport={{ once: true, margin: '-100px' }}
               variants={PRESETS.fadeInLeft as unknown as Variants}
-              className="flex flex-col"
+              className="flex flex-col will-change-transform"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-8">
                 Where We Started

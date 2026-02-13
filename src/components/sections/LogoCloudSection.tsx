@@ -68,10 +68,11 @@ export const LogoCloudSection: React.FC<LogoCloudSectionProps> = ({
     >
       <Container>
         <motion.div
-          initial="initial"
+          initial={false}
           whileInView="animate"
           viewport={{ once: true, margin: '-100px' }}
           variants={PRESETS.fadeInUp as unknown as Variants}
+          className="will-change-transform"
         >
           <LogoCloud
             title={title}

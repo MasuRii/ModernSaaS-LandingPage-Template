@@ -65,7 +65,7 @@ export const PricingTiers: React.FC<PricingTiersProps> = ({ className, billingPe
             return (
               <motion.div
                 key={tier.id}
-                initial="initial"
+                initial={false}
                 whileInView="animate"
                 viewport={{ once: true, margin: '-100px' }}
                 variants={
@@ -81,7 +81,7 @@ export const PricingTiers: React.FC<PricingTiersProps> = ({ className, billingPe
                     },
                   } as Variants
                 }
-                className="h-full"
+                className="h-full will-change-transform"
               >
                 <PricingCard
                   tier={tier.name}
@@ -105,11 +105,11 @@ export const PricingTiers: React.FC<PricingTiersProps> = ({ className, billingPe
 
         {/* Note about prices */}
         <motion.p
-          initial="initial"
+          initial={false}
           whileInView="animate"
           viewport={{ once: true }}
           variants={PRESETS.fadeInUp as unknown as Variants}
-          className="mt-12 text-center text-sm text-text-muted max-w-2xl mx-auto"
+          className="mt-12 text-center text-sm text-text-muted max-w-2xl mx-auto will-change-transform"
         >
           Prices are shown in USD. Annual billing saves you up to 20% on Pro and Starter plans. All
           plans include a 14-day free trial. No credit card required to start.

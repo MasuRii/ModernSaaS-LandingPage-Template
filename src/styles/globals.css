@@ -171,21 +171,63 @@
  * Ensures content remains visible after animation.
  * Applied as a safeguard to prevent elements from
  * disappearing due to animation cleanup issues.
+ * This selector targets elements with data-animated attribute
+ * and applies visibility safeguards.
  */
-.animate-visible-safeguard {
+.animate-visible-safeguard,
+[data-animated='true'] {
   visibility: visible !important;
   opacity: 1 !important;
 }
 
 /**
+ * Enhanced visibility safeguard for all animated elements.
+ * Applied to ensure elements remain visible after animation completes.
+ * Uses !important to override any conflicting animation states.
+ */
+[data-animated='true'],
+[data-animated='true'] * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/**
+ * Post-animation state safeguard.
+ * Ensures elements maintain full visibility after animations complete.
+ * Targets elements that have finished their animation lifecycle.
+ */
+[data-animation-complete='true'],
+.animate-finished {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/**
  * Reduced motion: immediately show content.
  * Applied when user prefers reduced motion.
+ * All animated elements are forced visible with no transforms.
  */
 @media (prefers-reduced-motion: reduce) {
-  .animate-reduced-motion-visible {
+  .animate-reduced-motion-visible,
+  [data-animated='true'],
+  [data-animated='true'] * {
     visibility: visible !important;
     opacity: 1 !important;
     transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Ensure all motion elements are visible in reduced motion mode */
+  [data-framer-motion],
+  [class*='motion-'],
+  [class*='animate-'] {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
   }
 }
 

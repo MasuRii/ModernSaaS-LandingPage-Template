@@ -81,19 +81,20 @@ export const ProductMockup: React.FC<ProductMockupProps> = ({
         animate={
           floating && !prefersReducedMotion
             ? {
-                y: [0, -12, 0],
+                y: [0, -8, 0],
               }
             : {}
         }
         transition={
           floating && !prefersReducedMotion
             ? {
-                duration: 6,
+                duration: 8,
                 repeat: Infinity,
                 ease: 'easeInOut',
               }
             : {}
         }
+        style={{ willChange: floating && !prefersReducedMotion ? 'transform' : 'auto' }}
         className={frameClasses}
       >
         <div className={screenClasses}>

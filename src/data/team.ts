@@ -279,14 +279,24 @@ export const milestones: Milestone[] = [
   },
 ];
 
-/** Investors for About page */
+/** Investors for About page - Leading SaaS venture capital firms */
 export const investors: Investor[] = [
-  { id: '1', name: 'Sequoia Capital', type: 'vc', logo: '/images/integrations/sequoia.svg' },
-  { id: '2', name: 'Andreessen Horowitz', type: 'vc', logo: '/images/integrations/a16z.svg' },
-  { id: '3', name: 'Y Combinator', type: 'vc', logo: '/images/integrations/yc.svg' },
-  { id: '4', name: 'Accel Partners', type: 'vc', logo: '/images/integrations/accel.svg' },
-  { id: '5', name: 'Greylock', type: 'vc', logo: '/images/integrations/greylock.svg' },
-  { id: '6', name: 'Various Angels', type: 'angel', logo: '/images/integrations/angels.svg' },
+  {
+    id: '1',
+    name: 'Bessemer Venture Partners',
+    type: 'vc',
+    logo: '/images/integrations/bessemer.svg',
+  },
+  { id: '2', name: 'Insight Partners', type: 'vc', logo: '/images/integrations/insight.svg' },
+  {
+    id: '3',
+    name: 'Lightspeed Venture Partners',
+    type: 'vc',
+    logo: '/images/integrations/lightspeed.svg',
+  },
+  { id: '4', name: 'Battery Ventures', type: 'vc', logo: '/images/integrations/battery.svg' },
+  { id: '5', name: 'Craft Ventures', type: 'vc', logo: '/images/integrations/craft.svg' },
+  { id: '6', name: 'BoxGroup', type: 'vc', logo: '/images/integrations/boxgroup.svg' },
 ];
 
 /** Company statistics for About page */

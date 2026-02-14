@@ -39,3 +39,24 @@ coverage/
 playwright-report/
 test-results/
 e2e/test-results/
+
+# Lighthouse CI reports
+lighthouse-*.json
+
+# Vite cache
+.vite/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Additional logs
+*.log
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+desktop.ini

@@ -3,6 +3,7 @@
  *
  * Displays a partner/integration logo with hover effects and demo modal integration.
  * Supports grayscale-to-color transition and scaling on hover.
+ * Fully supports dark mode using CSS filter inversion for optimal visibility.
  *
  * @module components/ui
  */
@@ -45,11 +46,17 @@ export interface IntegrationLogoProps {
  *
  * Features:
  * - Theme-aware grayscale-to-color hover transition
+ * - Automatic dark mode support using CSS filter inversion
  * - Scale-up animation on hover
  * - Responsive sizing variants
  * - Automatic path resolution via centralized path config
  * - Seamless integration with DemoLinkModal
  * - Lazy loading for performance
+ *
+ * Dark Mode Support:
+ * - Dark logos are automatically inverted to white using CSS filter
+ * - Colored logos maintain their colors with increased brightness
+ * - Ensures all logos are visible on dark backgrounds
  */
 export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
   name,
@@ -79,25 +86,30 @@ export const IntegrationLogo: React.FC<IntegrationLogoProps> = ({
   const containerClasses = `
     group relative flex items-center justify-center 
     px-4 py-3 rounded-xl transition-all duration-300
-    ${showHoverBg ? 'hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/20' : ''}
+    ${showHoverBg ? 'hover:bg-bg-secondary/50 dark:hover:bg-bg-secondary/30' : ''}
     ${className}
   `;
 
-  // Image styles with grayscale and scale transitions
-  // When colored=true, show full brand colors without grayscale filter
-  const imageClasses = `
-    ${sizeClasses[size]} w-auto max-w-full
-    transition-all duration-500 ease-out
-    group-hover:scale-110
-    ${
-      colored
-        ? 'opacity-100'
-        : grayscale
-          ? 'grayscale opacity-50 contrast-[0.8] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100'
-          : 'opacity-100'
+  // Image styles with theme-aware filters
+  // Light Mode: Grayscale logos start desaturated, become colored on hover
+  // Dark Mode: Use CSS filter:invert to make dark logos white for visibility
+  // Reference: https://jeffbridgforth.com/handling-logos-in-dark-mode/
+  const imageClasses = React.useMemo(() => {
+    const baseClasses = `${sizeClasses[size]} w-auto max-w-full transition-all duration-500 ease-out group-hover:scale-110`;
+
+    // Colored logos: Show full colors, no inversion in dark mode
+    if (colored) {
+      return `${baseClasses} opacity-100 dark:brightness-125 dark:invert-0`;
     }
-    ${colored ? '' : 'dark:invert-[0.2] dark:group-hover:invert-0'}
-  `;
+
+    // Grayscale logos: Apply grayscale filter
+    if (grayscale) {
+      return `${baseClasses} grayscale opacity-60 contrast-[0.9] group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100 dark:invert`;
+    }
+
+    // Default: No grayscale, but invert in dark mode
+    return `${baseClasses} opacity-100 dark:invert`;
+  }, [size, sizeClasses, colored, grayscale]);
 
   return (
     <DemoLink

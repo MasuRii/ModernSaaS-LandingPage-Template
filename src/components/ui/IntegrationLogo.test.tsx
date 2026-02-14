@@ -23,7 +23,8 @@ describe('IntegrationLogo', () => {
 
     const img = screen.getByAltText('Test Integration logo');
     expect(img).toHaveClass('grayscale');
-    expect(img).toHaveClass('opacity-50');
+    expect(img).toHaveClass('opacity-60');
+    expect(img).toHaveClass('dark:invert');
   });
 
   it('can disable grayscale effect', () => {

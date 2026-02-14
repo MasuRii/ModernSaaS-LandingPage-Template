@@ -1,7 +1,7 @@
 # Visual Regression Testing
 
 This document describes the visual regression testing setup and workflow for the
-ModernSaaS Landing Page template.
+ModernSaaS Landing Page Template.
 
 ## Overview
 
@@ -11,9 +11,11 @@ pixel-level changes.
 
 ## Test Location
 
-- **Test File**: `e2e/tests/visual-regression.spec.ts`
-- **Baseline Screenshots**: `e2e/snapshots/`
-- **Test Results**: `e2e/test-results/`
+| Path                                  | Description                         |
+| ------------------------------------- | ----------------------------------- |
+| `e2e/tests/visual-regression.spec.ts` | Test file with visual test cases    |
+| `e2e/snapshots/`                      | Baseline screenshots for comparison |
+| `e2e/test-results/`                   | Test results and diff images        |
 
 ## Configuration
 
@@ -24,7 +26,7 @@ The visual comparison threshold is configured in `playwright.config.ts`:
 ```typescript
 expect: {
   toHaveScreenshot: {
-    maxDiffPixels: 250,      // Allow up to 250 different pixels
+    maxDiffPixels: 250,       // Allow up to 250 different pixels
     threshold: 0.25,          // Per-pixel difference threshold (0-1)
     animations: 'disabled',   // Disable animations for consistent screenshots
   },
@@ -33,12 +35,11 @@ expect: {
 
 ### Why These Settings?
 
-- **maxDiffPixels: 250**: Accounts for minor font rendering differences across
-  platforms (macOS vs Linux)
-- **threshold: 0.25**: Allows slight anti-aliasing variations while catching
-  actual visual changes
-- **animations: 'disabled'**: Ensures screenshots are taken with animations in a
-  consistent state
+| Setting         | Value      | Reason                                                                          |
+| --------------- | ---------- | ------------------------------------------------------------------------------- |
+| `maxDiffPixels` | 250        | Accounts for minor font rendering differences across platforms (macOS vs Linux) |
+| `threshold`     | 0.25       | Allows slight anti-aliasing variations while catching actual visual changes     |
+| `animations`    | 'disabled' | Ensures screenshots are taken with animations in a consistent state             |
 
 ## Baseline Screenshots
 
@@ -46,26 +47,15 @@ expect: {
 
 The test suite creates baseline screenshots for:
 
-1. **Header Component** (6 screenshots)
-   - Light/Dark mode × Desktop/Tablet/Mobile
-
-2. **Footer Component** (6 screenshots)
-   - Light/Dark mode × Desktop/Tablet/Mobile
-
-3. **Full Page** (4 screenshots)
-   - Light/Dark mode × Desktop/Mobile
-
-4. **Key Breakpoints** (12 screenshots)
-   - 6 breakpoints (mobile-xs to desktop-lg) × Light/Dark mode
-
-5. **Hero Section** (4 screenshots)
-   - Light/Dark mode × Desktop/Mobile
-
-6. **Mobile Navigation** (2 screenshots)
-   - Light/Dark mode with menu open
-
-7. **Demo Modal** (2 screenshots)
-   - Light/Dark mode with modal open
+| Component             | Screenshots | Variants                           |
+| --------------------- | ----------- | ---------------------------------- |
+| **Header**            | 6           | Light/Dark × Desktop/Tablet/Mobile |
+| **Footer**            | 6           | Light/Dark × Desktop/Tablet/Mobile |
+| **Full Page**         | 4           | Light/Dark × Desktop/Mobile        |
+| **Key Breakpoints**   | 12          | 6 breakpoints × Light/Dark         |
+| **Hero Section**      | 4           | Light/Dark × Desktop/Mobile        |
+| **Mobile Navigation** | 2           | Light/Dark with menu open          |
+| **Demo Modal**        | 2           | Light/Dark with modal open         |
 
 **Total: 36 baseline screenshots**
 
@@ -152,10 +142,10 @@ When a test fails due to visual differences:
 
 2. **Review the changes**:
 
-   ```bash
-   # View the HTML report
-   bunx playwright show-report
-   ```
+```bash
+# View the HTML report
+bunx playwright show-report
+```
 
 3. **Decide**:
    - If intentional: Update baselines with `--update-snapshots`
@@ -165,18 +155,12 @@ When a test fails due to visual differences:
 
 ### When to Update Baselines
 
-✅ **Update when**:
-
-- Intentional UI design changes
-- New components added
-- Theme color changes
-- Layout adjustments
-
-❌ **Don't update when**:
-
-- Unexplained pixel shifts
-- Font rendering differences only
-- Unintentional visual regressions
+| ✅ Update When                | ❌ Don't Update When             |
+| ----------------------------- | -------------------------------- |
+| Intentional UI design changes | Unexplained pixel shifts         |
+| New components added          | Font rendering differences only  |
+| Theme color changes           | Unintentional visual regressions |
+| Layout adjustments            | -                                |
 
 ### Platform Consistency
 
@@ -228,12 +212,14 @@ await expect(page).toHaveScreenshot('page.png', {
 
 When tests pass locally but fail in CI:
 
-1. **Font differences**: Install same fonts in CI
-2. **OS differences**: Use Docker for consistent environment
-3. **Timing issues**: Add explicit waits
-4. **Viewport**: Ensure consistent viewport sizes
+| Issue            | Solution                              |
+| ---------------- | ------------------------------------- |
+| Font differences | Install same fonts in CI              |
+| OS differences   | Use Docker for consistent environment |
+| Timing issues    | Add explicit waits                    |
+| Viewport         | Ensure consistent viewport sizes      |
 
-## Scripts
+## Available Scripts
 
 Add these scripts to `package.json`:
 
@@ -254,9 +240,9 @@ Add these scripts to `package.json`:
 - [Playwright Visual Comparisons](https://playwright.dev/docs/api/class-pageassertions#page-assertions-to-have-screenshot-1)
 - [Project Testing Strategy](./TESTING_STRATEGY.md)
 
-## Acceptance Criteria Verification
+## Acceptance Criteria
 
-This testing implementation satisfies all acceptance criteria from task 4.5.3:
+This testing implementation satisfies all acceptance criteria:
 
 - [x] Configure Playwright for screenshot comparison
 - [x] Create baseline screenshots for header in both themes
@@ -264,3 +250,11 @@ This testing implementation satisfies all acceptance criteria from task 4.5.3:
 - [x] Create baseline screenshots at key breakpoints
 - [x] Document visual regression testing process
 - [x] All visual tests pass
+
+---
+
+<div align="center">
+
+**Questions?** Check the [main documentation](../README.md) or open an issue.
+
+</div>

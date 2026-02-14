@@ -113,11 +113,6 @@ const fitClasses = {
   'scale-down': 'object-scale-down',
 };
 
-// Combine classes
-const combinedClasses = [fitClasses[fit], roundedClasses[rounded], className]
-  .filter(Boolean)
-  .join(' ');
-
 // Check if we have a local image (ImageMetadata)
 const isLocalImage = typeof resolvedSrc === 'object' && 'src' in resolvedSrc;
 // Check if we have a remote string URL
@@ -169,7 +164,7 @@ if (blurUp && isLocalImage && loading === 'lazy') {
       />
     </div>
   ) : isRemoteString ? (
-    <div class="image-wrapper">
+    <div class={cn('image-wrapper relative overflow-hidden w-full h-full', className)}>
       <img
         src={resolvedSrc}
         alt={alt}
@@ -177,7 +172,7 @@ if (blurUp && isLocalImage && loading === 'lazy') {
         height={finalHeight}
         loading={loading}
         decoding={loading === 'eager' ? 'sync' : 'async'}
-        class={combinedClasses}
+        class={cn(fitClasses[fit], roundedClasses[rounded], 'w-full h-full')}
         sizes={sizes}
         fetchpriority={fetchpriority}
       />
@@ -248,12 +243,11 @@ if (blurUp && isLocalImage && loading === 'lazy') {
 
 <style>
   .image-wrapper {
-    display: inline-block;
+    display: block;
     max-width: 100%;
   }
 
   .image-wrapper :global(img) {
-    height: auto;
     max-width: 100%;
   }
 

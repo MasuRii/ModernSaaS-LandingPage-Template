@@ -41,12 +41,12 @@ export const FeaturesHero: React.FC<FeaturesHeroProps> = ({ className }) => {
       background="transparent"
       aria-label="Features Hero Section"
     >
-      {/* Background with mesh gradient */}
+      {/* Background with soft gradient */}
       <GradientBackground
         id="features-hero-gradient"
-        variant="subtle"
-        intensity={0.4}
-        className="opacity-30 dark:opacity-10"
+        variant="soft"
+        intensity={0.45}
+        className="opacity-60 dark:opacity-40"
       />
 
       <Container className="relative z-10">

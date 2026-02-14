@@ -4,19 +4,21 @@ import { Container } from '@/components/ui/Container';
 import { Search } from 'lucide-react';
 
 export interface SupportHeroProps {
-  title?: string;
   description?: string;
 }
 
 export const SupportHero: React.FC<SupportHeroProps> = ({
-  title = 'How can we help you?',
   description = 'Search our knowledge base or browse categories below to find answers to your questions.',
 }) => {
   return (
     <Section background="gradient" padding="xl" className="relative overflow-hidden">
       <Container size="narrow" className="text-center relative z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-text-primary">
-          {title}
+          How can we{' '}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400">
+            help
+          </span>{' '}
+          you?
         </h1>
         <p className="text-lg md:text-xl mb-10 text-text-secondary max-w-2xl mx-auto">
           {description}

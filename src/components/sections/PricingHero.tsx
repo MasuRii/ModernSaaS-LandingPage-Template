@@ -57,12 +57,12 @@ export const PricingHero: React.FC<PricingHeroProps> = ({
       background="transparent"
       aria-label="Pricing Hero Section"
     >
-      {/* Background with mesh gradient */}
+      {/* Background with minimal gradient */}
       <GradientBackground
         id="pricing-hero-gradient"
-        variant="subtle"
-        intensity={0.4}
-        className="opacity-30 dark:opacity-10"
+        variant="minimal"
+        intensity={0.3}
+        className="opacity-40 dark:opacity-20"
       />
 
       <Container className="relative z-10">

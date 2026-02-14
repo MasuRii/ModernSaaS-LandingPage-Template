@@ -53,12 +53,12 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
       aria-label="Hero Section"
       data-testid="hero-section"
     >
-      {/* Background with mesh gradient */}
+      {/* Background with elegant gradient */}
       <GradientBackground
         id="hero-gradient"
-        variant="vibrant"
-        intensity={0.6}
-        className="opacity-40 dark:opacity-20"
+        variant="deep"
+        intensity={0.5}
+        className="opacity-50 dark:opacity-30"
         aria-label="Animated gradient background"
       />
 
@@ -158,19 +158,19 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
                 <img
                   src="/images/publications/techcrunch.svg"
                   alt="TechCrunch"
-                  className="h-6 w-auto"
+                  className="h-6 w-auto dark:invert"
                   loading="lazy"
                 />
                 <img
                   src="/images/publications/forbes.svg"
                   alt="Forbes"
-                  className="h-5 w-auto"
+                  className="h-5 w-auto dark:invert"
                   loading="lazy"
                 />
                 <img
                   src="/images/publications/producthunt.svg"
                   alt="Product Hunt"
-                  className="h-6 w-auto"
+                  className="h-6 w-auto dark:invert"
                   loading="lazy"
                 />
               </div>
@@ -191,29 +191,29 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               animate="animate"
             />
 
-            {/* Decorative background effects */}
-            <div className="absolute -top-16 -right-16 w-80 h-80 bg-primary-500/20 blur-[100px] rounded-full -z-10 animate-pulse" />
-            <div className="absolute -bottom-16 -left-16 w-80 h-80 bg-secondary-500/20 blur-[100px] rounded-full -z-10 animate-pulse" />
+            {/* Decorative background effects - optimized for performance */}
+            <div className="absolute -top-16 -right-16 w-80 h-80 bg-primary-500/10 rounded-full -z-10 opacity-60" />
+            <div className="absolute -bottom-16 -left-16 w-80 h-80 bg-secondary-500/10 rounded-full -z-10 opacity-60" />
 
-            {/* Floating visual elements (decorations) */}
+            {/* Floating visual elements (decorations) - optimized */}
             <motion.div
               animate={
                 prefersReducedMotion
                   ? {}
                   : {
-                      y: [0, 20, 0],
-                      rotate: [0, 5, 0],
+                      y: [0, 12, 0],
                     }
               }
               transition={
                 prefersReducedMotion
                   ? {}
                   : {
-                      duration: 5,
+                      duration: 6,
                       repeat: Infinity,
                       ease: 'easeInOut',
                     }
               }
+              style={{ willChange: prefersReducedMotion ? 'auto' : 'transform' }}
               className="absolute -bottom-6 -right-6 w-32 h-32 bg-bg-primary border border-border-default rounded-xl shadow-xl z-20 flex items-center justify-center p-4 hidden md:flex"
             >
               <div className="space-y-2 w-full">

@@ -42,9 +42,9 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
       >
         <GradientBackground
           id="about-hero-gradient"
-          variant="subtle"
-          intensity={0.4}
-          className="opacity-30 dark:opacity-10"
+          variant="minimal"
+          intensity={0.3}
+          className="opacity-40 dark:opacity-20"
         />
 
         <Container className="relative z-10">
@@ -58,7 +58,10 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
                 Our Mission
               </h2>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-8 leading-[1.1]">
-                {company.mission}
+                Empowering teams to{' '}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600 dark:from-primary-400 dark:to-secondary-400">
+                  achieve more
+                </span>
               </h1>
               <p className="text-lg md:text-xl text-text-muted leading-relaxed max-w-3xl mx-auto">
                 {company.fullDescription}

@@ -19,7 +19,7 @@ export const ChangelogHero: React.FC<ChangelogHeroProps> = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-text-primary"
         >
           {title}
         </motion.h1>
@@ -27,7 +27,7 @@ export const ChangelogHero: React.FC<ChangelogHeroProps> = ({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto"
+          className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto"
         >
           {description}
         </motion.p>

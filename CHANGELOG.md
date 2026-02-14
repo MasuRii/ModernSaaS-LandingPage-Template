@@ -6,6 +6,35 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- **Investor Logos** - Replaced generic placeholder logos with proper branded
+  SVGs for Sequoia Capital, Andreessen Horowitz (a16z), Y Combinator, Accel
+  Partners, Greylock Partners, and Angel Investors. All logos use `currentColor`
+  for automatic light/dark theme compatibility.
+- **Changelog Text Visibility** - Fixed hardcoded `text-white` colors in
+  ChangelogHero component to use theme-aware `text-text-primary` and
+  `text-text-secondary` classes, ensuring proper visibility in both light and
+  dark modes with WCAG AA compliant contrast ratios (~12:1).
+- **Blog Image White Margins** - Resolved white margin issue at ultra-wide
+  resolutions (>1920px) by changing Container size from `default` to `full` in
+  blog post pages. Added `w-full h-full` classes to OptimizedImage component for
+  proper container filling.
+- **Docs Page SDK Icons** - Replaced generic `Code` icon with language-specific
+  icons (JavaScript, Python, Ruby, Go, PHP, Java) in the documentation SDK
+  section. Created `LanguageIcons.tsx` component with custom SVG icons using
+  `currentColor` for theme support.
+
+### Enhanced
+
+- **Privacy/Terms Page Titles** - Improved visual presentation of LegalHero
+  component with gradient text effects
+  (`bg-gradient-to-r from-primary-600 to- secondary-600`), dynamic page type
+  badges (Shield icon for Privacy Policy, FileText icon for Terms of Service),
+  and responsive typography. All enhancements support both light and dark modes.
+
 ## [0.1.0] - 2026-02-12
 
 ### Added

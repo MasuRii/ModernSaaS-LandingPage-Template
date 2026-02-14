@@ -79,17 +79,17 @@ export function Header({
     // Add scroll listener
     window.addEventListener('scroll', handleScroll, { passive: true });
 
-    // Handle Astro transitions
+    // Handle Astro View Transitions
     const handleNavigation = () => {
       setCurrentPath(window.location.pathname);
       setIsMobileMenuOpen(false);
     };
 
-    document.addEventListener('astro:after-navigation', handleNavigation);
+    document.addEventListener('astro:after-swap', handleNavigation);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      document.removeEventListener('astro:after-navigation', handleNavigation);
+      document.removeEventListener('astro:after-swap', handleNavigation);
     };
   }, [handleScroll]);
 

@@ -111,7 +111,7 @@ export function Header({
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ease-in-out ${headerBackground} ${className}`}
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ease-in-out pt-[env(safe-area-inset-top)] ${headerBackground} ${className}`}
         role="banner"
         aria-label="Site header"
       >

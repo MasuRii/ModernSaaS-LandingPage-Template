@@ -382,7 +382,7 @@ describe('Component Snapshots', () => {
 
         it('GradientBackground matches snapshot', () => {
           const { asFragment } = render(
-            <UI.GradientBackground variant="vibrant" id="test-gradient" />,
+            <UI.GradientBackground variant="deep" id="test-gradient" />,
             { wrapper },
           );
           expect(asFragment()).toMatchSnapshot();

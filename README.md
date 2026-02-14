@@ -1,102 +1,158 @@
+<div align="center">
+
 # ModernSaaS Landing Page Template
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://MasuRii.github.io/ModernSaaS-LandingPage-Template/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Astro](https://img.shields.io/badge/Astro-5.17-orange)](https://astro.build/)
-[![React](https://img.shields.io/badge/React-19-blue)](https://react.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8)](https://tailwindcss.com/)
+![Astro](https://img.shields.io/badge/Astro-5.17.2-BC52EE?style=for-the-badge&logo=astro&logoColor=white)
+![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.18-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-A production-ready, visually stunning SaaS startup landing page template
+[![Build Status](https://img.shields.io/github/actions/workflow/status/MasuRii/ModernSaaS-LandingPage-Template/ci.yml?branch=main&style=flat-square&logo=github)](https://github.com/MasuRii/ModernSaaS-LandingPage-Template/actions)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/MasuRii/ModernSaaS-LandingPage-Template/deploy.yml?branch=main&style=flat-square&logo=github&label=deploy)](https://github.com/MasuRii/ModernSaaS-LandingPage-Template/actions/workflows/deploy.yml)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue?style=flat-square)](package.json)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
+
+**A production-ready, visually stunning SaaS startup landing page template
 featuring modern 2026 design trends, comprehensive light/dark mode support, Core
-Web Vitals optimization, and seamless GitHub Pages deployment.
+Web Vitals optimization, and seamless GitHub Pages deployment.**
 
-## ✨ Features
+![Screenshot of the Website](public/screenshot.png)
 
-- **🚀 High Performance**: Built with Astro 5 for near-zero JavaScript by
-  default. Perfect Lighthouse scores.
-- **🎨 Modern Design**: 2026 design trends including glassmorphism, bento grids,
+[🚀 Live Demo](https://masurii.github.io/ModernSaaS-LandingPage-Template/) |
+[Documentation](#documentation) | [Quick Start](#quick-start)
+
+</div>
+
+---
+
+## Features
+
+- **Blazing Fast** - Built with Astro 5 for near-zero JavaScript by default.
+  Perfect Lighthouse scores.
+- **Modern Design** - 2026 design trends including glassmorphism, bento grids,
   and mesh gradients.
-- **🌓 Dark Mode**: First-class dark mode support with automatic system
-  preference detection and persistent toggle.
-- **📱 Fully Responsive**: Optimized for all devices from 320px mobile to
+- **Dark Mode** - First-class dark mode support with automatic system preference
+  detection and persistent toggle.
+- **Fully Responsive** - Optimized for all devices from 320px mobile to
   ultra-wide desktops.
-- **🔍 SEO Optimized**: Built-in JSON-LD structured data, automatic sitemaps,
-  and optimized meta tags.
-- **🧪 Production-Grade Testing**: 1,100+ unit tests and comprehensive E2E suite
+- **SEO Optimized** - Built-in JSON-LD structured data, automatic sitemaps, and
+  optimized meta tags.
+- **Production-Grade Testing** - 1,100+ unit tests and comprehensive E2E suite
   using Playwright.
-- **📦 Atomic Components**: Highly reusable UI components built with React and
+- **Atomic Components** - Highly reusable UI components built with React and
   Tailwind CSS v4.
-- **🎬 Fluid Animations**: Smooth, hardware-accelerated animations using Motion
+- **Fluid Animations** - Smooth, hardware-accelerated animations using Motion
   One with reduced motion support.
-- **📄 Content Driven**: Easily customizable via centralized data files.
+- **Content Driven** - Easily customizable via centralized data files.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-| Technology                                      | Justification                                                                     |
-| ----------------------------------------------- | --------------------------------------------------------------------------------- |
-| **[Astro 5](https://astro.build/)**             | Zero-JS-by-default architecture for maximum performance and native static export. |
-| **[React 19](https://react.dev/)**              | Selective hydration for interactive components using the "Islands" architecture.  |
-| **[Tailwind CSS v4](https://tailwindcss.com/)** | Next-gen utility-first styling with zero-runtime overhead and excellent DX.       |
-| **[Motion One](https://motion.dev/)**           | High-performance animations built on the Web Animations API (WAAPI).              |
-| **[Radix UI](https://www.radix-ui.com/)**       | Accessible, unstyled primitives for robust interactive components.                |
-| **[Vitest](https://vitest.dev/)**               | Modern, fast unit testing framework compatible with Vite.                         |
-| **[Playwright](https://playwright.dev/)**       | Comprehensive E2E and visual regression testing across all major browsers.        |
-| **[Bun](https://bun.sh/)**                      | Ultra-fast package manager and test runner.                                       |
+| Category          | Technology                                                              |
+| ----------------- | ----------------------------------------------------------------------- |
+| **Framework**     | [Astro](https://astro.build) v5.17.2                                    |
+| **UI Library**    | [React](https://react.dev) v19.2.4                                      |
+| **Styling**       | [Tailwind CSS](https://tailwindcss.com) v4.1.18                         |
+| **Animations**    | [Motion One](https://motion.dev) v12.34.0                               |
+| **UI Primitives** | [Radix UI](https://www.radix-ui.com)                                    |
+| **Icons**         | [Lucide React](https://lucide.dev)                                      |
+| **Testing**       | [Vitest](https://vitest.dev), [Playwright](https://playwright.dev)      |
+| **Runtime**       | [Bun](https://bun.sh)                                                   |
+| **Deployment**    | [GitHub Pages](https://pages.github.com) / [Vercel](https://vercel.com) |
 
-## 📁 Project Structure
+## Quick Start
 
-```text
-├── .github/workflows/  # CI/CD (GitHub Actions)
-├── docs/               # Project documentation and research
-├── e2e/                # End-to-end tests (Playwright)
-├── public/             # Static assets (images, fonts, robots.txt)
-├── scripts/            # Utility scripts (image fetching, deployment)
-├── src/
-│   ├── assets/         # Project-specific assets
-│   ├── components/     # UI components (Atomic design)
-│   ├── config/         # Centralized configuration (site, paths, animation)
-│   ├── data/           # Content data files (JSON/TS)
-│   ├── layouts/        # Page layouts
-│   ├── pages/          # Astro pages and routing
-│   ├── styles/         # Global styles and tokens
-│   ├── utils/          # Shared utilities
-│   └── types/          # TypeScript definitions
-└── tests/              # Unit and integration tests (Vitest)
+### Prerequisites
+
+- [Bun](https://bun.sh) (recommended) or [Node.js](https://nodejs.org) 18+
+- [Git](https://git-scm.com)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/MasuRii/ModernSaaS-LandingPage-Template.git
+cd ModernSaaS-LandingPage-Template
+
+# Install dependencies
+bun install  # or npm install
+
+# Start development server
+bun dev  # or npm run dev
 ```
 
-## 🚀 Quick Start
+The site will be available at `http://localhost:4321`
 
-Ensure you have [Bun](https://bun.sh/) installed.
+## Commands
 
-1. **Clone the repository:**
+All commands are run from the root of the project:
 
-   ```bash
-   git clone https://github.com/MasuRii/ModernSaaS-LandingPage-Template.git
-   cd ModernSaaS-LandingPage-Template
-   ```
+| Command                 | Description                                |
+| ----------------------- | ------------------------------------------ |
+| `bun install`           | Install dependencies                       |
+| `bun dev`               | Start local dev server at `localhost:4321` |
+| `bun build`             | Build production site to `./dist/`         |
+| `bun preview`           | Preview production build locally           |
+| `bun run typecheck`     | Run TypeScript type checking               |
+| `bun run lint`          | Run ESLint for code quality                |
+| `bun run format`        | Run Prettier for code formatting           |
+| `bun run test`          | Run unit tests with Vitest                 |
+| `bun run test:coverage` | Generate test coverage report              |
+| `bun run test:e2e`      | Run E2E tests with Playwright              |
+| `bun run test:a11y`     | Run accessibility tests with axe-core      |
+| `bun run test:perf`     | Run Lighthouse performance audit           |
+| `bun run test:visual`   | Run visual regression tests                |
 
-2. **Install dependencies:**
+## Project Structure
 
-   ```bash
-   bun install
-   ```
+```
+ModernSaaS-LandingPage-Template/
+├── .github/workflows/        # CI/CD (GitHub Actions)
+├── e2e/                      # End-to-end tests (Playwright)
+│   ├── tests/                # E2E test files
+│   ├── snapshots/            # Visual regression baselines
+│   └── VISUAL_REGRESSION.md  # Visual testing documentation
+├── public/                   # Static assets (images, fonts, robots.txt)
+├── scripts/                  # Utility scripts (image fetching, deployment)
+├── src/
+│   ├── assets/               # Project-specific assets
+│   ├── components/           # UI components (Atomic design)
+│   │   ├── layout/           # Layout components (Header, Footer)
+│   │   ├── sections/         # Page sections (Hero, Features, etc.)
+│   │   └── ui/               # Reusable UI components
+│   ├── config/               # Centralized configuration
+│   ├── content/              # Content collections (blog posts)
+│   ├── data/                 # Content data files (JSON/TS)
+│   ├── hooks/                # Custom React hooks
+│   ├── layouts/              # Page layouts
+│   ├── lib/                  # Utility libraries
+│   ├── pages/                # Astro pages and routing
+│   ├── styles/               # Global styles and CSS tokens
+│   ├── types/                # TypeScript definitions
+│   └── utils/                # Shared utility functions
+├── tests/                    # Unit and integration tests (Vitest)
+│   └── unit/
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── CUSTOMIZATION.md
+└── package.json
+```
 
-3. **Start development server:**
+## Customization
 
-   ```bash
-   bun run dev
-   ```
+### Content
 
-4. **Build for production:**
-   ```bash
-   bun run build
-   ```
+Edit the data files in `src/data/` to update the site content:
 
-## 🎨 Customization
+- **`features.ts`** - Feature lists, bento grid content, zigzag sections
+- **`pricing.ts`** - Pricing tiers, billing cycles, feature comparisons
+- **`testimonials.ts`** - Customer quotes, avatars, ratings
+- **`team.ts`** - Team member profiles
+- **`integrations.ts`** - Integration partners and logos
+- **`faq.ts`** - Frequently asked questions
+- **`navigation.ts`** - Header and footer navigation
 
-This template is designed to be easily brandable and customizable.
-
-### 1. Branding & Identity
+### Branding & Configuration
 
 Update `src/config/site.ts` to change:
 
@@ -105,133 +161,54 @@ Update `src/config/site.ts` to change:
 - **Social Links**: `social` object
 - **Contact Info**: `contact` object
 - **SEO Defaults**: `seo` object
+- **Feature Flags**: Enable/disable features (newsletter, search, darkMode)
 
-### 2. Colors & Typography
+### Styling
 
-Styling is managed via CSS variables in `src/styles/tokens.css`.
+The template uses **Tailwind CSS v4** with CSS variables in
+`src/styles/tokens.css`:
 
-- **Primary Color**: Update `--primitive-color-primary-*` scale.
-- **Secondary Color**: Update `--primitive-color-secondary-*` scale.
-- **Accent Color**: Update `--primitive-color-accent-*` scale.
-- **Typography**: Update `--font-family-sans` and `--font-size-*` tokens.
+- **Primary Color**: Update `--primitive-color-primary-*` scale
+- **Secondary Color**: Update `--primitive-color-secondary-*` scale
+- **Typography**: Update `--font-family-sans` and `--font-size-*` tokens
 
-The template uses **Tailwind CSS v4**, so these tokens are automatically
-available as utility classes.
+## Environment Variables
 
-### 3. Content Data
+| Variable       | Description                                                | Example                            |
+| -------------- | ---------------------------------------------------------- | ---------------------------------- |
+| `SITE_URL`     | Production URL for sitemaps and canonical URLs             | `https://my-saas.com`              |
+| `BASE_PATH`    | Subdirectory path (e.g., `/my-repo`)                       | `/ModernSaaS-LandingPage-Template` |
+| `GITHUB_PAGES` | Set to `true` for GitHub Pages subdirectory auto-detection | `true`                             |
 
-Most page content is centralized in `src/data/`:
+Copy `.env.example` to `.env` and update the values for your deployment.
 
-- **Features**: `src/data/features.ts`
-- **Pricing**: `src/data/pricing.ts`
-- **Testimonials**: `src/data/testimonials.ts`
-- **Team**: `src/data/team.ts`
-- **Integrations**: `src/data/integrations.ts`
-- **FAQs**: `src/data/faq.ts`
+## Deployment
 
-### 4. Logos & Icons
+This project supports both **GitHub Pages** and **Vercel** deployment:
 
-- **Text-based Logo**: Automatically updates via `company.name` in
-  `src/config/site.ts`.
-- **Logo Icon**: The default `Zap` icon is used in `Header.tsx`. Replace it with
-  your own SVG or icon component in `src/components/layout/Header.tsx`.
+### GitHub Pages (Automatic)
 
-## ⚙️ Configuration
+1. Push your code to GitHub
+2. Enable GitHub Pages in repository settings (Settings → Pages → Source: GitHub
+   Actions)
+3. The included workflow will automatically build and deploy on every push to
+   `main`
+4. Your site will be available at `https://<username>.github.io/<repo-name>/`
 
-Beyond visual customization, the template provides several configuration hooks.
+### Vercel
 
-### 1. Site Configuration
+1. Push your code to GitHub
+2. Import the repository in [Vercel](https://vercel.com)
+3. Set environment variables in Vercel dashboard
+4. Deploy!
 
-The `src/config/site.ts` file contains more than just branding.
+For other platforms, run `bun build` and deploy the `dist/` folder.
 
-- **Analytics**: Set your IDs for `googleAnalyticsId`, `plausibleDomain`, or
-  `posthogKey` in the `analytics` object.
-- **Feature Flags**: Toggle core features (e.g., `newsletter`, `search`,
-  `darkMode`) in the `featureFlags` object.
-- **Demo Mode**: Set `demoMode: true` to intercept placeholder links with
-  informational modals.
+## Testing
 
-### 2. Environment Variables
+The template includes a comprehensive testing suite:
 
-The template uses environment variables to control build behavior:
-
-- `SITE_URL`: The production URL (e.g., `https://my-saas.com`). Used for
-  sitemaps and canonical URLs.
-- `BASE_PATH`: The subdirectory path (e.g., `/my-repo`). Defaults to `/` unless
-  running in GitHub Actions.
-- `GITHUB_PAGES`: Set to `true` by GitHub Actions to automatically detect
-  project subdirectory names.
-
-### 3. Astro Configuration
-
-Key settings in `astro.config.mjs`:
-
-- `trailingSlash`: Set to `'always'` to ensure consistent URL patterns.
-- `compressHTML`: Set to `true` for optimized production builds.
-- `image.service`: Configured to use Sharp for high-performance image
-  processing.
-
-## 🚀 Deployment
-
-The template is optimized for static hosting and can be deployed to any major
-provider.
-
-### 1. GitHub Pages (Recommended)
-
-This template is pre-configured for seamless GitHub Pages deployment via GitHub
-Actions.
-
-1. **Push your code** to a GitHub repository.
-2. **Enable GitHub Pages** in your repository settings:
-   - Go to **Settings > Pages**.
-   - Under **Build and deployment > Source**, select **GitHub Actions**.
-3. The included `.github/workflows/deploy.yml` will automatically build and
-   deploy your site whenever you push to the `main` branch.
-
-**Note**: If deploying to a project site (e.g.,
-`https://username.github.io/repo-name/`), the template automatically handles the
-subdirectory path resolution.
-
-### 2. Vercel
-
-Vercel is an excellent choice for Astro projects.
-
-1. Import your repository into the [Vercel Dashboard](https://vercel.com/new).
-2. Vercel will automatically detect Astro and use the correct build settings.
-3. Add the following **Environment Variables** (optional but recommended):
-   - `SITE_URL`: Your production URL.
-4. Click **Deploy**.
-
-### 3. Netlify
-
-1. Create a new site from [Netlify Dashboard](https://app.netlify.com/start).
-2. Connect your repository.
-3. Use the following build settings (should be auto-detected):
-   - **Build command**: `bun run build`
-   - **Publish directory**: `dist`
-4. Click **Deploy site**.
-
-### 4. Custom Domains
-
-When using a custom domain:
-
-1. Update `SITE_URL` in your deployment environment variables to match your
-   custom domain.
-2. If using GitHub Pages with a custom domain, ensure you update the `base` path
-   in `astro.config.mjs` to `/` (if it's not a subdirectory) or use the
-   `BASE_PATH` environment variable.
-3. Follow your provider's instructions for DNS configuration (A records, CNAME,
-   etc.).
-
-## 🧪 Testing
-
-The template includes a comprehensive testing suite ensuring production quality
-and accessibility compliance.
-
-### 1. Unit & Integration Tests
-
-Built with **Vitest**, these tests cover atomic components, hooks, and
-utilities.
+### Unit & Integration Tests
 
 ```bash
 # Run all unit tests
@@ -241,78 +218,59 @@ bun run test
 bun run test:coverage
 ```
 
-### 2. End-to-End (E2E) Tests
-
-Powered by **Playwright**, covering user journeys, theme switching, and form
-validations across all major browser engines.
+### End-to-End Tests
 
 ```bash
 # Run all E2E tests
 bun run test:e2e
 
-# Run tests in UI mode
+# Run with UI mode
 bun run test:e2e:ui
 
 # Run production smoke tests
 bun run test:e2e:prod
 ```
 
-### 3. Accessibility & SEO
-
-Automated audits using **Axe-core** and schema validators.
+### Accessibility & SEO
 
 ```bash
 # Run accessibility audit
 bun run test:a11y
 
-# Validate JSON-LD structured data
-bun run test:seo
-```
-
-### 4. Performance & Quality
-
-Core Web Vitals and build integrity checks.
-
-```bash
 # Run Lighthouse audit
 bun run test:perf
-
-# Verify deployment build (checks for broken links/assets)
-bun run test:deploy
-
-# Run type checking and linting
-bun run typecheck
-bun run lint
 ```
 
-## 📸 Screenshots
+## Documentation
 
-### Light Mode
+- [Customization Guide](./CUSTOMIZATION.md) - Detailed customization
+  instructions
+- [Contributing Guidelines](./CONTRIBUTING.md) - How to contribute to this
+  project
+- [Changelog](./CHANGELOG.md) - Version history and changes
+- [Visual Regression Testing](./e2e/VISUAL_REGRESSION.md) - Visual testing
+  documentation
 
-_Modern, clean, and professional interface with blue trust signals._
-![Homepage Light Mode](./docs/screenshots/home-light.png)
+## Contributing
 
-### Dark Mode
+Contributions are welcome! Please read our
+[Contributing Guidelines](./CONTRIBUTING.md) before submitting a pull request.
 
-_Sleek, futuristic dark interface with vibrant purple accents and mesh
-gradients._ ![Homepage Dark Mode](./docs/screenshots/home-dark.png)
+We follow:
 
-## 📖 Documentation
+- [Conventional Commits](https://www.conventionalcommits.org/) for commit
+  messages
+- ESLint and Prettier for code style
+- Git Flow branching strategy
 
-- [Test Summary](./docs/TEST_SUMMARY.md)
-- [Deployment Verification](./docs/DEPLOYMENT_VERIFICATION.md)
-- [Design Guidelines](./docs/research/DESIGN_GUIDELINES.md)
-- [Tech Stack Evaluation](./docs/research/CHOSEN_TECH_STACK.md)
+---
 
-## 📄 License
+<div align="center">
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
-for details.
+**Built with love by [MasuRii](https://github.com/MasuRii)**
 
-## ✨ Credits
+If you found this helpful, please consider giving it a star!
 
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Typography**: [Inter Variable](https://rsms.me/inter/)
-- **Images**: [Unsplash](https://unsplash.com/) for high-quality placeholder
-  photography.
-- **Author**: [MasuRii](https://github.com/MasuRii)
+[![GitHub stars](https://img.shields.io/github/stars/MasuRii/ModernSaaS-LandingPage-Template?style=social)](https://github.com/MasuRii/ModernSaaS-LandingPage-Template)
+
+</div>

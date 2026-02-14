@@ -79,7 +79,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
                 },
               } as unknown as Variants
             }
-            className="flex flex-col items-start text-left"
+            className="flex flex-col items-center text-center lg:items-start lg:text-left"
           >
             {/* Social Proof Badge */}
             <SocialProofBadge
@@ -96,7 +96,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               initial={false}
               animate="animate"
               variants={PRESETS.heroEntrance as unknown as Variants}
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient will-change-transform"
+              className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary mb-6 max-w-[600px] leading-[1.1] text-gradient will-change-transform mx-auto lg:mx-0"
               data-testid="hero-headline"
             >
               Build Faster with{' '}
@@ -110,7 +110,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               initial={false}
               animate="animate"
               variants={PRESETS.fadeInUp as unknown as Variants}
-              className="text-lg md:text-xl text-text-muted mb-10 max-w-[520px] leading-relaxed will-change-transform"
+              className="text-lg md:text-xl text-text-muted mb-10 max-w-[520px] leading-relaxed will-change-transform mx-auto lg:mx-0"
               data-testid="hero-description"
             >
               {company.tagline}. The all-in-one platform for scaling your business with powerful
@@ -120,7 +120,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
             {/* CTAs */}
             <motion.div
               variants={PRESETS.fadeInUp as unknown as Variants}
-              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+              className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center lg:justify-start"
             >
               <Link
                 href={ROUTES.SIGNUP}
@@ -149,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
             {/* Secondary Social Proof */}
             <motion.div
               variants={PRESETS.fadeInUp as unknown as Variants}
-              className="mt-10 flex flex-wrap items-center gap-6"
+              className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-6"
             >
               <div className="text-xs font-semibold uppercase tracking-wider text-text-muted">
                 Featured In
@@ -159,19 +159,25 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
                   src="/images/publications/techcrunch.svg"
                   alt="TechCrunch"
                   className="h-6 w-auto dark:invert"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="sync"
+                  fetchPriority="low"
                 />
                 <img
                   src="/images/publications/forbes.svg"
                   alt="Forbes"
                   className="h-5 w-auto dark:invert"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="sync"
+                  fetchPriority="low"
                 />
                 <img
                   src="/images/publications/producthunt.svg"
                   alt="Product Hunt"
                   className="h-6 w-auto dark:invert"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="sync"
+                  fetchPriority="low"
                 />
               </div>
             </motion.div>

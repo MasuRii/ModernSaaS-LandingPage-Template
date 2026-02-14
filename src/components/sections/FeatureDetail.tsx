@@ -97,7 +97,7 @@ export const FeatureDetail: React.FC<FeatureDetailProps> = ({ className }) => {
                 )}
               >
                 {/* Text Content */}
-                <div className="flex-1 space-y-6">
+                <div className="flex-1 space-y-6 text-center lg:text-left">
                   <FadeInUp triggerOnView threshold={0.2}>
                     <div className="inline-flex p-3 rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 mb-2 shadow-sm">
                       <IconComponent size={24} aria-hidden="true" />
@@ -105,14 +105,17 @@ export const FeatureDetail: React.FC<FeatureDetailProps> = ({ className }) => {
                     <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-text-primary mb-4">
                       {feature.title}
                     </h2>
-                    <p className="text-lg text-text-muted leading-relaxed mb-6">
+                    <p className="text-lg text-text-muted leading-relaxed mb-6 max-w-2xl mx-auto lg:max-w-none lg:mx-0">
                       {feature.description}
                     </p>
 
                     {feature.subFeatures && (
-                      <ul className="space-y-4" role="list">
+                      <ul className="space-y-4 max-w-xl mx-auto lg:max-w-none lg:mx-0" role="list">
                         {feature.subFeatures.map((sub, i) => (
-                          <li key={i} className="flex items-start gap-3">
+                          <li
+                            key={i}
+                            className="flex items-start gap-3 justify-center lg:justify-start text-left"
+                          >
                             <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center">
                               <Check
                                 size={12}

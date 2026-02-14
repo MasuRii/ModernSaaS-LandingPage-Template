@@ -37,11 +37,11 @@ export const RelatedPosts: React.FC<RelatedPostsProps> = ({ posts, className }) 
         <div className="space-y-12">
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="space-y-4">
+            <div className="space-y-4 text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-bold text-text-primary tracking-tight">
                 Related Articles
               </h2>
-              <p className="text-lg text-text-secondary max-w-2xl">
+              <p className="text-lg text-text-secondary max-w-2xl mx-auto md:mx-0">
                 Continue reading about modern SaaS development, product strategy, and engineering
                 best practices.
               </p>

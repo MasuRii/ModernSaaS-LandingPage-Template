@@ -107,14 +107,14 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
               whileInView="animate"
               viewport={{ once: true, margin: '-100px' }}
               variants={PRESETS.fadeInLeft as unknown as Variants}
-              className="flex flex-col will-change-transform"
+              className="flex flex-col items-center text-center lg:items-start lg:text-left will-change-transform"
               style={{ opacity: 1 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-8">
                 Where We Started
               </h2>
 
-              <div className="space-y-6 text-text-muted leading-relaxed">
+              <div className="space-y-6 text-text-muted leading-relaxed max-w-2xl lg:max-w-none">
                 <p>
                   Founded in {company.foundedYear}, we set out to solve a simple problem: making
                   collaboration effortless for remote teams. What started as a weekend project
@@ -128,7 +128,7 @@ export const CompanyStory: React.FC<CompanyStoryProps> = ({ className }) => {
                 </p>
               </div>
 
-              <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 text-center sm:text-left">
                 <div>
                   <h3 className="text-xl font-bold text-text-primary mb-3">Today</h3>
                   <p className="text-text-muted leading-relaxed">

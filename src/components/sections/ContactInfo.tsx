@@ -85,17 +85,17 @@ export const ContactInfo: React.FC<ContactInfoProps> = ({ className, id = 'conta
             whileInView="animate"
             viewport={{ once: true, margin: '-100px' }}
             variants={PRESETS.fadeInUp as unknown as Variants}
-            className="will-change-transform lg:col-span-1"
+            className="will-change-transform lg:col-span-1 text-center lg:text-left"
           >
             <h2 className="mb-4 text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
               Other ways to connect
             </h2>
-            <p className="mb-8 text-lg text-text-secondary leading-relaxed">
+            <p className="mb-8 text-lg text-text-secondary leading-relaxed max-w-lg mx-auto lg:max-w-none lg:mx-0">
               Prefer a direct line? Reach out through any of these channels and we'll get back to
               you as soon as possible.
             </p>
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 items-center lg:items-start">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-text-muted">
                 Follow our journey
               </h3>

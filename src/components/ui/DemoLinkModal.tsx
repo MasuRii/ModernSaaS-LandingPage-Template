@@ -9,6 +9,7 @@
  */
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import {
   Check,
   Copy,
@@ -212,12 +213,13 @@ export const DemoLinkModal = ({
     return null;
   }
 
-  return (
+  // Use createPortal to render modal outside parent containers
+  // This prevents issues with parent elements that have transform/overflow creating new stacking contexts
+  const modalContent = (
     <>
       {/* Backdrop overlay */}
       <div
-        className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50"
-        onClick={onClose}
+        className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[100]"
         aria-hidden="true"
         data-testid="modal-overlay"
         style={{
@@ -227,16 +229,18 @@ export const DemoLinkModal = ({
 
       {/* Modal dialog container - flexbox centering to avoid transform conflicts */}
       <div
-        className="fixed inset-0 flex items-center justify-center z-50 p-4"
+        className="fixed inset-0 flex items-center justify-center z-[100] p-4"
         role="dialog"
         aria-modal="true"
         aria-labelledby="demo-link-modal-title"
         aria-describedby="demo-link-modal-description"
         data-testid="modal-content"
+        onClick={onClose}
       >
         <div
           ref={containerRef}
           className="w-full max-w-md"
+          onClick={(e) => e.stopPropagation()}
           style={{
             animation: prefersReducedMotion
               ? undefined
@@ -359,6 +363,14 @@ export const DemoLinkModal = ({
       `}</style>
     </>
   );
+
+  // Render modal via portal to document.body to escape parent stacking contexts
+  if (typeof document !== 'undefined') {
+    return createPortal(modalContent, document.body);
+  }
+
+  // SSR fallback - render inline (won't be interactive until hydrated)
+  return modalContent;
 };
 
 /**

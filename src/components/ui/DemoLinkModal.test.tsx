@@ -95,16 +95,26 @@ describe('DemoLinkModal Component', () => {
       expect(onClose).toHaveBeenCalledTimes(1);
     });
 
-    it('calls onClose when backdrop is clicked', async () => {
+    it('calls onClose when clicking outside the modal card', async () => {
       const onClose = vi.fn();
       render(<DemoLinkModal {...defaultProps} onClose={onClose} />);
 
-      // Find backdrop by its aria-hidden attribute
-      const backdrop = document.querySelector('[aria-hidden="true"]');
-      if (backdrop) {
-        await userEvent.click(backdrop);
-        expect(onClose).toHaveBeenCalledTimes(1);
-      }
+      // Find the modal container (dialog) and click on it outside the card
+      const modalContainer = screen.getByRole('dialog');
+      await userEvent.click(modalContainer);
+
+      expect(onClose).toHaveBeenCalledTimes(1);
+    });
+
+    it('does not call onClose when clicking inside the modal card', async () => {
+      const onClose = vi.fn();
+      render(<DemoLinkModal {...defaultProps} onClose={onClose} />);
+
+      // Click inside the modal card (on the title)
+      const title = screen.getByRole('heading', { level: 2 });
+      await userEvent.click(title);
+
+      expect(onClose).not.toHaveBeenCalled();
     });
 
     it('calls onClose when Close button is clicked', async () => {

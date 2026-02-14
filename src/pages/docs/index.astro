@@ -17,6 +17,14 @@ import {
   ChevronRight,
   ExternalLink,
 } from 'lucide-react';
+import {
+  JavaScriptIcon,
+  PythonIcon,
+  RubyIcon,
+  GoIcon,
+  PhpIcon,
+  JavaIcon,
+} from '../../components/icons/LanguageIcons';
 
 const seo = pageSEO.docs;
 
@@ -324,7 +332,12 @@ const sdkData = [
           sdkData.map((sdk) => (
             <div class="flex flex-col items-center p-4 rounded-xl bg-bg-primary border border-border-default hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-md transition-all duration-200 cursor-pointer group">
               <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 mb-3 group-hover:scale-110 transition-transform">
-                <Code size={24} />
+                {sdk.name === 'JavaScript' && <JavaScriptIcon size={24} />}
+                {sdk.name === 'Python' && <PythonIcon size={24} />}
+                {sdk.name === 'Ruby' && <RubyIcon size={24} />}
+                {sdk.name === 'Go' && <GoIcon size={24} />}
+                {sdk.name === 'PHP' && <PhpIcon size={24} />}
+                {sdk.name === 'Java' && <JavaIcon size={24} />}
               </div>
               <span class="font-semibold text-text-primary text-sm">{sdk.name}</span>
               <span class="text-xs text-text-muted mt-1">{sdk.version}</span>

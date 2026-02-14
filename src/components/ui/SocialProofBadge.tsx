@@ -74,7 +74,7 @@ export const SocialProofBadge: React.FC<SocialProofBadgeProps> = ({
                       alt="User profile"
                       containerClassName="w-full h-full"
                       className="w-full h-full object-cover"
-                      loading="lazy"
+                      loading="eager"
                       placeholder={
                         <span className="text-[10px] text-primary-600 dark:text-primary-400 font-bold uppercase">
                           {String.fromCharCode(65 + i)}

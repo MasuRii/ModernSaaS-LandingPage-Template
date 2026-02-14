@@ -211,7 +211,7 @@ export const Toaster = () => {
 
   return (
     <div
-      className="fixed bottom-0 right-0 z-[100] flex w-full flex-col gap-3 p-4 sm:max-w-md sm:p-6"
+      className="fixed top-0 left-1/2 -translate-x-1/2 z-[100] flex w-full max-w-md flex-col gap-3 p-4 pt-[calc(1rem+env(safe-area-inset-top))] sm:top-auto sm:bottom-0 sm:left-auto sm:right-0 sm:translate-x-0 sm:pt-4 sm:pb-[calc(1.5rem+env(safe-area-inset-bottom))]"
       role="region"
       aria-label="Notifications"
     >

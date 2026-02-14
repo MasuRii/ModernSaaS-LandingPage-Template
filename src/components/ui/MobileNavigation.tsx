@@ -205,13 +205,13 @@ export function MobileNavigation({
                 ? { duration: 0 }
                 : { type: 'spring', damping: 25, stiffness: 200 }
             }
-            className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-bg-primary border-l border-border-default shadow-2xl z-50 md:hidden flex flex-col"
+            className="fixed top-0 right-0 bottom-0 w-full max-w-[min(24rem,calc(100vw-2rem))] bg-bg-primary border-l border-border-default shadow-2xl z-50 md:hidden flex flex-col"
             role="dialog"
             aria-modal="true"
             aria-label="Mobile navigation menu"
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-5 border-b border-border-default/50">
+            <div className="flex items-center justify-between px-6 py-5 pt-[calc(1.25rem+env(safe-area-inset-top))] border-b border-border-default/50">
               <span className="text-xl font-bold text-text-primary tracking-tight">Menu</span>
               <button
                 ref={closeButtonRef}
@@ -258,7 +258,7 @@ export function MobileNavigation({
             </nav>
 
             {/* Footer with theme toggle and CTA */}
-            <div className="border-t border-border-default/50 p-6 space-y-6 bg-bg-secondary/30">
+            <div className="border-t border-border-default/50 p-6 pb-[calc(1.5rem+env(safe-area-inset-bottom))] space-y-6 bg-bg-secondary/30">
               {/* Theme toggle */}
               <div className="flex items-center justify-between px-2">
                 <span className="text-sm font-semibold text-text-secondary uppercase tracking-wider">

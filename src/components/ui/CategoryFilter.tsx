@@ -26,16 +26,16 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({
 }) => {
   return (
     <div
-      className={cn('w-full overflow-x-auto pb-2 scrollbar-hide', className)}
+      className={cn('w-full overflow-x-auto pb-2 scrollbar-hide touch-pan-x', className)}
       data-testid="category-filter"
     >
       <Tabs
         value={activeCategory}
         onValueChange={(value) => onCategoryChange(value as BlogCategory | 'all')}
-        className="w-fit mx-auto"
+        className="w-fit min-w-full flex justify-center"
         hasPanels={false}
       >
-        <TabsList className="bg-bg-secondary/50 backdrop-blur-sm border border-border-muted p-1 rounded-full h-auto flex-nowrap whitespace-nowrap">
+        <TabsList className="bg-bg-secondary/50 backdrop-blur-sm border border-border-muted p-1 rounded-full h-auto flex-nowrap whitespace-nowrap overflow-x-visible">
           <TabsTrigger
             value="all"
             className={cn(

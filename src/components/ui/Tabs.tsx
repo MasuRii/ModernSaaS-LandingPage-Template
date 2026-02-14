@@ -139,8 +139,8 @@ export const TabsList = React.forwardRef<HTMLDivElement, TabsListProps>(
         aria-orientation={orientation}
         onKeyDown={handleKeyDown}
         className={cn(
-          'inline-flex h-10 items-center justify-center rounded-lg bg-bg-secondary p-1 text-text-muted',
-          orientation === 'vertical' && 'h-auto flex-col items-stretch',
+          'inline-flex h-10 items-center justify-center rounded-lg bg-bg-secondary p-1 text-text-muted overflow-x-auto scrollbar-hide touch-pan-x',
+          orientation === 'vertical' && 'h-auto flex-col items-stretch overflow-x-visible',
           className,
         )}
         {...props}

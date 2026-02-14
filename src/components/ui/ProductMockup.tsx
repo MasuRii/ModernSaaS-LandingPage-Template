@@ -66,7 +66,7 @@ export const ProductMockup: React.FC<ProductMockupProps> = ({
     'relative z-10 w-full shadow-2xl overflow-hidden bg-bg-primary border-border-default',
     variant === 'laptop'
       ? 'aspect-[16/10] rounded-t-xl border-x-[6px] border-t-[6px] md:border-x-[12px] md:border-t-[12px]'
-      : 'aspect-[9/19] rounded-[2.5rem] border-[8px] md:border-[12px] w-[280px] md:w-[320px] mx-auto',
+      : 'aspect-[9/19] rounded-[2.5rem] border-[8px] md:border-[12px] max-w-[280px] md:max-w-[320px] w-full mx-auto',
   );
 
   const screenClasses = 'absolute inset-0 bg-bg-secondary/30 flex flex-col overflow-hidden';

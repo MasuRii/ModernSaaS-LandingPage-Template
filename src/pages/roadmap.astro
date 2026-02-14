@@ -9,7 +9,7 @@ const seo = pageSEO.roadmap;
 ---
 
 <Layout title={`${seo.title} | ${company.name}`} description={seo.description}>
-  <RoadmapHero title={roadmapMetadata.title} subheading={roadmapMetadata.subheading} />
+  <RoadmapHero client:load title={roadmapMetadata.title} subheading={roadmapMetadata.subheading} />
 
   <RoadmapTimeline quarters={roadmapData} client:load />
 

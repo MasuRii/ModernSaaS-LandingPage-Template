@@ -159,46 +159,47 @@ const finalCrumbs = crumbs || defaultCrumbs;
     <ClientRouter />
 
     <style is:global>
-      /* Custom Page Transitions matching Animation Strategy */
+      /* 
+        Optimized Page Transitions
+        - Reduced animation duration for faster perceived performance
+        - Simplified animations to reduce GPU load
+        - Added will-change hints for compositor optimization
+      */
       ::view-transition-old(root) {
-        animation:
-          200ms ease-in both fade-out,
-          200ms ease-in both slide-to-top;
+        animation: 150ms ease-out both fade-out;
+        will-change: opacity;
       }
 
       ::view-transition-new(root) {
-        animation:
-          400ms cubic-bezier(0.22, 1, 0.36, 1) both fade-in,
-          400ms cubic-bezier(0.22, 1, 0.36, 1) both slide-from-bottom;
+        animation: 250ms cubic-bezier(0.22, 1, 0.36, 1) both fade-in;
+        will-change: opacity, transform;
       }
 
       @keyframes fade-in {
         from {
           opacity: 0;
+          transform: translateY(8px);
         }
       }
       @keyframes fade-out {
         to {
           opacity: 0;
-        }
-      }
-      @keyframes slide-from-bottom {
-        from {
-          transform: translateY(20px);
-        }
-      }
-      @keyframes slide-to-top {
-        to {
-          transform: translateY(-20px);
+          transform: translateY(-8px);
         }
       }
 
-      /* Respect reduced motion */
+      /* Respect reduced motion - disable animations entirely */
       @media (prefers-reduced-motion: reduce) {
         ::view-transition-old(root),
         ::view-transition-new(root) {
           animation: none !important;
         }
+      }
+
+      /* Optimize performance during transitions - disable heavy effects */
+      ::view-transition-old(root) *,
+      ::view-transition-new(root) * {
+        animation-play-state: paused !important;
       }
     </style>
   </head>
